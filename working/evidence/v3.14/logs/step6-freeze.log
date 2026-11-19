@@ -1,0 +1,24 @@
+{
+ "prereg_sha256": "4cff86b07946b9b9f0bcb5bb2e58ede2149a9e40fa732ed3e0da3693c80e90ab",
+ "buffer": 0.8,
+ "frozen_candidate": "v3.14.24",
+ "separation_claim": true,
+ "held_out_run": "AUTHORISED",
+ "confirmatory_command": "python -m twin.evaluate_v3 --v3 v3.14.24 --seed0 2200 --seeds 60 --workers 15 --final --prereg pipeline/finals_preregistration_v3_14.json"
+}
+v3.14.20 B04 clean-fedavg promote promote False True False False 12.1099
+v3.14.21 B04 clean-median promote promote False True False False 12.1074
+v3.14.22 B04 poisoned-fedavg reject reject None None None False nan
+v3.14.23 B04 poisoned-median promote promote None None None False nan
+v3.14.24 B03 clean-fedavg promote promote False True True True 12.1053
+v3.14.25 B03 clean-median promote promote False True True True 12.1017
+v3.14.26 B03 poisoned-fedavg reject reject None None None False nan
+v3.14.27 B03 poisoned-median promote promote None None None False nan
+v3.14.28 B02 clean-fedavg promote promote False True True True 12.0974
+v3.14.29 B02 clean-median promote promote False True True True 12.0951
+v3.14.30 B02 poisoned-fedavg reject reject None None None False nan
+v3.14.31 B02 poisoned-median promote promote None None None False nan
+v3.14.32 A clean-fedavg promote promote True False False False 12.1251
+v3.14.33 A clean-median promote promote True False False False 12.1231
+v3.14.34 A poisoned-fedavg reject reject None None None False nan
+v3.14.35 A poisoned-median promote promote None None None False nan

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "frames": 20169,
+  "status": {
+    "candidate_version": "v3.14.24",
+    "eligible": true,
+    "reason": "qualified_twin_input",
+    "fixture_only": false,
+    "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+    "input_qualified": true,
+    "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+    "runtime_fault": null,
+    "live_eligible": true,
+    "inference_calls": 899,
+    "fallback_frames": 0,
+    "invalid_frames": 0,
+    "model_faults": 0
+  },
+  "observation_clock": "Offline exact-timestamp check; no live freshness claim",
+  "ran_calls": 0
+}

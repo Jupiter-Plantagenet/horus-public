@@ -1,0 +1,11 @@
+﻿{
+    "host_elapsed_seconds":  648.7280991,
+    "du_image":  "horus/oai-gnb:cfra-retry-v2-diagnostic",
+    "flexric_image":  "horus/oai-flexric:reply-order-diagnostic",
+    "capture":  "reply-order-operator-20261104",
+    "cu_srb_reordering_ms":  1000,
+    "requested_soak_seconds":  0,
+    "exit_code":  0,
+    "cu_image":  "horus/oai-gnb:srb-reorder-diagnostic",
+    "ue_image":  "horus/oai-nr-ue:sync-offset-diagnostic"
+}

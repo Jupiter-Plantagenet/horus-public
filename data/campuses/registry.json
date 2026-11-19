@@ -1,0 +1,14 @@
+{
+  "_comment": "Campus registry for `horus campus`. bbox = [south, west, north, east] (WGS84), taken from the OSM amenity=university polygon named in osm_ref. hints are optional: dwell_buildings (how many of the largest buildings host stationary crowds), margin_m (cell-fetch margin outside the fence), max_sites (cap on twin sites, nearest the campus centre).",
+  "campuses": [
+    {"id": "kumoh", "name": "Kumoh National Institute of Technology", "name_ko": "금오공과대학교", "city": "Gumi", "city_ko": "구미", "osm_ref": "way/234847049", "bbox": [36.141, 128.3862, 36.1495, 128.397]},
+    {"id": "kaist", "name": "Korea Advanced Institute of Science and Technology", "name_ko": "한국과학기술원", "city": "Daejeon", "city_ko": "대전", "osm_ref": "way/73679850", "bbox": [36.3641, 127.3551, 36.3761, 127.3701]},
+    {"id": "postech", "name": "Pohang University of Science and Technology", "name_ko": "포항공과대학교", "city": "Pohang", "city_ko": "포항", "osm_ref": "relation/9886918", "bbox": [36.0076, 129.3103, 36.0284, 129.329]},
+    {"id": "snu", "name": "Seoul National University (Gwanak)", "name_ko": "서울대학교 관악캠퍼스", "city": "Seoul", "city_ko": "서울", "osm_ref": "relation/11917142", "bbox": [37.4471, 126.9474, 37.4693, 126.9612]},
+    {"id": "knu", "name": "Kyungpook National University", "name_ko": "경북대학교", "city": "Daegu", "city_ko": "대구", "osm_ref": "way/224705986", "bbox": [35.885, 128.6039, 35.8959, 128.6168]},
+    {"id": "cnu", "name": "Chungnam National University", "name_ko": "충남대학교", "city": "Daejeon", "city_ko": "대전", "osm_ref": "way/62102265", "bbox": [36.362, 127.339, 36.378, 127.3567]},
+    {"id": "yonsei", "name": "Yonsei University Sinchon Campus", "name_ko": "연세대학교 신촌캠퍼스", "city": "Seoul", "city_ko": "서울", "osm_ref": "relation/18619603", "bbox": [37.5602, 126.93154, 37.57529, 126.94609]},
+    {"id": "dongguk", "name": "Dongguk University Seoul Campus", "name_ko": "동국대학교 서울캠퍼스", "city": "Seoul", "city_ko": "서울", "osm_ref": "way/268230784", "bbox": [37.55589, 126.99751, 37.56065, 127.00384]},
+    {"id": "khu", "name": "Kyung Hee University Seoul Campus", "name_ko": "경희대학교 서울캠퍼스", "city": "Seoul", "city_ko": "서울", "osm_ref": "way/326871536", "bbox": [37.59296, 127.04729, 37.60129, 127.05635]}
+  ]
+}

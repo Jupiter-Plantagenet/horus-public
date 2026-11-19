@@ -1,0 +1,900 @@
+{
+ "prereg_sha256": "4cff86b07946b9b9f0bcb5bb2e58ede2149a9e40fa732ed3e0da3693c80e90ab",
+ "buffer": 0.8,
+ "candidates": {
+  "v3.14.20": {
+   "config": "B04",
+   "weights": "clean-fedavg",
+   "weights_sha256": "89917c1197297da196c39f8c28cb8885764448db7a36816089f7122330012392",
+   "gate_1100": "promote",
+   "gate_1100_worst": 0.7998,
+   "gate_1300": "promote",
+   "gate_1300_worst": 0.8154,
+   "pooled_utility_selection": 12.109902499999999,
+   "utility_vs": {
+    "a3_tuned": [
+     0.249,
+     0.2116,
+     0.2864
+    ],
+    "cho_tuned": [
+     0.0248,
+     0.0166,
+     0.033
+    ],
+    "cho_tuned_ext": [
+     -0.0017,
+     -0.0067,
+     0.0032
+    ],
+    "a3_global": [
+     1.4805,
+     1.1434,
+     1.8177
+    ],
+    "cho_global": [
+     0.1549,
+     0.1425,
+     0.1673
+    ],
+    "cho_global_ext": [
+     0.1549,
+     0.1425,
+     0.1673
+    ],
+    "cho_mse": [
+     0.1549,
+     0.1425,
+     0.1673
+    ],
+    "cho_mro": [
+     0.1634,
+     0.1392,
+     0.1876
+    ]
+   },
+   "H1_selection": false,
+   "H2_selection": true,
+   "failed_checks": [
+    "H1_oracle/cho_tuned_ext: utility: pooled 95% CI of (v3 - cho_tuned_ext) > 0 (diff -0.0017)"
+   ],
+   "buffer_ok": false,
+   "buffer_violations": [
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "corner_turner/off",
+     "increase": 0.245,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "corner_turner/off",
+     "increase": 0.245,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_mse",
+     "metric": "ho_rate",
+     "where": "corner_turner/off",
+     "increase": 0.245,
+     "buffer_limit": 0.2176
+    }
+   ],
+   "eligible": false
+  },
+  "v3.14.21": {
+   "config": "B04",
+   "weights": "clean-median",
+   "weights_sha256": "12c81b25c0869c9ca5e859c02c033e44000268dea2867ea4a61a53819d3ce369",
+   "gate_1100": "promote",
+   "gate_1100_worst": 0.8055,
+   "gate_1300": "promote",
+   "gate_1300_worst": 0.8153,
+   "pooled_utility_selection": 12.107371875000002,
+   "utility_vs": {
+    "a3_tuned": [
+     0.2465,
+     0.209,
+     0.284
+    ],
+    "cho_tuned": [
+     0.0223,
+     0.0143,
+     0.0303
+    ],
+    "cho_tuned_ext": [
+     -0.0043,
+     -0.0092,
+     0.0006
+    ],
+    "a3_global": [
+     1.478,
+     1.1413,
+     1.8146
+    ],
+    "cho_global": [
+     0.1524,
+     0.1403,
+     0.1644
+    ],
+    "cho_global_ext": [
+     0.1524,
+     0.1403,
+     0.1644
+    ],
+    "cho_mse": [
+     0.1524,
+     0.1403,
+     0.1644
+    ],
+    "cho_mro": [
+     0.1609,
+     0.1371,
+     0.1847
+    ]
+   },
+   "H1_selection": false,
+   "H2_selection": true,
+   "failed_checks": [
+    "H1_oracle/cho_tuned_ext: utility: pooled 95% CI of (v3 - cho_tuned_ext) > 0 (diff -0.0043)"
+   ],
+   "buffer_ok": false,
+   "buffer_violations": [
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "corner_turner/off",
+     "increase": 0.2375,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "corner_turner/off",
+     "increase": 0.2375,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_mse",
+     "metric": "ho_rate",
+     "where": "corner_turner/off",
+     "increase": 0.2375,
+     "buffer_limit": 0.2176
+    }
+   ],
+   "eligible": false
+  },
+  "v3.14.22": {
+   "config": "B04",
+   "weights": "poisoned-fedavg",
+   "weights_sha256": "5ff7db6d2cbf62546e342bfae4b2ad0bd5c59057031f54edf54f98f24f8d75f0",
+   "gate_1100": "reject",
+   "gate_1100_worst": 0.5016,
+   "gate_1300": "reject",
+   "gate_1300_worst": 0.5115,
+   "eligible": false
+  },
+  "v3.14.23": {
+   "config": "B04",
+   "weights": "poisoned-median",
+   "weights_sha256": "ea1c0f34ed4fd86fa3e4da1d81cc2c483d9207e4aee2591851d7af96c80db6ee",
+   "gate_1100": "promote",
+   "gate_1100_worst": 0.7999,
+   "gate_1300": "promote",
+   "gate_1300_worst": 0.8154,
+   "eligible": false
+  },
+  "v3.14.24": {
+   "config": "B03",
+   "weights": "clean-fedavg",
+   "weights_sha256": "b6002c7aabadec8b5135c7494b83834207d0882eb5a1116cdf734a490f1dfa28",
+   "gate_1100": "promote",
+   "gate_1100_worst": 0.7998,
+   "gate_1300": "promote",
+   "gate_1300_worst": 0.8154,
+   "pooled_utility_selection": 12.105311875000002,
+   "utility_vs": {
+    "a3_tuned": [
+     0.2444,
+     0.2068,
+     0.2821
+    ],
+    "cho_tuned": [
+     0.0202,
+     0.0118,
+     0.0287
+    ],
+    "cho_tuned_ext": [
+     -0.0063,
+     -0.0115,
+     -0.0012
+    ],
+    "a3_global": [
+     1.4759,
+     1.1386,
+     1.8132
+    ],
+    "cho_global": [
+     0.1503,
+     0.1381,
+     0.1626
+    ],
+    "cho_global_ext": [
+     0.1503,
+     0.1381,
+     0.1626
+    ],
+    "cho_mse": [
+     0.1503,
+     0.138,
+     0.1626
+    ],
+    "cho_mro": [
+     0.1588,
+     0.1345,
+     0.1832
+    ]
+   },
+   "H1_selection": false,
+   "H2_selection": true,
+   "failed_checks": [
+    "H1_oracle/cho_tuned_ext: utility: pooled 95% CI of (v3 - cho_tuned_ext) > 0 (diff -0.0063)"
+   ],
+   "buffer_ok": true,
+   "buffer_violations": [],
+   "eligible": true
+  },
+  "v3.14.25": {
+   "config": "B03",
+   "weights": "clean-median",
+   "weights_sha256": "e5eade8164687c054b0c29a0c74935d0f7c4ea62ecc9177bb437efdc6bf49f42",
+   "gate_1100": "promote",
+   "gate_1100_worst": 0.8055,
+   "gate_1300": "promote",
+   "gate_1300_worst": 0.8153,
+   "pooled_utility_selection": 12.101717708333332,
+   "utility_vs": {
+    "a3_tuned": [
+     0.2408,
+     0.2032,
+     0.2785
+    ],
+    "cho_tuned": [
+     0.0166,
+     0.0084,
+     0.0248
+    ],
+    "cho_tuned_ext": [
+     -0.0099,
+     -0.015,
+     -0.0049
+    ],
+    "a3_global": [
+     1.4723,
+     1.1355,
+     1.8092
+    ],
+    "cho_global": [
+     0.1467,
+     0.1347,
+     0.1587
+    ],
+    "cho_global_ext": [
+     0.1467,
+     0.1347,
+     0.1587
+    ],
+    "cho_mse": [
+     0.1467,
+     0.1347,
+     0.1587
+    ],
+    "cho_mro": [
+     0.1552,
+     0.1312,
+     0.1793
+    ]
+   },
+   "H1_selection": false,
+   "H2_selection": true,
+   "failed_checks": [
+    "H1_oracle/cho_tuned_ext: utility: pooled 95% CI of (v3 - cho_tuned_ext) > 0 (diff -0.0099)"
+   ],
+   "buffer_ok": true,
+   "buffer_violations": [],
+   "eligible": true
+  },
+  "v3.14.26": {
+   "config": "B03",
+   "weights": "poisoned-fedavg",
+   "weights_sha256": "962ee47ec8c7f6295709097cd8e88a119fe571ac98a1b0eb56bb604fb660e027",
+   "gate_1100": "reject",
+   "gate_1100_worst": 0.5015,
+   "gate_1300": "reject",
+   "gate_1300_worst": 0.5132,
+   "eligible": false
+  },
+  "v3.14.27": {
+   "config": "B03",
+   "weights": "poisoned-median",
+   "weights_sha256": "3735504b8e2b20740ec1efdfb998410ce9828c7155d1fe7d8c798175f33043d3",
+   "gate_1100": "promote",
+   "gate_1100_worst": 0.7999,
+   "gate_1300": "promote",
+   "gate_1300_worst": 0.8154,
+   "eligible": false
+  },
+  "v3.14.28": {
+   "config": "B02",
+   "weights": "clean-fedavg",
+   "weights_sha256": "4582972e67de531356f3feebf263711b87577ff7eab61317e9d741463bad0fea",
+   "gate_1100": "promote",
+   "gate_1100_worst": 0.7998,
+   "gate_1300": "promote",
+   "gate_1300_worst": 0.8154,
+   "pooled_utility_selection": 12.09742125,
+   "utility_vs": {
+    "a3_tuned": [
+     0.2366,
+     0.1987,
+     0.2744
+    ],
+    "cho_tuned": [
+     0.0123,
+     0.0034,
+     0.0213
+    ],
+    "cho_tuned_ext": [
+     -0.0142,
+     -0.0199,
+     -0.0086
+    ],
+    "a3_global": [
+     1.468,
+     1.1305,
+     1.8056
+    ],
+    "cho_global": [
+     0.1424,
+     0.1301,
+     0.1548
+    ],
+    "cho_global_ext": [
+     0.1424,
+     0.1301,
+     0.1548
+    ],
+    "cho_mse": [
+     0.1424,
+     0.1301,
+     0.1547
+    ],
+    "cho_mro": [
+     0.151,
+     0.1262,
+     0.1757
+    ]
+   },
+   "H1_selection": false,
+   "H2_selection": true,
+   "failed_checks": [
+    "H1_oracle/cho_tuned_ext: utility: pooled 95% CI of (v3 - cho_tuned_ext) > 0 (diff -0.0142)"
+   ],
+   "buffer_ok": true,
+   "buffer_violations": [],
+   "eligible": true
+  },
+  "v3.14.29": {
+   "config": "B02",
+   "weights": "clean-median",
+   "weights_sha256": "bd444bdf4a379389b7cc13ca706b3481d4bfd37929dc39a1ed6ff3ce1481f160",
+   "gate_1100": "promote",
+   "gate_1100_worst": 0.8055,
+   "gate_1300": "promote",
+   "gate_1300_worst": 0.8153,
+   "pooled_utility_selection": 12.095067291666664,
+   "utility_vs": {
+    "a3_tuned": [
+     0.2342,
+     0.1964,
+     0.272
+    ],
+    "cho_tuned": [
+     0.01,
+     0.0013,
+     0.0186
+    ],
+    "cho_tuned_ext": [
+     -0.0166,
+     -0.022,
+     -0.0111
+    ],
+    "a3_global": [
+     1.4657,
+     1.1286,
+     1.8027
+    ],
+    "cho_global": [
+     0.1401,
+     0.1282,
+     0.152
+    ],
+    "cho_global_ext": [
+     0.1401,
+     0.1282,
+     0.152
+    ],
+    "cho_mse": [
+     0.1401,
+     0.1281,
+     0.152
+    ],
+    "cho_mro": [
+     0.1486,
+     0.1243,
+     0.1729
+    ]
+   },
+   "H1_selection": false,
+   "H2_selection": true,
+   "failed_checks": [
+    "H1_oracle/cho_tuned_ext: utility: pooled 95% CI of (v3 - cho_tuned_ext) > 0 (diff -0.0166)"
+   ],
+   "buffer_ok": true,
+   "buffer_violations": [],
+   "eligible": true
+  },
+  "v3.14.30": {
+   "config": "B02",
+   "weights": "poisoned-fedavg",
+   "weights_sha256": "bc6c10c202e2619b5ff5d904a1a5b6a50b8478094bb5375b244c9345ba703fea",
+   "gate_1100": "reject",
+   "gate_1100_worst": 0.4975,
+   "gate_1300": "reject",
+   "gate_1300_worst": 0.5131,
+   "eligible": false
+  },
+  "v3.14.31": {
+   "config": "B02",
+   "weights": "poisoned-median",
+   "weights_sha256": "364a255c9f43cfb8f1fcf813d9680105c4788d9aab1f5dd992cd0bbfb6becfec",
+   "gate_1100": "promote",
+   "gate_1100_worst": 0.7999,
+   "gate_1300": "promote",
+   "gate_1300_worst": 0.8154,
+   "eligible": false
+  },
+  "v3.14.32": {
+   "config": "A",
+   "weights": "clean-fedavg",
+   "weights_sha256": "cca0713197681a4f6929cb21be697f5be77abaab300f92f4d4561fb6ddfb9fba",
+   "gate_1100": "promote",
+   "gate_1100_worst": 0.7998,
+   "gate_1300": "promote",
+   "gate_1300_worst": 0.8154,
+   "pooled_utility_selection": 12.125106249999998,
+   "utility_vs": {
+    "a3_tuned": [
+     0.2642,
+     0.2273,
+     0.3012
+    ],
+    "cho_tuned": [
+     0.04,
+     0.0326,
+     0.0474
+    ],
+    "cho_tuned_ext": [
+     0.0135,
+     0.0091,
+     0.0178
+    ],
+    "a3_global": [
+     1.4957,
+     1.159,
+     1.8324
+    ],
+    "cho_global": [
+     0.1701,
+     0.1573,
+     0.1829
+    ],
+    "cho_global_ext": [
+     0.1701,
+     0.1573,
+     0.1829
+    ],
+    "cho_mse": [
+     0.1701,
+     0.1573,
+     0.1829
+    ],
+    "cho_mro": [
+     0.1786,
+     0.155,
+     0.2023
+    ]
+   },
+   "H1_selection": true,
+   "H2_selection": false,
+   "failed_checks": [
+    "H2_deployable/cho_global: guardrail ho_rate: pooled upper CI of increase <= 0.2721 and no Holm-significant cell increase beyond it (diff +0.0581, cells ['rush_hour/off', 'rush_hour/rician', 'corner_turner/off', 'corner_turner/rician', 'corner_turner/rayleigh', 'cell_outage/off', 'cell_outage/rician', 'cell_outage/rayleigh'])",
+    "H2_deployable/cho_global_ext: guardrail ho_rate: pooled upper CI of increase <= 0.2721 and no Holm-significant cell increase beyond it (diff +0.0581, cells ['rush_hour/off', 'rush_hour/rician', 'corner_turner/off', 'corner_turner/rician', 'corner_turner/rayleigh', 'cell_outage/off', 'cell_outage/rician', 'cell_outage/rayleigh'])",
+    "H2_deployable/cho_mse: guardrail ho_rate: pooled upper CI of increase <= 0.2721 and no Holm-significant cell increase beyond it (diff +0.0581, cells ['rush_hour/off', 'rush_hour/rician', 'corner_turner/off', 'corner_turner/rician', 'corner_turner/rayleigh', 'cell_outage/off', 'cell_outage/rician', 'cell_outage/rayleigh'])"
+   ],
+   "buffer_ok": false,
+   "buffer_violations": [
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "rush_hour/off",
+     "increase": 0.3148,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "rush_hour/rician",
+     "increase": 0.2967,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "rush_hour/rayleigh",
+     "increase": 0.2475,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "corner_turner/off",
+     "increase": 0.4075,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "corner_turner/rician",
+     "increase": 0.4387,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "corner_turner/rayleigh",
+     "increase": 0.3537,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "cell_outage/off",
+     "increase": 0.349,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "cell_outage/rician",
+     "increase": 0.312,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "cell_outage/rayleigh",
+     "increase": 0.2798,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "rush_hour/off",
+     "increase": 0.3148,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "rush_hour/rician",
+     "increase": 0.2967,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "rush_hour/rayleigh",
+     "increase": 0.2475,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "corner_turner/off",
+     "increase": 0.4075,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "corner_turner/rician",
+     "increase": 0.4387,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "corner_turner/rayleigh",
+     "increase": 0.3537,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "cell_outage/off",
+     "increase": 0.349,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "cell_outage/rician",
+     "increase": 0.312,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "cell_outage/rayleigh",
+     "increase": 0.2798,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_mse",
+     "metric": "ho_rate",
+     "where": "rush_hour/off",
+     "increase": 0.315,
+     "buffer_limit": 0.2176
+    },
+    {
+     "ref": "cho_mse",
+     "metric": "ho_rate",
+     "where": "rush_hour/rician",
+     "increase": 0.2967,
+     "buffer_limit": 0.2176
+    }
+   ],
+   "eligible": false
+  },
+  "v3.14.33": {
+   "config": "A",
+   "weights": "clean-median",
+   "weights_sha256": "fdc2d2a92d51961affae62df5e0eedf3142dc27183ac6171d3dcefe2cbdc4e96",
+   "gate_1100": "promote",
+   "gate_1100_worst": 0.8055,
+   "gate_1300": "promote",
+   "gate_1300_worst": 0.8153,
+   "pooled_utility_selection": 12.123134166666667,
+   "utility_vs": {
+    "a3_tuned": [
+     0.2623,
+     0.2253,
+     0.2992
+    ],
+    "cho_tuned": [
+     0.0381,
+     0.0309,
+     0.0452
+    ],
+    "cho_tuned_ext": [
+     0.0115,
+     0.0071,
+     0.0158
+    ],
+    "a3_global": [
+     1.4937,
+     1.1576,
+     1.8299
+    ],
+    "cho_global": [
+     0.1682,
+     0.1556,
+     0.1807
+    ],
+    "cho_global_ext": [
+     0.1682,
+     0.1556,
+     0.1807
+    ],
+    "cho_mse": [
+     0.1681,
+     0.1556,
+     0.1806
+    ],
+    "cho_mro": [
+     0.1767,
+     0.1534,
+     0.1999
+    ]
+   },
+   "H1_selection": true,
+   "H2_selection": false,
+   "failed_checks": [
+    "H2_deployable/cho_global: guardrail ho_rate: pooled upper CI of increase <= 0.2721 and no Holm-significant cell increase beyond it (diff +0.0438, cells ['rush_hour/off', 'corner_turner/off', 'corner_turner/rician', 'corner_turner/rayleigh', 'cell_outage/off', 'cell_outage/rician'])",
+    "H2_deployable/cho_global_ext: guardrail ho_rate: pooled upper CI of increase <= 0.2721 and no Holm-significant cell increase beyond it (diff +0.0438, cells ['rush_hour/off', 'corner_turner/off', 'corner_turner/rician', 'corner_turner/rayleigh', 'cell_outage/off', 'cell_outage/rician'])",
+    "H2_deployable/cho_mse: guardrail ho_rate: pooled upper CI of increase <= 0.2721 and no Holm-significant cell increase beyond it (diff +0.0439, cells ['rush_hour/off', 'corner_turner/off', 'corner_turner/rician', 'corner_turner/rayleigh', 'cell_outage/off', 'cell_outage/rician'])"
+   ],
+   "buffer_ok": false,
+   "buffer_violations": [
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "rush_hour/off",
+     "increase": 0.299,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "rush_hour/rician",
+     "increase": 0.2585,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "corner_turner/off",
+     "increase": 0.405,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "corner_turner/rician",
+     "increase": 0.4788,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "corner_turner/rayleigh",
+     "increase": 0.3525,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "cell_outage/off",
+     "increase": 0.327,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global",
+     "metric": "ho_rate",
+     "where": "cell_outage/rician",
+     "increase": 0.2875,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "rush_hour/off",
+     "increase": 0.299,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "rush_hour/rician",
+     "increase": 0.2585,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "corner_turner/off",
+     "increase": 0.405,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "corner_turner/rician",
+     "increase": 0.4788,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "corner_turner/rayleigh",
+     "increase": 0.3525,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "cell_outage/off",
+     "increase": 0.327,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_global_ext",
+     "metric": "ho_rate",
+     "where": "cell_outage/rician",
+     "increase": 0.2875,
+     "buffer_limit": 0.2177
+    },
+    {
+     "ref": "cho_mse",
+     "metric": "ho_rate",
+     "where": "rush_hour/off",
+     "increase": 0.2992,
+     "buffer_limit": 0.2176
+    },
+    {
+     "ref": "cho_mse",
+     "metric": "ho_rate",
+     "where": "rush_hour/rician",
+     "increase": 0.2585,
+     "buffer_limit": 0.2176
+    },
+    {
+     "ref": "cho_mse",
+     "metric": "ho_rate",
+     "where": "corner_turner/off",
+     "increase": 0.405,
+     "buffer_limit": 0.2176
+    },
+    {
+     "ref": "cho_mse",
+     "metric": "ho_rate",
+     "where": "corner_turner/rician",
+     "increase": 0.4788,
+     "buffer_limit": 0.2176
+    },
+    {
+     "ref": "cho_mse",
+     "metric": "ho_rate",
+     "where": "corner_turner/rayleigh",
+     "increase": 0.3525,
+     "buffer_limit": 0.2176
+    },
+    {
+     "ref": "cho_mse",
+     "metric": "ho_rate",
+     "where": "cell_outage/off",
+     "increase": 0.3272,
+     "buffer_limit": 0.2176
+    }
+   ],
+   "eligible": false
+  },
+  "v3.14.34": {
+   "config": "A",
+   "weights": "poisoned-fedavg",
+   "weights_sha256": "de9f8aaa8246e49bc7c37e8d71d325de81dd8e96da8bf0f24cd9f75e3d8bb282",
+   "gate_1100": "reject",
+   "gate_1100_worst": 0.4928,
+   "gate_1300": "reject",
+   "gate_1300_worst": 0.5209,
+   "eligible": false
+  },
+  "v3.14.35": {
+   "config": "A",
+   "weights": "poisoned-median",
+   "weights_sha256": "2aebee7cb06d3e760f5e020e52dbf198d24a64936988c612025a764fe233c8f1",
+   "gate_1100": "promote",
+   "gate_1100_worst": 0.7999,
+   "gate_1300": "promote",
+   "gate_1300_worst": 0.8154,
+   "eligible": false
+  }
+ },
+ "frozen_candidate": "v3.14.24",
+ "separation_claim": true,
+ "held_out_run": "AUTHORISED",
+ "confirmatory_command": "python -m twin.evaluate_v3 --v3 v3.14.24 --seed0 2200 --seeds 60 --workers 15 --final --prereg pipeline/finals_preregistration_v3_14.json"
+}

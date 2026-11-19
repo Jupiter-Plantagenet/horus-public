@@ -1,0 +1,331 @@
+59953.992596 [NR_RRC] I [UE 0] RNTI 0xc080 RRCReconfiguration includes radio Bearer Configuration
+59953.992650 [PDCP]   I SRB 2 re-established
+59953.992655 [PDCP]   I DRB 1 re-established
+59953.992660 [NR_RRC] I [UE 0] RNTI 0xc080 RRCReconfiguration includes Measurement Configuration
+59953.992667 [NR_RRC] I [UE 0] RNTI 0xc080 HORUS: defer handover completion until target random access
+59953.992703 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+59953.992854 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+59954.002495 [NR_PHY] W Starting re-sync detection for target Nid_cell 1
+59954.002505 [NR_PHY] I Starting cell search with center freq: 3649440000, bandwidth: 106. Scanning for 1 number of GSCN.
+59954.077444 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+59954.077597 [PHY]    A UE synchronized! decoded_frame_rx=1016 skipped_frames=18
+59954.077621 [PHY]    I Resynchronizing RX by 673616 samples
+59954.101537 [NR_RRC] I [UE 0] RNTI 0xc080 HORUS: target random access succeeded; submit handover completion
+59954.101562 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+59954.101566 [NR_RRC] I [UE 0] RNTI 0xc080  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+59978.398375 [NR_RRC] I [UE 0] RNTI 0x0d01 RRCReconfiguration includes radio Bearer Configuration
+59978.398440 [PDCP]   I SRB 2 re-established
+59978.398461 [PDCP]   I DRB 1 re-established
+59978.398470 [NR_RRC] I [UE 0] RNTI 0x0d01 RRCReconfiguration includes Measurement Configuration
+59978.398479 [NR_RRC] I [UE 0] RNTI 0x0d01 HORUS: defer handover completion until target random access
+59978.398765 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+59978.398873 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+59978.407837 [NR_PHY] W Starting re-sync detection for target Nid_cell 0
+59978.407846 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+59978.482576 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+59978.487226 [PHY]    A UE synchronized! decoded_frame_rx=226 skipped_frames=18
+59978.487247 [PHY]    I Resynchronizing RX by 827216 samples
+59978.511686 [NR_RRC] I [UE 0] RNTI 0x0d01 HORUS: target random access succeeded; submit handover completion
+59978.511696 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+59978.511705 [NR_RRC] I [UE 0] RNTI 0x0d01  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+60143.192764 [NR_RRC] I [UE 0] RNTI 0xc80a RRCReconfiguration includes radio Bearer Configuration
+60143.192818 [PDCP]   I SRB 2 re-established
+60143.192823 [PDCP]   I DRB 1 re-established
+60143.192829 [NR_RRC] I [UE 0] RNTI 0xc80a RRCReconfiguration includes Measurement Configuration
+60143.192838 [NR_RRC] I [UE 0] RNTI 0xc80a HORUS: defer handover completion until target random access
+60143.192954 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+60143.193087 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+60143.203170 [NR_PHY] W Starting re-sync detection for target Nid_cell 1
+60143.203178 [NR_PHY] I Starting cell search with center freq: 3649440000, bandwidth: 106. Scanning for 1 number of GSCN.
+60143.274627 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+60143.278204 [PHY]    A UE synchronized! decoded_frame_rx=952 skipped_frames=18
+60143.278224 [PHY]    I Resynchronizing RX by 212816 samples
+60143.297165 [NR_RRC] I [UE 0] RNTI 0xc80a HORUS: target random access succeeded; submit handover completion
+60143.297175 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+60143.297183 [NR_RRC] I [UE 0] RNTI 0xc80a  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+60167.571789 [NR_RRC] I [UE 0] RNTI 0x0a77 RRCReconfiguration includes radio Bearer Configuration
+60167.571845 [PDCP]   I SRB 2 re-established
+60167.571849 [PDCP]   I DRB 1 re-established
+60167.571856 [NR_RRC] I [UE 0] RNTI 0x0a77 RRCReconfiguration includes Measurement Configuration
+60167.571865 [NR_RRC] I [UE 0] RNTI 0x0a77 HORUS: defer handover completion until target random access
+60167.572095 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+60167.572206 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+60167.582351 [NR_PHY] W Starting re-sync detection for target Nid_cell 0
+60167.582358 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+60167.653942 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+60167.658718 [PHY]    A UE synchronized! decoded_frame_rx=150 skipped_frames=18
+60167.658737 [PHY]    I Resynchronizing RX by 642896 samples
+60167.682127 [NR_RRC] I [UE 0] RNTI 0x0a77 HORUS: target random access succeeded; submit handover completion
+60167.682134 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+60167.682137 [NR_RRC] I [UE 0] RNTI 0x0a77  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+60332.454150 [NR_RRC] I [UE 0] RNTI 0x8268 RRCReconfiguration includes radio Bearer Configuration
+60332.454194 [PDCP]   I SRB 2 re-established
+60332.454197 [PDCP]   I DRB 1 re-established
+60332.454202 [NR_RRC] I [UE 0] RNTI 0x8268 RRCReconfiguration includes Measurement Configuration
+60332.454210 [NR_RRC] I [UE 0] RNTI 0x8268 HORUS: defer handover completion until target random access
+60332.454627 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+60332.454740 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+60332.462873 [NR_PHY] W Starting re-sync detection for target Nid_cell 1
+60332.462881 [NR_PHY] I Starting cell search with center freq: 3649440000, bandwidth: 106. Scanning for 1 number of GSCN.
+60332.535797 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+60332.541057 [PHY]    A UE synchronized! decoded_frame_rx=798 skipped_frames=18
+60332.541077 [PHY]    I Resynchronizing RX by 489296 samples
+60332.564538 [NR_RRC] I [UE 0] RNTI 0x8268 HORUS: target random access succeeded; submit handover completion
+60332.564547 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+60332.564550 [NR_RRC] I [UE 0] RNTI 0x8268  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+60356.844807 [NR_RRC] I [UE 0] RNTI 0x14b9 RRCReconfiguration includes radio Bearer Configuration
+60356.844864 [PDCP]   I SRB 2 re-established
+60356.844883 [PDCP]   I DRB 1 re-established
+60356.844891 [NR_RRC] I [UE 0] RNTI 0x14b9 RRCReconfiguration includes Measurement Configuration
+60356.844898 [NR_RRC] I [UE 0] RNTI 0x14b9 HORUS: defer handover completion until target random access
+60356.845123 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+60356.845239 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+60356.854552 [NR_PHY] W Starting re-sync detection for target Nid_cell 0
+60356.854559 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+60356.924979 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+60356.934870 [PHY]    A UE synchronized! decoded_frame_rx=898 skipped_frames=18
+60356.934895 [PHY]    I Resynchronizing RX by 182096 samples
+60356.954414 [NR_RRC] I [UE 0] RNTI 0x14b9 HORUS: target random access succeeded; submit handover completion
+60356.954422 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+60356.954426 [NR_RRC] I [UE 0] RNTI 0x14b9  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+60521.755746 [NR_RRC] I [UE 0] RNTI 0x16d7 RRCReconfiguration includes radio Bearer Configuration
+60521.755817 [PDCP]   I SRB 2 re-established
+60521.755853 [PDCP]   I DRB 1 re-established
+60521.755933 [NR_RRC] I [UE 0] RNTI 0x16d7 RRCReconfiguration includes Measurement Configuration
+60521.755968 [NR_RRC] I [UE 0] RNTI 0x16d7 HORUS: defer handover completion until target random access
+60521.756285 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+60521.756541 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+60521.764449 [NR_PHY] W Starting re-sync detection for target Nid_cell 1
+60521.764456 [NR_PHY] I Starting cell search with center freq: 3649440000, bandwidth: 106. Scanning for 1 number of GSCN.
+60521.841417 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 58
+60521.846338 [PHY]    A UE synchronized! decoded_frame_rx=650 skipped_frames=20
+60521.846363 [PHY]    I Resynchronizing RX by 366416 samples
+60521.867831 [NR_RRC] I [UE 0] RNTI 0x16d7 HORUS: target random access succeeded; submit handover completion
+60521.867886 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+60521.867927 [NR_RRC] I [UE 0] RNTI 0x16d7  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+60546.142487 [NR_RRC] I [UE 0] RNTI 0x235b RRCReconfiguration includes radio Bearer Configuration
+60546.142541 [PDCP]   I SRB 2 re-established
+60546.142559 [PDCP]   I DRB 1 re-established
+60546.142566 [NR_RRC] I [UE 0] RNTI 0x235b RRCReconfiguration includes Measurement Configuration
+60546.142573 [NR_RRC] I [UE 0] RNTI 0x235b HORUS: defer handover completion until target random access
+60546.142801 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+60546.142911 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+60546.152981 [NR_PHY] W Starting re-sync detection for target Nid_cell 0
+60546.152987 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+60546.223242 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+60546.225624 [PHY]    A UE synchronized! decoded_frame_rx=884 skipped_frames=18
+60546.225644 [PHY]    I Resynchronizing RX by 458576 samples
+60546.248613 [NR_RRC] I [UE 0] RNTI 0x235b HORUS: target random access succeeded; submit handover completion
+60546.248645 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+60546.248649 [NR_RRC] I [UE 0] RNTI 0x235b  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+60711.043228 [NR_RRC] I [UE 0] RNTI 0x6390 RRCReconfiguration includes radio Bearer Configuration
+60711.043301 [PDCP]   I SRB 2 re-established
+60711.043306 [PDCP]   I DRB 1 re-established
+60711.043326 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+60711.043343 [NR_RRC] I [UE 0] RNTI 0x6390 RRCReconfiguration includes Measurement Configuration
+60711.043352 [NR_RRC] I [UE 0] RNTI 0x6390 HORUS: defer handover completion until target random access
+60711.043445 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+60711.052963 [NR_PHY] W Starting re-sync detection for target Nid_cell 1
+60711.052997 [NR_PHY] I Starting cell search with center freq: 3649440000, bandwidth: 106. Scanning for 1 number of GSCN.
+60711.121554 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+60711.128580 [PHY]    A UE synchronized! decoded_frame_rx=448 skipped_frames=18
+60711.128599 [PHY]    I Resynchronizing RX by 520016 samples
+60711.150671 [NR_RRC] I [UE 0] RNTI 0x6390 HORUS: target random access succeeded; submit handover completion
+60711.150694 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+60711.150697 [NR_RRC] I [UE 0] RNTI 0x6390  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+60735.421194 [NR_RRC] I [UE 0] RNTI 0xf975 RRCReconfiguration includes radio Bearer Configuration
+60735.421266 [PDCP]   I SRB 2 re-established
+60735.421271 [PDCP]   I DRB 1 re-established
+60735.421277 [NR_RRC] I [UE 0] RNTI 0xf975 RRCReconfiguration includes Measurement Configuration
+60735.421283 [NR_RRC] I [UE 0] RNTI 0xf975 HORUS: defer handover completion until target random access
+60735.421565 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+60735.421674 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+60735.429725 [NR_PHY] W Starting re-sync detection for target Nid_cell 0
+60735.429733 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+60735.496354 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 60
+60735.499178 [PHY]    A UE synchronized! decoded_frame_rx=674 skipped_frames=16
+60735.499199 [PHY]    I Resynchronizing RX by 1072976 samples
+60735.526505 [NR_RRC] I [UE 0] RNTI 0xf975 HORUS: target random access succeeded; submit handover completion
+60735.526527 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+60735.526531 [NR_RRC] I [UE 0] RNTI 0xf975  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+60900.288786 [NR_RRC] I [UE 0] RNTI 0x6858 RRCReconfiguration includes radio Bearer Configuration
+60900.288862 [PDCP]   I SRB 2 re-established
+60900.288881 [PDCP]   I DRB 1 re-established
+60900.288945 [NR_RRC] I [UE 0] RNTI 0x6858 RRCReconfiguration includes Measurement Configuration
+60900.288955 [NR_RRC] I [UE 0] RNTI 0x6858 HORUS: defer handover completion until target random access
+60900.289092 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+60900.289207 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+60900.297567 [NR_PHY] W Starting re-sync detection for target Nid_cell 1
+60900.297600 [NR_PHY] I Starting cell search with center freq: 3649440000, bandwidth: 106. Scanning for 1 number of GSCN.
+60900.375095 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+60900.379611 [PHY]    A UE synchronized! decoded_frame_rx=480 skipped_frames=20
+60900.379633 [PHY]    I Resynchronizing RX by 120656 samples
+60900.399303 [NR_RRC] I [UE 0] RNTI 0x6858 HORUS: target random access succeeded; submit handover completion
+60900.399312 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+60900.399315 [NR_RRC] I [UE 0] RNTI 0x6858  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+60924.682402 [NR_RRC] I [UE 0] RNTI 0xb650 RRCReconfiguration includes radio Bearer Configuration
+60924.682474 [PDCP]   I SRB 2 re-established
+60924.682480 [PDCP]   I DRB 1 re-established
+60924.682489 [NR_RRC] I [UE 0] RNTI 0xb650 RRCReconfiguration includes Measurement Configuration
+60924.682500 [NR_RRC] I [UE 0] RNTI 0xb650 HORUS: defer handover completion until target random access
+60924.682745 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+60924.682864 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+60924.691302 [NR_PHY] W Starting re-sync detection for target Nid_cell 0
+60924.691309 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+60924.764058 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 60
+60924.773060 [PHY]    A UE synchronized! decoded_frame_rx=716 skipped_frames=20
+60924.773080 [PHY]    I Resynchronizing RX by 1042256 samples
+60924.799910 [NR_RRC] I [UE 0] RNTI 0xb650 HORUS: target random access succeeded; submit handover completion
+60924.799922 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+60924.799927 [NR_RRC] I [UE 0] RNTI 0xb650  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+61089.403215 [NR_RRC] I [UE 0] RNTI 0x6318 RRCReconfiguration includes radio Bearer Configuration
+61089.403303 [PDCP]   I SRB 2 re-established
+61089.403307 [PDCP]   I DRB 1 re-established
+61089.403314 [NR_RRC] I [UE 0] RNTI 0x6318 RRCReconfiguration includes Measurement Configuration
+61089.403324 [NR_RRC] I [UE 0] RNTI 0x6318 HORUS: defer handover completion until target random access
+61089.403663 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+61089.403772 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+61089.412009 [NR_PHY] W Starting re-sync detection for target Nid_cell 1
+61089.412028 [NR_PHY] I Starting cell search with center freq: 3649440000, bandwidth: 106. Scanning for 1 number of GSCN.
+61089.489238 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+61089.490956 [PHY]    A UE synchronized! decoded_frame_rx=384 skipped_frames=18
+61089.490962 [PHY]    I Resynchronizing RX by 1042256 samples
+61089.518239 [NR_RRC] I [UE 0] RNTI 0x6318 HORUS: target random access succeeded; submit handover completion
+61089.518247 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+61089.518250 [NR_RRC] I [UE 0] RNTI 0x6318  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+61113.799769 [NR_RRC] I [UE 0] RNTI 0x40ce RRCReconfiguration includes radio Bearer Configuration
+61113.799823 [PDCP]   I SRB 2 re-established
+61113.799830 [PDCP]   I DRB 1 re-established
+61113.799836 [NR_RRC] I [UE 0] RNTI 0x40ce RRCReconfiguration includes Measurement Configuration
+61113.799843 [NR_RRC] I [UE 0] RNTI 0x40ce HORUS: defer handover completion until target random access
+61113.799954 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+61113.800103 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+61113.809714 [NR_PHY] W Starting re-sync detection for target Nid_cell 0
+61113.809721 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+61113.882922 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+61113.891623 [PHY]    A UE synchronized! decoded_frame_rx=604 skipped_frames=18
+61113.891646 [PHY]    I Resynchronizing RX by 919376 samples
+61113.918420 [NR_RRC] I [UE 0] RNTI 0x40ce HORUS: target random access succeeded; submit handover completion
+61113.918428 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+61113.918437 [NR_RRC] I [UE 0] RNTI 0x40ce  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+61158.452408 [PDCP]   W 4 NR PDU discarded (rcvd_count < rx_deliv or duplicate)
+61278.631946 [NR_RRC] I [UE 0] RNTI 0x6286 RRCReconfiguration includes radio Bearer Configuration
+61278.631998 [PDCP]   I SRB 2 re-established
+61278.632017 [PDCP]   I DRB 1 re-established
+61278.632066 [NR_RRC] I [UE 0] RNTI 0x6286 RRCReconfiguration includes Measurement Configuration
+61278.632073 [NR_RRC] I [UE 0] RNTI 0x6286 HORUS: defer handover completion until target random access
+61278.632208 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+61278.632364 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+61278.640608 [NR_PHY] W Starting re-sync detection for target Nid_cell 1
+61278.640615 [NR_PHY] I Starting cell search with center freq: 3649440000, bandwidth: 106. Scanning for 1 number of GSCN.
+61278.709281 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 59
+61278.711917 [PHY]    A UE synchronized! decoded_frame_rx=352 skipped_frames=16
+61278.711940 [PHY]    I Resynchronizing RX by 520016 samples
+61278.734833 [NR_RRC] I [UE 0] RNTI 0x6286 HORUS: target random access succeeded; submit handover completion
+61278.734858 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+61278.734886 [NR_RRC] I [UE 0] RNTI 0x6286  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+61303.008082 [NR_RRC] I [UE 0] RNTI 0xbcd6 RRCReconfiguration includes radio Bearer Configuration
+61303.008085 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+61303.008150 [PDCP]   I SRB 2 re-established
+61303.008172 [PDCP]   I DRB 1 re-established
+61303.008183 [NR_RRC] I [UE 0] RNTI 0xbcd6 RRCReconfiguration includes Measurement Configuration
+61303.008193 [NR_RRC] I [UE 0] RNTI 0xbcd6 HORUS: defer handover completion until target random access
+61303.008203 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+61303.017117 [NR_PHY] W Starting re-sync detection for target Nid_cell 0
+61303.017125 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+61303.093184 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+61303.099787 [PHY]    A UE synchronized! decoded_frame_rx=568 skipped_frames=20
+61303.099810 [PHY]    I Resynchronizing RX by 89936 samples
+61303.118393 [NR_RRC] I [UE 0] RNTI 0xbcd6 HORUS: target random access succeeded; submit handover completion
+61303.118416 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+61303.118420 [NR_RRC] I [UE 0] RNTI 0xbcd6  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+61467.814461 [NR_RRC] I [UE 0] RNTI 0x1d9e RRCReconfiguration includes radio Bearer Configuration
+61467.814515 [PDCP]   I SRB 2 re-established
+61467.814519 [PDCP]   I DRB 1 re-established
+61467.814524 [NR_RRC] I [UE 0] RNTI 0x1d9e RRCReconfiguration includes Measurement Configuration
+61467.814532 [NR_RRC] I [UE 0] RNTI 0x1d9e HORUS: defer handover completion until target random access
+61467.814711 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+61467.814805 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+61467.823569 [NR_PHY] W Starting re-sync detection for target Nid_cell 1
+61467.823578 [NR_PHY] I Starting cell search with center freq: 3649440000, bandwidth: 106. Scanning for 1 number of GSCN.
+61467.892389 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 60
+61467.899537 [PHY]    A UE synchronized! decoded_frame_rx=226 skipped_frames=18
+61467.899557 [PHY]    I Resynchronizing RX by 1103696 samples
+61467.926380 [NR_RRC] I [UE 0] RNTI 0x1d9e HORUS: target random access succeeded; submit handover completion
+61467.926393 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+61467.926397 [NR_RRC] I [UE 0] RNTI 0x1d9e  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+61492.206333 [NR_RRC] I [UE 0] RNTI 0x1698 RRCReconfiguration includes radio Bearer Configuration
+61492.206347 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+61492.206389 [PDCP]   I SRB 2 re-established
+61492.206393 [PDCP]   I DRB 1 re-established
+61492.206399 [NR_RRC] I [UE 0] RNTI 0x1698 RRCReconfiguration includes Measurement Configuration
+61492.206406 [NR_RRC] I [UE 0] RNTI 0x1698 HORUS: defer handover completion until target random access
+61492.206441 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+61492.216325 [NR_PHY] W Starting re-sync detection for target Nid_cell 0
+61492.216333 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+61492.290263 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+61492.291940 [PHY]    A UE synchronized! decoded_frame_rx=442 skipped_frames=18
+61492.291962 [PHY]    I Resynchronizing RX by 1072976 samples
+61492.319224 [NR_RRC] I [UE 0] RNTI 0x1698 HORUS: target random access succeeded; submit handover completion
+61492.319231 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+61492.319234 [NR_RRC] I [UE 0] RNTI 0x1698  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+61656.975499 [NR_RRC] I [UE 0] RNTI 0x0dd9 RRCReconfiguration includes radio Bearer Configuration
+61656.975551 [PDCP]   I SRB 2 re-established
+61656.975558 [PDCP]   I DRB 1 re-established
+61656.975564 [NR_RRC] I [UE 0] RNTI 0x0dd9 RRCReconfiguration includes Measurement Configuration
+61656.975571 [NR_RRC] I [UE 0] RNTI 0x0dd9 HORUS: defer handover completion until target random access
+61656.975734 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+61656.975841 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+61656.986207 [NR_PHY] W Starting re-sync detection for target Nid_cell 1
+61656.986215 [NR_PHY] I Starting cell search with center freq: 3649440000, bandwidth: 106. Scanning for 1 number of GSCN.
+61657.053544 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+61657.061579 [PHY]    A UE synchronized! decoded_frame_rx=90 skipped_frames=18
+61657.061601 [PHY]    I Resynchronizing RX by 827216 samples
+61657.087114 [NR_RRC] I [UE 0] RNTI 0x0dd9 HORUS: target random access succeeded; submit handover completion
+61657.087123 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+61657.087127 [NR_RRC] I [UE 0] RNTI 0x0dd9  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+61681.355701 [NR_RRC] I [UE 0] RNTI 0xcdef RRCReconfiguration includes radio Bearer Configuration
+61681.355756 [PDCP]   I SRB 2 re-established
+61681.355760 [PDCP]   I DRB 1 re-established
+61681.355766 [NR_RRC] I [UE 0] RNTI 0xcdef RRCReconfiguration includes Measurement Configuration
+61681.355774 [NR_RRC] I [UE 0] RNTI 0xcdef HORUS: defer handover completion until target random access
+61681.355919 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+61681.356038 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+61681.364780 [NR_PHY] W Starting re-sync detection for target Nid_cell 0
+61681.364788 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+61681.440465 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+61681.443680 [PHY]    A UE synchronized! decoded_frame_rx=310 skipped_frames=18
+61681.443700 [PHY]    I Resynchronizing RX by 212816 samples
+61681.464860 [NR_RRC] I [UE 0] RNTI 0xcdef HORUS: target random access succeeded; submit handover completion
+61681.464883 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+61681.464887 [NR_RRC] I [UE 0] RNTI 0xcdef  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+61846.112157 [NR_RRC] I [UE 0] RNTI 0x1e06 RRCReconfiguration includes radio Bearer Configuration
+61846.112232 [PDCP]   I SRB 2 re-established
+61846.112253 [PDCP]   I DRB 1 re-established
+61846.112263 [NR_RRC] I [UE 0] RNTI 0x1e06 RRCReconfiguration includes Measurement Configuration
+61846.112270 [NR_RRC] I [UE 0] RNTI 0x1e06 HORUS: defer handover completion until target random access
+61846.112599 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+61846.112710 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+61846.122043 [NR_PHY] W Starting re-sync detection for target Nid_cell 1
+61846.122050 [NR_PHY] I Starting cell search with center freq: 3649440000, bandwidth: 106. Scanning for 1 number of GSCN.
+61846.187510 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+61846.197549 [PHY]    A UE synchronized! decoded_frame_rx=942 skipped_frames=18
+61846.197569 [PHY]    I Resynchronizing RX by 151376 samples
+61846.217042 [NR_RRC] I [UE 0] RNTI 0x1e06 HORUS: target random access succeeded; submit handover completion
+61846.217078 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+61846.217083 [NR_RRC] I [UE 0] RNTI 0x1e06  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+61870.508850 [NR_RRC] I [UE 0] RNTI 0xfcd5 RRCReconfiguration includes radio Bearer Configuration
+61870.508903 [PDCP]   I SRB 2 re-established
+61870.508910 [PDCP]   I DRB 1 re-established
+61870.508915 [NR_RRC] I [UE 0] RNTI 0xfcd5 RRCReconfiguration includes Measurement Configuration
+61870.508922 [NR_RRC] I [UE 0] RNTI 0xfcd5 HORUS: defer handover completion until target random access
+61870.509240 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+61870.509353 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+61870.519619 [NR_PHY] W Starting re-sync detection for target Nid_cell 0
+61870.519626 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+61870.592344 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+61870.594630 [PHY]    A UE synchronized! decoded_frame_rx=162 skipped_frames=16
+61870.594652 [PHY]    I Resynchronizing RX by 827216 samples
+61870.619060 [NR_RRC] I [UE 0] RNTI 0xfcd5 HORUS: target random access succeeded; submit handover completion
+61870.619068 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+61870.619070 [NR_RRC] I [UE 0] RNTI 0xfcd5  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)

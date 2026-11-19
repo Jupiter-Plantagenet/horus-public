@@ -1,0 +1,281 @@
+# HORUS: E2 agent on the CU (RC Style 3 "Connected Mode Mobility" / Handover
+2669.962961 [UTIL]   I running in SA mode (no --phy-test, --do-ra, --nsa option present)
+2677.352892 [PDCP]   W HORUS LAB: CU SRB 1 t-Reordering explicitly set to 1000 ms
+2677.694231 [PDCP]   W HORUS LAB: CU SRB 2 t-Reordering explicitly set to 1000 ms
+2677.744413 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 189a) Received RRCReconfigurationComplete
+2715.629969 [NR_RRC] A Handover triggered for UE 1/RNTI 189a towards cell 11111111/assoc_id 276/PCI 1
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2717.402741 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 15ed) Received RRCReconfigurationComplete
+2717.402781 [NR_RRC] A handover for UE 1/RNTI 15ed complete!
+2717.402813 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+2724.595607 [NR_RRC] A Handover triggered for UE 1/RNTI 15ed towards cell 12345678/assoc_id 270/PCI 0
+2725.412080 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI de3b) Received RRCReconfigurationComplete
+2725.412122 [NR_RRC] A handover for UE 1/RNTI de3b complete!
+2725.412199 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2732.461072 [NR_RRC] A Handover triggered for UE 1/RNTI de3b towards cell 11111111/assoc_id 276/PCI 1
+2733.151830 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI ae0a) Received RRCReconfigurationComplete
+2733.151876 [NR_RRC] A handover for UE 1/RNTI ae0a complete!
+2733.151941 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2740.700454 [NR_RRC] A Handover triggered for UE 1/RNTI ae0a towards cell 12345678/assoc_id 270/PCI 0
+2741.684724 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 8576) Received RRCReconfigurationComplete
+2741.684743 [NR_RRC] A handover for UE 1/RNTI 8576 complete!
+2741.684780 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2748.881876 [NR_RRC] A Handover triggered for UE 1/RNTI 8576 towards cell 11111111/assoc_id 276/PCI 1
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2750.436406 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI c719) Received RRCReconfigurationComplete
+2750.436623 [NR_RRC] A handover for UE 1/RNTI c719 complete!
+2750.438203 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+2758.009249 [NR_RRC] A Handover triggered for UE 1/RNTI c719 towards cell 12345678/assoc_id 270/PCI 0
+2758.956552 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI fc7b) Received RRCReconfigurationComplete
+2758.956568 [NR_RRC] A handover for UE 1/RNTI fc7b complete!
+2758.956580 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2767.307426 [NR_RRC] A Handover triggered for UE 1/RNTI fc7b towards cell 11111111/assoc_id 276/PCI 1
+2768.439631 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 36c1) Received RRCReconfigurationComplete
+2768.439650 [NR_RRC] A handover for UE 1/RNTI 36c1 complete!
+2768.439702 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2776.608668 [NR_RRC] A Handover triggered for UE 1/RNTI 36c1 towards cell 12345678/assoc_id 270/PCI 0
+2777.445597 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI f37c) Received RRCReconfigurationComplete
+2777.445698 [NR_RRC] A handover for UE 1/RNTI f37c complete!
+2777.445760 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2784.958514 [NR_RRC] A Handover triggered for UE 1/RNTI f37c towards cell 11111111/assoc_id 276/PCI 1
+2785.600790 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 530b) Received RRCReconfigurationComplete
+2785.600809 [NR_RRC] A handover for UE 1/RNTI 530b complete!
+2785.600821 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2796.062000 [NR_RRC] A Handover triggered for UE 1/RNTI 530b towards cell 12345678/assoc_id 270/PCI 0
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2797.580403 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI ed1f) Received RRCReconfigurationComplete
+2797.580424 [NR_RRC] A handover for UE 1/RNTI ed1f complete!
+2797.580573 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+2804.613359 [NR_RRC] A Handover triggered for UE 1/RNTI ed1f towards cell 11111111/assoc_id 276/PCI 1
+2805.278797 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI d7e2) Received RRCReconfigurationComplete
+2805.278820 [NR_RRC] A handover for UE 1/RNTI d7e2 complete!
+2805.279070 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2812.407939 [NR_RRC] A Handover triggered for UE 1/RNTI d7e2 towards cell 12345678/assoc_id 270/PCI 0
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2814.481525 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 7fa7) Received RRCReconfigurationComplete
+2814.481543 [NR_RRC] A handover for UE 1/RNTI 7fa7 complete!
+2814.481596 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+2821.732221 [NR_RRC] A Handover triggered for UE 1/RNTI 7fa7 towards cell 11111111/assoc_id 276/PCI 1
+2822.549418 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 79bc) Received RRCReconfigurationComplete
+2822.549434 [NR_RRC] A handover for UE 1/RNTI 79bc complete!
+2822.549442 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2831.276114 [NR_RRC] A Handover triggered for UE 1/RNTI 79bc towards cell 12345678/assoc_id 270/PCI 0
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2832.841188 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 9c0e) Received RRCReconfigurationComplete
+2832.841381 [NR_RRC] A handover for UE 1/RNTI 9c0e complete!
+2832.841426 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+2839.621710 [NR_RRC] A Handover triggered for UE 1/RNTI 9c0e towards cell 11111111/assoc_id 276/PCI 1
+2840.421457 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI e672) Received RRCReconfigurationComplete
+2840.421479 [NR_RRC] A handover for UE 1/RNTI e672 complete!
+2840.421594 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2848.277384 [NR_RRC] A Handover triggered for UE 1/RNTI e672 towards cell 12345678/assoc_id 270/PCI 0
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2849.388927 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 3c99) Received RRCReconfigurationComplete
+2849.389054 [NR_RRC] A handover for UE 1/RNTI 3c99 complete!
+2849.389140 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+2856.132633 [NR_RRC] A Handover triggered for UE 1/RNTI 3c99 towards cell 11111111/assoc_id 276/PCI 1
+2856.796217 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 5252) Received RRCReconfigurationComplete
+2856.796334 [NR_RRC] A handover for UE 1/RNTI 5252 complete!
+2856.796386 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2866.002570 [NR_RRC] A Handover triggered for UE 1/RNTI 5252 towards cell 12345678/assoc_id 270/PCI 0
+2866.687183 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 131c) Received RRCReconfigurationComplete
+2866.687226 [NR_RRC] A handover for UE 1/RNTI 131c complete!
+2866.687246 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2875.017820 [NR_RRC] A Handover triggered for UE 1/RNTI 131c towards cell 11111111/assoc_id 276/PCI 1
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2875.920805 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI ff1b) Received RRCReconfigurationComplete
+2875.920869 [NR_RRC] A handover for UE 1/RNTI ff1b complete!
+2875.920905 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+2885.583016 [NR_RRC] A Handover triggered for UE 1/RNTI ff1b towards cell 12345678/assoc_id 270/PCI 0
+2886.563418 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 4762) Received RRCReconfigurationComplete
+2886.563472 [NR_RRC] A handover for UE 1/RNTI 4762 complete!
+2886.563648 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2894.241426 [NR_RRC] A Handover triggered for UE 1/RNTI 4762 towards cell 11111111/assoc_id 276/PCI 1
+2895.277936 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 9b88) Received RRCReconfigurationComplete
+2895.277991 [NR_RRC] A handover for UE 1/RNTI 9b88 complete!
+2895.278063 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2902.625415 [NR_RRC] A Handover triggered for UE 1/RNTI 9b88 towards cell 12345678/assoc_id 270/PCI 0
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2904.536984 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 5eec) Received RRCReconfigurationComplete
+2904.537012 [NR_RRC] A handover for UE 1/RNTI 5eec complete!
+2904.537024 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+2912.092707 [NR_RRC] A Handover triggered for UE 1/RNTI 5eec towards cell 11111111/assoc_id 276/PCI 1
+2912.743363 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 3888) Received RRCReconfigurationComplete
+2912.743415 [NR_RRC] A handover for UE 1/RNTI 3888 complete!
+2912.743559 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2920.094586 [NR_RRC] A Handover triggered for UE 1/RNTI 3888 towards cell 12345678/assoc_id 270/PCI 0
+2920.828539 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 93c6) Received RRCReconfigurationComplete
+2920.828567 [NR_RRC] A handover for UE 1/RNTI 93c6 complete!
+2920.828747 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2928.780201 [NR_RRC] A Handover triggered for UE 1/RNTI 93c6 towards cell 11111111/assoc_id 276/PCI 1
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2930.280802 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI c8a3) Received RRCReconfigurationComplete
+2930.280903 [NR_RRC] A handover for UE 1/RNTI c8a3 complete!
+2930.280949 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+2937.511732 [NR_RRC] A Handover triggered for UE 1/RNTI c8a3 towards cell 12345678/assoc_id 270/PCI 0
+2938.164587 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI de5c) Received RRCReconfigurationComplete
+2938.164609 [NR_RRC] A handover for UE 1/RNTI de5c complete!
+2938.164813 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2945.489044 [NR_RRC] A Handover triggered for UE 1/RNTI de5c towards cell 11111111/assoc_id 276/PCI 1
+2946.300755 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 5f5f) Received RRCReconfigurationComplete
+2946.300773 [NR_RRC] A handover for UE 1/RNTI 5f5f complete!
+2946.300821 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2953.499607 [NR_RRC] A Handover triggered for UE 1/RNTI 5f5f towards cell 12345678/assoc_id 270/PCI 0
+2954.825316 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 0709) Received RRCReconfigurationComplete
+2954.825341 [NR_RRC] A handover for UE 1/RNTI 0709 complete!
+2954.825356 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2962.402706 [NR_RRC] A Handover triggered for UE 1/RNTI 0709 towards cell 11111111/assoc_id 276/PCI 1
+2963.560411 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 7552) Received RRCReconfigurationComplete
+2963.560438 [NR_RRC] A handover for UE 1/RNTI 7552 complete!
+2963.560492 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2970.417612 [NR_RRC] A Handover triggered for UE 1/RNTI 7552 towards cell 12345678/assoc_id 270/PCI 0
+2971.097678 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI c160) Received RRCReconfigurationComplete
+2971.098152 [NR_RRC] A handover for UE 1/RNTI c160 complete!
+2971.098321 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2978.701482 [NR_RRC] A Handover triggered for UE 1/RNTI c160 towards cell 11111111/assoc_id 276/PCI 1
+2979.489935 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 4c9d) Received RRCReconfigurationComplete
+2979.490092 [NR_RRC] A handover for UE 1/RNTI 4c9d complete!
+2979.490175 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+2986.750122 [NR_RRC] A Handover triggered for UE 1/RNTI 4c9d towards cell 12345678/assoc_id 270/PCI 0
+2987.418291 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 2ddc) Received RRCReconfigurationComplete
+2987.418309 [NR_RRC] A handover for UE 1/RNTI 2ddc complete!
+2987.418370 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+2994.896332 [NR_RRC] A Handover triggered for UE 1/RNTI 2ddc towards cell 11111111/assoc_id 276/PCI 1
+2995.655479 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 6602) Received RRCReconfigurationComplete
+2995.655574 [NR_RRC] A handover for UE 1/RNTI 6602 complete!
+2995.655594 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+3002.858263 [NR_RRC] A Handover triggered for UE 1/RNTI 6602 towards cell 12345678/assoc_id 270/PCI 0
+3003.715158 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 6d38) Received RRCReconfigurationComplete
+3003.715245 [NR_RRC] A handover for UE 1/RNTI 6d38 complete!
+3003.715264 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+3010.887336 [NR_RRC] A Handover triggered for UE 1/RNTI 6d38 towards cell 11111111/assoc_id 276/PCI 1
+3011.621072 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 08a4) Received RRCReconfigurationComplete
+3011.621173 [NR_RRC] A handover for UE 1/RNTI 08a4 complete!
+3011.621198 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+3020.200532 [NR_RRC] A Handover triggered for UE 1/RNTI 08a4 towards cell 12345678/assoc_id 270/PCI 0
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+3021.566806 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 61d9) Received RRCReconfigurationComplete
+3021.566829 [NR_RRC] A handover for UE 1/RNTI 61d9 complete!
+3021.566874 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+3028.625357 [NR_RRC] A Handover triggered for UE 1/RNTI 61d9 towards cell 11111111/assoc_id 276/PCI 1
+3029.430548 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 2f4e) Received RRCReconfigurationComplete
+3029.430571 [NR_RRC] A handover for UE 1/RNTI 2f4e complete!
+3029.430617 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+3036.597378 [NR_RRC] A Handover triggered for UE 1/RNTI 2f4e towards cell 12345678/assoc_id 270/PCI 0
+3037.405488 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 564d) Received RRCReconfigurationComplete
+3037.405595 [NR_RRC] A handover for UE 1/RNTI 564d complete!
+3037.405809 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+3044.886741 [NR_RRC] A Handover triggered for UE 1/RNTI 564d towards cell 11111111/assoc_id 276/PCI 1
+3045.708456 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 286c) Received RRCReconfigurationComplete
+3045.708476 [NR_RRC] A handover for UE 1/RNTI 286c complete!
+3045.708514 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+3054.279538 [NR_RRC] A Handover triggered for UE 1/RNTI 286c towards cell 12345678/assoc_id 270/PCI 0
+3055.067178 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 5306) Received RRCReconfigurationComplete
+3055.067211 [NR_RRC] A handover for UE 1/RNTI 5306 complete!
+3055.067228 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+3062.443608 [NR_RRC] A Handover triggered for UE 1/RNTI 5306 towards cell 11111111/assoc_id 276/PCI 1
+3063.133518 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 8de3) Received RRCReconfigurationComplete
+3063.133774 [NR_RRC] A handover for UE 1/RNTI 8de3 complete!
+3063.133798 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+3071.714469 [NR_RRC] A Handover triggered for UE 1/RNTI 8de3 towards cell 12345678/assoc_id 270/PCI 0
+3072.704715 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI c4ae) Received RRCReconfigurationComplete
+3072.704735 [NR_RRC] A handover for UE 1/RNTI c4ae complete!
+3072.704747 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+3079.852500 [NR_RRC] A Handover triggered for UE 1/RNTI c4ae towards cell 11111111/assoc_id 276/PCI 1
+3080.527880 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI abdb) Received RRCReconfigurationComplete
+3080.528721 [NR_RRC] A handover for UE 1/RNTI abdb complete!
+3080.528789 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+3087.742601 [NR_RRC] A Handover triggered for UE 1/RNTI abdb towards cell 12345678/assoc_id 270/PCI 0
+3088.585347 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI c9e3) Received RRCReconfigurationComplete
+3088.585363 [NR_RRC] A handover for UE 1/RNTI c9e3 complete!
+3088.589263 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+3097.185065 [NR_RRC] A Handover triggered for UE 1/RNTI c9e3 towards cell 11111111/assoc_id 276/PCI 1
+3098.031219 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 80d1) Received RRCReconfigurationComplete
+3098.031240 [NR_RRC] A handover for UE 1/RNTI 80d1 complete!
+3098.031295 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+3105.920054 [NR_RRC] A Handover triggered for UE 1/RNTI 80d1 towards cell 12345678/assoc_id 270/PCI 0
+3106.682449 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI a98b) Received RRCReconfigurationComplete
+3106.682469 [NR_RRC] A handover for UE 1/RNTI a98b complete!
+3106.682504 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+3113.992196 [NR_RRC] A Handover triggered for UE 1/RNTI a98b towards cell 11111111/assoc_id 276/PCI 1
+3114.693768 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 76d8) Received RRCReconfigurationComplete
+3114.693792 [NR_RRC] A handover for UE 1/RNTI 76d8 complete!
+3114.693865 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+3124.057120 [NR_RRC] A Handover triggered for UE 1/RNTI 76d8 towards cell 12345678/assoc_id 270/PCI 0
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+3124.900982 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 796a) Received RRCReconfigurationComplete
+3124.901004 [NR_RRC] A handover for UE 1/RNTI 796a complete!
+3124.901054 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+3131.911282 [NR_RRC] A Handover triggered for UE 1/RNTI 796a towards cell 11111111/assoc_id 276/PCI 1
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+3134.371998 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 1d73) Received RRCReconfigurationComplete
+3134.372079 [NR_RRC] A handover for UE 1/RNTI 1d73 complete!
+3134.372094 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+3141.798469 [NR_RRC] A Handover triggered for UE 1/RNTI 1d73 towards cell 12345678/assoc_id 270/PCI 0
+3142.469412 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI b5b0) Received RRCReconfigurationComplete
+3142.469508 [NR_RRC] A handover for UE 1/RNTI b5b0 complete!
+3142.469562 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+3150.055658 [NR_RRC] A Handover triggered for UE 1/RNTI b5b0 towards cell 11111111/assoc_id 276/PCI 1
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+3151.870031 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 1242) Received RRCReconfigurationComplete
+3151.870072 [NR_RRC] A handover for UE 1/RNTI 1242 complete!
+3151.870084 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+3159.173175 [NR_RRC] A Handover triggered for UE 1/RNTI 1242 towards cell 12345678/assoc_id 270/PCI 0
+3159.886984 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 71e9) Received RRCReconfigurationComplete
+3159.887005 [NR_RRC] A handover for UE 1/RNTI 71e9 complete!
+3159.887067 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+3167.542075 [NR_RRC] A Handover triggered for UE 1/RNTI 71e9 towards cell 11111111/assoc_id 276/PCI 1
+3168.823530 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI cb7a) Received RRCReconfigurationComplete
+3168.823552 [NR_RRC] A handover for UE 1/RNTI cb7a complete!
+3168.823815 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+3176.603200 [NR_RRC] A Handover triggered for UE 1/RNTI cb7a towards cell 12345678/assoc_id 270/PCI 0
+3177.231980 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 6dcf) Received RRCReconfigurationComplete
+3177.232025 [NR_RRC] A handover for UE 1/RNTI 6dcf complete!
+3177.232142 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 276
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+3184.557619 [NR_RRC] A Handover triggered for UE 1/RNTI 6dcf towards cell 11111111/assoc_id 276/PCI 1
+3185.320689 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 6f2a) Received RRCReconfigurationComplete
+3185.320706 [NR_RRC] A handover for UE 1/RNTI 6f2a complete!
+3185.320715 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 270
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+3192.450350 [NR_RRC] A Handover triggered for UE 1/RNTI 6f2a towards cell 12345678/assoc_id 270/PCI 0

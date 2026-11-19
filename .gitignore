@@ -1,0 +1,16 @@
+# Python bytecode cache (created by py_compile / imports)
+__pycache__/
+*.pyc
+
+# Local secrets — API tokens live here, never in git (e.g. OPENCELLID)
+env
+.env
+
+# finals raw sweep rows (committed gzipped as sweep.jsonl.gz)
+working/evidence/finals-sweep/sweep.jsonl
+
+~$*
+
+
+# Office lock files
+stack/.env

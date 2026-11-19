@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "scope": "Normal operator-only probe; no debugger, inference or sustained AI qualification",
+  "attempts": 80,
+  "new_cu_rrc_completions": 80,
+  "post_control_traffic_passes": 80,
+  "source_driver_sha256": "0e0e4eb2222e212dfdde98d548473d5e805dadd2576c5bd2a74204cd709aeac8",
+  "actual_images": {
+    "ho-cu": "sha256:dc53f0fd4f18a7fb35741467207607a31f8f688bd5b0f226c403fefddae49bcd",
+    "ho-du-pci0": "sha256:9a0a1a2536f371ff9d014fa787c282d30bbfe4be81b621821883cb49ea9700c7",
+    "ho-du-pci1": "sha256:9a0a1a2536f371ff9d014fa787c282d30bbfe4be81b621821883cb49ea9700c7",
+    "ho-nr-ue": "sha256:995d877338aeb029ceb102659d5de0e5078bcae8f54dca14d2da3a915af40b05",
+    "ho-flexric": "sha256:67dc41ae98695084d01627001895a9f86a2382536eb09d2f16bfb15c3d23931e"
+  },
+  "native_elapsed_seconds": 594.045601091,
+  "host_elapsed_seconds": 648.7280991,
+  "cleanup_passed": true,
+  "negative_sync_corrections": 4,
+  "window_recoveries": 0,
+  "lost_rar_replays": 0,
+  "valid_ul_context_retirements": 80,
+  "model_gate_security_bandwidth_response_window_retry_limits_unchanged": true,
+  "source_bound_bounded_and_sustained_acceptance_pending": true,
+  "new_training_or_heldout_runs": false
+}

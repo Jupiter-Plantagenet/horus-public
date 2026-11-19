@@ -1,0 +1,20 @@
+{
+  "image_id": "sha256:eb025d5eebf5ee629e83c965ef8871cbc8809b7ca6d1d301de3739901fe700a2",
+  "binary_sha256": "3fcf61a5d28cca7c06dc9126b1b1645749426598d9b42e147f09ce20043ffd22",
+  "patch": {
+    "upstream": "cfee4c20b45ac1cf6d455d3f01bb3e00200438b0",
+    "diagnostic_only": true,
+    "patched_sha256": {
+      "openair2/RRC/NR_UE/rrc_UE.c": "61aecacdf86cde4710e7641ef2100194b67948c51f613340edb28255a6cf7514",
+      "openair2/RRC/NR_UE/rrc_defs.h": "a449bb75fa502d7958fb0a8514ea5336099a0eb7ebf6d67e8ff090eddb468760"
+    }
+  },
+  "source_files_sha256": {
+    "Dockerfile": "8e9b73e96d2a5ec633058d5815f4c910197912edb127b59bd543f4af4ea17a72",
+    "patch_rrc.py": "18345e38a35d6d5992717ea840b9cb7cfd2498f392801e4853094bb76760f7f1"
+  },
+  "standalone_ue_experiment": "FAILED at control 9 with stock infinite CU SRB reordering; preserved",
+  "combined_bounded": "PASS with explicit finite CU timer: 1802 frames, 86 calls, two fresh CU RRC completions, traffic, hashes and cleanup",
+  "sustained_acceptance": "PENDING",
+  "new_training_or_heldout_runs": false
+}

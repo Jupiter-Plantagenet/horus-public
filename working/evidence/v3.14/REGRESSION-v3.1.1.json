@@ -1,0 +1,11 @@
+{
+ "purpose": "The v3.14 code (trend feature set, penalized rule, ensembles, min dwell, float32 targets, fed width) must leave the frozen v3.1.1 lineage unchanged",
+ "date": "2026-11-18",
+ "host": "desktop WSL Ubuntu 24.04.4 (Ryzen 7 7800X3D, 16 threads); Python 3.12.7, numpy 1.26.4, torch 2.9.1+cpu",
+ "method": "python -m twin.gate_v3 on a pending copy of v3.1.1.artifact.json (seeds 1100..1102); --rows compared field-by-field with working/evidence/issue-39/package/v3.1.1.gate.json",
+ "results": {
+  "v3.14 code, PYTHONHASHSEED=0": "72/72 rows, 0 field mismatches, PROMOTE worst 0.7999",
+  "v3.14 code, PYTHONHASHSEED=0 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1": "72/72 rows, 0 field mismatches, PROMOTE worst 0.7999 (5.6 s wall clock with 15 workers)"
+ },
+ "unit_tests": "pipeline/tests: 97 passed (incl. tests/test_v314.py: the trend set's first 16 columns equal the v3 set bit-for-bit in closed loop; float32 targets equal the v3.13 float64 path bit-for-bit)"
+}

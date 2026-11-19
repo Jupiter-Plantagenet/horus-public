@@ -1,0 +1,212 @@
+{
+  "format": "horus-measured-cell-mapping-v1",
+  "source_split": "development only",
+  "cells": [
+    {
+      "index": 0,
+      "id": "LTE/450/6/36153880/100",
+      "key": [
+        "LTE",
+        450,
+        6,
+        36153880,
+        100
+      ]
+    },
+    {
+      "index": 1,
+      "id": "LTE/450/6/36153883/100",
+      "key": [
+        "LTE",
+        450,
+        6,
+        36153883,
+        100
+      ]
+    },
+    {
+      "index": 2,
+      "id": "LTE/450/6/36154378/100",
+      "key": [
+        "LTE",
+        450,
+        6,
+        36154378,
+        100
+      ]
+    },
+    {
+      "index": 3,
+      "id": "LTE/450/6/36154379/100",
+      "key": [
+        "LTE",
+        450,
+        6,
+        36154379,
+        100
+      ]
+    },
+    {
+      "index": 4,
+      "id": "LTE/450/6/36154392/100",
+      "key": [
+        "LTE",
+        450,
+        6,
+        36154392,
+        100
+      ]
+    },
+    {
+      "index": 5,
+      "id": "LTE/450/6/36154396/100",
+      "key": [
+        "LTE",
+        450,
+        6,
+        36154396,
+        100
+      ]
+    },
+    {
+      "index": 6,
+      "id": "LTE/450/6/39319068/100",
+      "key": [
+        "LTE",
+        450,
+        6,
+        39319068,
+        100
+      ]
+    }
+  ],
+  "pci_channel_bindings": [
+    {
+      "observed": [
+        "LTE",
+        450,
+        6,
+        236,
+        100
+      ],
+      "candidates": [
+        [
+          "LTE",
+          450,
+          6,
+          36154378,
+          100
+        ]
+      ]
+    },
+    {
+      "observed": [
+        "LTE",
+        450,
+        6,
+        277,
+        100
+      ],
+      "candidates": [
+        [
+          "LTE",
+          450,
+          6,
+          36153883,
+          100
+        ]
+      ]
+    },
+    {
+      "observed": [
+        "LTE",
+        450,
+        6,
+        397,
+        100
+      ],
+      "candidates": [
+        [
+          "LTE",
+          450,
+          6,
+          36154379,
+          100
+        ]
+      ]
+    },
+    {
+      "observed": [
+        "LTE",
+        450,
+        6,
+        462,
+        100
+      ],
+      "candidates": [
+        [
+          "LTE",
+          450,
+          6,
+          36153880,
+          100
+        ]
+      ]
+    },
+    {
+      "observed": [
+        "LTE",
+        450,
+        6,
+        487,
+        100
+      ],
+      "candidates": [
+        [
+          "LTE",
+          450,
+          6,
+          36154396,
+          100
+        ]
+      ]
+    },
+    {
+      "observed": [
+        "LTE",
+        450,
+        6,
+        488,
+        100
+      ],
+      "candidates": [
+        [
+          "LTE",
+          450,
+          6,
+          39319068,
+          100
+        ]
+      ]
+    },
+    {
+      "observed": [
+        "LTE",
+        450,
+        6,
+        489,
+        100
+      ],
+      "candidates": [
+        [
+          "LTE",
+          450,
+          6,
+          36154392,
+          100
+        ]
+      ]
+    }
+  ],
+  "caveat": "Neighbours without PLMN use the serving PLMN as an explicit assumption; a unique PCI/channel binding is not independently verified neighbour identity."
+}

@@ -1,0 +1,1570 @@
+{
+  "started": "2026-11-18T19:24:33.694609+00:00",
+  "passed": true,
+  "cycles": [
+    {
+      "index": 0,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.010720014572143555,
+      "replay_manifest_sha256": "4b76b37362d5be9d366d210555cbc463105e75db740ac293d393727bb8c704ba"
+    },
+    {
+      "index": 1,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 167,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.010682106018066406,
+      "replay_manifest_sha256": "d0e368e89a4bd9720cc4f7d93400c8de72998495ec798f952f359997be00bf38"
+    },
+    {
+      "index": 2,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 167,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.010818958282470703,
+      "replay_manifest_sha256": "0350ff53d7fd90ac8a9ce0c4e9b7d3e4483ed9dec8bfc410928e220624a9eb9b"
+    },
+    {
+      "index": 3,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.010905027389526367,
+      "replay_manifest_sha256": "0b041834353ef6582e030d572fd04f88866e9ddbe160b595a98109178f851c81"
+    },
+    {
+      "index": 4,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.011770963668823242,
+      "replay_manifest_sha256": "0873ad73b2c18ff541f4514950088a0429d7964461caf04ad0a835d6350d2f18"
+    },
+    {
+      "index": 5,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        21,
+        4
+      ],
+      "max_input_age_s": 0.010821819305419922,
+      "replay_manifest_sha256": "50d90d62ddf07bd6544c81a23f0936ecf5dd4e3de8e649f04ef3c2454b1db53a"
+    },
+    {
+      "index": 6,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.010789155960083008,
+      "replay_manifest_sha256": "c84f7507249ff30cec9c50ca2ac853674bdb9ae586959bde1209e45c5a6208e2"
+    },
+    {
+      "index": 7,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        21,
+        4
+      ],
+      "max_input_age_s": 0.010811090469360352,
+      "replay_manifest_sha256": "bff3fc81d02348000311b9e54030ecfcc178d6f1af588bed75fa1c06d33771ab"
+    },
+    {
+      "index": 8,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.010814905166625977,
+      "replay_manifest_sha256": "8cf9149658342059815519cb6885dd566cef83a41f9afc512fb1a2a17494139c"
+    },
+    {
+      "index": 9,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        21,
+        4
+      ],
+      "max_input_age_s": 0.010694026947021484,
+      "replay_manifest_sha256": "0f6fcc6fb09404697ee829bc7db16f35b5aed0a122f0fdebc01e92449c05f181"
+    },
+    {
+      "index": 10,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        21,
+        4
+      ],
+      "max_input_age_s": 0.010786056518554688,
+      "replay_manifest_sha256": "f73693e3e6540f39be18d2f5eae5a5d63abbc2ac67d2bba0e9c7d4155bbe5a32"
+    },
+    {
+      "index": 11,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        21,
+        4
+      ],
+      "max_input_age_s": 0.010686874389648438,
+      "replay_manifest_sha256": "0416a377322b930b219b9cf2cfcbc92ac9c5b64c3e8543ad3359307aff207813"
+    },
+    {
+      "index": 12,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        21,
+        4
+      ],
+      "max_input_age_s": 0.010632991790771484,
+      "replay_manifest_sha256": "1e8ae7038e8c40f4ef85dcb5564b2c96b55a51a42e262869e646789e133dd373"
+    },
+    {
+      "index": 13,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.011042118072509766,
+      "replay_manifest_sha256": "2643273f7d8d2c7ce12434a2d89ba99e748c98ee1479b6c4f9aeb5130af98c73"
+    },
+    {
+      "index": 14,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.01663494110107422,
+      "replay_manifest_sha256": "9ffbb6a14116ae5736b3899484e689590be9be6fc5fbd64ec09efc668180a217"
+    },
+    {
+      "index": 15,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.010843992233276367,
+      "replay_manifest_sha256": "b28d539c995bab8c68311cf424e90006f7f40135b3b3b9858594b39749cc4936"
+    },
+    {
+      "index": 16,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.010962963104248047,
+      "replay_manifest_sha256": "b16f1ac8852d5f3dfc0336b079eefdca37327f945fe9e6c53a70d762a8fe2616"
+    },
+    {
+      "index": 17,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.01057887077331543,
+      "replay_manifest_sha256": "9700d667669534c7b56b57f1ade3954ad3a38f6c9dd5472a0fcd67be359d2587"
+    },
+    {
+      "index": 18,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.01116800308227539,
+      "replay_manifest_sha256": "c69c64cc1a9eaa87a816be4ed0eccb7fa57c2fb5c42f2a6dcf127e97cf2e4c9a"
+    },
+    {
+      "index": 19,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.010598182678222656,
+      "replay_manifest_sha256": "b76c3ea6a0d8e64a15d1cdf0c99685c57b6b790cff1e57f2991c8f075895672a"
+    },
+    {
+      "index": 20,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.02062392234802246,
+      "replay_manifest_sha256": "3e62b162349464bb2be32bcb16250c754a5a9a28e0040b9b23dac80bbec8e709"
+    },
+    {
+      "index": 21,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.010926008224487305,
+      "replay_manifest_sha256": "46cdb90bc662934d928546b4c1dc94f39e6d6444b2078773ed3a760e146165ab"
+    },
+    {
+      "index": 22,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 167,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.010500907897949219,
+      "replay_manifest_sha256": "f1826c450a6647bc32092c76f61f87e06e4ab3118b345650705832131d508d41"
+    },
+    {
+      "index": 23,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.010754108428955078,
+      "replay_manifest_sha256": "b311966cbc74329b43defb1dfc09abb7f2bd660885c586c88ed6291dadfd74f3"
+    },
+    {
+      "index": 24,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.010598897933959961,
+      "replay_manifest_sha256": "52567f82ab736c30ffce21dab0da132c792de092d6ca741bdceeb803054d79bc"
+    },
+    {
+      "index": 25,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.010706901550292969,
+      "replay_manifest_sha256": "0f93fd51e9b1dfcf67a234d65172aed088fc42ce9f358425fa3e911c9e0151c3"
+    },
+    {
+      "index": 26,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.010992050170898438,
+      "replay_manifest_sha256": "7a9a505f5c8642cb32bb0d9b7f6e15c82df61a40f03784eae5ac0ecc2e5d256d"
+    },
+    {
+      "index": 27,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.010706901550292969,
+      "replay_manifest_sha256": "fe3fad1b4f6ae1c27ead3b05bdb4d583a9dadd7790fa723ce1f9380d616325a6"
+    },
+    {
+      "index": 28,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.010445117950439453,
+      "replay_manifest_sha256": "51d84df43caef5fcd7eb888f49aedda3ace5f3bb49e3b175015f6424be609999"
+    },
+    {
+      "index": 29,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.010772943496704102,
+      "replay_manifest_sha256": "8b497f738e7fc570aa5bf989576ca7437609db45bac9c070dbb1a312b9f5aa59"
+    },
+    {
+      "index": 30,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        21,
+        4
+      ],
+      "max_input_age_s": 0.011681079864501953,
+      "replay_manifest_sha256": "d1b86b3c2c4026104f9e07e62f5eefc01f7c58259ad87f02c2ba6da0d6e21ab8"
+    },
+    {
+      "index": 31,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        21,
+        4
+      ],
+      "max_input_age_s": 0.010716915130615234,
+      "replay_manifest_sha256": "f6674997102c4e3925ed0088a221ee875d4691531f05ef5e46176df70a63cfaa"
+    },
+    {
+      "index": 32,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.03771805763244629,
+      "replay_manifest_sha256": "a572180da63b88ffdbbfbf87cfd1ba64b7ff36861a08e43b5d063dd2f82b2374"
+    },
+    {
+      "index": 33,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        21,
+        4
+      ],
+      "max_input_age_s": 0.01065516471862793,
+      "replay_manifest_sha256": "070673e8e21096da883fb0a79af123037bcd7c24e3d0ed5787e0b43da62bdb2f"
+    },
+    {
+      "index": 34,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1822,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 87,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        4
+      ],
+      "max_input_age_s": 0.011536836624145508,
+      "replay_manifest_sha256": "723a3ee69d08d15306992c332efb0b27b131dfc84b7f550406eb4aa7ee609d70"
+    },
+    {
+      "index": 35,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        21,
+        4
+      ],
+      "max_input_age_s": 0.01060795783996582,
+      "replay_manifest_sha256": "1ebc34563e5b6551a337ece0129bda713b3e1a180c5e8c508b06db391116dd52"
+    },
+    {
+      "index": 36,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.01061105728149414,
+      "replay_manifest_sha256": "ef3ec7814f811b30adf0688e66f874587fbe82ee930a7c818514ca2ca9033f71"
+    },
+    {
+      "index": 37,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.01052999496459961,
+      "replay_manifest_sha256": "b2fddbc57803f4cf5d91ba9599242e7c90a32af9125648811c9873fffe3f766e"
+    },
+    {
+      "index": 38,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.01076507568359375,
+      "replay_manifest_sha256": "629f76e0ac08c3dc9023c3f7ed80f42586e59dc8df413dd3550cc55091f95ce5"
+    },
+    {
+      "index": 39,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.010931015014648438,
+      "replay_manifest_sha256": "9220345df34efa220c67558f54b5296379f20cb3e1f5fd7c024b876929842c85"
+    },
+    {
+      "index": 40,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 168,
+      "post_handover_replies": [
+        20,
+        5
+      ],
+      "max_input_age_s": 0.014993906021118164,
+      "replay_manifest_sha256": "05539dd02bdc0a1bec91e5b33c4e637e54baf4c7d4899c68ad66f1bfcb168dba"
+    }
+  ],
+  "candidate_version": "v3.14.24",
+  "qualification_dir": "selector-integration-v3.14",
+  "qualification": "calibrated replay -> emulated OAI ordinary F1; not field RAN or native CHO",
+  "required_sustained_utc_seconds": 7600.0,
+  "final_evaluation_verdict": null,
+  "ue_image_override": "horus/oai-nr-ue:sync-offset-diagnostic",
+  "cu_image_override": "horus/oai-gnb:srb-reorder-diagnostic",
+  "du_image_override": "horus/oai-gnb:cfra-retry-v2-diagnostic",
+  "flexric_image_override": "horus/oai-flexric:reply-order-diagnostic",
+  "cu_srb_reordering_ms": 1000,
+  "radio_startup_settle_seconds": 8,
+  "ue_image_id": "sha256:995d877338aeb029ceb102659d5de0e5078bcae8f54dca14d2da3a915af40b05",
+  "cu_image_id": "sha256:dc53f0fd4f18a7fb35741467207607a31f8f688bd5b0f226c403fefddae49bcd",
+  "flexric_image_id": "sha256:67dc41ae98695084d01627001895a9f86a2382536eb09d2f16bfb15c3d23931e",
+  "handover_xapp_sha256": "76ca14afd2a02ac06ef4ffeb420deab604ab4b93acf8eb14a4c9aaa4899f5d2e",
+  "du_image_ids": {
+    "ho-du-pci0": "sha256:9a0a1a2536f371ff9d014fa787c282d30bbfe4be81b621821883cb49ea9700c7",
+    "ho-du-pci1": "sha256:9a0a1a2536f371ff9d014fa787c282d30bbfe4be81b621821883cb49ea9700c7"
+  },
+  "cpu_allocation": {
+    "shared_available_cores": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "note": "Shared CPU allocation; RF simulation retains all available CPUs"
+  },
+  "dashboard_url": "http://127.0.0.1:8027",
+  "sustained_started": "2026-11-18T19:25:28.184148+00:00",
+  "sustained_elapsed_seconds": 7760.203320389999,
+  "cleanup_passed": true,
+  "finished": "2026-11-18T21:28:53.498284+00:00",
+  "source_files_verified": 5040,
+  "source_hashes_match": true
+}

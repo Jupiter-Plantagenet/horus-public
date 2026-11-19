@@ -1,0 +1,87 @@
+#     cell_type =  "CELL_MACRO_GNB";
+    nr_cellid = 12345678L;
+    servingCellConfigCommon = (
+ #spCellConfigCommon
+      physCellId                                                    = 0;
+# ssb_periodicityServingCell
+      ssb_periodicityServingCell                                    = 2;
+    tr_n_preference  = "f1";
+# HORUS: E2 agent on each DU too. FlexRIC's xapp_rc_handover learns the DUs'
+# cells (NR CGI) from the F1 Setup each DU carries in its E2 Setup
+# (E2 Node Component Config, F1 interface) and targets "the other DU's cell".
+Additional option(s): --rfsim --log_config.global_log_options level,nocolor,time --gNBs.[0].gNB_DU_ID 3585 --gNBs.[0].nr_cellid 11111111 --gNBs.[0].servingCellConfigCommon.[0].physCellId 1 --gNBs.[0].servingCellConfigCommon.[0].absoluteFrequencySSB 643296 --gNBs.[0].servingCellConfigCommon.[0].dl_absoluteFrequencyPointA 642024 --gNBs.[0].servingCellConfigCommon.[0].ssb_PositionsInBurst_Bitmap 2 --MACRLCs.[0].local_n_address 192.168.71.172 --rfsimulator.[0].serveraddr 192.168.71.181 --e2_agent.near_ric_ip_addr 192.168.71.160 --e2_agent.sm_dir /usr/local/lib/flexric/
+/opt/oai-gnb/bin/nr-softmodem -O /opt/oai-gnb/etc/gnb.conf --rfsim --log_config.global_log_options level,nocolor,time --gNBs.[0].gNB_DU_ID 3585 --gNBs.[0].nr_cellid 11111111 --gNBs.[0].servingCellConfigCommon.[0].physCellId 1 --gNBs.[0].servingCellConfigCommon.[0].absoluteFrequencySSB 643296 --gNBs.[0].servingCellConfigCommon.[0].dl_absoluteFrequencyPointA 642024 --gNBs.[0].servingCellConfigCommon.[0].ssb_PositionsInBurst_Bitmap 2 --MACRLCs.[0].local_n_address 192.168.71.172 --rfsimulator.[0].serveraddr 192.168.71.181 --e2_agent.near_ric_ip_addr 192.168.71.160 --e2_agent.sm_dir /usr/local/lib/flexric/
+CMDLINE: "/opt/oai-gnb/bin/nr-softmodem" "-O" "/opt/oai-gnb/etc/gnb.conf" "--rfsim" "--log_config.global_log_options" "level,nocolor,time" "--gNBs.[0].gNB_DU_ID" "3585" "--gNBs.[0].nr_cellid" "11111111" "--gNBs.[0].servingCellConfigCommon.[0].physCellId" "1" "--gNBs.[0].servingCellConfigCommon.[0].absoluteFrequencySSB" "643296" "--gNBs.[0].servingCellConfigCommon.[0].dl_absoluteFrequencyPointA" "642024" "--gNBs.[0].servingCellConfigCommon.[0].ssb_PositionsInBurst_Bitmap" "2" "--MACRLCs.[0].local_n_address" "192.168.71.172" "--rfsimulator.[0].serveraddr" "192.168.71.181" "--e2_agent.near_ric_ip_addr" "192.168.71.160" "--e2_agent.sm_dir" "/usr/local/lib/flexric/" 
+46145.822408 [RRC]    I Read in ServingCellConfigCommon (PhysCellId 1, ABSFREQSSB 643296, DLBand 78, ABSFREQPOINTA 642024, DLBW 106,RACH_TargetReceivedPower -96
+46145.822482 [NR_MAC] I PUSCH Target 230 RSSI thresh 0 Failure 10, PUCCH Target 200 RSSI thresh 0 Failure 10
+46145.829027 [F1AP]   I F1-C DU IPaddr 192.168.71.172, connect to F1-C CU 192.168.71.150, binding GTP to 192.168.71.172 ports local 2153 remote 2153
+46145.831164 [GNB_APP] I F1AP: gNB idx 0 gNB_DU_id 3585, gNB_DU_name du-rfsim, TAC 1 MCC/MNC/length 208/99/2 cellID 11111111
+46145.831185 [GNB_APP] I ngran_DU: Configuring Cell 0 for TDD
+46145.831204 [GNB_APP] I Configured DU: cell ID 11111111, PCI 1
+46145.831303 [GNB_APP] I gNB 0: neighbour_list has 0 serving cell(s)
+46145.831920 [GNB_APP] I gNB 0 SIB2 config: q_Hyst=0 dB, cellReselPrio=0, q_RxLevMin=-56 dBm, t_ReselectionNR=1 s
+46145.878752 [MAC]    I received F1 Setup Response from CU cu-rfsim
+46146.951401 [PHY]    I fp->Nid_cell=0
+46336.637755 [NR_MAC] I Added new CFRA process for UE RNTI f024 with initial CellGroup and 1 preamble(s):   63
+46336.637781 [RLC]    I Activated srb0 for UE 61476
+46336.637949 [RLC]    I Added srb 1 to UE 61476
+46336.638005 [RLC]    I Added srb 2 to UE 61476
+46336.638456 [RLC]    I Added drb 1 to UE 61476
+46336.638478 [RLC]    I Added DRB to UE 61476
+46336.864571 [NR_MAC] W reconfigCellGroup still present, did we miss ACK for RRCReconfiguration?
+UE f024: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.09000 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 11/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.08100 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -41.7 CCE fail 0
+UE f024: dlsch_rounds 7/1/0/0, dlsch_errors 0, pucch0_DTX 1 (SNR 19.8-0.2) RSSI -123.5, BLER 0.14905 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 36/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02288 MCS (0) 2 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.8 (+2.8) RSSI -41.6 CCE fail 0
+UE f024: dlsch_rounds 11/1/0/0, dlsch_errors 0, pucch0_DTX 1 (SNR 19.8-0.2) RSSI -123.5, BLER 0.10866 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 59/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00646 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.9 (+2.9) RSSI -41.4 CCE fail 0
+UE f024: dlsch_rounds 17/1/0/0, dlsch_errors 0, pucch0_DTX 1 (SNR 19.8-0.2) RSSI -123.5, BLER 0.07921 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 82/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00203 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 12 SNR 27.0 (+4.0) RSSI -41.4 CCE fail 0
+UE f024: dlsch_rounds 19/1/0/0, dlsch_errors 0, pucch0_DTX 1 (SNR 19.8-0.2) RSSI -123.5, BLER 0.07129 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 102/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00052 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -41.4 CCE fail 0
+UE f024: dlsch_rounds 23/2/0/0, dlsch_errors 0, pucch0_DTX 2 (SNR 19.8-0.2) RSSI -123.5, BLER 0.05774 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 127/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00015 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -41.4 CCE fail 0
+UE f024: dlsch_rounds 27/3/0/0, dlsch_errors 0, pucch0_DTX 3 (SNR 19.8-0.2) RSSI -123.5, BLER 0.10197 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 155/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00004 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -41.4 CCE fail 0
+UE f024: dlsch_rounds 33/4/0/0, dlsch_errors 0, pucch0_DTX 4 (SNR 19.8-0.2) RSSI -123.5, BLER 0.18513 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 183/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -41.4 CCE fail 0
+UE f024: dlsch_rounds 37/5/0/0, dlsch_errors 0, pucch0_DTX 5 (SNR 19.8-0.2) RSSI -123.5, BLER 0.23496 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 208/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -41.5 CCE fail 0
+UE f024: dlsch_rounds 41/6/0/0, dlsch_errors 0, pucch0_DTX 6 (SNR 19.8-0.2) RSSI -123.5, BLER 0.26128 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 231/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -41.5 CCE fail 0
+UE f024: dlsch_rounds 46/7/0/0, dlsch_errors 0, pucch0_DTX 7 (SNR 19.8-0.2) RSSI -123.5, BLER 0.17143 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 254/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -41.4 CCE fail 0
+UE f024: dlsch_rounds 51/7/0/0, dlsch_errors 0, pucch0_DTX 7 (SNR 19.8-0.2) RSSI -123.5, BLER 0.20597 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 278/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -41.3 CCE fail 0
+UE f024: dlsch_rounds 53/7/0/0, dlsch_errors 0, pucch0_DTX 7 (SNR 19.8-0.2) RSSI -123.5, BLER 0.16684 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 294/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -41.4 CCE fail 0
+UE f024: dlsch_rounds 56/7/0/0, dlsch_errors 0, pucch0_DTX 7 (SNR 19.8-0.2) RSSI -123.5, BLER 0.12162 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 319/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -41.4 CCE fail 0
+UE f024: dlsch_rounds 61/7/0/0, dlsch_errors 0, pucch0_DTX 7 (SNR 19.8-0.2) RSSI -123.5, BLER 0.07980 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 343/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -41.3 CCE fail 0
+UE f024: dlsch_rounds 66/8/0/0, dlsch_errors 0, pucch0_DTX 8 (SNR 19.8-0.2) RSSI -123.5, BLER 0.15236 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 367/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 24 SNR 26.1 (+3.1) RSSI -41.3 CCE fail 0
+UE f024: dlsch_rounds 70/9/0/0, dlsch_errors 0, pucch0_DTX 9 (SNR 19.8-0.2) RSSI -123.5, BLER 0.15674 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 390/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -41.3 CCE fail 0
+UE f024: dlsch_rounds 74/10/0/0, dlsch_errors 0, pucch0_DTX 10 (SNR 19.8-0.2) RSSI -123.5, BLER 0.20426 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 414/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -41.3 CCE fail 0
+UE f024: dlsch_rounds 77/10/0/0, dlsch_errors 0, pucch0_DTX 10 (SNR 19.8-0.2) RSSI -123.5, BLER 0.14891 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 437/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -41.3 CCE fail 0
+UE f024: dlsch_rounds 82/10/0/0, dlsch_errors 0, pucch0_DTX 10 (SNR 19.8-0.2) RSSI -123.5, BLER 0.09770 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 464/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 24 SNR 25.9 (+2.9) RSSI -41.2 CCE fail 0
+UE f024: dlsch_rounds 86/10/0/0, dlsch_errors 0, pucch0_DTX 10 (SNR 19.8-0.2) RSSI -123.5, BLER 0.07122 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 488/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -41.2 CCE fail 0
+UE f024: dlsch_rounds 91/10/0/0, dlsch_errors 0, pucch0_DTX 10 (SNR 19.8-0.2) RSSI -123.5, BLER 0.04673 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 511/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 12 SNR 26.0 (+3.0) RSSI -41.3 CCE fail 0
+UE f024: dlsch_rounds 93/10/0/0, dlsch_errors 0, pucch0_DTX 10 (SNR 19.8-0.2) RSSI -123.5, BLER 0.03785 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 530/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -41.4 CCE fail 0
+UE f024: dlsch_rounds 98/11/0/0, dlsch_errors 0, pucch0_DTX 11 (SNR 19.8-0.2) RSSI -123.5, BLER 0.12759 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 557/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 26.0 (+3.0) RSSI -41.3 CCE fail 0
+UE f024: dlsch_rounds 102/13/0/0, dlsch_errors 0, pucch0_DTX 13 (SNR 19.8-0.2) RSSI -123.5, BLER 0.13802 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 582/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -41.3 CCE fail 0
+UE f024: dlsch_rounds 106/13/0/0, dlsch_errors 0, pucch0_DTX 13 (SNR 19.8-0.2) RSSI -123.5, BLER 0.18161 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 608/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -41.3 CCE fail 0
+UE f024: dlsch_rounds 110/14/0/0, dlsch_errors 0, pucch0_DTX 14 (SNR 19.8-0.2) RSSI -123.5, BLER 0.14711 MCS (0) 0 (Qm 2) CCE fail 0
+UE f024: ulsch_rounds 632/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -41.4 CCE fail 0
+46361.042709 [NR_MAC] W UE f024 UL failure after transmission timeout
+46361.253081 [RLC]    W Remove UE 61476

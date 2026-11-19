@@ -1,0 +1,36 @@
+[primary] episodes=120 H2=FAIL NI=FAIL
+   vs a3_global       U +2.6881 [+2.2409, +3.1354] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+   vs cho_global      U -0.0458 [-0.0703, -0.0213] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_global_ext  U -0.0458 [-0.0703, -0.0213] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_mse         U -0.0459 [-0.0703, -0.0214] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_mro         U +0.4277 [+0.3139, +0.5415] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+[sens_serving_only] episodes=40 H2=FAIL NI=FAIL
+   vs a3_global       U +4.9513 [+3.6669, +6.2358] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+   vs cho_global      U +0.0207 [-0.0511, +0.0925] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_global_ext  U +0.0207 [-0.0511, +0.0925] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_mse         U +0.0214 [-0.0508, +0.0937] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_mro         U +0.7797 [+0.5284, +1.0311] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+[sens_load_025] episodes=40 H2=FAIL NI=FAIL
+   vs a3_global       U +1.8223 [+1.2669, +2.3777] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+   vs cho_global      U -0.0425 [-0.0879, +0.0029] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_global_ext  U -0.0425 [-0.0879, +0.0029] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_mse         U -0.0427 [-0.0880, +0.0026] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_mro         U +0.3602 [+0.1686, +0.5518] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+[sens_load_075] episodes=40 H2=FAIL NI=FAIL
+   vs a3_global       U +3.6935 [+2.6093, +4.7777] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+   vs cho_global      U -0.0637 [-0.1119, -0.0154] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+   vs cho_global_ext  U -0.0637 [-0.1119, -0.0154] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+   vs cho_mse         U -0.0638 [-0.1120, -0.0156] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+   vs cho_mro         U +0.3920 [+0.1994, +0.5845] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+[sens_ext_m120] episodes=40 H2=FAIL NI=FAIL
+   vs a3_global       U +2.4987 [+1.7411, +3.2562] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+   vs cho_global      U -0.0525 [-0.1039, -0.0011] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_global_ext  U -0.0525 [-0.1039, -0.0011] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_mse         U -0.0527 [-0.1040, -0.0013] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_mro         U +0.3913 [+0.1930, +0.5896] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+[sens_ext_m100] episodes=40 H2=FAIL NI=FAIL
+   vs a3_global       U +2.9806 [+2.1048, +3.8564] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok
+   vs cho_global      U -0.0568 [-0.1035, -0.0102] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_global_ext  U -0.0568 [-0.1035, -0.0102] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_mse         U -0.0570 [-0.1036, -0.0103] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:FAIL
+   vs cho_mro         U +0.3909 [+0.1986, +0.5832] ho_rate:ok fail_rate:ok rlf_rate:ok pp_rate:ok

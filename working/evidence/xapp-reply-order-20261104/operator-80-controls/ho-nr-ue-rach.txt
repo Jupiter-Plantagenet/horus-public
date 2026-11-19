@@ -1,0 +1,1869 @@
+1414.502658 [UTIL]   I running in SA mode (no --phy-test, --do-ra, --nsa option present)
+1417.113025 [PHY]    I [UE thread Synch] Running Initial Synch 
+1417.632930 [PHY]    E synch Failed: 
+1417.648264 [PHY]    I [UE thread Synch] Running Initial Synch 
+1418.365889 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1418.366513 [PHY]    I [UE0] In synch, rx_offset 0 samples
+1418.366645 [PHY]    I [UE 0] Measured Carrier Frequency offset 1 Hz
+1418.366843 [PHY]    A Initial sync successful, PCI: 0
+1418.367080 [PHY]    I Got synch: hw_slot_offset 0, carrier off 1 Hz
+1418.380091 [PHY]    A UE synchronized! decoded_frame_rx=154 skipped_frames=50
+1418.380114 [PHY]    I Resynchronizing RX by 0 samples
+1418.380122 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1418.384691 [PHY]    I N_TA_offset changed from 0 to 800
+1418.386376 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1418.410150 [NR_MAC] I PRACH scheduler: Selected RO Frame 205, Slot 19, Symbol 0, Fdm 0
+1418.418159 [PHY]    I PRACH [UE 0] in frame.slot 205.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 27
+1418.431742 [PHY]    I [UE 0] RAR-Msg2 decoded
+1418.431799 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1418.431805 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1418.431807 [NR_MAC] A [UE 0][RAPROC][206.10] Found RAR with the intended RAPID 27
+1418.438544 [NR_MAC] A [RAPROC][206.19] RA-Msg3 transmitted
+1418.475026 [NR_MAC] A [UE 0][207.10][RAPROC] 4-Step RA procedure succeeded. CBRA: Contention Resolution is successful.
+1419.074144 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1419.074149 [NR_RRC] I [UE 0] RNTI 0x7c36  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1453.870486 [NR_RRC] I [UE 0] RNTI 0x6f9a HORUS: defer handover completion until target random access
+1453.870506 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1453.906367 [PHY]    I [UE thread Synch] Running Initial Synch 
+1454.214357 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1454.214646 [PHY]    I [UE0] In synch, rx_offset 1103696 samples
+1454.214650 [PHY]    I [UE 0] Measured Carrier Frequency offset -2 Hz
+1454.214652 [PHY]    A Initial sync successful, PCI: 1
+1454.214666 [PHY]    I Got synch: hw_slot_offset 72, carrier off -2 Hz
+1454.258387 [PHY]    A UE synchronized! decoded_frame_rx=398 skipped_frames=12
+1454.258453 [PHY]    I Resynchronizing RX by 1103696 samples
+1454.317080 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1454.329396 [MAC]    I Initialization of 4-Step CFRA procedure
+1454.329444 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1454.376584 [NR_MAC] I PRACH scheduler: Selected RO Frame 411, Slot 19, Symbol 0, Fdm 0
+1454.377112 [PHY]    I PRACH [UE 0] in frame.slot 411.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1454.405228 [PHY]    I [UE 0] RAR-Msg2 decoded
+1454.405272 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1454.405277 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1454.405280 [NR_MAC] A [UE 0][RAPROC][412.10] Found RAR with the intended RAPID 63
+1454.405295 [NR_MAC] A [UE 0][412.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1454.405338 [NR_RRC] I [UE 0] RNTI 0x6f9a HORUS: target random access succeeded; submit handover completion
+1454.405349 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1454.405387 [NR_RRC] I [UE 0] RNTI 0x6f9a  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1460.217017 [NR_RRC] I [UE 0] RNTI 0x1aa0 HORUS: defer handover completion until target random access
+1460.218291 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1460.289402 [PHY]    I [UE thread Synch] Running Initial Synch 
+1460.641458 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1460.648097 [PHY]    I [UE0] In synch, rx_offset 1103696 samples
+1460.648101 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1460.648104 [PHY]    A Initial sync successful, PCI: 0
+1460.648118 [PHY]    I Got synch: hw_slot_offset 72, carrier off 2 Hz
+1460.697021 [PHY]    A UE synchronized! decoded_frame_rx=630 skipped_frames=10
+1460.697039 [PHY]    I Resynchronizing RX by 1103696 samples
+1460.790634 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1460.804825 [MAC]    I Initialization of 4-Step CFRA procedure
+1460.804841 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1460.889096 [NR_MAC] I PRACH scheduler: Selected RO Frame 641, Slot 19, Symbol 4, Fdm 0
+1460.889418 [PHY]    I PRACH [UE 0] in frame.slot 641.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1460.937286 [PHY]    I [UE 0] RAR-Msg2 decoded
+1460.937330 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1460.937336 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1460.937339 [NR_MAC] A [UE 0][RAPROC][642.10] Found RAR with the intended RAPID 63
+1460.937350 [NR_MAC] A [UE 0][642.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1460.937411 [NR_RRC] I [UE 0] RNTI 0x1aa0 HORUS: target random access succeeded; submit handover completion
+1460.937424 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1460.937428 [NR_RRC] I [UE 0] RNTI 0x1aa0  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1468.389459 [NR_RRC] I [UE 0] RNTI 0xeee9 HORUS: defer handover completion until target random access
+1468.390442 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1468.430291 [PHY]    I [UE thread Synch] Running Initial Synch 
+1468.672954 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1468.673314 [PHY]    I [UE0] In synch, rx_offset 980816 samples
+1468.673369 [PHY]    I [UE 0] Measured Carrier Frequency offset -2 Hz
+1468.673400 [PHY]    A Initial sync successful, PCI: 1
+1468.673537 [PHY]    I Got synch: hw_slot_offset 64, carrier off -2 Hz
+1468.688357 [PHY]    A UE synchronized! decoded_frame_rx=860 skipped_frames=10
+1468.688380 [PHY]    I Resynchronizing RX by 980816 samples
+1468.718690 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1468.726357 [MAC]    I Initialization of 4-Step CFRA procedure
+1468.726545 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1468.771315 [NR_MAC] I PRACH scheduler: Selected RO Frame 871, Slot 19, Symbol 8, Fdm 0
+1468.771577 [PHY]    I PRACH [UE 0] in frame.slot 871.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1468.787778 [PHY]    I [UE 0] RAR-Msg2 decoded
+1468.787796 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1468.787799 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1468.787801 [NR_MAC] A [UE 0][RAPROC][872.10] Found RAR with the intended RAPID 63
+1468.787811 [NR_MAC] A [UE 0][872.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1468.787839 [NR_RRC] I [UE 0] RNTI 0xeee9 HORUS: target random access succeeded; submit handover completion
+1468.787846 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1468.787849 [NR_RRC] I [UE 0] RNTI 0xeee9  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1474.740471 [NR_RRC] I [UE 0] RNTI 0xdcf7 HORUS: defer handover completion until target random access
+1474.744037 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1474.784611 [PHY]    I [UE thread Synch] Running Initial Synch 
+1475.055134 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1475.056055 [PHY]    I [UE0] In synch, rx_offset 489296 samples
+1475.056351 [PHY]    I [UE 0] Measured Carrier Frequency offset 5 Hz
+1475.056530 [PHY]    A Initial sync successful, PCI: 0
+1475.056872 [PHY]    I Got synch: hw_slot_offset 32, carrier off 5 Hz
+1475.069689 [PHY]    A UE synchronized! decoded_frame_rx=64 skipped_frames=16
+1475.069821 [PHY]    I Resynchronizing RX by 489296 samples
+1475.081782 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1475.085303 [MAC]    I Initialization of 4-Step CFRA procedure
+1475.085322 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1475.114377 [NR_MAC] I PRACH scheduler: Selected RO Frame 81, Slot 19, Symbol 8, Fdm 0
+1475.114592 [PHY]    I PRACH [UE 0] in frame.slot 81.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1475.128317 [PHY]    I [UE 0] RAR-Msg2 decoded
+1475.128336 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1475.128340 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1475.128343 [NR_MAC] A [UE 0][RAPROC][82.10] Found RAR with the intended RAPID 63
+1475.128358 [NR_MAC] A [UE 0][82.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1475.128429 [NR_RRC] I [UE 0] RNTI 0xdcf7 HORUS: target random access succeeded; submit handover completion
+1475.128457 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1475.128461 [NR_RRC] I [UE 0] RNTI 0xdcf7  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1480.887878 [NR_RRC] I [UE 0] RNTI 0xe727 HORUS: defer handover completion until target random access
+1480.890429 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1480.936504 [PHY]    I [UE thread Synch] Running Initial Synch 
+1481.252683 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1481.254216 [PHY]    I [UE0] In synch, rx_offset 980816 samples
+1481.254258 [PHY]    I [UE 0] Measured Carrier Frequency offset -2 Hz
+1481.254284 [PHY]    A Initial sync successful, PCI: 1
+1481.254392 [PHY]    I Got synch: hw_slot_offset 64, carrier off -2 Hz
+1481.260520 [PHY]    A UE synchronized! decoded_frame_rx=316 skipped_frames=10
+1481.260539 [PHY]    I Resynchronizing RX by 980816 samples
+1481.300062 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1481.306611 [MAC]    I Initialization of 4-Step CFRA procedure
+1481.306635 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1481.383925 [NR_MAC] I PRACH scheduler: Selected RO Frame 327, Slot 19, Symbol 4, Fdm 0
+1481.384419 [PHY]    I PRACH [UE 0] in frame.slot 327.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1481.412178 [PHY]    I [UE 0] RAR-Msg2 decoded
+1481.412198 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1481.412203 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1481.412206 [NR_MAC] A [UE 0][RAPROC][328.10] Found RAR with the intended RAPID 63
+1481.412236 [NR_MAC] A [UE 0][328.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1481.413961 [NR_RRC] I [UE 0] RNTI 0xe727 HORUS: target random access succeeded; submit handover completion
+1481.413979 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1481.413984 [NR_RRC] I [UE 0] RNTI 0xe727  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1487.783218 [NR_RRC] I [UE 0] RNTI 0x67f9 HORUS: defer handover completion until target random access
+1487.785169 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1487.819336 [PHY]    I [UE thread Synch] Running Initial Synch 
+1488.219463 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1488.219634 [PHY]    I [UE0] In synch, rx_offset -2224 samples
+1488.219639 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1488.219641 [PHY]    A Initial sync successful, PCI: 0
+1488.219654 [PHY]    I Got synch: hw_slot_offset 139810, carrier off 2 Hz
+1488.277409 [PHY]    A UE synchronized! decoded_frame_rx=556 skipped_frames=12
+1488.277861 [PHY]    W HORUS LAB: negative synchronization offset -2224 samples; advance to next frame
+1488.277875 [PHY]    I Resynchronizing RX by 612176 samples
+1488.308620 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1488.318439 [MAC]    I Initialization of 4-Step CFRA procedure
+1488.318461 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1488.332839 [NR_MAC] I PRACH scheduler: Selected RO Frame 569, Slot 19, Symbol 0, Fdm 0
+1488.334113 [PHY]    I PRACH [UE 0] in frame.slot 569.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1488.350270 [PHY]    I [UE 0] RAR-Msg2 decoded
+1488.350311 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1488.350318 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1488.350322 [NR_MAC] A [UE 0][RAPROC][570.10] Found RAR with the intended RAPID 63
+1488.350337 [NR_MAC] A [UE 0][570.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1488.353657 [NR_RRC] I [UE 0] RNTI 0x67f9 HORUS: target random access succeeded; submit handover completion
+1488.353691 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1488.353744 [NR_RRC] I [UE 0] RNTI 0x67f9  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1493.830029 [NR_RRC] I [UE 0] RNTI 0x4462 HORUS: defer handover completion until target random access
+1493.831100 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1493.876292 [PHY]    I [UE thread Synch] Running Initial Synch 
+1494.139467 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1494.142249 [PHY]    I [UE0] In synch, rx_offset 642896 samples
+1494.142331 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1494.142357 [PHY]    A Initial sync successful, PCI: 1
+1494.143390 [PHY]    I Got synch: hw_slot_offset 42, carrier off -1 Hz
+1494.145294 [PHY]    A UE synchronized! decoded_frame_rx=836 skipped_frames=14
+1494.145332 [PHY]    I Resynchronizing RX by 642896 samples
+1494.158175 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1494.163429 [MAC]    I Initialization of 4-Step CFRA procedure
+1494.163460 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1494.187580 [NR_MAC] I PRACH scheduler: Selected RO Frame 851, Slot 19, Symbol 0, Fdm 0
+1494.187780 [PHY]    I PRACH [UE 0] in frame.slot 851.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1494.202255 [PHY]    I [UE 0] RAR-Msg2 decoded
+1494.202275 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1494.202279 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1494.202282 [NR_MAC] A [UE 0][RAPROC][852.10] Found RAR with the intended RAPID 63
+1494.202296 [NR_MAC] A [UE 0][852.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1494.202771 [NR_RRC] I [UE 0] RNTI 0x4462 HORUS: target random access succeeded; submit handover completion
+1494.202795 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1494.202800 [NR_RRC] I [UE 0] RNTI 0x4462  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1500.088033 [NR_RRC] I [UE 0] RNTI 0x9f13 HORUS: defer handover completion until target random access
+1500.089529 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1500.129388 [PHY]    I [UE thread Synch] Running Initial Synch 
+1500.357518 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1500.358413 [PHY]    I [UE0] In synch, rx_offset 1042256 samples
+1500.358418 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1500.358421 [PHY]    A Initial sync successful, PCI: 0
+1500.358433 [PHY]    I Got synch: hw_slot_offset 68, carrier off 3 Hz
+1500.371932 [PHY]    A UE synchronized! decoded_frame_rx=76 skipped_frames=14
+1500.371952 [PHY]    I Resynchronizing RX by 1042256 samples
+1500.400298 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1500.406146 [MAC]    I Initialization of 4-Step CFRA procedure
+1500.406194 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1500.439427 [NR_MAC] I PRACH scheduler: Selected RO Frame 91, Slot 19, Symbol 8, Fdm 0
+1500.439660 [PHY]    I PRACH [UE 0] in frame.slot 91.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1500.451926 [PHY]    I [UE 0] RAR-Msg2 decoded
+1500.451950 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1500.451956 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1500.451959 [NR_MAC] A [UE 0][RAPROC][92.10] Found RAR with the intended RAPID 63
+1500.452020 [NR_MAC] A [UE 0][92.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1500.452102 [NR_RRC] I [UE 0] RNTI 0x9f13 HORUS: target random access succeeded; submit handover completion
+1500.452121 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1500.452125 [NR_RRC] I [UE 0] RNTI 0x9f13  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1506.108532 [NR_RRC] I [UE 0] RNTI 0xc4d0 HORUS: defer handover completion until target random access
+1506.112386 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1506.144499 [PHY]    I [UE thread Synch] Running Initial Synch 
+1506.373522 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1506.373592 [PHY]    I [UE0] In synch, rx_offset 888656 samples
+1506.373595 [PHY]    I [UE 0] Measured Carrier Frequency offset 0 Hz
+1506.373598 [PHY]    A Initial sync successful, PCI: 1
+1506.373613 [PHY]    I Got synch: hw_slot_offset 58, carrier off 0 Hz
+1506.411822 [PHY]    A UE synchronized! decoded_frame_rx=352 skipped_frames=16
+1506.411841 [PHY]    I Resynchronizing RX by 888656 samples
+1506.436451 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1506.442790 [MAC]    I Initialization of 4-Step CFRA procedure
+1506.442812 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1506.474089 [NR_MAC] I PRACH scheduler: Selected RO Frame 369, Slot 19, Symbol 8, Fdm 0
+1506.474608 [PHY]    I PRACH [UE 0] in frame.slot 369.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1506.499874 [PHY]    I [UE 0] RAR-Msg2 decoded
+1506.499899 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1506.499903 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1506.499912 [NR_MAC] A [UE 0][RAPROC][370.10] Found RAR with the intended RAPID 63
+1506.499925 [NR_MAC] A [UE 0][370.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1506.500202 [NR_RRC] I [UE 0] RNTI 0xc4d0 HORUS: target random access succeeded; submit handover completion
+1506.500314 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1506.500347 [NR_RRC] I [UE 0] RNTI 0xc4d0  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1512.229968 [NR_RRC] I [UE 0] RNTI 0x0701 HORUS: defer handover completion until target random access
+1512.230926 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1512.375104 [PHY]    I [UE thread Synch] Running Initial Synch 
+1512.741285 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1512.741462 [PHY]    I [UE0] In synch, rx_offset 151376 samples
+1512.741466 [PHY]    I [UE 0] Measured Carrier Frequency offset 5 Hz
+1512.741469 [PHY]    A Initial sync successful, PCI: 0
+1512.741482 [PHY]    I Got synch: hw_slot_offset 10, carrier off 5 Hz
+1512.768660 [PHY]    A UE synchronized! decoded_frame_rx=608 skipped_frames=14
+1512.768738 [PHY]    I Resynchronizing RX by 151376 samples
+1512.770986 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1512.776169 [MAC]    I Initialization of 4-Step CFRA procedure
+1512.776223 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1512.811051 [NR_MAC] I PRACH scheduler: Selected RO Frame 623, Slot 19, Symbol 4, Fdm 0
+1512.811269 [PHY]    I PRACH [UE 0] in frame.slot 623.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1512.825778 [PHY]    I [UE 0] RAR-Msg2 decoded
+1512.825795 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1512.825800 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1512.825803 [NR_MAC] A [UE 0][RAPROC][624.10] Found RAR with the intended RAPID 63
+1512.825818 [NR_MAC] A [UE 0][624.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1512.825854 [NR_RRC] I [UE 0] RNTI 0x0701 HORUS: target random access succeeded; submit handover completion
+1512.825862 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1512.825866 [NR_RRC] I [UE 0] RNTI 0x0701  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1518.342696 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1518.344952 [NR_RRC] I [UE 0] RNTI 0x4cfe HORUS: defer handover completion until target random access
+1518.380666 [PHY]    I [UE thread Synch] Running Initial Synch 
+1518.660740 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1518.661204 [PHY]    I [UE0] In synch, rx_offset 120656 samples
+1518.661219 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1518.661223 [PHY]    A Initial sync successful, PCI: 1
+1518.661238 [PHY]    I Got synch: hw_slot_offset 8, carrier off -1 Hz
+1518.680031 [PHY]    A UE synchronized! decoded_frame_rx=830 skipped_frames=18
+1518.680100 [PHY]    I Resynchronizing RX by 120656 samples
+1518.681621 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1518.685936 [MAC]    I Initialization of 4-Step CFRA procedure
+1518.685958 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1518.720156 [NR_MAC] I PRACH scheduler: Selected RO Frame 849, Slot 19, Symbol 4, Fdm 0
+1518.720370 [PHY]    I PRACH [UE 0] in frame.slot 849.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1518.734889 [PHY]    I [UE 0] RAR-Msg2 decoded
+1518.734934 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1518.734940 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1518.734943 [NR_MAC] A [UE 0][RAPROC][850.10] Found RAR with the intended RAPID 63
+1518.734956 [NR_MAC] A [UE 0][850.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1518.734987 [NR_RRC] I [UE 0] RNTI 0x4cfe HORUS: target random access succeeded; submit handover completion
+1518.734995 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1518.734999 [NR_RRC] I [UE 0] RNTI 0x4cfe  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1524.410017 [NR_RRC] I [UE 0] RNTI 0xd989 HORUS: defer handover completion until target random access
+1524.410603 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1524.441839 [PHY]    I [UE thread Synch] Running Initial Synch 
+1524.713991 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1524.716079 [PHY]    I [UE0] In synch, rx_offset 520016 samples
+1524.716083 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1524.716085 [PHY]    A Initial sync successful, PCI: 0
+1524.716097 [PHY]    I Got synch: hw_slot_offset 34, carrier off 2 Hz
+1524.720151 [PHY]    A UE synchronized! decoded_frame_rx=88 skipped_frames=14
+1524.720202 [PHY]    I Resynchronizing RX by 520016 samples
+1524.734263 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1524.742667 [MAC]    I Initialization of 4-Step CFRA procedure
+1524.743164 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1524.777427 [NR_MAC] I PRACH scheduler: Selected RO Frame 103, Slot 19, Symbol 4, Fdm 0
+1524.777769 [PHY]    I PRACH [UE 0] in frame.slot 103.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1524.797608 [PHY]    I [UE 0] RAR-Msg2 decoded
+1524.797634 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1524.797638 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1524.797641 [NR_MAC] A [UE 0][RAPROC][104.10] Found RAR with the intended RAPID 63
+1524.797657 [NR_MAC] A [UE 0][104.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1524.797772 [NR_RRC] I [UE 0] RNTI 0xd989 HORUS: target random access succeeded; submit handover completion
+1524.797786 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1524.797822 [NR_RRC] I [UE 0] RNTI 0xd989  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1531.197077 [NR_RRC] I [UE 0] RNTI 0x67ed HORUS: defer handover completion until target random access
+1531.199157 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1531.243221 [PHY]    I [UE thread Synch] Running Initial Synch 
+1531.442928 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1531.443471 [PHY]    I [UE0] In synch, rx_offset 612176 samples
+1531.443591 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1531.443744 [PHY]    A Initial sync successful, PCI: 1
+1531.444133 [PHY]    I Got synch: hw_slot_offset 40, carrier off -1 Hz
+1531.455342 [PHY]    A UE synchronized! decoded_frame_rx=332 skipped_frames=14
+1531.455390 [PHY]    I Resynchronizing RX by 612176 samples
+1531.470136 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1531.473900 [MAC]    I Initialization of 4-Step CFRA procedure
+1531.473950 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1531.501782 [NR_MAC] I PRACH scheduler: Selected RO Frame 347, Slot 19, Symbol 4, Fdm 0
+1531.502448 [PHY]    I PRACH [UE 0] in frame.slot 347.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1531.517465 [PHY]    I [UE 0] RAR-Msg2 decoded
+1531.517486 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1531.517491 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1531.517494 [NR_MAC] A [UE 0][RAPROC][348.10] Found RAR with the intended RAPID 63
+1531.517510 [NR_MAC] A [UE 0][348.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1531.517884 [NR_RRC] I [UE 0] RNTI 0x67ed HORUS: target random access succeeded; submit handover completion
+1531.517905 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1531.517911 [NR_RRC] I [UE 0] RNTI 0x67ed  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1537.168406 [NR_RRC] I [UE 0] RNTI 0x90de HORUS: defer handover completion until target random access
+1537.173338 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1537.208097 [PHY]    I [UE thread Synch] Running Initial Synch 
+1537.476248 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1537.476470 [PHY]    I [UE0] In synch, rx_offset 59216 samples
+1537.476477 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1537.476481 [PHY]    A Initial sync successful, PCI: 0
+1537.476495 [PHY]    I Got synch: hw_slot_offset 4, carrier off 3 Hz
+1537.487975 [PHY]    A UE synchronized! decoded_frame_rx=612 skipped_frames=20
+1537.488074 [PHY]    I Resynchronizing RX by 59216 samples
+1537.489007 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1537.494044 [MAC]    I Initialization of 4-Step CFRA procedure
+1537.494069 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1537.520566 [NR_MAC] I PRACH scheduler: Selected RO Frame 633, Slot 19, Symbol 4, Fdm 0
+1537.521128 [PHY]    I PRACH [UE 0] in frame.slot 633.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1537.533964 [PHY]    I [UE 0] RAR-Msg2 decoded
+1537.534094 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1537.534134 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1537.534159 [NR_MAC] A [UE 0][RAPROC][634.10] Found RAR with the intended RAPID 63
+1537.534176 [NR_MAC] A [UE 0][634.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1537.534327 [NR_RRC] I [UE 0] RNTI 0x90de HORUS: target random access succeeded; submit handover completion
+1537.534373 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1537.534408 [NR_RRC] I [UE 0] RNTI 0x90de  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1543.473888 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1543.475479 [NR_RRC] I [UE 0] RNTI 0xecf4 HORUS: defer handover completion until target random access
+1543.498246 [PHY]    I [UE thread Synch] Running Initial Synch 
+1543.733095 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1543.733398 [PHY]    I [UE0] In synch, rx_offset 151376 samples
+1543.733440 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1543.733445 [PHY]    A Initial sync successful, PCI: 1
+1543.733461 [PHY]    I Got synch: hw_slot_offset 10, carrier off -1 Hz
+1543.778281 [PHY]    A UE synchronized! decoded_frame_rx=890 skipped_frames=18
+1543.778298 [PHY]    I Resynchronizing RX by 151376 samples
+1543.780397 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1543.789426 [MAC]    I Initialization of 4-Step CFRA procedure
+1543.789447 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1543.821020 [NR_MAC] I PRACH scheduler: Selected RO Frame 909, Slot 19, Symbol 8, Fdm 0
+1543.821231 [PHY]    I PRACH [UE 0] in frame.slot 909.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1543.843905 [PHY]    I [UE 0] RAR-Msg2 decoded
+1543.843929 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1543.843934 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1543.843938 [NR_MAC] A [UE 0][RAPROC][910.10] Found RAR with the intended RAPID 63
+1543.843953 [NR_MAC] A [UE 0][910.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1543.844017 [NR_RRC] I [UE 0] RNTI 0xecf4 HORUS: target random access succeeded; submit handover completion
+1543.844028 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1543.844032 [NR_RRC] I [UE 0] RNTI 0xecf4  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1549.621366 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1549.622507 [NR_RRC] I [UE 0] RNTI 0xea8d HORUS: defer handover completion until target random access
+1549.660799 [PHY]    I [UE thread Synch] Running Initial Synch 
+1549.867889 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1549.868044 [PHY]    I [UE0] In synch, rx_offset 366416 samples
+1549.868050 [PHY]    I [UE 0] Measured Carrier Frequency offset 1 Hz
+1549.868052 [PHY]    A Initial sync successful, PCI: 0
+1549.868187 [PHY]    I Got synch: hw_slot_offset 24, carrier off 1 Hz
+1549.893837 [PHY]    A UE synchronized! decoded_frame_rx=140 skipped_frames=14
+1549.893856 [PHY]    I Resynchronizing RX by 366416 samples
+1549.904587 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1549.908965 [MAC]    I Initialization of 4-Step CFRA procedure
+1549.909014 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1549.940053 [NR_MAC] I PRACH scheduler: Selected RO Frame 155, Slot 19, Symbol 4, Fdm 0
+1549.940316 [PHY]    I PRACH [UE 0] in frame.slot 155.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1549.956447 [PHY]    I [UE 0] RAR-Msg2 decoded
+1549.956469 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1549.956473 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1549.956476 [NR_MAC] A [UE 0][RAPROC][156.10] Found RAR with the intended RAPID 63
+1549.956489 [NR_MAC] A [UE 0][156.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1549.956551 [NR_RRC] I [UE 0] RNTI 0xea8d HORUS: target random access succeeded; submit handover completion
+1549.956560 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1549.956564 [NR_RRC] I [UE 0] RNTI 0xea8d  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1555.697523 [NR_RRC] I [UE 0] RNTI 0x0587 HORUS: defer handover completion until target random access
+1555.698802 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1555.732368 [PHY]    I [UE thread Synch] Running Initial Synch 
+1556.042654 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1556.044563 [PHY]    I [UE0] In synch, rx_offset 735056 samples
+1556.044785 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1556.045104 [PHY]    A Initial sync successful, PCI: 1
+1556.045144 [PHY]    I Got synch: hw_slot_offset 48, carrier off -1 Hz
+1556.047818 [PHY]    A UE synchronized! decoded_frame_rx=414 skipped_frames=14
+1556.047837 [PHY]    I Resynchronizing RX by 735056 samples
+1556.100463 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1556.107637 [MAC]    I Initialization of 4-Step CFRA procedure
+1556.107682 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1556.155618 [NR_MAC] I PRACH scheduler: Selected RO Frame 429, Slot 19, Symbol 4, Fdm 0
+1556.155846 [PHY]    I PRACH [UE 0] in frame.slot 429.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1556.169589 [PHY]    I [UE 0] RAR-Msg2 decoded
+1556.169641 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1556.169647 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1556.169651 [NR_MAC] A [UE 0][RAPROC][430.10] Found RAR with the intended RAPID 63
+1556.169665 [NR_MAC] A [UE 0][430.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1556.169703 [NR_RRC] I [UE 0] RNTI 0x0587 HORUS: target random access succeeded; submit handover completion
+1556.169717 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1556.169722 [NR_RRC] I [UE 0] RNTI 0x0587  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1561.763955 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1561.765623 [NR_RRC] I [UE 0] RNTI 0xbc84 HORUS: defer handover completion until target random access
+1561.804205 [PHY]    I [UE thread Synch] Running Initial Synch 
+1562.080031 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1562.080977 [PHY]    I [UE0] In synch, rx_offset 182096 samples
+1562.081140 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1562.081291 [PHY]    A Initial sync successful, PCI: 0
+1562.082111 [PHY]    I Got synch: hw_slot_offset 12, carrier off 2 Hz
+1562.091744 [PHY]    A UE synchronized! decoded_frame_rx=696 skipped_frames=16
+1562.091765 [PHY]    I Resynchronizing RX by 182096 samples
+1562.097868 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1562.103638 [MAC]    I Initialization of 4-Step CFRA procedure
+1562.103700 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1562.128483 [NR_MAC] I PRACH scheduler: Selected RO Frame 713, Slot 19, Symbol 4, Fdm 0
+1562.129350 [PHY]    I PRACH [UE 0] in frame.slot 713.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1562.142461 [PHY]    I [UE 0] RAR-Msg2 decoded
+1562.142562 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1562.142568 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1562.142570 [NR_MAC] A [UE 0][RAPROC][714.10] Found RAR with the intended RAPID 63
+1562.142585 [NR_MAC] A [UE 0][714.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1562.143247 [NR_RRC] I [UE 0] RNTI 0xbc84 HORUS: target random access succeeded; submit handover completion
+1562.143272 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1562.143276 [NR_RRC] I [UE 0] RNTI 0xbc84  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1568.285910 [NR_RRC] I [UE 0] RNTI 0x36fa HORUS: defer handover completion until target random access
+1568.287195 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1568.391698 [PHY]    I [UE thread Synch] Running Initial Synch 
+1569.011026 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1569.011200 [PHY]    I [UE0] In synch, rx_offset 89936 samples
+1569.011203 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1569.011206 [PHY]    A Initial sync successful, PCI: 1
+1569.011218 [PHY]    I Got synch: hw_slot_offset 6, carrier off -1 Hz
+1569.048891 [PHY]    A UE synchronized! decoded_frame_rx=916 skipped_frames=12
+1569.048912 [PHY]    I Resynchronizing RX by 89936 samples
+1569.050020 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1569.078679 [MAC]    I Initialization of 4-Step CFRA procedure
+1569.078704 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1569.198517 [NR_MAC] I PRACH scheduler: Selected RO Frame 929, Slot 19, Symbol 8, Fdm 0
+1569.198721 [PHY]    I PRACH [UE 0] in frame.slot 929.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1569.358098 [PHY]    I [UE 0] RAR-Msg2 decoded
+1569.358121 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1569.358125 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1569.358128 [NR_MAC] A [UE 0][RAPROC][930.10] Found RAR with the intended RAPID 63
+1569.358140 [NR_MAC] A [UE 0][930.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1569.358221 [NR_RRC] I [UE 0] RNTI 0x36fa HORUS: target random access succeeded; submit handover completion
+1569.358232 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1569.358236 [NR_RRC] I [UE 0] RNTI 0x36fa  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1575.620048 [NR_RRC] I [UE 0] RNTI 0xcb16 HORUS: defer handover completion until target random access
+1575.621961 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1575.670232 [PHY]    I [UE thread Synch] Running Initial Synch 
+1576.011750 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1576.013925 [PHY]    I [UE0] In synch, rx_offset 89936 samples
+1576.014093 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1576.014278 [PHY]    A Initial sync successful, PCI: 0
+1576.014592 [PHY]    I Got synch: hw_slot_offset 6, carrier off 2 Hz
+1576.029988 [PHY]    A UE synchronized! decoded_frame_rx=130 skipped_frames=12
+1576.030010 [PHY]    I Resynchronizing RX by 89936 samples
+1576.039604 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1576.041899 [MAC]    I Initialization of 4-Step CFRA procedure
+1576.041942 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1576.103893 [NR_MAC] I PRACH scheduler: Selected RO Frame 143, Slot 19, Symbol 8, Fdm 0
+1576.105296 [PHY]    I PRACH [UE 0] in frame.slot 143.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1576.135474 [PHY]    I [UE 0] RAR-Msg2 decoded
+1576.135514 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1576.135520 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1576.135523 [NR_MAC] A [UE 0][RAPROC][144.10] Found RAR with the intended RAPID 63
+1576.135535 [NR_MAC] A [UE 0][144.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1576.136481 [NR_RRC] I [UE 0] RNTI 0xcb16 HORUS: target random access succeeded; submit handover completion
+1576.136529 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1576.136536 [NR_RRC] I [UE 0] RNTI 0xcb16  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1581.892316 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1581.894585 [NR_RRC] I [UE 0] RNTI 0xe3e3 HORUS: defer handover completion until target random access
+1581.942624 [PHY]    I [UE thread Synch] Running Initial Synch 
+1582.216682 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1582.217816 [PHY]    I [UE0] In synch, rx_offset 28496 samples
+1582.217899 [PHY]    I [UE 0] Measured Carrier Frequency offset 0 Hz
+1582.217905 [PHY]    A Initial sync successful, PCI: 1
+1582.217923 [PHY]    I Got synch: hw_slot_offset 2, carrier off 0 Hz
+1582.233413 [PHY]    A UE synchronized! decoded_frame_rx=412 skipped_frames=16
+1582.233432 [PHY]    I Resynchronizing RX by 28496 samples
+1582.233679 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1582.237881 [MAC]    I Initialization of 4-Step CFRA procedure
+1582.237903 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1582.267066 [NR_MAC] I PRACH scheduler: Selected RO Frame 429, Slot 19, Symbol 8, Fdm 0
+1582.267787 [PHY]    I PRACH [UE 0] in frame.slot 429.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1582.280449 [PHY]    I [UE 0] RAR-Msg2 decoded
+1582.280911 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1582.281169 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1582.281362 [NR_MAC] A [UE 0][RAPROC][430.10] Found RAR with the intended RAPID 63
+1582.281456 [NR_MAC] A [UE 0][430.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1582.281604 [NR_RRC] I [UE 0] RNTI 0xe3e3 HORUS: target random access succeeded; submit handover completion
+1582.281627 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1582.281632 [NR_RRC] I [UE 0] RNTI 0xe3e3  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1588.077117 [NR_RRC] I [UE 0] RNTI 0xb2a3 HORUS: defer handover completion until target random access
+1588.119307 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1588.196514 [PHY]    I [UE thread Synch] Running Initial Synch 
+1588.657754 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1588.657909 [PHY]    I [UE0] In synch, rx_offset 397136 samples
+1588.657941 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1588.657945 [PHY]    A Initial sync successful, PCI: 0
+1588.657959 [PHY]    I Got synch: hw_slot_offset 26, carrier off 3 Hz
+1588.668564 [PHY]    A UE synchronized! decoded_frame_rx=622 skipped_frames=12
+1588.668581 [PHY]    I Resynchronizing RX by 397136 samples
+1588.675644 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1588.679266 [MAC]    I Initialization of 4-Step CFRA procedure
+1588.679316 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1588.704559 [NR_MAC] I PRACH scheduler: Selected RO Frame 635, Slot 19, Symbol 8, Fdm 0
+1588.705005 [PHY]    I PRACH [UE 0] in frame.slot 635.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1588.715434 [PHY]    I [UE 0] RAR-Msg2 decoded
+1588.715455 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1588.715459 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1588.715462 [NR_MAC] A [UE 0][RAPROC][636.10] Found RAR with the intended RAPID 63
+1588.715477 [NR_MAC] A [UE 0][636.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1588.715798 [NR_RRC] I [UE 0] RNTI 0xb2a3 HORUS: target random access succeeded; submit handover completion
+1588.715818 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1588.715822 [NR_RRC] I [UE 0] RNTI 0xb2a3  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1594.042162 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1594.043510 [NR_RRC] I [UE 0] RNTI 0x3e78 HORUS: defer handover completion until target random access
+1594.074219 [PHY]    I [UE thread Synch] Running Initial Synch 
+1594.375187 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1594.375831 [PHY]    I [UE0] In synch, rx_offset -2224 samples
+1594.376081 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1594.376197 [PHY]    A Initial sync successful, PCI: 1
+1594.376215 [PHY]    I Got synch: hw_slot_offset 139810, carrier off -1 Hz
+1594.389133 [PHY]    A UE synchronized! decoded_frame_rx=890 skipped_frames=18
+1594.389304 [PHY]    W HORUS LAB: negative synchronization offset -2224 samples; advance to next frame
+1594.389471 [PHY]    I Resynchronizing RX by 612176 samples
+1594.399687 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1594.404369 [MAC]    I Initialization of 4-Step CFRA procedure
+1594.404653 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1594.413814 [NR_MAC] I PRACH scheduler: Selected RO Frame 909, Slot 19, Symbol 4, Fdm 0
+1594.414297 [PHY]    I PRACH [UE 0] in frame.slot 909.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1594.427184 [PHY]    I [UE 0] RAR-Msg2 decoded
+1594.427203 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1594.427207 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1594.427211 [NR_MAC] A [UE 0][RAPROC][910.10] Found RAR with the intended RAPID 63
+1594.427225 [NR_MAC] A [UE 0][910.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1594.427629 [NR_RRC] I [UE 0] RNTI 0x3e78 HORUS: target random access succeeded; submit handover completion
+1594.427764 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1594.427817 [NR_RRC] I [UE 0] RNTI 0x3e78  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1600.053659 [NR_RRC] I [UE 0] RNTI 0x5730 HORUS: defer handover completion until target random access
+1600.055621 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1600.100035 [PHY]    I [UE thread Synch] Running Initial Synch 
+1600.330204 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1600.330558 [PHY]    I [UE0] In synch, rx_offset 550736 samples
+1600.330600 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1600.330626 [PHY]    A Initial sync successful, PCI: 0
+1600.330766 [PHY]    I Got synch: hw_slot_offset 36, carrier off 3 Hz
+1600.346524 [PHY]    A UE synchronized! decoded_frame_rx=158 skipped_frames=14
+1600.346587 [PHY]    I Resynchronizing RX by 550736 samples
+1600.359192 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1600.363098 [MAC]    I Initialization of 4-Step CFRA procedure
+1600.363203 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1600.391542 [NR_MAC] I PRACH scheduler: Selected RO Frame 173, Slot 19, Symbol 8, Fdm 0
+1600.391886 [PHY]    I PRACH [UE 0] in frame.slot 173.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1600.405010 [PHY]    I [UE 0] RAR-Msg2 decoded
+1600.405026 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1600.405030 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1600.405033 [NR_MAC] A [UE 0][RAPROC][174.10] Found RAR with the intended RAPID 63
+1600.405046 [NR_MAC] A [UE 0][174.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1600.405394 [NR_RRC] I [UE 0] RNTI 0x5730 HORUS: target random access succeeded; submit handover completion
+1600.405416 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1600.405421 [NR_RRC] I [UE 0] RNTI 0x5730  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1606.108324 [NR_RRC] I [UE 0] RNTI 0x6f5d HORUS: defer handover completion until target random access
+1606.111712 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1606.140873 [PHY]    I [UE thread Synch] Running Initial Synch 
+1606.381050 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1606.381696 [PHY]    I [UE0] In synch, rx_offset 120656 samples
+1606.381827 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1606.381833 [PHY]    A Initial sync successful, PCI: 1
+1606.381843 [PHY]    I Got synch: hw_slot_offset 8, carrier off -1 Hz
+1606.412456 [PHY]    A UE synchronized! decoded_frame_rx=436 skipped_frames=18
+1606.412477 [PHY]    I Resynchronizing RX by 120656 samples
+1606.417579 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1606.421939 [MAC]    I Initialization of 4-Step CFRA procedure
+1606.421970 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1606.447806 [NR_MAC] I PRACH scheduler: Selected RO Frame 455, Slot 19, Symbol 0, Fdm 0
+1606.448369 [PHY]    I PRACH [UE 0] in frame.slot 455.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1606.471336 [PHY]    I [UE 0] RAR-Msg2 decoded
+1606.471355 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1606.471359 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1606.471362 [NR_MAC] A [UE 0][RAPROC][456.10] Found RAR with the intended RAPID 63
+1606.471378 [NR_MAC] A [UE 0][456.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1606.471447 [NR_RRC] I [UE 0] RNTI 0x6f5d HORUS: target random access succeeded; submit handover completion
+1606.471461 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1606.471465 [NR_RRC] I [UE 0] RNTI 0x6f5d  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1612.577445 [NR_RRC] I [UE 0] RNTI 0x1843 HORUS: defer handover completion until target random access
+1612.580296 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1612.616798 [PHY]    I [UE thread Synch] Running Initial Synch 
+1612.831494 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1612.832260 [PHY]    I [UE0] In synch, rx_offset 243536 samples
+1612.833560 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1612.833613 [PHY]    A Initial sync successful, PCI: 0
+1612.833634 [PHY]    I Got synch: hw_slot_offset 16, carrier off 2 Hz
+1612.858557 [PHY]    A UE synchronized! decoded_frame_rx=638 skipped_frames=16
+1612.858569 [PHY]    I Resynchronizing RX by 243536 samples
+1612.864998 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1612.869973 [MAC]    I Initialization of 4-Step CFRA procedure
+1612.869998 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1612.896557 [NR_MAC] I PRACH scheduler: Selected RO Frame 655, Slot 19, Symbol 8, Fdm 0
+1612.896786 [PHY]    I PRACH [UE 0] in frame.slot 655.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1612.909531 [PHY]    I [UE 0] RAR-Msg2 decoded
+1612.909570 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1612.909576 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1612.909579 [NR_MAC] A [UE 0][RAPROC][656.10] Found RAR with the intended RAPID 63
+1612.909595 [NR_MAC] A [UE 0][656.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1612.909996 [NR_RRC] I [UE 0] RNTI 0x1843 HORUS: target random access succeeded; submit handover completion
+1612.910015 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1612.910019 [NR_RRC] I [UE 0] RNTI 0x1843  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1619.538720 [NR_RRC] I [UE 0] RNTI 0xe516 HORUS: defer handover completion until target random access
+1619.540748 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1619.579356 [PHY]    I [UE thread Synch] Running Initial Synch 
+1619.838776 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1619.839485 [PHY]    I [UE0] In synch, rx_offset 520016 samples
+1619.839491 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1619.839494 [PHY]    A Initial sync successful, PCI: 1
+1619.839508 [PHY]    I Got synch: hw_slot_offset 34, carrier off -1 Hz
+1619.884394 [PHY]    A UE synchronized! decoded_frame_rx=918 skipped_frames=14
+1619.884411 [PHY]    I Resynchronizing RX by 520016 samples
+1619.898337 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1619.902766 [MAC]    I Initialization of 4-Step CFRA procedure
+1619.902820 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1619.937065 [NR_MAC] I PRACH scheduler: Selected RO Frame 933, Slot 19, Symbol 4, Fdm 0
+1619.937265 [PHY]    I PRACH [UE 0] in frame.slot 933.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1619.952070 [PHY]    I [UE 0] RAR-Msg2 decoded
+1619.952087 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1619.952091 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1619.952094 [NR_MAC] A [UE 0][RAPROC][934.10] Found RAR with the intended RAPID 63
+1619.952106 [NR_MAC] A [UE 0][934.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1619.952562 [NR_RRC] I [UE 0] RNTI 0xe516 HORUS: target random access succeeded; submit handover completion
+1619.952588 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1619.952594 [NR_RRC] I [UE 0] RNTI 0xe516  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1625.942191 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1625.943737 [NR_RRC] I [UE 0] RNTI 0x12b6 HORUS: defer handover completion until target random access
+1625.987666 [PHY]    I [UE thread Synch] Running Initial Synch 
+1626.226424 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1626.226818 [PHY]    I [UE0] In synch, rx_offset 151376 samples
+1626.226826 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1626.226829 [PHY]    A Initial sync successful, PCI: 0
+1626.226843 [PHY]    I Got synch: hw_slot_offset 10, carrier off 2 Hz
+1626.227459 [PHY]    A UE synchronized! decoded_frame_rx=168 skipped_frames=12
+1626.227474 [PHY]    I Resynchronizing RX by 151376 samples
+1626.229661 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1626.235558 [MAC]    I Initialization of 4-Step CFRA procedure
+1626.235626 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1626.263080 [NR_MAC] I PRACH scheduler: Selected RO Frame 181, Slot 19, Symbol 0, Fdm 0
+1626.263277 [PHY]    I PRACH [UE 0] in frame.slot 181.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1626.275947 [PHY]    I [UE 0] RAR-Msg2 decoded
+1626.275978 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1626.275983 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1626.275987 [NR_MAC] A [UE 0][RAPROC][182.10] Found RAR with the intended RAPID 63
+1626.276061 [NR_MAC] A [UE 0][182.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1626.276104 [NR_RRC] I [UE 0] RNTI 0x12b6 HORUS: target random access succeeded; submit handover completion
+1626.276116 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1626.276120 [NR_RRC] I [UE 0] RNTI 0x12b6  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1632.559015 [NR_RRC] I [UE 0] RNTI 0x532d HORUS: defer handover completion until target random access
+1632.559257 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1632.691539 [PHY]    I [UE thread Synch] Running Initial Synch 
+1633.040087 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1633.040834 [PHY]    I [UE0] In synch, rx_offset 59216 samples
+1633.040920 [PHY]    I [UE 0] Measured Carrier Frequency offset -2 Hz
+1633.040978 [PHY]    A Initial sync successful, PCI: 1
+1633.041047 [PHY]    I Got synch: hw_slot_offset 4, carrier off -2 Hz
+1633.061212 [PHY]    A UE synchronized! decoded_frame_rx=360 skipped_frames=14
+1633.061236 [PHY]    I Resynchronizing RX by 59216 samples
+1633.061847 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1633.071088 [MAC]    I Initialization of 4-Step CFRA procedure
+1633.071111 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1633.117134 [NR_MAC] I PRACH scheduler: Selected RO Frame 375, Slot 19, Symbol 8, Fdm 0
+1633.117449 [PHY]    I PRACH [UE 0] in frame.slot 375.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1633.130847 [PHY]    I [UE 0] RAR-Msg2 decoded
+1633.130892 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1633.130897 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1633.130900 [NR_MAC] A [UE 0][RAPROC][376.10] Found RAR with the intended RAPID 63
+1633.130913 [NR_MAC] A [UE 0][376.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1633.131000 [NR_RRC] I [UE 0] RNTI 0x532d HORUS: target random access succeeded; submit handover completion
+1633.131034 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1633.131040 [NR_RRC] I [UE 0] RNTI 0x532d  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1638.607888 [NR_RRC] I [UE 0] RNTI 0x5d19 HORUS: defer handover completion until target random access
+1638.610219 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1638.686605 [PHY]    I [UE thread Synch] Running Initial Synch 
+1639.317522 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1639.318078 [PHY]    I [UE0] In synch, rx_offset 489296 samples
+1639.318205 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1639.318302 [PHY]    A Initial sync successful, PCI: 0
+1639.318518 [PHY]    I Got synch: hw_slot_offset 32, carrier off 3 Hz
+1639.432350 [PHY]    A UE synchronized! decoded_frame_rx=622 skipped_frames=14
+1639.432363 [PHY]    I Resynchronizing RX by 489296 samples
+1639.453967 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1639.464567 [MAC]    I Initialization of 4-Step CFRA procedure
+1639.464598 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1639.523677 [NR_MAC] I PRACH scheduler: Selected RO Frame 637, Slot 19, Symbol 8, Fdm 0
+1639.523859 [PHY]    I PRACH [UE 0] in frame.slot 637.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1639.546256 [PHY]    I [UE 0] RAR-Msg2 decoded
+1639.546276 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1639.546281 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1639.546283 [NR_MAC] A [UE 0][RAPROC][638.10] Found RAR with the intended RAPID 63
+1639.546297 [NR_MAC] A [UE 0][638.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1639.546417 [NR_RRC] I [UE 0] RNTI 0x5d19 HORUS: target random access succeeded; submit handover completion
+1639.546431 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1639.546435 [NR_RRC] I [UE 0] RNTI 0x5d19  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1645.752806 [NR_RRC] I [UE 0] RNTI 0x6942 HORUS: defer handover completion until target random access
+1645.753467 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1645.806455 [PHY]    I [UE thread Synch] Running Initial Synch 
+1646.025031 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1646.025356 [PHY]    I [UE0] In synch, rx_offset 151376 samples
+1646.025365 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1646.025368 [PHY]    A Initial sync successful, PCI: 1
+1646.025384 [PHY]    I Got synch: hw_slot_offset 10, carrier off -1 Hz
+1646.043541 [PHY]    A UE synchronized! decoded_frame_rx=894 skipped_frames=16
+1646.044499 [PHY]    I Resynchronizing RX by 151376 samples
+1646.046736 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1646.050497 [MAC]    I Initialization of 4-Step CFRA procedure
+1646.050766 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1646.078779 [NR_MAC] I PRACH scheduler: Selected RO Frame 911, Slot 19, Symbol 4, Fdm 0
+1646.079222 [PHY]    I PRACH [UE 0] in frame.slot 911.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1646.091185 [PHY]    I [UE 0] RAR-Msg2 decoded
+1646.091206 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1646.091210 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1646.091213 [NR_MAC] A [UE 0][RAPROC][912.10] Found RAR with the intended RAPID 63
+1646.091226 [NR_MAC] A [UE 0][912.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1646.092531 [NR_RRC] I [UE 0] RNTI 0x6942 HORUS: target random access succeeded; submit handover completion
+1646.092556 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1646.092561 [NR_RRC] I [UE 0] RNTI 0x6942  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1651.715870 [NR_RRC] I [UE 0] RNTI 0x1a4b HORUS: defer handover completion until target random access
+1651.716089 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1651.747145 [PHY]    I [UE thread Synch] Running Initial Synch 
+1651.955854 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1651.956253 [PHY]    I [UE0] In synch, rx_offset 980816 samples
+1651.956404 [PHY]    I [UE 0] Measured Carrier Frequency offset 1 Hz
+1651.956506 [PHY]    A Initial sync successful, PCI: 0
+1651.956922 [PHY]    I Got synch: hw_slot_offset 64, carrier off 1 Hz
+1651.974709 [PHY]    A UE synchronized! decoded_frame_rx=154 skipped_frames=14
+1651.974738 [PHY]    I Resynchronizing RX by 980816 samples
+1652.003598 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1652.005996 [MAC]    I Initialization of 4-Step CFRA procedure
+1652.006015 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1652.032034 [NR_MAC] I PRACH scheduler: Selected RO Frame 169, Slot 19, Symbol 0, Fdm 0
+1652.032640 [PHY]    I PRACH [UE 0] in frame.slot 169.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1652.042931 [PHY]    I [UE 0] RAR-Msg2 decoded
+1652.042958 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1652.042962 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1652.042965 [NR_MAC] A [UE 0][RAPROC][170.10] Found RAR with the intended RAPID 63
+1652.042981 [NR_MAC] A [UE 0][170.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1652.043011 [NR_RRC] I [UE 0] RNTI 0x1a4b HORUS: target random access succeeded; submit handover completion
+1652.043020 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1652.043024 [NR_RRC] I [UE 0] RNTI 0x1a4b  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1657.778354 [NR_RRC] I [UE 0] RNTI 0xf560 HORUS: defer handover completion until target random access
+1657.781355 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1657.825486 [PHY]    I [UE thread Synch] Running Initial Synch 
+1658.115093 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1658.115577 [PHY]    I [UE0] In synch, rx_offset 182096 samples
+1658.115623 [PHY]    I [UE 0] Measured Carrier Frequency offset -2 Hz
+1658.115626 [PHY]    A Initial sync successful, PCI: 1
+1658.115641 [PHY]    I Got synch: hw_slot_offset 12, carrier off -2 Hz
+1658.125950 [PHY]    A UE synchronized! decoded_frame_rx=434 skipped_frames=10
+1658.126125 [PHY]    I Resynchronizing RX by 182096 samples
+1658.136370 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1658.140989 [MAC]    I Initialization of 4-Step CFRA procedure
+1658.141012 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1658.210237 [NR_MAC] I PRACH scheduler: Selected RO Frame 445, Slot 19, Symbol 4, Fdm 0
+1658.210461 [PHY]    I PRACH [UE 0] in frame.slot 445.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1658.240356 [PHY]    I [UE 0] RAR-Msg2 decoded
+1658.240372 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1658.240376 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1658.240379 [NR_MAC] A [UE 0][RAPROC][446.10] Found RAR with the intended RAPID 63
+1658.240391 [NR_MAC] A [UE 0][446.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1658.240796 [NR_RRC] I [UE 0] RNTI 0xf560 HORUS: target random access succeeded; submit handover completion
+1658.240812 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1658.240817 [NR_RRC] I [UE 0] RNTI 0xf560  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1664.175928 [NR_RRC] I [UE 0] RNTI 0xe2e5 HORUS: defer handover completion until target random access
+1664.177653 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1664.214071 [PHY]    I [UE thread Synch] Running Initial Synch 
+1664.459321 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1664.459893 [PHY]    I [UE0] In synch, rx_offset 642896 samples
+1664.459930 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1664.459934 [PHY]    A Initial sync successful, PCI: 0
+1664.459949 [PHY]    I Got synch: hw_slot_offset 42, carrier off 3 Hz
+1664.482960 [PHY]    A UE synchronized! decoded_frame_rx=650 skipped_frames=14
+1664.482984 [PHY]    I Resynchronizing RX by 642896 samples
+1664.501172 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1664.503662 [MAC]    I Initialization of 4-Step CFRA procedure
+1664.504079 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1664.532298 [NR_MAC] I PRACH scheduler: Selected RO Frame 665, Slot 19, Symbol 8, Fdm 0
+1664.532768 [PHY]    I PRACH [UE 0] in frame.slot 665.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1664.550906 [PHY]    I [UE 0] RAR-Msg2 decoded
+1664.550948 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1664.550953 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1664.550956 [NR_MAC] A [UE 0][RAPROC][666.10] Found RAR with the intended RAPID 63
+1664.550968 [NR_MAC] A [UE 0][666.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1664.551009 [NR_RRC] I [UE 0] RNTI 0xe2e5 HORUS: target random access succeeded; submit handover completion
+1664.551024 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1664.551030 [NR_RRC] I [UE 0] RNTI 0xe2e5  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1670.330424 [NR_RRC] I [UE 0] RNTI 0xd94c HORUS: defer handover completion until target random access
+1670.331209 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1670.368769 [PHY]    I [UE thread Synch] Running Initial Synch 
+1670.623900 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1670.624420 [PHY]    I [UE0] In synch, rx_offset 458576 samples
+1670.624498 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1670.624573 [PHY]    A Initial sync successful, PCI: 1
+1670.624710 [PHY]    I Got synch: hw_slot_offset 30, carrier off -1 Hz
+1670.646937 [PHY]    A UE synchronized! decoded_frame_rx=904 skipped_frames=18
+1670.646956 [PHY]    I Resynchronizing RX by 458576 samples
+1670.659440 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1670.663797 [MAC]    I Initialization of 4-Step CFRA procedure
+1670.663820 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1670.689195 [NR_MAC] I PRACH scheduler: Selected RO Frame 923, Slot 19, Symbol 4, Fdm 0
+1670.689859 [PHY]    I PRACH [UE 0] in frame.slot 923.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1670.703311 [PHY]    I [UE 0] RAR-Msg2 decoded
+1670.703330 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1670.703333 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1670.703335 [NR_MAC] A [UE 0][RAPROC][924.10] Found RAR with the intended RAPID 63
+1670.703346 [NR_MAC] A [UE 0][924.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1670.703375 [NR_RRC] I [UE 0] RNTI 0xd94c HORUS: target random access succeeded; submit handover completion
+1670.703382 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1670.703385 [NR_RRC] I [UE 0] RNTI 0xd94c  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1676.584825 [NR_RRC] I [UE 0] RNTI 0xab8c HORUS: defer handover completion until target random access
+1676.585570 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1676.616867 [PHY]    I [UE thread Synch] Running Initial Synch 
+1676.869738 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1676.870053 [PHY]    I [UE0] In synch, rx_offset 120656 samples
+1676.870229 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1676.870334 [PHY]    A Initial sync successful, PCI: 0
+1676.870354 [PHY]    I Got synch: hw_slot_offset 8, carrier off 3 Hz
+1676.905326 [PHY]    A UE synchronized! decoded_frame_rx=158 skipped_frames=14
+1676.905346 [PHY]    I Resynchronizing RX by 120656 samples
+1676.907880 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1676.912289 [MAC]    I Initialization of 4-Step CFRA procedure
+1676.912314 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1676.947542 [NR_MAC] I PRACH scheduler: Selected RO Frame 173, Slot 19, Symbol 0, Fdm 0
+1676.948127 [PHY]    I PRACH [UE 0] in frame.slot 173.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1676.959619 [PHY]    I [UE 0] RAR-Msg2 decoded
+1676.959662 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1676.959668 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1676.959671 [NR_MAC] A [UE 0][RAPROC][174.10] Found RAR with the intended RAPID 63
+1676.959685 [NR_MAC] A [UE 0][174.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1676.959924 [NR_RRC] I [UE 0] RNTI 0xab8c HORUS: target random access succeeded; submit handover completion
+1676.960069 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1676.960210 [NR_RRC] I [UE 0] RNTI 0xab8c  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1682.758234 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1682.760327 [NR_RRC] I [UE 0] RNTI 0x6069 HORUS: defer handover completion until target random access
+1682.802923 [PHY]    I [UE thread Synch] Running Initial Synch 
+1683.067011 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1683.067141 [PHY]    I [UE0] In synch, rx_offset 550736 samples
+1683.067145 [PHY]    I [UE 0] Measured Carrier Frequency offset -2 Hz
+1683.067147 [PHY]    A Initial sync successful, PCI: 1
+1683.067156 [PHY]    I Got synch: hw_slot_offset 36, carrier off -2 Hz
+1683.077428 [PHY]    A UE synchronized! decoded_frame_rx=434 skipped_frames=14
+1683.077449 [PHY]    I Resynchronizing RX by 550736 samples
+1683.094142 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1683.099307 [MAC]    I Initialization of 4-Step CFRA procedure
+1683.099329 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1683.133646 [NR_MAC] I PRACH scheduler: Selected RO Frame 449, Slot 19, Symbol 0, Fdm 0
+1683.137506 [PHY]    I PRACH [UE 0] in frame.slot 449.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1683.151498 [PHY]    I [UE 0] RAR-Msg2 decoded
+1683.151547 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1683.151553 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1683.151557 [NR_MAC] A [UE 0][RAPROC][450.10] Found RAR with the intended RAPID 63
+1683.151572 [NR_MAC] A [UE 0][450.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1683.151606 [NR_RRC] I [UE 0] RNTI 0x6069 HORUS: target random access succeeded; submit handover completion
+1683.151618 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1683.151622 [NR_RRC] I [UE 0] RNTI 0x6069  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1689.454973 [NR_RRC] I [UE 0] RNTI 0x6e39 HORUS: defer handover completion until target random access
+1689.455711 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1689.487896 [PHY]    I [UE thread Synch] Running Initial Synch 
+1689.724460 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1689.724739 [PHY]    I [UE0] In synch, rx_offset 857936 samples
+1689.724767 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1689.724789 [PHY]    A Initial sync successful, PCI: 0
+1689.724858 [PHY]    I Got synch: hw_slot_offset 56, carrier off 2 Hz
+1689.736687 [PHY]    A UE synchronized! decoded_frame_rx=678 skipped_frames=16
+1689.736711 [PHY]    I Resynchronizing RX by 857936 samples
+1689.755708 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1689.761297 [MAC]    I Initialization of 4-Step CFRA procedure
+1689.761357 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1689.791554 [NR_MAC] I PRACH scheduler: Selected RO Frame 695, Slot 19, Symbol 0, Fdm 0
+1689.792113 [PHY]    I PRACH [UE 0] in frame.slot 695.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1689.807858 [PHY]    I [UE 0] RAR-Msg2 decoded
+1689.807877 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1689.807882 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1689.807886 [NR_MAC] A [UE 0][RAPROC][696.10] Found RAR with the intended RAPID 63
+1689.807901 [NR_MAC] A [UE 0][696.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1689.808780 [NR_RRC] I [UE 0] RNTI 0x6e39 HORUS: target random access succeeded; submit handover completion
+1689.808831 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1689.808838 [NR_RRC] I [UE 0] RNTI 0x6e39  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1695.680291 [NR_RRC] I [UE 0] RNTI 0xc736 HORUS: defer handover completion until target random access
+1695.680720 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1695.713621 [PHY]    I [UE thread Synch] Running Initial Synch 
+1695.947631 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1695.948246 [PHY]    I [UE0] In synch, rx_offset 765776 samples
+1695.948255 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1695.948257 [PHY]    A Initial sync successful, PCI: 1
+1695.948271 [PHY]    I Got synch: hw_slot_offset 50, carrier off -1 Hz
+1695.959101 [PHY]    A UE synchronized! decoded_frame_rx=974 skipped_frames=14
+1695.959119 [PHY]    I Resynchronizing RX by 765776 samples
+1695.975747 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1695.979702 [MAC]    I Initialization of 4-Step CFRA procedure
+1695.979834 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1696.007380 [NR_MAC] I PRACH scheduler: Selected RO Frame 989, Slot 19, Symbol 8, Fdm 0
+1696.007573 [PHY]    I PRACH [UE 0] in frame.slot 989.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1696.017508 [PHY]    I [UE 0] RAR-Msg2 decoded
+1696.017531 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1696.017536 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1696.017540 [NR_MAC] A [UE 0][RAPROC][990.10] Found RAR with the intended RAPID 63
+1696.017555 [NR_MAC] A [UE 0][990.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1696.017593 [NR_RRC] I [UE 0] RNTI 0xc736 HORUS: target random access succeeded; submit handover completion
+1696.017608 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1696.017613 [NR_RRC] I [UE 0] RNTI 0xc736  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1701.723252 [NR_RRC] I [UE 0] RNTI 0x7f76 HORUS: defer handover completion until target random access
+1701.737220 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1701.817969 [PHY]    I [UE thread Synch] Running Initial Synch 
+1702.280410 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1702.280946 [PHY]    I [UE0] In synch, rx_offset 489296 samples
+1702.281108 [PHY]    I [UE 0] Measured Carrier Frequency offset 0 Hz
+1702.281283 [PHY]    A Initial sync successful, PCI: 0
+1702.281501 [PHY]    I Got synch: hw_slot_offset 32, carrier off 0 Hz
+1702.286196 [PHY]    A UE synchronized! decoded_frame_rx=218 skipped_frames=10
+1702.286212 [PHY]    I Resynchronizing RX by 489296 samples
+1702.318392 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1702.328305 [MAC]    I Initialization of 4-Step CFRA procedure
+1702.328358 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1702.385090 [NR_MAC] I PRACH scheduler: Selected RO Frame 229, Slot 19, Symbol 0, Fdm 0
+1702.386986 [PHY]    I PRACH [UE 0] in frame.slot 229.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1702.409537 [PHY]    I [UE 0] RAR-Msg2 decoded
+1702.409555 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1702.409559 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1702.409562 [NR_MAC] A [UE 0][RAPROC][230.10] Found RAR with the intended RAPID 63
+1702.409574 [NR_MAC] A [UE 0][230.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1702.409640 [NR_RRC] I [UE 0] RNTI 0x7f76 HORUS: target random access succeeded; submit handover completion
+1702.409650 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1702.409655 [NR_RRC] I [UE 0] RNTI 0x7f76  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1707.925002 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1707.926967 [NR_RRC] I [UE 0] RNTI 0xc901 HORUS: defer handover completion until target random access
+1707.955853 [PHY]    I [UE thread Synch] Running Initial Synch 
+1708.269521 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1708.272456 [PHY]    I [UE0] In synch, rx_offset 120656 samples
+1708.272682 [PHY]    I [UE 0] Measured Carrier Frequency offset 0 Hz
+1708.273006 [PHY]    A Initial sync successful, PCI: 1
+1708.273492 [PHY]    I Got synch: hw_slot_offset 8, carrier off 0 Hz
+1708.288085 [PHY]    A UE synchronized! decoded_frame_rx=480 skipped_frames=14
+1708.288564 [PHY]    I Resynchronizing RX by 120656 samples
+1708.294413 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1708.303086 [MAC]    I Initialization of 4-Step CFRA procedure
+1708.303110 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1708.356147 [NR_MAC] I PRACH scheduler: Selected RO Frame 495, Slot 19, Symbol 0, Fdm 0
+1708.356331 [PHY]    I PRACH [UE 0] in frame.slot 495.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1708.372408 [PHY]    I [UE 0] RAR-Msg2 decoded
+1708.372426 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1708.372431 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1708.372434 [NR_MAC] A [UE 0][RAPROC][496.10] Found RAR with the intended RAPID 63
+1708.372478 [NR_MAC] A [UE 0][496.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1708.372507 [NR_RRC] I [UE 0] RNTI 0xc901 HORUS: target random access succeeded; submit handover completion
+1708.372515 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1708.372519 [NR_RRC] I [UE 0] RNTI 0xc901  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1714.046059 [NR_RRC] I [UE 0] RNTI 0x86f7 HORUS: defer handover completion until target random access
+1714.049304 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1714.170208 [PHY]    I [UE thread Synch] Running Initial Synch 
+1714.500597 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1714.500789 [PHY]    I [UE0] In synch, rx_offset 304976 samples
+1714.500837 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1714.500871 [PHY]    A Initial sync successful, PCI: 0
+1714.500934 [PHY]    I Got synch: hw_slot_offset 20, carrier off 2 Hz
+1714.521300 [PHY]    A UE synchronized! decoded_frame_rx=716 skipped_frames=12
+1714.521319 [PHY]    I Resynchronizing RX by 304976 samples
+1714.549232 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1714.552041 [MAC]    I Initialization of 4-Step CFRA procedure
+1714.552088 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1714.613133 [NR_MAC] I PRACH scheduler: Selected RO Frame 729, Slot 19, Symbol 8, Fdm 0
+1714.613370 [PHY]    I PRACH [UE 0] in frame.slot 729.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1714.633784 [PHY]    I [UE 0] RAR-Msg2 decoded
+1714.633809 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1714.633813 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1714.633817 [NR_MAC] A [UE 0][RAPROC][730.10] Found RAR with the intended RAPID 63
+1714.633833 [NR_MAC] A [UE 0][730.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1714.633867 [NR_RRC] I [UE 0] RNTI 0x86f7 HORUS: target random access succeeded; submit handover completion
+1714.633878 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1714.633913 [NR_RRC] I [UE 0] RNTI 0x86f7  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1721.767971 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1721.768101 [NR_RRC] I [UE 0] RNTI 0x3a43 HORUS: defer handover completion until target random access
+1721.802263 [PHY]    I [UE thread Synch] Running Initial Synch 
+1722.026427 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1722.026501 [PHY]    I [UE0] In synch, rx_offset -2224 samples
+1722.026506 [PHY]    I [UE 0] Measured Carrier Frequency offset -2 Hz
+1722.026509 [PHY]    A Initial sync successful, PCI: 1
+1722.026524 [PHY]    I Got synch: hw_slot_offset 139810, carrier off -2 Hz
+1722.042366 [PHY]    A UE synchronized! decoded_frame_rx=922 skipped_frames=16
+1722.042406 [PHY]    W HORUS LAB: negative synchronization offset -2224 samples; advance to next frame
+1722.042410 [PHY]    I Resynchronizing RX by 612176 samples
+1722.056773 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1722.060235 [MAC]    I Initialization of 4-Step CFRA procedure
+1722.060253 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1722.070953 [NR_MAC] I PRACH scheduler: Selected RO Frame 939, Slot 19, Symbol 8, Fdm 0
+1722.071135 [PHY]    I PRACH [UE 0] in frame.slot 939.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1722.084852 [PHY]    I [UE 0] RAR-Msg2 decoded
+1722.084998 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1722.085040 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1722.085065 [NR_MAC] A [UE 0][RAPROC][940.10] Found RAR with the intended RAPID 63
+1722.085116 [NR_MAC] A [UE 0][940.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1722.085216 [NR_RRC] I [UE 0] RNTI 0x3a43 HORUS: target random access succeeded; submit handover completion
+1722.085256 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1722.085263 [NR_RRC] I [UE 0] RNTI 0x3a43  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1727.945719 [NR_RRC] I [UE 0] RNTI 0x5884 HORUS: defer handover completion until target random access
+1727.948279 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1728.020482 [PHY]    I [UE thread Synch] Running Initial Synch 
+1728.394152 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1728.396636 [PHY]    I [UE0] In synch, rx_offset 642896 samples
+1728.396641 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1728.396643 [PHY]    A Initial sync successful, PCI: 0
+1728.396658 [PHY]    I Got synch: hw_slot_offset 42, carrier off 2 Hz
+1728.405921 [PHY]    A UE synchronized! decoded_frame_rx=142 skipped_frames=10
+1728.405943 [PHY]    I Resynchronizing RX by 642896 samples
+1728.437481 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1728.451522 [MAC]    I Initialization of 4-Step CFRA procedure
+1728.451572 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1728.509371 [NR_MAC] I PRACH scheduler: Selected RO Frame 153, Slot 19, Symbol 0, Fdm 0
+1728.509628 [PHY]    I PRACH [UE 0] in frame.slot 153.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1728.536107 [PHY]    I [UE 0] RAR-Msg2 decoded
+1728.536129 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1728.536134 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1728.536138 [NR_MAC] A [UE 0][RAPROC][154.10] Found RAR with the intended RAPID 63
+1728.536152 [NR_MAC] A [UE 0][154.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1728.536301 [NR_RRC] I [UE 0] RNTI 0x5884 HORUS: target random access succeeded; submit handover completion
+1728.536313 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1728.536317 [NR_RRC] I [UE 0] RNTI 0x5884  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1733.861915 [NR_RRC] I [UE 0] RNTI 0x2ca5 HORUS: defer handover completion until target random access
+1733.868107 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1733.898216 [PHY]    I [UE thread Synch] Running Initial Synch 
+1734.120835 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1734.121658 [PHY]    I [UE0] In synch, rx_offset 151376 samples
+1734.121804 [PHY]    I [UE 0] Measured Carrier Frequency offset 0 Hz
+1734.121872 [PHY]    A Initial sync successful, PCI: 1
+1734.121989 [PHY]    I Got synch: hw_slot_offset 10, carrier off 0 Hz
+1734.136286 [PHY]    A UE synchronized! decoded_frame_rx=400 skipped_frames=14
+1734.136310 [PHY]    I Resynchronizing RX by 151376 samples
+1734.141609 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1734.150785 [MAC]    I Initialization of 4-Step CFRA procedure
+1734.150865 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1734.185304 [NR_MAC] I PRACH scheduler: Selected RO Frame 415, Slot 19, Symbol 4, Fdm 0
+1734.186675 [PHY]    I PRACH [UE 0] in frame.slot 415.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1734.201789 [PHY]    I [UE 0] RAR-Msg2 decoded
+1734.202054 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1734.202215 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1734.202377 [NR_MAC] A [UE 0][RAPROC][416.10] Found RAR with the intended RAPID 63
+1734.202669 [NR_MAC] A [UE 0][416.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1734.203041 [NR_RRC] I [UE 0] RNTI 0x2ca5 HORUS: target random access succeeded; submit handover completion
+1734.203280 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1734.203508 [NR_RRC] I [UE 0] RNTI 0x2ca5  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1739.836833 [NR_RRC] I [UE 0] RNTI 0xbf94 HORUS: defer handover completion until target random access
+1739.838375 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1739.869364 [PHY]    I [UE thread Synch] Running Initial Synch 
+1740.090191 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1740.090762 [PHY]    I [UE0] In synch, rx_offset 397136 samples
+1740.091043 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1740.091190 [PHY]    A Initial sync successful, PCI: 0
+1740.091212 [PHY]    I Got synch: hw_slot_offset 26, carrier off 2 Hz
+1740.094490 [PHY]    A UE synchronized! decoded_frame_rx=676 skipped_frames=14
+1740.094511 [PHY]    I Resynchronizing RX by 397136 samples
+1740.112709 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1740.117660 [MAC]    I Initialization of 4-Step CFRA procedure
+1740.117681 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1740.154066 [NR_MAC] I PRACH scheduler: Selected RO Frame 691, Slot 19, Symbol 0, Fdm 0
+1740.154970 [PHY]    I PRACH [UE 0] in frame.slot 691.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1740.175396 [PHY]    I [UE 0] RAR-Msg2 decoded
+1740.175421 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1740.175427 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1740.175430 [NR_MAC] A [UE 0][RAPROC][692.10] Found RAR with the intended RAPID 63
+1740.175447 [NR_MAC] A [UE 0][692.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1740.175495 [NR_RRC] I [UE 0] RNTI 0xbf94 HORUS: target random access succeeded; submit handover completion
+1740.175507 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1740.175511 [NR_RRC] I [UE 0] RNTI 0xbf94  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1745.920203 [NR_RRC] I [UE 0] RNTI 0xf4b4 HORUS: defer handover completion until target random access
+1745.926152 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1745.963942 [PHY]    I [UE thread Synch] Running Initial Synch 
+1746.191741 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1746.192330 [PHY]    I [UE0] In synch, rx_offset 212816 samples
+1746.192335 [PHY]    I [UE 0] Measured Carrier Frequency offset 0 Hz
+1746.192337 [PHY]    A Initial sync successful, PCI: 1
+1746.192351 [PHY]    I Got synch: hw_slot_offset 14, carrier off 0 Hz
+1746.196590 [PHY]    A UE synchronized! decoded_frame_rx=950 skipped_frames=14
+1746.196612 [PHY]    I Resynchronizing RX by 212816 samples
+1746.199518 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1746.203702 [MAC]    I Initialization of 4-Step CFRA procedure
+1746.203723 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1746.229720 [NR_MAC] I PRACH scheduler: Selected RO Frame 965, Slot 19, Symbol 0, Fdm 0
+1746.230177 [PHY]    I PRACH [UE 0] in frame.slot 965.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1746.243521 [PHY]    I [UE 0] RAR-Msg2 decoded
+1746.243548 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1746.243555 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1746.243558 [NR_MAC] A [UE 0][RAPROC][966.10] Found RAR with the intended RAPID 63
+1746.243591 [NR_MAC] A [UE 0][966.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1746.244258 [NR_RRC] I [UE 0] RNTI 0xf4b4 HORUS: target random access succeeded; submit handover completion
+1746.244426 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1746.244435 [NR_RRC] I [UE 0] RNTI 0xf4b4  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1752.479537 [NR_RRC] I [UE 0] RNTI 0x2844 HORUS: defer handover completion until target random access
+1752.480983 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1752.529833 [PHY]    I [UE thread Synch] Running Initial Synch 
+1752.768354 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1752.768744 [PHY]    I [UE0] In synch, rx_offset 489296 samples
+1752.768749 [PHY]    I [UE 0] Measured Carrier Frequency offset 5 Hz
+1752.768752 [PHY]    A Initial sync successful, PCI: 0
+1752.768767 [PHY]    I Got synch: hw_slot_offset 32, carrier off 5 Hz
+1752.787622 [PHY]    A UE synchronized! decoded_frame_rx=208 skipped_frames=16
+1752.787640 [PHY]    I Resynchronizing RX by 489296 samples
+1752.797260 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1752.803572 [MAC]    I Initialization of 4-Step CFRA procedure
+1752.803610 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1752.828226 [NR_MAC] I PRACH scheduler: Selected RO Frame 225, Slot 19, Symbol 8, Fdm 0
+1752.828641 [PHY]    I PRACH [UE 0] in frame.slot 225.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1752.839588 [PHY]    I [UE 0] RAR-Msg2 decoded
+1752.839608 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1752.839614 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1752.839620 [NR_MAC] A [UE 0][RAPROC][226.10] Found RAR with the intended RAPID 63
+1752.839632 [NR_MAC] A [UE 0][226.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1752.840031 [NR_RRC] I [UE 0] RNTI 0x2844 HORUS: target random access succeeded; submit handover completion
+1752.840059 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1752.840065 [NR_RRC] I [UE 0] RNTI 0x2844  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1758.930106 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1758.930980 [NR_RRC] I [UE 0] RNTI 0x22fa HORUS: defer handover completion until target random access
+1758.966492 [PHY]    I [UE thread Synch] Running Initial Synch 
+1759.187154 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1759.187564 [PHY]    I [UE0] In synch, rx_offset 120656 samples
+1759.187680 [PHY]    I [UE 0] Measured Carrier Frequency offset -2 Hz
+1759.187690 [PHY]    A Initial sync successful, PCI: 1
+1759.187705 [PHY]    I Got synch: hw_slot_offset 8, carrier off -2 Hz
+1759.203305 [PHY]    A UE synchronized! decoded_frame_rx=434 skipped_frames=14
+1759.203324 [PHY]    I Resynchronizing RX by 120656 samples
+1759.208737 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1759.212515 [MAC]    I Initialization of 4-Step CFRA procedure
+1759.213352 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1759.239345 [NR_MAC] I PRACH scheduler: Selected RO Frame 449, Slot 19, Symbol 4, Fdm 0
+1759.239519 [PHY]    I PRACH [UE 0] in frame.slot 449.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1759.261710 [PHY]    I [UE 0] RAR-Msg2 decoded
+1759.261733 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1759.261759 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1759.261765 [NR_MAC] A [UE 0][RAPROC][450.10] Found RAR with the intended RAPID 63
+1759.261784 [NR_MAC] A [UE 0][450.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1759.261879 [NR_RRC] I [UE 0] RNTI 0x22fa HORUS: target random access succeeded; submit handover completion
+1759.261894 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1759.261899 [NR_RRC] I [UE 0] RNTI 0x22fa  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1765.079502 [NR_RRC] I [UE 0] RNTI 0x1c66 HORUS: defer handover completion until target random access
+1765.081599 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1765.108033 [PHY]    I [UE thread Synch] Running Initial Synch 
+1765.358898 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1765.359174 [PHY]    I [UE0] In synch, rx_offset 120656 samples
+1765.359179 [PHY]    I [UE 0] Measured Carrier Frequency offset 1 Hz
+1765.359183 [PHY]    A Initial sync successful, PCI: 0
+1765.359194 [PHY]    I Got synch: hw_slot_offset 8, carrier off 1 Hz
+1765.404681 [PHY]    A UE synchronized! decoded_frame_rx=706 skipped_frames=18
+1765.404722 [PHY]    I Resynchronizing RX by 120656 samples
+1765.406452 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1765.413555 [MAC]    I Initialization of 4-Step CFRA procedure
+1765.413604 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1765.445927 [NR_MAC] I PRACH scheduler: Selected RO Frame 725, Slot 19, Symbol 4, Fdm 0
+1765.446271 [PHY]    I PRACH [UE 0] in frame.slot 725.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1765.466789 [PHY]    I [UE 0] RAR-Msg2 decoded
+1765.466810 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1765.466815 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1765.466819 [NR_MAC] A [UE 0][RAPROC][726.10] Found RAR with the intended RAPID 63
+1765.466832 [NR_MAC] A [UE 0][726.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1765.466912 [NR_RRC] I [UE 0] RNTI 0x1c66 HORUS: target random access succeeded; submit handover completion
+1765.466933 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1765.466938 [NR_RRC] I [UE 0] RNTI 0x1c66  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1771.241191 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1771.241550 [NR_RRC] I [UE 0] RNTI 0x17f2 HORUS: defer handover completion until target random access
+1771.288622 [PHY]    I [UE thread Synch] Running Initial Synch 
+1771.561449 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1771.562009 [PHY]    I [UE0] In synch, rx_offset 304976 samples
+1771.562185 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1771.562472 [PHY]    A Initial sync successful, PCI: 1
+1771.562788 [PHY]    I Got synch: hw_slot_offset 20, carrier off -1 Hz
+1771.564716 [PHY]    A UE synchronized! decoded_frame_rx=1000 skipped_frames=12
+1771.564945 [PHY]    I Resynchronizing RX by 304976 samples
+1771.578318 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1771.583180 [MAC]    I Initialization of 4-Step CFRA procedure
+1771.583208 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1771.613613 [NR_MAC] I PRACH scheduler: Selected RO Frame 1013, Slot 19, Symbol 4, Fdm 0
+1771.613823 [PHY]    I PRACH [UE 0] in frame.slot 1013.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1771.630396 [PHY]    I [UE 0] RAR-Msg2 decoded
+1771.630487 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1771.630496 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1771.630499 [NR_MAC] A [UE 0][RAPROC][1014.10] Found RAR with the intended RAPID 63
+1771.630511 [NR_MAC] A [UE 0][1014.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1771.630578 [NR_RRC] I [UE 0] RNTI 0x17f2 HORUS: target random access succeeded; submit handover completion
+1771.630592 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1771.630597 [NR_RRC] I [UE 0] RNTI 0x17f2  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1777.282829 [NR_RRC] I [UE 0] RNTI 0x7cf3 HORUS: defer handover completion until target random access
+1777.283030 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1777.324515 [PHY]    I [UE thread Synch] Running Initial Synch 
+1777.591242 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1777.592508 [PHY]    I [UE0] In synch, rx_offset 182096 samples
+1777.592515 [PHY]    I [UE 0] Measured Carrier Frequency offset 0 Hz
+1777.592518 [PHY]    A Initial sync successful, PCI: 0
+1777.592534 [PHY]    I Got synch: hw_slot_offset 12, carrier off 0 Hz
+1777.631561 [PHY]    A UE synchronized! decoded_frame_rx=248 skipped_frames=16
+1777.631589 [PHY]    I Resynchronizing RX by 182096 samples
+1777.633722 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1777.652801 [MAC]    I Initialization of 4-Step CFRA procedure
+1777.652824 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1777.715018 [NR_MAC] I PRACH scheduler: Selected RO Frame 265, Slot 19, Symbol 8, Fdm 0
+1777.715210 [PHY]    I PRACH [UE 0] in frame.slot 265.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1777.745548 [PHY]    I [UE 0] RAR-Msg2 decoded
+1777.745574 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1777.745579 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1777.745583 [NR_MAC] A [UE 0][RAPROC][266.10] Found RAR with the intended RAPID 63
+1777.745597 [NR_MAC] A [UE 0][266.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1777.745787 [NR_RRC] I [UE 0] RNTI 0x7cf3 HORUS: target random access succeeded; submit handover completion
+1777.745878 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1777.745885 [NR_RRC] I [UE 0] RNTI 0x7cf3  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1783.827534 [NR_RRC] I [UE 0] RNTI 0x9a49 HORUS: defer handover completion until target random access
+1783.827806 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1783.867992 [PHY]    I [UE thread Synch] Running Initial Synch 
+1784.110747 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1784.113316 [PHY]    I [UE0] In synch, rx_offset 1072976 samples
+1784.113652 [PHY]    I [UE 0] Measured Carrier Frequency offset 0 Hz
+1784.114580 [PHY]    A Initial sync successful, PCI: 1
+1784.114606 [PHY]    I Got synch: hw_slot_offset 70, carrier off 0 Hz
+1784.152543 [PHY]    A UE synchronized! decoded_frame_rx=482 skipped_frames=18
+1784.152845 [PHY]    I Resynchronizing RX by 1072976 samples
+1784.179920 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1784.185597 [MAC]    I Initialization of 4-Step CFRA procedure
+1784.185644 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1784.215370 [NR_MAC] I PRACH scheduler: Selected RO Frame 501, Slot 19, Symbol 8, Fdm 0
+1784.216248 [PHY]    I PRACH [UE 0] in frame.slot 501.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1784.225311 [PHY]    I [UE 0] RAR-Msg2 decoded
+1784.225335 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1784.225339 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1784.225342 [NR_MAC] A [UE 0][RAPROC][502.10] Found RAR with the intended RAPID 63
+1784.225356 [NR_MAC] A [UE 0][502.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1784.225430 [NR_RRC] I [UE 0] RNTI 0x9a49 HORUS: target random access succeeded; submit handover completion
+1784.225446 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1784.225450 [NR_RRC] I [UE 0] RNTI 0x9a49  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1789.933563 [NR_RRC] I [UE 0] RNTI 0xfad1 HORUS: defer handover completion until target random access
+1789.934340 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1789.987593 [PHY]    I [UE thread Synch] Running Initial Synch 
+1790.303717 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1790.303810 [PHY]    I [UE0] In synch, rx_offset 120656 samples
+1790.303814 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1790.303844 [PHY]    A Initial sync successful, PCI: 0
+1790.303862 [PHY]    I Got synch: hw_slot_offset 8, carrier off 3 Hz
+1790.334318 [PHY]    A UE synchronized! decoded_frame_rx=752 skipped_frames=16
+1790.334362 [PHY]    I Resynchronizing RX by 120656 samples
+1790.336201 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1790.340553 [MAC]    I Initialization of 4-Step CFRA procedure
+1790.340580 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1790.365774 [NR_MAC] I PRACH scheduler: Selected RO Frame 769, Slot 19, Symbol 8, Fdm 0
+1790.366013 [PHY]    I PRACH [UE 0] in frame.slot 769.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1790.378519 [PHY]    I [UE 0] RAR-Msg2 decoded
+1790.378564 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1790.378570 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1790.378574 [NR_MAC] A [UE 0][RAPROC][770.10] Found RAR with the intended RAPID 63
+1790.378587 [NR_MAC] A [UE 0][770.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1790.378837 [NR_RRC] I [UE 0] RNTI 0xfad1 HORUS: target random access succeeded; submit handover completion
+1790.379035 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1790.379048 [NR_RRC] I [UE 0] RNTI 0xfad1  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1795.963581 [NR_RRC] I [UE 0] RNTI 0xcf0f HORUS: defer handover completion until target random access
+1795.968937 [MAC]    I Initialization of 4-Step CFRA procedure
+1795.968992 [NR_MAC] W HORUS LAB: sole authorized active target CFRA SSB 1 selected; previous MIB SSB 0
+1795.968998 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1795.969698 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1796.031574 [PHY]    I [UE thread Synch] Running Initial Synch 
+1796.560871 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1796.561227 [PHY]    I [UE0] In synch, rx_offset 1072976 samples
+1796.561232 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1796.561235 [PHY]    A Initial sync successful, PCI: 1
+1796.561249 [PHY]    I Got synch: hw_slot_offset 70, carrier off -1 Hz
+1796.575011 [PHY]    A UE synchronized! decoded_frame_rx=1014 skipped_frames=14
+1796.575030 [PHY]    I Resynchronizing RX by 1072976 samples
+1796.603348 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1796.641073 [NR_MAC] I PRACH scheduler: Selected RO Frame 5, Slot 19, Symbol 8, Fdm 0
+1796.641400 [PHY]    I PRACH [UE 0] in frame.slot 5.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1796.660835 [PHY]    I [UE 0] RAR-Msg2 decoded
+1796.660851 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1796.660855 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1796.660858 [NR_MAC] A [UE 0][RAPROC][6.10] Found RAR with the intended RAPID 63
+1796.660870 [NR_MAC] A [UE 0][6.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1796.660901 [NR_RRC] I [UE 0] RNTI 0xcf0f HORUS: target random access succeeded; submit handover completion
+1796.660910 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1796.660914 [NR_RRC] I [UE 0] RNTI 0xcf0f  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1801.984576 [NR_RRC] I [UE 0] RNTI 0xe40b HORUS: defer handover completion until target random access
+1801.986255 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1802.035607 [PHY]    I [UE thread Synch] Running Initial Synch 
+1802.275767 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1802.275928 [PHY]    I [UE0] In synch, rx_offset 735056 samples
+1802.275933 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1802.275936 [PHY]    A Initial sync successful, PCI: 0
+1802.275952 [PHY]    I Got synch: hw_slot_offset 48, carrier off 2 Hz
+1802.282799 [PHY]    A UE synchronized! decoded_frame_rx=236 skipped_frames=12
+1802.282823 [PHY]    I Resynchronizing RX by 735056 samples
+1802.307665 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1802.314401 [MAC]    I Initialization of 4-Step CFRA procedure
+1802.314503 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1802.354134 [NR_MAC] I PRACH scheduler: Selected RO Frame 249, Slot 19, Symbol 0, Fdm 0
+1802.354973 [PHY]    I PRACH [UE 0] in frame.slot 249.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1802.373424 [PHY]    I [UE 0] RAR-Msg2 decoded
+1802.373449 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1802.373454 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1802.373458 [NR_MAC] A [UE 0][RAPROC][250.10] Found RAR with the intended RAPID 63
+1802.373470 [NR_MAC] A [UE 0][250.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1802.373508 [NR_RRC] I [UE 0] RNTI 0xe40b HORUS: target random access succeeded; submit handover completion
+1802.373519 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1802.373523 [NR_RRC] I [UE 0] RNTI 0xe40b  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1807.842340 [NR_RRC] I [UE 0] RNTI 0xa879 HORUS: defer handover completion until target random access
+1807.843906 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1807.884998 [PHY]    I [UE thread Synch] Running Initial Synch 
+1808.147398 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1808.147631 [PHY]    I [UE0] In synch, rx_offset 397136 samples
+1808.147652 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1808.147682 [PHY]    A Initial sync successful, PCI: 1
+1808.147757 [PHY]    I Got synch: hw_slot_offset 26, carrier off -1 Hz
+1808.182544 [PHY]    A UE synchronized! decoded_frame_rx=502 skipped_frames=14
+1808.182564 [PHY]    I Resynchronizing RX by 397136 samples
+1808.192902 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1808.196044 [MAC]    I Initialization of 4-Step CFRA procedure
+1808.196067 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1808.221150 [NR_MAC] I PRACH scheduler: Selected RO Frame 517, Slot 19, Symbol 0, Fdm 0
+1808.221355 [PHY]    I PRACH [UE 0] in frame.slot 517.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1808.233316 [PHY]    I [UE 0] RAR-Msg2 decoded
+1808.233330 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1808.233333 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1808.233336 [NR_MAC] A [UE 0][RAPROC][518.10] Found RAR with the intended RAPID 63
+1808.233348 [NR_MAC] A [UE 0][518.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1808.233497 [NR_RRC] I [UE 0] RNTI 0xa879 HORUS: target random access succeeded; submit handover completion
+1808.233514 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1808.233518 [NR_RRC] I [UE 0] RNTI 0xa879  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1813.918358 [NR_RRC] I [UE 0] RNTI 0x6e04 HORUS: defer handover completion until target random access
+1813.918759 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1813.956876 [PHY]    I [UE thread Synch] Running Initial Synch 
+1814.205957 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1814.206900 [PHY]    I [UE0] In synch, rx_offset 1103696 samples
+1814.206911 [PHY]    I [UE 0] Measured Carrier Frequency offset 4 Hz
+1814.206915 [PHY]    A Initial sync successful, PCI: 0
+1814.206930 [PHY]    I Got synch: hw_slot_offset 72, carrier off 4 Hz
+1814.240645 [PHY]    A UE synchronized! decoded_frame_rx=754 skipped_frames=14
+1814.240687 [PHY]    I Resynchronizing RX by 1103696 samples
+1814.267485 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1814.276387 [MAC]    I Initialization of 4-Step CFRA procedure
+1814.276409 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1814.305103 [NR_MAC] I PRACH scheduler: Selected RO Frame 769, Slot 19, Symbol 8, Fdm 0
+1814.305870 [PHY]    I PRACH [UE 0] in frame.slot 769.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1814.315967 [PHY]    I [UE 0] RAR-Msg2 decoded
+1814.315997 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1814.316020 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1814.316024 [NR_MAC] A [UE 0][RAPROC][770.10] Found RAR with the intended RAPID 63
+1814.316039 [NR_MAC] A [UE 0][770.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1814.316114 [NR_RRC] I [UE 0] RNTI 0x6e04 HORUS: target random access succeeded; submit handover completion
+1814.316127 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1814.316131 [NR_RRC] I [UE 0] RNTI 0x6e04  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1819.927430 [NR_RRC] I [UE 0] RNTI 0xf55d HORUS: defer handover completion until target random access
+1819.927723 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1819.974760 [PHY]    I [UE thread Synch] Running Initial Synch 
+1820.216078 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1820.216965 [PHY]    I [UE0] In synch, rx_offset 28496 samples
+1820.217012 [PHY]    I [UE 0] Measured Carrier Frequency offset 0 Hz
+1820.217041 [PHY]    A Initial sync successful, PCI: 1
+1820.217082 [PHY]    I Got synch: hw_slot_offset 2, carrier off 0 Hz
+1820.219510 [PHY]    A UE synchronized! decoded_frame_rx=0 skipped_frames=12
+1820.219905 [PHY]    I Resynchronizing RX by 28496 samples
+1820.220580 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1820.225104 [MAC]    I Initialization of 4-Step CFRA procedure
+1820.225123 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1820.250532 [NR_MAC] I PRACH scheduler: Selected RO Frame 13, Slot 19, Symbol 4, Fdm 0
+1820.250908 [PHY]    I PRACH [UE 0] in frame.slot 13.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1820.263486 [PHY]    I [UE 0] RAR-Msg2 decoded
+1820.263502 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1820.263509 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1820.263700 [NR_MAC] A [UE 0][RAPROC][14.10] Found RAR with the intended RAPID 63
+1820.263794 [NR_MAC] A [UE 0][14.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1820.263843 [NR_RRC] I [UE 0] RNTI 0xf55d HORUS: target random access succeeded; submit handover completion
+1820.263853 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1820.263857 [NR_RRC] I [UE 0] RNTI 0xf55d  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1825.756316 [NR_RRC] I [UE 0] RNTI 0xe9b7 HORUS: defer handover completion until target random access
+1825.756433 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1825.802334 [PHY]    I [UE thread Synch] Running Initial Synch 
+1826.088574 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1826.088971 [PHY]    I [UE0] In synch, rx_offset 397136 samples
+1826.089006 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1826.089031 [PHY]    A Initial sync successful, PCI: 0
+1826.089088 [PHY]    I Got synch: hw_slot_offset 26, carrier off 3 Hz
+1826.135484 [PHY]    A UE synchronized! decoded_frame_rx=260 skipped_frames=16
+1826.135535 [PHY]    I Resynchronizing RX by 397136 samples
+1826.153741 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1826.157410 [MAC]    I Initialization of 4-Step CFRA procedure
+1826.157434 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1826.195269 [NR_MAC] I PRACH scheduler: Selected RO Frame 277, Slot 19, Symbol 4, Fdm 0
+1826.195469 [PHY]    I PRACH [UE 0] in frame.slot 277.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1826.213945 [PHY]    I [UE 0] RAR-Msg2 decoded
+1826.213964 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1826.213967 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1826.213970 [NR_MAC] A [UE 0][RAPROC][278.10] Found RAR with the intended RAPID 63
+1826.214003 [NR_MAC] A [UE 0][278.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1826.214042 [NR_RRC] I [UE 0] RNTI 0xe9b7 HORUS: target random access succeeded; submit handover completion
+1826.214052 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1826.214055 [NR_RRC] I [UE 0] RNTI 0xe9b7  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1831.957134 [NR_RRC] I [UE 0] RNTI 0x357b HORUS: defer handover completion until target random access
+1831.968447 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1832.080460 [PHY]    I [UE thread Synch] Running Initial Synch 
+1832.772975 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1832.773650 [PHY]    I [UE0] In synch, rx_offset 520016 samples
+1832.773663 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1832.773666 [PHY]    A Initial sync successful, PCI: 1
+1832.773681 [PHY]    I Got synch: hw_slot_offset 34, carrier off -1 Hz
+1832.880291 [PHY]    A UE synchronized! decoded_frame_rx=486 skipped_frames=14
+1832.880313 [PHY]    I Resynchronizing RX by 520016 samples
+1832.922004 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1832.938465 [MAC]    I Initialization of 4-Step CFRA procedure
+1832.938498 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1833.032921 [NR_MAC] I PRACH scheduler: Selected RO Frame 501, Slot 19, Symbol 4, Fdm 0
+1833.033169 [PHY]    I PRACH [UE 0] in frame.slot 501.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1833.090582 [PHY]    I [UE 0] RAR-Msg2 decoded
+1833.090602 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1833.090606 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1833.090609 [NR_MAC] A [UE 0][RAPROC][502.10] Found RAR with the intended RAPID 63
+1833.090623 [NR_MAC] A [UE 0][502.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1833.090662 [NR_RRC] I [UE 0] RNTI 0x357b HORUS: target random access succeeded; submit handover completion
+1833.090677 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1833.090682 [NR_RRC] I [UE 0] RNTI 0x357b  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1839.759255 [NR_RRC] I [UE 0] RNTI 0x959d HORUS: defer handover completion until target random access
+1839.764223 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1839.835779 [PHY]    I [UE thread Synch] Running Initial Synch 
+1840.247805 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1840.248673 [PHY]    I [UE0] In synch, rx_offset 704336 samples
+1840.248724 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1840.248750 [PHY]    A Initial sync successful, PCI: 0
+1840.248835 [PHY]    I Got synch: hw_slot_offset 46, carrier off 2 Hz
+1840.267118 [PHY]    A UE synchronized! decoded_frame_rx=740 skipped_frames=16
+1840.267141 [PHY]    I Resynchronizing RX by 704336 samples
+1840.282130 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1840.285716 [MAC]    I Initialization of 4-Step CFRA procedure
+1840.285740 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1840.306666 [NR_MAC] I PRACH scheduler: Selected RO Frame 757, Slot 19, Symbol 8, Fdm 0
+1840.306866 [PHY]    I PRACH [UE 0] in frame.slot 757.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1840.321155 [PHY]    I [UE 0] RAR-Msg2 decoded
+1840.321170 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1840.321172 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1840.321174 [NR_MAC] A [UE 0][RAPROC][758.10] Found RAR with the intended RAPID 63
+1840.321183 [NR_MAC] A [UE 0][758.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1840.321203 [NR_RRC] I [UE 0] RNTI 0x959d HORUS: target random access succeeded; submit handover completion
+1840.321211 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1840.321213 [NR_RRC] I [UE 0] RNTI 0x959d  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1845.824404 [NR_RRC] I [UE 0] RNTI 0x69df HORUS: defer handover completion until target random access
+1845.824755 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1845.867158 [PHY]    I [UE thread Synch] Running Initial Synch 
+1846.142316 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1846.142751 [PHY]    I [UE0] In synch, rx_offset 212816 samples
+1846.142904 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1846.142988 [PHY]    A Initial sync successful, PCI: 1
+1846.143191 [PHY]    I Got synch: hw_slot_offset 14, carrier off -1 Hz
+1846.173233 [PHY]    A UE synchronized! decoded_frame_rx=974 skipped_frames=16
+1846.173258 [PHY]    I Resynchronizing RX by 212816 samples
+1846.180612 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1846.185046 [MAC]    I Initialization of 4-Step CFRA procedure
+1846.185067 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1846.211224 [NR_MAC] I PRACH scheduler: Selected RO Frame 991, Slot 19, Symbol 4, Fdm 0
+1846.211773 [PHY]    I PRACH [UE 0] in frame.slot 991.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1846.224699 [PHY]    I [UE 0] RAR-Msg2 decoded
+1846.224735 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1846.224960 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1846.224974 [NR_MAC] A [UE 0][RAPROC][992.10] Found RAR with the intended RAPID 63
+1846.224991 [NR_MAC] A [UE 0][992.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1846.225067 [NR_RRC] I [UE 0] RNTI 0x69df HORUS: target random access succeeded; submit handover completion
+1846.225081 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1846.225085 [NR_RRC] I [UE 0] RNTI 0x69df  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1851.970629 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1851.971584 [NR_RRC] I [UE 0] RNTI 0x00eb HORUS: defer handover completion until target random access
+1852.023250 [PHY]    I [UE thread Synch] Running Initial Synch 
+1852.266119 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1852.266867 [PHY]    I [UE0] In synch, rx_offset 980816 samples
+1852.266904 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1852.266925 [PHY]    A Initial sync successful, PCI: 0
+1852.267012 [PHY]    I Got synch: hw_slot_offset 64, carrier off 3 Hz
+1852.296146 [PHY]    A UE synchronized! decoded_frame_rx=212 skipped_frames=14
+1852.296167 [PHY]    I Resynchronizing RX by 980816 samples
+1852.314513 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1852.319444 [MAC]    I Initialization of 4-Step CFRA procedure
+1852.319516 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1852.348336 [NR_MAC] I PRACH scheduler: Selected RO Frame 227, Slot 19, Symbol 0, Fdm 0
+1852.348869 [PHY]    I PRACH [UE 0] in frame.slot 227.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1852.378636 [PHY]    I [UE 0] RAR-Msg2 decoded
+1852.378660 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1852.378664 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1852.378668 [NR_MAC] A [UE 0][RAPROC][228.10] Found RAR with the intended RAPID 63
+1852.378682 [NR_MAC] A [UE 0][228.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1852.379350 [NR_RRC] I [UE 0] RNTI 0x00eb HORUS: target random access succeeded; submit handover completion
+1852.379374 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1852.379379 [NR_RRC] I [UE 0] RNTI 0x00eb  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1857.984436 [NR_RRC] I [UE 0] RNTI 0x3d29 HORUS: defer handover completion until target random access
+1858.004793 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1858.187924 [PHY]    I [UE thread Synch] Running Initial Synch 
+1858.416773 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1858.417055 [PHY]    I [UE0] In synch, rx_offset 120656 samples
+1858.417090 [PHY]    I [UE 0] Measured Carrier Frequency offset -3 Hz
+1858.417095 [PHY]    A Initial sync successful, PCI: 1
+1858.417191 [PHY]    I Got synch: hw_slot_offset 8, carrier off -3 Hz
+1858.432034 [PHY]    A UE synchronized! decoded_frame_rx=396 skipped_frames=10
+1858.432054 [PHY]    I Resynchronizing RX by 120656 samples
+1858.434053 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1858.440944 [MAC]    I Initialization of 4-Step CFRA procedure
+1858.440991 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1858.467226 [NR_MAC] I PRACH scheduler: Selected RO Frame 407, Slot 19, Symbol 4, Fdm 0
+1858.467417 [PHY]    I PRACH [UE 0] in frame.slot 407.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1858.479414 [PHY]    I [UE 0] RAR-Msg2 decoded
+1858.479919 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1858.480726 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1858.480738 [NR_MAC] A [UE 0][RAPROC][408.10] Found RAR with the intended RAPID 63
+1858.480754 [NR_MAC] A [UE 0][408.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1858.480810 [NR_RRC] I [UE 0] RNTI 0x3d29 HORUS: target random access succeeded; submit handover completion
+1858.480822 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1858.480826 [NR_RRC] I [UE 0] RNTI 0x3d29  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1864.013540 [NR_RRC] I [UE 0] RNTI 0xb8cd HORUS: defer handover completion until target random access
+1864.015338 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1864.050747 [PHY]    I [UE thread Synch] Running Initial Synch 
+1864.306038 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1864.306412 [PHY]    I [UE0] In synch, rx_offset 796496 samples
+1864.306485 [PHY]    I [UE 0] Measured Carrier Frequency offset 4 Hz
+1864.306521 [PHY]    A Initial sync successful, PCI: 0
+1864.307552 [PHY]    I Got synch: hw_slot_offset 52, carrier off 4 Hz
+1864.314465 [PHY]    A UE synchronized! decoded_frame_rx=662 skipped_frames=18
+1864.314482 [PHY]    I Resynchronizing RX by 796496 samples
+1864.330946 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1864.334321 [MAC]    I Initialization of 4-Step CFRA procedure
+1864.334344 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1864.358988 [NR_MAC] I PRACH scheduler: Selected RO Frame 681, Slot 19, Symbol 8, Fdm 0
+1864.359897 [PHY]    I PRACH [UE 0] in frame.slot 681.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1864.371357 [PHY]    I [UE 0] RAR-Msg2 decoded
+1864.371400 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1864.371406 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1864.371409 [NR_MAC] A [UE 0][RAPROC][682.10] Found RAR with the intended RAPID 63
+1864.371425 [NR_MAC] A [UE 0][682.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1864.371856 [NR_RRC] I [UE 0] RNTI 0xb8cd HORUS: target random access succeeded; submit handover completion
+1864.371878 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1864.371883 [NR_RRC] I [UE 0] RNTI 0xb8cd  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1871.198565 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1871.200984 [NR_RRC] I [UE 0] RNTI 0x2da2 HORUS: defer handover completion until target random access
+1871.301487 [PHY]    I [UE thread Synch] Running Initial Synch 
+1871.653581 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1871.653875 [PHY]    I [UE0] In synch, rx_offset 397136 samples
+1871.653917 [PHY]    I [UE 0] Measured Carrier Frequency offset -2 Hz
+1871.653969 [PHY]    A Initial sync successful, PCI: 1
+1871.654076 [PHY]    I Got synch: hw_slot_offset 26, carrier off -2 Hz
+1871.662160 [PHY]    A UE synchronized! decoded_frame_rx=826 skipped_frames=10
+1871.662211 [PHY]    I Resynchronizing RX by 397136 samples
+1871.678993 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1871.690204 [MAC]    I Initialization of 4-Step CFRA procedure
+1871.690224 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1871.766145 [NR_MAC] I PRACH scheduler: Selected RO Frame 837, Slot 19, Symbol 0, Fdm 0
+1871.766345 [PHY]    I PRACH [UE 0] in frame.slot 837.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1871.809904 [PHY]    I [UE 0] RAR-Msg2 decoded
+1871.809924 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1871.809928 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1871.809931 [NR_MAC] A [UE 0][RAPROC][838.10] Found RAR with the intended RAPID 63
+1871.809944 [NR_MAC] A [UE 0][838.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1871.809978 [NR_RRC] I [UE 0] RNTI 0x2da2 HORUS: target random access succeeded; submit handover completion
+1871.809989 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1871.809994 [NR_RRC] I [UE 0] RNTI 0x2da2  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1877.486227 [NR_RRC] I [UE 0] RNTI 0x3ec3 HORUS: defer handover completion until target random access
+1877.487101 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1877.536047 [PHY]    I [UE thread Synch] Running Initial Synch 
+1877.847007 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1877.847322 [PHY]    I [UE0] In synch, rx_offset 335696 samples
+1877.847333 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1877.847336 [PHY]    A Initial sync successful, PCI: 0
+1877.847352 [PHY]    I Got synch: hw_slot_offset 22, carrier off 3 Hz
+1877.891615 [PHY]    A UE synchronized! decoded_frame_rx=44 skipped_frames=14
+1877.891639 [PHY]    I Resynchronizing RX by 335696 samples
+1877.902062 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1877.906328 [MAC]    I Initialization of 4-Step CFRA procedure
+1877.906455 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1877.945341 [NR_MAC] I PRACH scheduler: Selected RO Frame 59, Slot 19, Symbol 0, Fdm 0
+1877.945668 [PHY]    I PRACH [UE 0] in frame.slot 59.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1877.976233 [PHY]    I [UE 0] RAR-Msg2 decoded
+1877.976248 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1877.976252 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1877.976256 [NR_MAC] A [UE 0][RAPROC][60.10] Found RAR with the intended RAPID 63
+1877.976273 [NR_MAC] A [UE 0][60.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1877.976851 [NR_RRC] I [UE 0] RNTI 0x3ec3 HORUS: target random access succeeded; submit handover completion
+1877.976873 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1877.976878 [NR_RRC] I [UE 0] RNTI 0x3ec3  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1883.841080 [NR_RRC] I [UE 0] RNTI 0xe840 HORUS: defer handover completion until target random access
+1883.841233 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1883.880185 [PHY]    I [UE thread Synch] Running Initial Synch 
+1884.162267 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1884.162585 [PHY]    I [UE0] In synch, rx_offset 1072976 samples
+1884.162654 [PHY]    I [UE 0] Measured Carrier Frequency offset -1 Hz
+1884.162681 [PHY]    A Initial sync successful, PCI: 1
+1884.162777 [PHY]    I Got synch: hw_slot_offset 70, carrier off -1 Hz
+1884.183346 [PHY]    A UE synchronized! decoded_frame_rx=268 skipped_frames=16
+1884.183412 [PHY]    I Resynchronizing RX by 1072976 samples
+1884.213414 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1884.221068 [MAC]    I Initialization of 4-Step CFRA procedure
+1884.221092 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1884.253378 [NR_MAC] I PRACH scheduler: Selected RO Frame 285, Slot 19, Symbol 0, Fdm 0
+1884.253649 [PHY]    I PRACH [UE 0] in frame.slot 285.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1884.266758 [PHY]    I [UE 0] RAR-Msg2 decoded
+1884.266777 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1884.266782 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1884.266928 [NR_MAC] A [UE 0][RAPROC][286.10] Found RAR with the intended RAPID 63
+1884.266943 [NR_MAC] A [UE 0][286.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1884.266975 [NR_RRC] I [UE 0] RNTI 0xe840 HORUS: target random access succeeded; submit handover completion
+1884.266984 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1884.266988 [NR_RRC] I [UE 0] RNTI 0xe840  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1890.156666 [NR_RRC] I [UE 0] RNTI 0x96ec HORUS: defer handover completion until target random access
+1890.158427 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1890.239964 [PHY]    I [UE thread Synch] Running Initial Synch 
+1890.541216 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1890.541384 [PHY]    I [UE0] In synch, rx_offset 89936 samples
+1890.541415 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1890.541435 [PHY]    A Initial sync successful, PCI: 0
+1890.541478 [PHY]    I Got synch: hw_slot_offset 6, carrier off 3 Hz
+1890.555583 [PHY]    A UE synchronized! decoded_frame_rx=506 skipped_frames=10
+1890.555599 [PHY]    I Resynchronizing RX by 89936 samples
+1890.558211 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1890.564204 [MAC]    I Initialization of 4-Step CFRA procedure
+1890.564235 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1890.622778 [NR_MAC] I PRACH scheduler: Selected RO Frame 517, Slot 19, Symbol 4, Fdm 0
+1890.623070 [PHY]    I PRACH [UE 0] in frame.slot 517.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1890.640909 [PHY]    I [UE 0] RAR-Msg2 decoded
+1890.640992 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1890.641034 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1890.641091 [NR_MAC] A [UE 0][RAPROC][518.10] Found RAR with the intended RAPID 63
+1890.641143 [NR_MAC] A [UE 0][518.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1890.641257 [NR_RRC] I [UE 0] RNTI 0x96ec HORUS: target random access succeeded; submit handover completion
+1890.641357 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1890.641364 [NR_RRC] I [UE 0] RNTI 0x96ec  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1896.623845 [NR_RRC] I [UE 0] RNTI 0x35d7 HORUS: defer handover completion until target random access
+1896.630303 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1896.672757 [PHY]    I [UE thread Synch] Running Initial Synch 
+1896.924512 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1896.925244 [PHY]    I [UE0] In synch, rx_offset 274256 samples
+1896.925274 [PHY]    I [UE 0] Measured Carrier Frequency offset -2 Hz
+1896.925279 [PHY]    A Initial sync successful, PCI: 1
+1896.925294 [PHY]    I Got synch: hw_slot_offset 18, carrier off -2 Hz
+1896.926817 [PHY]    A UE synchronized! decoded_frame_rx=690 skipped_frames=14
+1896.926858 [PHY]    I Resynchronizing RX by 274256 samples
+1896.931544 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1896.939176 [MAC]    I Initialization of 4-Step CFRA procedure
+1896.939363 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1896.970288 [NR_MAC] I PRACH scheduler: Selected RO Frame 705, Slot 19, Symbol 8, Fdm 0
+1896.970722 [PHY]    I PRACH [UE 0] in frame.slot 705.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1896.984762 [PHY]    I [UE 0] RAR-Msg2 decoded
+1896.984786 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1896.984791 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1896.984795 [NR_MAC] A [UE 0][RAPROC][706.10] Found RAR with the intended RAPID 63
+1896.984812 [NR_MAC] A [UE 0][706.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1896.985047 [NR_RRC] I [UE 0] RNTI 0x35d7 HORUS: target random access succeeded; submit handover completion
+1896.985255 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1896.985420 [NR_RRC] I [UE 0] RNTI 0x35d7  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1902.853390 [NR_RRC] I [UE 0] RNTI 0x0569 HORUS: defer handover completion until target random access
+1902.853827 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1902.890075 [PHY]    I [UE thread Synch] Running Initial Synch 
+1903.151995 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1903.152371 [PHY]    I [UE0] In synch, rx_offset 1072976 samples
+1903.152376 [PHY]    I [UE 0] Measured Carrier Frequency offset 3 Hz
+1903.152379 [PHY]    A Initial sync successful, PCI: 0
+1903.152415 [PHY]    I Got synch: hw_slot_offset 70, carrier off 3 Hz
+1903.182814 [PHY]    A UE synchronized! decoded_frame_rx=968 skipped_frames=14
+1903.182833 [PHY]    I Resynchronizing RX by 1072976 samples
+1903.205540 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1903.210696 [MAC]    I Initialization of 4-Step CFRA procedure
+1903.210750 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1903.240550 [NR_MAC] I PRACH scheduler: Selected RO Frame 983, Slot 19, Symbol 4, Fdm 0
+1903.241081 [PHY]    I PRACH [UE 0] in frame.slot 983.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1903.253963 [PHY]    I [UE 0] RAR-Msg2 decoded
+1903.253982 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1903.253986 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1903.253989 [NR_MAC] A [UE 0][RAPROC][984.10] Found RAR with the intended RAPID 63
+1903.254004 [NR_MAC] A [UE 0][984.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1903.254042 [NR_RRC] I [UE 0] RNTI 0x0569 HORUS: target random access succeeded; submit handover completion
+1903.254051 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1903.254054 [NR_RRC] I [UE 0] RNTI 0x0569  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1909.058762 [NR_RRC] I [UE 0] RNTI 0x476f HORUS: defer handover completion until target random access
+1909.060676 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1909.107956 [PHY]    I [UE thread Synch] Running Initial Synch 
+1909.379855 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1909.380226 [PHY]    I [UE0] In synch, rx_offset 427856 samples
+1909.380242 [PHY]    I [UE 0] Measured Carrier Frequency offset 0 Hz
+1909.380245 [PHY]    A Initial sync successful, PCI: 1
+1909.380259 [PHY]    I Got synch: hw_slot_offset 28, carrier off 0 Hz
+1909.389528 [PHY]    A UE synchronized! decoded_frame_rx=194 skipped_frames=12
+1909.389570 [PHY]    I Resynchronizing RX by 427856 samples
+1909.400861 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1909.405393 [MAC]    I Initialization of 4-Step CFRA procedure
+1909.405410 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1909.433918 [NR_MAC] I PRACH scheduler: Selected RO Frame 207, Slot 19, Symbol 8, Fdm 0
+1909.434093 [PHY]    I PRACH [UE 0] in frame.slot 207.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1909.446377 [PHY]    I [UE 0] RAR-Msg2 decoded
+1909.446396 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1909.446400 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1909.446403 [NR_MAC] A [UE 0][RAPROC][208.10] Found RAR with the intended RAPID 63
+1909.446416 [NR_MAC] A [UE 0][208.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1909.446454 [NR_RRC] I [UE 0] RNTI 0x476f HORUS: target random access succeeded; submit handover completion
+1909.446468 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1909.446473 [NR_RRC] I [UE 0] RNTI 0x476f  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1914.948980 [NR_RRC] I [UE 0] RNTI 0xfb4d HORUS: defer handover completion until target random access
+1914.949736 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1914.992406 [PHY]    I [UE thread Synch] Running Initial Synch 
+1915.258022 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1915.260756 [PHY]    I [UE0] In synch, rx_offset -2224 samples
+1915.260812 [PHY]    I [UE 0] Measured Carrier Frequency offset 4 Hz
+1915.260837 [PHY]    A Initial sync successful, PCI: 0
+1915.260886 [PHY]    I Got synch: hw_slot_offset 139810, carrier off 4 Hz
+1915.297667 [PHY]    A UE synchronized! decoded_frame_rx=440 skipped_frames=14
+1915.297691 [PHY]    W HORUS LAB: negative synchronization offset -2224 samples; advance to next frame
+1915.297695 [PHY]    I Resynchronizing RX by 612176 samples
+1915.328991 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1915.342493 [MAC]    I Initialization of 4-Step CFRA procedure
+1915.342706 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1915.360851 [NR_MAC] I PRACH scheduler: Selected RO Frame 455, Slot 19, Symbol 4, Fdm 0
+1915.361504 [PHY]    I PRACH [UE 0] in frame.slot 455.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1915.374295 [PHY]    I [UE 0] RAR-Msg2 decoded
+1915.374321 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1915.374325 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1915.374328 [NR_MAC] A [UE 0][RAPROC][456.10] Found RAR with the intended RAPID 63
+1915.374342 [NR_MAC] A [UE 0][456.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1915.374377 [NR_RRC] I [UE 0] RNTI 0xfb4d HORUS: target random access succeeded; submit handover completion
+1915.374386 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1915.374391 [NR_RRC] I [UE 0] RNTI 0xfb4d  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1921.217979 [NR_RRC] I [UE 0] RNTI 0x538b HORUS: defer handover completion until target random access
+1921.222266 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1921.256552 [PHY]    I [UE thread Synch] Running Initial Synch 
+1921.481470 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1921.481644 [PHY]    I [UE0] In synch, rx_offset 489296 samples
+1921.481653 [PHY]    I [UE 0] Measured Carrier Frequency offset -2 Hz
+1921.481657 [PHY]    A Initial sync successful, PCI: 1
+1921.481669 [PHY]    I Got synch: hw_slot_offset 32, carrier off -2 Hz
+1921.497410 [PHY]    A UE synchronized! decoded_frame_rx=708 skipped_frames=14
+1921.497517 [PHY]    I Resynchronizing RX by 489296 samples
+1921.507776 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1921.512565 [MAC]    I Initialization of 4-Step CFRA procedure
+1921.513583 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1921.537436 [NR_MAC] I PRACH scheduler: Selected RO Frame 723, Slot 19, Symbol 0, Fdm 0
+1921.537783 [PHY]    I PRACH [UE 0] in frame.slot 723.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1921.548847 [PHY]    I [UE 0] RAR-Msg2 decoded
+1921.548986 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1921.548993 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1921.548997 [NR_MAC] A [UE 0][RAPROC][724.10] Found RAR with the intended RAPID 63
+1921.549014 [NR_MAC] A [UE 0][724.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1921.549063 [NR_RRC] I [UE 0] RNTI 0x538b HORUS: target random access succeeded; submit handover completion
+1921.549073 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1921.549078 [NR_RRC] I [UE 0] RNTI 0x538b  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1927.524755 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1927.527317 [NR_RRC] I [UE 0] RNTI 0x8510 HORUS: defer handover completion until target random access
+1927.559086 [PHY]    I [UE thread Synch] Running Initial Synch 
+1927.904707 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1927.905198 [PHY]    I [UE0] In synch, rx_offset 335696 samples
+1927.905206 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1927.905209 [PHY]    A Initial sync successful, PCI: 0
+1927.905222 [PHY]    I Got synch: hw_slot_offset 22, carrier off 2 Hz
+1927.925638 [PHY]    A UE synchronized! decoded_frame_rx=954 skipped_frames=16
+1927.925660 [PHY]    I Resynchronizing RX by 335696 samples
+1927.934519 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1927.940425 [MAC]    I Initialization of 4-Step CFRA procedure
+1927.940478 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1927.973111 [NR_MAC] I PRACH scheduler: Selected RO Frame 971, Slot 19, Symbol 0, Fdm 0
+1927.973315 [PHY]    I PRACH [UE 0] in frame.slot 971.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1927.991087 [PHY]    I [UE 0] RAR-Msg2 decoded
+1927.991132 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1927.991138 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1927.991173 [NR_MAC] A [UE 0][RAPROC][972.10] Found RAR with the intended RAPID 63
+1927.991193 [NR_MAC] A [UE 0][972.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1927.991280 [NR_RRC] I [UE 0] RNTI 0x8510 HORUS: target random access succeeded; submit handover completion
+1927.991296 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1927.991301 [NR_RRC] I [UE 0] RNTI 0x8510  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1933.631728 [NR_RRC] I [UE 0] RNTI 0x82ba HORUS: defer handover completion until target random access
+1933.632227 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1933.674272 [PHY]    I [UE thread Synch] Running Initial Synch 
+1933.937004 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1933.937161 [PHY]    I [UE0] In synch, rx_offset 827216 samples
+1933.937167 [PHY]    I [UE 0] Measured Carrier Frequency offset 0 Hz
+1933.937170 [PHY]    A Initial sync successful, PCI: 1
+1933.937186 [PHY]    I Got synch: hw_slot_offset 54, carrier off 0 Hz
+1933.955930 [PHY]    A UE synchronized! decoded_frame_rx=186 skipped_frames=16
+1933.955986 [PHY]    I Resynchronizing RX by 827216 samples
+1933.980952 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1933.983322 [MAC]    I Initialization of 4-Step CFRA procedure
+1933.983344 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1934.011318 [NR_MAC] I PRACH scheduler: Selected RO Frame 203, Slot 19, Symbol 8, Fdm 0
+1934.011720 [PHY]    I PRACH [UE 0] in frame.slot 203.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1934.022065 [PHY]    I [UE 0] RAR-Msg2 decoded
+1934.022098 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1934.022103 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1934.022107 [NR_MAC] A [UE 0][RAPROC][204.10] Found RAR with the intended RAPID 63
+1934.022121 [NR_MAC] A [UE 0][204.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1934.022208 [NR_RRC] I [UE 0] RNTI 0x82ba HORUS: target random access succeeded; submit handover completion
+1934.022229 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1934.022233 [NR_RRC] I [UE 0] RNTI 0x82ba  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1940.184902 [NR_RRC] I [UE 0] RNTI 0x9e89 HORUS: defer handover completion until target random access
+1940.188047 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1940.218001 [PHY]    I [UE thread Synch] Running Initial Synch 
+1940.456394 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1940.457371 [PHY]    I [UE0] In synch, rx_offset 427856 samples
+1940.457381 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1940.457384 [PHY]    A Initial sync successful, PCI: 0
+1940.457398 [PHY]    I Got synch: hw_slot_offset 28, carrier off 2 Hz
+1940.483921 [PHY]    A UE synchronized! decoded_frame_rx=458 skipped_frames=14
+1940.483938 [PHY]    I Resynchronizing RX by 427856 samples
+1940.496182 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1940.505325 [MAC]    I Initialization of 4-Step CFRA procedure
+1940.505350 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 8 fdm 0 slot 19 format 162
+1940.537527 [NR_MAC] I PRACH scheduler: Selected RO Frame 473, Slot 19, Symbol 8, Fdm 0
+1940.537743 [PHY]    I PRACH [UE 0] in frame.slot 473.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1940.558806 [PHY]    I [UE 0] RAR-Msg2 decoded
+1940.558831 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got BI RAR subPDU 5 ms
+1940.558836 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 0113] Got RAPID RAR subPDU
+1940.558840 [NR_MAC] A [UE 0][RAPROC][474.10] Found RAR with the intended RAPID 63
+1940.558854 [NR_MAC] A [UE 0][474.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1940.559105 [NR_RRC] I [UE 0] RNTI 0x9e89 HORUS: target random access succeeded; submit handover completion
+1940.559127 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1940.559133 [NR_RRC] I [UE 0] RNTI 0x9e89  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1946.283499 [NR_RRC] I [UE 0] RNTI 0x08f7 HORUS: defer handover completion until target random access
+1946.284499 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+1946.316073 [PHY]    I [UE thread Synch] Running Initial Synch 
+1946.541078 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 1
+1946.541312 [PHY]    I [UE0] In synch, rx_offset 489296 samples
+1946.541316 [PHY]    I [UE 0] Measured Carrier Frequency offset -2 Hz
+1946.541319 [PHY]    A Initial sync successful, PCI: 1
+1946.541333 [PHY]    I Got synch: hw_slot_offset 32, carrier off -2 Hz
+1946.558399 [PHY]    A UE synchronized! decoded_frame_rx=732 skipped_frames=16
+1946.558419 [PHY]    I Resynchronizing RX by 489296 samples
+1946.569020 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1946.575201 [MAC]    I Initialization of 4-Step CFRA procedure
+1946.575243 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 0 fdm 0 slot 19 format 162
+1946.603243 [NR_MAC] I PRACH scheduler: Selected RO Frame 749, Slot 19, Symbol 0, Fdm 0
+1946.603427 [PHY]    I PRACH [UE 0] in frame.slot 749.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1946.613949 [PHY]    I [UE 0] RAR-Msg2 decoded
+1946.613970 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got BI RAR subPDU 5 ms
+1946.613975 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010b] Got RAPID RAR subPDU
+1946.613977 [NR_MAC] A [UE 0][RAPROC][750.10] Found RAR with the intended RAPID 63
+1946.613991 [NR_MAC] A [UE 0][750.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1946.614061 [NR_RRC] I [UE 0] RNTI 0x08f7 HORUS: target random access succeeded; submit handover completion
+1946.614077 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1946.614082 [NR_RRC] I [UE 0] RNTI 0x08f7  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+1952.280446 [NR_RRC] I [UE 0] RNTI 0x5488 HORUS: defer handover completion until target random access
+1952.281214 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+1952.317142 [PHY]    I [UE thread Synch] Running Initial Synch 
+1952.545595 [PHY]    A Initial sync: pbch decoded sucessfully, ssb index 0
+1952.545667 [PHY]    I [UE0] In synch, rx_offset 765776 samples
+1952.545671 [PHY]    I [UE 0] Measured Carrier Frequency offset 2 Hz
+1952.545675 [PHY]    A Initial sync successful, PCI: 0
+1952.545689 [PHY]    I Got synch: hw_slot_offset 50, carrier off 2 Hz
+1952.580502 [PHY]    A UE synchronized! decoded_frame_rx=1006 skipped_frames=16
+1952.580638 [PHY]    I Resynchronizing RX by 765776 samples
+1952.604364 [PHY]    I max_pos_acc = 0, shiftForNextFrame = 0
+1952.612696 [MAC]    I Initialization of 4-Step CFRA procedure
+1952.612755 [NR_MAC] I [UE 0] selected PRACH occasion: start_symbol 4 fdm 0 slot 19 format 162
+1952.639708 [NR_MAC] I PRACH scheduler: Selected RO Frame 1023, Slot 19, Symbol 4, Fdm 0
+1952.639917 [PHY]    I PRACH [UE 0] in frame.slot 1023.19, placing PRACH in position 2828, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+1952.653246 [PHY]    I [UE 0] RAR-Msg2 decoded
+1952.653262 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got BI RAR subPDU 5 ms
+1952.653266 [NR_MAC] I [UE 0][RAPROC][RA-RNTI 010f] Got RAPID RAR subPDU
+1952.653269 [NR_MAC] A [UE 0][RAPROC][0.10] Found RAR with the intended RAPID 63
+1952.653284 [NR_MAC] A [UE 0][0.10][RAPROC] RA procedure succeeded. CFRA: RAR successfully received.
+1952.653317 [NR_RRC] I [UE 0] RNTI 0x5488 HORUS: target random access succeeded; submit handover completion
+1952.653329 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+1952.653335 [NR_RRC] I [UE 0] RNTI 0x5488  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)

@@ -1,0 +1,24 @@
+# Incremental finals layer on top of an ALREADY-BUILT horus/flexric image.
+#
+# Dockerfile (the from-scratch recipe) contains the identical finals step at its
+# end. This file exists because a from-scratch rebuild re-clones FlexRIC from
+# gitlab.eurecom.fr and recompiles everything (~30+ min on the demo machine, and
+# gitlab rate-limits); here we reuse the validated, KPM-soaked build tree inside
+# the existing image and only recompile the objects patch 4 touches + the new
+# xApp. Used by `make act-build`:
+#   docker tag horus/flexric:local horus/flexric:pre-finals   (once)
+#   docker build -f Dockerfile.finals -t horus/flexric:local .
+ARG BASE=horus/flexric:pre-finals
+FROM ${BASE}
+COPY patches/patch4_rc_ctrl_failure.py /tmp/patch4_rc_ctrl_failure.py
+COPY xapp_horus_rc.c /opt/flexric/examples/xApp/c/control/xapp_horus_rc.c
+COPY xapp_horus_rc.cmake /tmp/xapp_horus_rc.cmake
+RUN python3 /tmp/patch4_rc_ctrl_failure.py /opt/flexric \
+ && cat /tmp/xapp_horus_rc.cmake >> /opt/flexric/examples/xApp/c/control/CMakeLists.txt \
+ && cd /opt/flexric/build \
+ && cmake .. \
+ && make -j"$(nproc)" \
+ && make install \
+ && ldconfig \
+ && test -x /opt/flexric/build/examples/xApp/c/control/xapp_horus_rc \
+ && echo 'HORUS: built xapp_horus_rc + patched RIC'

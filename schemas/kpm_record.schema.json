@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Jupiter-Plantagenet/horus/schemas/kpm_record.schema.json",
+  "title": "KPM Record",
+  "description": "One per-UE telemetry record. Written as JSONL by the KPM xApp (live) or the twin (simulated). Frozen per issue #1 — changing this schema requires sign-off from both George and Raneem.",
+  "type": "object",
+  "required": ["ue_id", "serving_cell_id", "rsrp_dbm", "ts", "source"],
+  "additionalProperties": false,
+  "properties": {
+    "ue_id": {
+      "type": "string",
+      "description": "Stable UE identifier within the emitting stack (e.g. RNTI or IMSI-derived label)."
+    },
+    "serving_cell_id": {
+      "type": "string",
+      "description": "Serving cell identifier (NCI or short cell label; same convention live and twin)."
+    },
+    "rsrp_dbm": {
+      "type": "number",
+      "minimum": -156,
+      "maximum": -31,
+      "description": "SS-RSRP in dBm (3GPP range). Under NSA field data this is the LTE anchor RSRP — label in provenance docs, not here."
+    },
+    "rsrq_db": {
+      "type": ["number", "null"],
+      "description": "RSRQ in dB, if available."
+    },
+    "sinr_db": {
+      "type": ["number", "null"],
+      "description": "SINR in dB, if available."
+    },
+    "throughput_mbps": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "description": "DL throughput in Mbps over the reporting window, if available."
+    },
+    "prb_util": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Serving-cell PRB utilization, 0..1, if available."
+    },
+    "neighbors": {
+      "type": "array",
+      "description": "Neighbor measurements in the same window (empty if not reported).",
+      "items": {
+        "type": "object",
+        "required": ["cell_id", "rsrp_dbm"],
+        "additionalProperties": false,
+        "properties": {
+          "cell_id": { "type": "string" },
+          "rsrp_dbm": { "type": "number", "minimum": -156, "maximum": -31 }
+        }
+      }
+    },
+    "ts": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp of the measurement window end."
+    },
+    "source": {
+      "type": "string",
+      "enum": ["live", "twin"],
+      "description": "Which stack emitted this record."
+    }
+  }
+}

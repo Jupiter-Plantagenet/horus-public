@@ -1,0 +1,4026 @@
+{
+ "primary": {
+  "meta": {
+   "block": "primary",
+   "session": "t4-reverse",
+   "model": "/var/tmp/horus-results-v313/src-measured/working/evidence/t4-replay/neighbor-assumption-model.json",
+   "overrides": {},
+   "assumptions": {
+    "format": "horus-measured-twin-assumptions-v1",
+    "dt_s": 0.1,
+    "minimum_stable_support_s": 5.0,
+    "nominal_bandwidth_mhz": 20.0,
+    "n_prb": 100,
+    "scs_khz": 15.0,
+    "noise_figure_db": 7.0,
+    "load": 0.5,
+    "external_interference_dbm_per_re": -110.0,
+    "fading": "off",
+    "notes": "Explicit simulation assumptions, not fitted or validated by t4. Nominal 20 MHz LTE implies 18 MHz occupied resource bandwidth; raw BANDWIDTH was predominantly '20/10', not a complete PHY configuration. Missing cells are not assumed silent: an external-interference floor is declared and varied in sensitivity runs. It is not an independently measured interference estimate. No new admission criteria or promotion is defined."
+   },
+   "coverage": {
+    "route_duration_s": 2167.2000000000003,
+    "represented_duration_s": 2016.9,
+    "segment_count": 24,
+    "support_change_boundaries": 29,
+    "boundary_duration_s": 2.9000000000000004,
+    "represented_fraction": 0.9306478405315614,
+    "interpretation": "Only stable intervals with >=2 supported cells. Segment starts reset UE/controller; boundaries are not RLF/HO events."
+   },
+   "segments": 24,
+   "trace_sha256_mean_surface": "569554f816305a7dc682dcc51cad3b14c9496700535c3953768e69eebaa4ef58",
+   "specs": {
+    "v3": "dqn2:v3.14.24",
+    "a3_global": "a3:off=0,hys=2,ttt=0.0,k=4",
+    "cho_global": "cho:prep=-6,off=3,hys=1,ttt=0.0,k=8",
+    "cho_global_ext": "cho:prep=-6,off=3,hys=1,ttt=0,k=8",
+    "cho_mse": "mse:{\"base\": {\"exec_offset_db\": 3.0, \"hys_db\": 1.0, \"l3_k\": 8, \"prep_offset_db\": -6.0, \"ttt_s\": 0.0}, \"n_high\": 3, \"n_med\": 1, \"off_high\": 0.0, \"off_med\": 0.0, \"sf_high\": 0.25, \"sf_med\": 0.5, \"stat_off_db\": 0.0, \"t_eval_s\": 30.0}",
+    "cho_mro": "mro:{\"base\": {\"exec_offset_db\": 1.0, \"hys_db\": 2.0, \"l3_k\": 4, \"prep_offset_db\": -6.0, \"ttt_s\": 0.0}, \"hi\": 8.0, \"ho_budget\": 0.0, \"lo\": -1.0, \"period_s\": 10.0, \"short_s\": 5.0, \"step_db\": 0.5}",
+    "a3_stock": "a3"
+   }
+  },
+  "verdict": {
+   "episodes": 120,
+   "modes": [
+    "rayleigh",
+    "rician"
+   ],
+   "refs": {
+    "a3_global": {
+     "pass": true,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": true,
+       "diff": 2.6881433333333336,
+       "ci": [
+        2.2409317933529014,
+        3.1353548733137657
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.3776)",
+       "pass": true,
+       "diff": -3.0603891666666674,
+       "ci": [
+        -3.3635294828783007,
+        -2.757248850455034
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.18542166666666665,
+       "ci": [
+        -0.2206705215634876,
+        -0.1501728117698457
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.000495,
+       "ci": [
+        -0.0001951521110240235,
+        0.0011851521110240234
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0561)",
+       "pass": true,
+       "diff": -0.5473808333333332,
+       "ci": [
+        -0.6285454793506087,
+        -0.46621618731605774
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": true,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.0954 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.09541170833333334
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.3776)",
+        "pass": true,
+        "diff": -3.0603891666666674,
+        "ci": [
+         -3.3635294828783007,
+         -2.757248850455034
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.18542166666666665,
+        "ci": [
+         -0.2206705215634876,
+         -0.1501728117698457
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.000495,
+        "ci": [
+         -0.0001951521110240235,
+         0.0011851521110240234
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0561)",
+        "pass": true,
+        "diff": -0.5473808333333332,
+        "ci": [
+         -0.6285454793506087,
+         -0.46621618731605774
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    },
+    "cho_global": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.04579833333333337,
+       "ci": [
+        -0.07028837489741324,
+        -0.0213082917692535
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0873)",
+       "pass": true,
+       "diff": -0.1574191666666667,
+       "ci": [
+        -0.1786593171705952,
+        -0.1361790161627382
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        -0.000984259098123635,
+        0.000984259098123635
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.000495,
+       "ci": [
+        -0.0001951521110240235,
+        0.0011851521110240234
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.012139166666666668,
+       "ci": [
+        0.007596734745144333,
+        0.016681598588189003
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1228 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.122751125
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0873)",
+        "pass": true,
+        "diff": -0.1574191666666667,
+        "ci": [
+         -0.1786593171705952,
+         -0.1361790161627382
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         -0.000984259098123635,
+         0.000984259098123635
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.000495,
+        "ci": [
+         -0.0001951521110240235,
+         0.0011851521110240234
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.012139166666666668,
+        "ci": [
+         0.007596734745144333,
+         0.016681598588189003
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_global_ext": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.04579833333333337,
+       "ci": [
+        -0.07028837489741324,
+        -0.0213082917692535
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0873)",
+       "pass": true,
+       "diff": -0.1574191666666667,
+       "ci": [
+        -0.1786593171705952,
+        -0.1361790161627382
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        -0.000984259098123635,
+        0.000984259098123635
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.000495,
+       "ci": [
+        -0.0001951521110240235,
+        0.0011851521110240234
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.012139166666666668,
+       "ci": [
+        0.007596734745144333,
+        0.016681598588189003
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1228 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.122751125
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0873)",
+        "pass": true,
+        "diff": -0.1574191666666667,
+        "ci": [
+         -0.1786593171705952,
+         -0.1361790161627382
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         -0.000984259098123635,
+         0.000984259098123635
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.000495,
+        "ci": [
+         -0.0001951521110240235,
+         0.0011851521110240234
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.012139166666666668,
+        "ci": [
+         0.007596734745144333,
+         0.016681598588189003
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_mse": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.04586500000000003,
+       "ci": [
+        -0.07034947638358088,
+        -0.021380523616419175
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0873)",
+       "pass": true,
+       "diff": -0.1574191666666667,
+       "ci": [
+        -0.1786593171705952,
+        -0.1361790161627382
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        -0.000984259098123635,
+        0.000984259098123635
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.000495,
+       "ci": [
+        -0.0001951521110240235,
+        0.0011851521110240234
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.012139166666666668,
+       "ci": [
+        0.007596734745144333,
+        0.016681598588189003
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1228 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.12275179166666668
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0873)",
+        "pass": true,
+        "diff": -0.1574191666666667,
+        "ci": [
+         -0.1786593171705952,
+         -0.1361790161627382
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         -0.000984259098123635,
+         0.000984259098123635
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.000495,
+        "ci": [
+         -0.0001951521110240235,
+         0.0011851521110240234
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.012139166666666668,
+        "ci": [
+         0.007596734745144333,
+         0.016681598588189003
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_mro": {
+     "pass": true,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": true,
+       "diff": 0.42767583333333337,
+       "ci": [
+        0.31390108698074926,
+        0.5414505796859175
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.2089)",
+       "pass": true,
+       "diff": -1.3736375,
+       "ci": [
+        -1.514468911385607,
+        -1.2328060886143932
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0002475,
+       "ci": [
+        -0.0006037086799000575,
+        0.0010987086799000576
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.000495,
+       "ci": [
+        -0.0001951521110240235,
+        0.0011851521110240234
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.12444333333333334,
+       "ci": [
+        -0.1485228576004452,
+        -0.10036380906622148
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": true,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1180 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.11801638333333334
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.2089)",
+        "pass": true,
+        "diff": -1.3736375,
+        "ci": [
+         -1.514468911385607,
+         -1.2328060886143932
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0002475,
+        "ci": [
+         -0.0006037086799000575,
+         0.0010987086799000576
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.000495,
+        "ci": [
+         -0.0001951521110240235,
+         0.0011851521110240234
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.12444333333333334,
+        "ci": [
+         -0.1485228576004452,
+         -0.10036380906622148
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    }
+   },
+   "pass": false,
+   "non_inferiority_pass": false
+  },
+  "means_faded": {
+   "v3": {
+    "utility": 12.2293,
+    "ho_rate": 0.7155,
+    "fail_rate": 0.0005,
+    "rlf_rate": 0.0005,
+    "pp_rate": 0.0131,
+    "mean_se": 1.5383,
+    "mean_thr_mbps": 27.6892
+   },
+   "a3_global": {
+    "utility": 9.5412,
+    "ho_rate": 3.7758,
+    "fail_rate": 0.1859,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.5605,
+    "mean_se": 1.5694,
+    "mean_thr_mbps": 28.2489
+   },
+   "cho_global": {
+    "utility": 12.2751,
+    "ho_rate": 0.8729,
+    "fail_rate": 0.0005,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.001,
+    "mean_se": 1.5468,
+    "mean_thr_mbps": 27.8419
+   },
+   "cho_global_ext": {
+    "utility": 12.2751,
+    "ho_rate": 0.8729,
+    "fail_rate": 0.0005,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.001,
+    "mean_se": 1.5468,
+    "mean_thr_mbps": 27.8419
+   },
+   "cho_mse": {
+    "utility": 12.2752,
+    "ho_rate": 0.8729,
+    "fail_rate": 0.0005,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.001,
+    "mean_se": 1.5468,
+    "mean_thr_mbps": 27.842
+   },
+   "cho_mro": {
+    "utility": 11.8016,
+    "ho_rate": 2.0891,
+    "fail_rate": 0.0002,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.1376,
+    "mean_se": 1.5669,
+    "mean_thr_mbps": 28.2048
+   },
+   "a3_stock": {
+    "utility": 11.6876,
+    "ho_rate": 1.4188,
+    "fail_rate": 0.0868,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.025,
+    "mean_se": 1.5536,
+    "mean_thr_mbps": 27.9658
+   }
+  },
+  "off_episode": {
+   "a3_global": {
+    "utility": 12.5975,
+    "ho_rate": 0.476,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.5713,
+    "mean_thr_mbps": 28.28
+   },
+   "a3_stock": {
+    "utility": 12.3567,
+    "ho_rate": 0.4165,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.5394,
+    "mean_thr_mbps": 27.71
+   },
+   "cho_global": {
+    "utility": 12.3542,
+    "ho_rate": 0.4165,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.5391,
+    "mean_thr_mbps": 27.7
+   },
+   "cho_global_ext": {
+    "utility": 12.3542,
+    "ho_rate": 0.4165,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.5391,
+    "mean_thr_mbps": 27.7
+   },
+   "cho_mro": {
+    "utility": 12.4913,
+    "ho_rate": 0.476,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.5582,
+    "mean_thr_mbps": 28.05
+   },
+   "cho_mse": {
+    "utility": 12.3542,
+    "ho_rate": 0.4165,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.5391,
+    "mean_thr_mbps": 27.7
+   },
+   "v3": {
+    "utility": 12.5634,
+    "ho_rate": 0.476,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.5671,
+    "mean_thr_mbps": 28.21
+   }
+  }
+ },
+ "sens_serving_only": {
+  "meta": {
+   "block": "sens_serving_only",
+   "session": "t4-reverse",
+   "model": "/var/tmp/horus-results-v313/src-measured/working/evidence/t4-calibration/primary-model.json",
+   "overrides": {},
+   "assumptions": {
+    "format": "horus-measured-twin-assumptions-v1",
+    "dt_s": 0.1,
+    "minimum_stable_support_s": 5.0,
+    "nominal_bandwidth_mhz": 20.0,
+    "n_prb": 100,
+    "scs_khz": 15.0,
+    "noise_figure_db": 7.0,
+    "load": 0.5,
+    "external_interference_dbm_per_re": -110.0,
+    "fading": "off",
+    "notes": "Explicit simulation assumptions, not fitted or validated by t4. Nominal 20 MHz LTE implies 18 MHz occupied resource bandwidth; raw BANDWIDTH was predominantly '20/10', not a complete PHY configuration. Missing cells are not assumed silent: an external-interference floor is declared and varied in sensitivity runs. It is not an independently measured interference estimate. No new admission criteria or promotion is defined."
+   },
+   "coverage": {
+    "route_duration_s": 2167.2000000000003,
+    "represented_duration_s": 1370.1000000000001,
+    "segment_count": 22,
+    "support_change_boundaries": 34,
+    "boundary_duration_s": 3.4000000000000004,
+    "represented_fraction": 0.6321982281284607,
+    "interpretation": "Only stable intervals with >=2 supported cells. Segment starts reset UE/controller; boundaries are not RLF/HO events."
+   },
+   "segments": 22,
+   "trace_sha256_mean_surface": "20772f5bc5d7fe951d36442558bc86feda0abe175a242025c8988cc763921acd",
+   "specs": {
+    "v3": "dqn2:v3.14.24",
+    "a3_global": "a3:off=0,hys=2,ttt=0.0,k=4",
+    "cho_global": "cho:prep=-6,off=3,hys=1,ttt=0.0,k=8",
+    "cho_global_ext": "cho:prep=-6,off=3,hys=1,ttt=0,k=8",
+    "cho_mse": "mse:{\"base\": {\"exec_offset_db\": 3.0, \"hys_db\": 1.0, \"l3_k\": 8, \"prep_offset_db\": -6.0, \"ttt_s\": 0.0}, \"n_high\": 3, \"n_med\": 1, \"off_high\": 0.0, \"off_med\": 0.0, \"sf_high\": 0.25, \"sf_med\": 0.5, \"stat_off_db\": 0.0, \"t_eval_s\": 30.0}",
+    "cho_mro": "mro:{\"base\": {\"exec_offset_db\": 1.0, \"hys_db\": 2.0, \"l3_k\": 4, \"prep_offset_db\": -6.0, \"ttt_s\": 0.0}, \"hi\": 8.0, \"ho_budget\": 0.0, \"lo\": -1.0, \"period_s\": 10.0, \"short_s\": 5.0, \"step_db\": 0.5}",
+    "a3_stock": "a3"
+   }
+  },
+  "verdict": {
+   "episodes": 40,
+   "modes": [
+    "rayleigh",
+    "rician"
+   ],
+   "refs": {
+    "a3_global": {
+     "pass": true,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": true,
+       "diff": 4.951315,
+       "ci": [
+        3.6668559378888923,
+        6.235774062111108
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.7625)",
+       "pass": true,
+       "diff": -6.71447,
+       "ci": [
+        -7.6510895815738085,
+        -5.777850418426192
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0314)",
+       "pass": true,
+       "diff": -0.3142125,
+       "ci": [
+        -0.41968592968715657,
+        -0.20873907031284344
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0944)",
+       "pass": true,
+       "diff": -0.9163600000000001,
+       "ci": [
+        -1.1493875638286508,
+        -0.6833324361713494
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": true,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.0580 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.058009725
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.7625)",
+        "pass": true,
+        "diff": -6.71447,
+        "ci": [
+         -7.6510895815738085,
+         -5.777850418426192
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0314)",
+        "pass": true,
+        "diff": -0.3142125,
+        "ci": [
+         -0.41968592968715657,
+         -0.20873907031284344
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0944)",
+        "pass": true,
+        "diff": -0.9163600000000001,
+        "ci": [
+         -1.1493875638286508,
+         -0.6833324361713494
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    },
+    "cho_global": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": 0.020700000000000073,
+       "ci": [
+        -0.05112021605223873,
+        0.09252021605223887
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.1605)",
+       "pass": true,
+       "diff": -0.69411,
+       "ci": [
+        -0.824128452443034,
+        -0.564091547556966
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.026279999999999998,
+       "ci": [
+        0.011133100022708368,
+        0.041426899977291626
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1073 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.107315875
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.1605)",
+        "pass": true,
+        "diff": -0.69411,
+        "ci": [
+         -0.824128452443034,
+         -0.564091547556966
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.026279999999999998,
+        "ci": [
+         0.011133100022708368,
+         0.041426899977291626
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_global_ext": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": 0.020700000000000073,
+       "ci": [
+        -0.05112021605223873,
+        0.09252021605223887
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.1605)",
+       "pass": true,
+       "diff": -0.69411,
+       "ci": [
+        -0.824128452443034,
+        -0.564091547556966
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.026279999999999998,
+       "ci": [
+        0.011133100022708368,
+        0.041426899977291626
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1073 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.107315875
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.1605)",
+        "pass": true,
+        "diff": -0.69411,
+        "ci": [
+         -0.824128452443034,
+         -0.564091547556966
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.026279999999999998,
+        "ci": [
+         0.011133100022708368,
+         0.041426899977291626
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_mse": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": 0.02143750000000009,
+       "ci": [
+        -0.050834774852578125,
+        0.09370977485257831
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.1607)",
+       "pass": true,
+       "diff": -0.6963,
+       "ci": [
+        -0.827099579589405,
+        -0.565500420410595
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.026279999999999998,
+       "ci": [
+        0.011133100022708368,
+        0.041426899977291626
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1073 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.1073085
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.1607)",
+        "pass": true,
+        "diff": -0.6963,
+        "ci": [
+         -0.827099579589405,
+         -0.565500420410595
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.026279999999999998,
+        "ci": [
+         0.011133100022708368,
+         0.041426899977291626
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_mro": {
+     "pass": true,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": true,
+       "diff": 0.7797325,
+       "ci": [
+        0.5284119033018903,
+        1.03105309669811
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.3882)",
+       "pass": true,
+       "diff": -2.9713149999999997,
+       "ci": [
+        -3.383409342210338,
+        -2.5592206577896612
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.1434125,
+       "ci": [
+        -0.19254176549777655,
+        -0.09428323450222345
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": true,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.0997 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.09972555
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.3882)",
+        "pass": true,
+        "diff": -2.9713149999999997,
+        "ci": [
+         -3.383409342210338,
+         -2.5592206577896612
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.1434125,
+        "ci": [
+         -0.19254176549777655,
+         -0.09428323450222345
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    }
+   },
+   "pass": false,
+   "non_inferiority_pass": false
+  },
+  "means_faded": {
+   "v3": {
+    "utility": 10.7523,
+    "ho_rate": 0.9109,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0274,
+    "mean_se": 1.3666,
+    "mean_thr_mbps": 24.5988
+   },
+   "a3_global": {
+    "utility": 5.801,
+    "ho_rate": 7.6254,
+    "fail_rate": 0.3142,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.9437,
+    "mean_se": 1.4241,
+    "mean_thr_mbps": 25.6353
+   },
+   "cho_global": {
+    "utility": 10.7316,
+    "ho_rate": 1.605,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0011,
+    "mean_se": 1.3832,
+    "mean_thr_mbps": 24.8978
+   },
+   "cho_global_ext": {
+    "utility": 10.7316,
+    "ho_rate": 1.605,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0011,
+    "mean_se": 1.3832,
+    "mean_thr_mbps": 24.8978
+   },
+   "cho_mse": {
+    "utility": 10.7309,
+    "ho_rate": 1.6072,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0011,
+    "mean_se": 1.3832,
+    "mean_thr_mbps": 24.8978
+   },
+   "cho_mro": {
+    "utility": 9.9726,
+    "ho_rate": 3.8822,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.1708,
+    "mean_se": 1.4157,
+    "mean_thr_mbps": 25.483
+   },
+   "a3_stock": {
+    "utility": 9.5047,
+    "ho_rate": 2.8312,
+    "fail_rate": 0.1708,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0405,
+    "mean_se": 1.3923,
+    "mean_thr_mbps": 25.0615
+   }
+  },
+  "off_episode": {
+   "a3_global": {
+    "utility": 11.0006,
+    "ho_rate": 0.5693,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.3778,
+    "mean_thr_mbps": 24.8
+   },
+   "a3_stock": {
+    "utility": 10.6779,
+    "ho_rate": 0.3503,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.3299,
+    "mean_thr_mbps": 23.94
+   },
+   "cho_global": {
+    "utility": 10.6746,
+    "ho_rate": 0.3503,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.3295,
+    "mean_thr_mbps": 23.93
+   },
+   "cho_global_ext": {
+    "utility": 10.6746,
+    "ho_rate": 0.3503,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.3295,
+    "mean_thr_mbps": 23.93
+   },
+   "cho_mro": {
+    "utility": 10.7157,
+    "ho_rate": 0.4379,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.3378,
+    "mean_thr_mbps": 24.08
+   },
+   "cho_mse": {
+    "utility": 10.6746,
+    "ho_rate": 0.3503,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.3295,
+    "mean_thr_mbps": 23.93
+   },
+   "v3": {
+    "utility": 10.7173,
+    "ho_rate": 0.4379,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0,
+    "mean_se": 1.338,
+    "mean_thr_mbps": 24.08
+   }
+  }
+ },
+ "sens_load_025": {
+  "meta": {
+   "block": "sens_load_025",
+   "session": "t4-reverse",
+   "model": "/var/tmp/horus-results-v313/src-measured/working/evidence/t4-replay/neighbor-assumption-model.json",
+   "overrides": {
+    "load": 0.25
+   },
+   "assumptions": {
+    "format": "horus-measured-twin-assumptions-v1",
+    "dt_s": 0.1,
+    "minimum_stable_support_s": 5.0,
+    "nominal_bandwidth_mhz": 20.0,
+    "n_prb": 100,
+    "scs_khz": 15.0,
+    "noise_figure_db": 7.0,
+    "load": 0.25,
+    "external_interference_dbm_per_re": -110.0,
+    "fading": "off",
+    "notes": "Explicit simulation assumptions, not fitted or validated by t4. Nominal 20 MHz LTE implies 18 MHz occupied resource bandwidth; raw BANDWIDTH was predominantly '20/10', not a complete PHY configuration. Missing cells are not assumed silent: an external-interference floor is declared and varied in sensitivity runs. It is not an independently measured interference estimate. No new admission criteria or promotion is defined."
+   },
+   "coverage": {
+    "route_duration_s": 2167.2000000000003,
+    "represented_duration_s": 2016.9,
+    "segment_count": 24,
+    "support_change_boundaries": 29,
+    "boundary_duration_s": 2.9000000000000004,
+    "represented_fraction": 0.9306478405315614,
+    "interpretation": "Only stable intervals with >=2 supported cells. Segment starts reset UE/controller; boundaries are not RLF/HO events."
+   },
+   "segments": 24,
+   "trace_sha256_mean_surface": "2e05da54611596bbefc366910cd7abf9cc9c9bf538ed458a6bce9d1d084d9a3a",
+   "specs": {
+    "v3": "dqn2:v3.14.24",
+    "a3_global": "a3:off=0,hys=2,ttt=0.0,k=4",
+    "cho_global": "cho:prep=-6,off=3,hys=1,ttt=0.0,k=8",
+    "cho_global_ext": "cho:prep=-6,off=3,hys=1,ttt=0,k=8",
+    "cho_mse": "mse:{\"base\": {\"exec_offset_db\": 3.0, \"hys_db\": 1.0, \"l3_k\": 8, \"prep_offset_db\": -6.0, \"ttt_s\": 0.0}, \"n_high\": 3, \"n_med\": 1, \"off_high\": 0.0, \"off_med\": 0.0, \"sf_high\": 0.25, \"sf_med\": 0.5, \"stat_off_db\": 0.0, \"t_eval_s\": 30.0}",
+    "cho_mro": "mro:{\"base\": {\"exec_offset_db\": 1.0, \"hys_db\": 2.0, \"l3_k\": 4, \"prep_offset_db\": -6.0, \"ttt_s\": 0.0}, \"hi\": 8.0, \"ho_budget\": 0.0, \"lo\": -1.0, \"period_s\": 10.0, \"short_s\": 5.0, \"step_db\": 0.5}",
+    "a3_stock": "a3"
+   }
+  },
+  "verdict": {
+   "episodes": 40,
+   "modes": [
+    "rayleigh",
+    "rician"
+   ],
+   "refs": {
+    "a3_global": {
+     "pass": true,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": true,
+       "diff": 1.8222675,
+       "ci": [
+        1.2668655912339128,
+        2.377669408766087
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.3667)",
+       "pass": true,
+       "diff": -2.902715,
+       "ci": [
+        -3.415427343033694,
+        -2.390002656966306
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.0416425,
+       "ci": [
+        -0.05773451539679858,
+        -0.02555048460320142
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0541)",
+       "pass": true,
+       "diff": -0.52359,
+       "ci": [
+        -0.6659392277201114,
+        -0.3812407722798886
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": true,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1423 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.14229725000000001
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.3667)",
+        "pass": true,
+        "diff": -2.902715,
+        "ci": [
+         -3.415427343033694,
+         -2.390002656966306
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.0416425,
+        "ci": [
+         -0.05773451539679858,
+         -0.02555048460320142
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0541)",
+        "pass": true,
+        "diff": -0.52359,
+        "ci": [
+         -0.6659392277201114,
+         -0.3812407722798886
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    },
+    "cho_global": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.04250750000000005,
+       "ci": [
+        -0.08788632276239956,
+        0.0028713227623994586
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0898)",
+       "pass": true,
+       "diff": -0.13312249999999998,
+       "ci": [
+        -0.1751205578492112,
+        -0.09112444215078873
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.0170925,
+       "ci": [
+        0.00878126405246321,
+        0.02540373594753679
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1609 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.160945
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0898)",
+        "pass": true,
+        "diff": -0.13312249999999998,
+        "ci": [
+         -0.1751205578492112,
+         -0.09112444215078873
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.0170925,
+        "ci": [
+         0.00878126405246321,
+         0.02540373594753679
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_global_ext": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.04250750000000005,
+       "ci": [
+        -0.08788632276239956,
+        0.0028713227623994586
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0898)",
+       "pass": true,
+       "diff": -0.13312249999999998,
+       "ci": [
+        -0.1751205578492112,
+        -0.09112444215078873
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.0170925,
+       "ci": [
+        0.00878126405246321,
+        0.02540373594753679
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1609 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.160945
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0898)",
+        "pass": true,
+        "diff": -0.13312249999999998,
+        "ci": [
+         -0.1751205578492112,
+         -0.09112444215078873
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.0170925,
+        "ci": [
+         0.00878126405246321,
+         0.02540373594753679
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_mse": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.04266750000000012,
+       "ci": [
+        -0.08798470510578965,
+        0.0026497051057894003
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0898)",
+       "pass": true,
+       "diff": -0.13312249999999998,
+       "ci": [
+        -0.1751205578492112,
+        -0.09112444215078873
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.0170925,
+       "ci": [
+        0.00878126405246321,
+        0.02540373594753679
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1609 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.16094659999999997
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0898)",
+        "pass": true,
+        "diff": -0.13312249999999998,
+        "ci": [
+         -0.1751205578492112,
+         -0.09112444215078873
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.0170925,
+        "ci": [
+         0.00878126405246321,
+         0.02540373594753679
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_mro": {
+     "pass": true,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": true,
+       "diff": 0.3601974999999998,
+       "ci": [
+        0.16857892436635794,
+        0.5518160756336417
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.2060)",
+       "pass": true,
+       "diff": -1.2955425,
+       "ci": [
+        -1.5315848479271659,
+        -1.0595001520728342
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.11155499999999999,
+       "ci": [
+        -0.14854774419791827,
+        -0.0745622558020817
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": true,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1569 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.15691795000000003
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.2060)",
+        "pass": true,
+        "diff": -1.2955425,
+        "ci": [
+         -1.5315848479271659,
+         -1.0595001520728342
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.11155499999999999,
+        "ci": [
+         -0.14854774419791827,
+         -0.0745622558020817
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    }
+   },
+   "pass": false,
+   "non_inferiority_pass": false
+  },
+  "means_faded": {
+   "v3": {
+    "utility": 16.052,
+    "ho_rate": 0.7645,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0178,
+    "mean_se": 2.0124,
+    "mean_thr_mbps": 36.2238
+   },
+   "a3_global": {
+    "utility": 14.2297,
+    "ho_rate": 3.6673,
+    "fail_rate": 0.0416,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.5414,
+    "mean_se": 2.0499,
+    "mean_thr_mbps": 36.8985
+   },
+   "cho_global": {
+    "utility": 16.0945,
+    "ho_rate": 0.8977,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0007,
+    "mean_se": 2.0184,
+    "mean_thr_mbps": 36.3305
+   },
+   "cho_global_ext": {
+    "utility": 16.0945,
+    "ho_rate": 0.8977,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0007,
+    "mean_se": 2.0184,
+    "mean_thr_mbps": 36.3305
+   },
+   "cho_mse": {
+    "utility": 16.0947,
+    "ho_rate": 0.8977,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0007,
+    "mean_se": 2.0184,
+    "mean_thr_mbps": 36.331
+   },
+   "cho_mro": {
+    "utility": 15.6918,
+    "ho_rate": 2.0601,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.1294,
+    "mean_se": 2.0435,
+    "mean_thr_mbps": 36.782
+   },
+   "a3_stock": {
+    "utility": 15.8875,
+    "ho_rate": 1.3789,
+    "fail_rate": 0.0208,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0245,
+    "mean_se": 2.0294,
+    "mean_thr_mbps": 36.5288
+   }
+  },
+  "off_episode": {}
+ },
+ "sens_load_075": {
+  "meta": {
+   "block": "sens_load_075",
+   "session": "t4-reverse",
+   "model": "/var/tmp/horus-results-v313/src-measured/working/evidence/t4-replay/neighbor-assumption-model.json",
+   "overrides": {
+    "load": 0.75
+   },
+   "assumptions": {
+    "format": "horus-measured-twin-assumptions-v1",
+    "dt_s": 0.1,
+    "minimum_stable_support_s": 5.0,
+    "nominal_bandwidth_mhz": 20.0,
+    "n_prb": 100,
+    "scs_khz": 15.0,
+    "noise_figure_db": 7.0,
+    "load": 0.75,
+    "external_interference_dbm_per_re": -110.0,
+    "fading": "off",
+    "notes": "Explicit simulation assumptions, not fitted or validated by t4. Nominal 20 MHz LTE implies 18 MHz occupied resource bandwidth; raw BANDWIDTH was predominantly '20/10', not a complete PHY configuration. Missing cells are not assumed silent: an external-interference floor is declared and varied in sensitivity runs. It is not an independently measured interference estimate. No new admission criteria or promotion is defined."
+   },
+   "coverage": {
+    "route_duration_s": 2167.2000000000003,
+    "represented_duration_s": 2016.9,
+    "segment_count": 24,
+    "support_change_boundaries": 29,
+    "boundary_duration_s": 2.9000000000000004,
+    "represented_fraction": 0.9306478405315614,
+    "interpretation": "Only stable intervals with >=2 supported cells. Segment starts reset UE/controller; boundaries are not RLF/HO events."
+   },
+   "segments": 24,
+   "trace_sha256_mean_surface": "331f25d9ce8b181dcdbb01216948563e731d5ed83c85af4d0d3c420aa05bd878",
+   "specs": {
+    "v3": "dqn2:v3.14.24",
+    "a3_global": "a3:off=0,hys=2,ttt=0.0,k=4",
+    "cho_global": "cho:prep=-6,off=3,hys=1,ttt=0.0,k=8",
+    "cho_global_ext": "cho:prep=-6,off=3,hys=1,ttt=0,k=8",
+    "cho_mse": "mse:{\"base\": {\"exec_offset_db\": 3.0, \"hys_db\": 1.0, \"l3_k\": 8, \"prep_offset_db\": -6.0, \"ttt_s\": 0.0}, \"n_high\": 3, \"n_med\": 1, \"off_high\": 0.0, \"off_med\": 0.0, \"sf_high\": 0.25, \"sf_med\": 0.5, \"stat_off_db\": 0.0, \"t_eval_s\": 30.0}",
+    "cho_mro": "mro:{\"base\": {\"exec_offset_db\": 1.0, \"hys_db\": 2.0, \"l3_k\": 4, \"prep_offset_db\": -6.0, \"ttt_s\": 0.0}, \"hi\": 8.0, \"ho_budget\": 0.0, \"lo\": -1.0, \"period_s\": 10.0, \"short_s\": 5.0, \"step_db\": 0.5}",
+    "a3_stock": "a3"
+   }
+  },
+  "verdict": {
+   "episodes": 40,
+   "modes": [
+    "rayleigh",
+    "rician"
+   ],
+   "refs": {
+    "a3_global": {
+     "pass": true,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": true,
+       "diff": 3.6934974999999994,
+       "ci": [
+        2.6093243876837646,
+        4.777670612316234
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.3633)",
+       "pass": true,
+       "diff": -2.9213075,
+       "ci": [
+        -3.420247606208874,
+        -2.4223673937911263
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0448)",
+       "pass": true,
+       "diff": -0.44177,
+       "ci": [
+        -0.578250009959612,
+        -0.30528999004038804
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.005942500000000001,
+       "ci": [
+        0.0015310971308465059,
+        0.010353902869153496
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0421)",
+       "pass": true,
+       "diff": -0.41202500000000003,
+       "ci": [
+        -0.5199195004852897,
+        -0.3041304995147104
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": true,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.0646 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.064596875
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.3633)",
+        "pass": true,
+        "diff": -2.9213075,
+        "ci": [
+         -3.420247606208874,
+         -2.4223673937911263
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0448)",
+        "pass": true,
+        "diff": -0.44177,
+        "ci": [
+         -0.578250009959612,
+         -0.30528999004038804
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.005942500000000001,
+        "ci": [
+         0.0015310971308465059,
+         0.010353902869153496
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0421)",
+        "pass": true,
+        "diff": -0.41202500000000003,
+        "ci": [
+         -0.5199195004852897,
+         -0.3041304995147104
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    },
+    "cho_global": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.063665,
+       "ci": [
+        -0.11193477639695384,
+        -0.015395223603046147
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0895)",
+       "pass": true,
+       "diff": -0.183695,
+       "ci": [
+        -0.22422298184705985,
+        -0.14316701815294014
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0037150000000000004,
+       "ci": [
+        -0.0020542374742654823,
+        0.009484237474265484
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0029725000000000003,
+       "ci": [
+        -0.0026392394318562225,
+        0.008584239431856223
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.008175,
+       "ci": [
+        0.0029054780457718546,
+        0.013444521954228145
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1022 (1% of ref utility)",
+        "pass": false,
+        "delta": 0.1021685
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0895)",
+        "pass": true,
+        "diff": -0.183695,
+        "ci": [
+         -0.22422298184705985,
+         -0.14316701815294014
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0037150000000000004,
+        "ci": [
+         -0.0020542374742654823,
+         0.009484237474265484
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0029725000000000003,
+        "ci": [
+         -0.0026392394318562225,
+         0.008584239431856223
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.008175,
+        "ci": [
+         0.0029054780457718546,
+         0.013444521954228145
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    },
+    "cho_global_ext": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.063665,
+       "ci": [
+        -0.11193477639695384,
+        -0.015395223603046147
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0895)",
+       "pass": true,
+       "diff": -0.183695,
+       "ci": [
+        -0.22422298184705985,
+        -0.14316701815294014
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0037150000000000004,
+       "ci": [
+        -0.0020542374742654823,
+        0.009484237474265484
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0029725000000000003,
+       "ci": [
+        -0.0026392394318562225,
+        0.008584239431856223
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.008175,
+       "ci": [
+        0.0029054780457718546,
+        0.013444521954228145
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1022 (1% of ref utility)",
+        "pass": false,
+        "delta": 0.1021685
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0895)",
+        "pass": true,
+        "diff": -0.183695,
+        "ci": [
+         -0.22422298184705985,
+         -0.14316701815294014
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0037150000000000004,
+        "ci": [
+         -0.0020542374742654823,
+         0.009484237474265484
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0029725000000000003,
+        "ci": [
+         -0.0026392394318562225,
+         0.008584239431856223
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.008175,
+        "ci": [
+         0.0029054780457718546,
+         0.013444521954228145
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    },
+    "cho_mse": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.06378500000000002,
+       "ci": [
+        -0.11201624801768982,
+        -0.015553751982310224
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0895)",
+       "pass": true,
+       "diff": -0.183695,
+       "ci": [
+        -0.22422298184705985,
+        -0.14316701815294014
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0037150000000000004,
+       "ci": [
+        -0.0020542374742654823,
+        0.009484237474265484
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0029725000000000003,
+       "ci": [
+        -0.0026392394318562225,
+        0.008584239431856223
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.008175,
+       "ci": [
+        0.0029054780457718546,
+        0.013444521954228145
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1022 (1% of ref utility)",
+        "pass": false,
+        "delta": 0.1021697
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0895)",
+        "pass": true,
+        "diff": -0.183695,
+        "ci": [
+         -0.22422298184705985,
+         -0.14316701815294014
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0037150000000000004,
+        "ci": [
+         -0.0020542374742654823,
+         0.009484237474265484
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0029725000000000003,
+        "ci": [
+         -0.0026392394318562225,
+         0.008584239431856223
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.008175,
+        "ci": [
+         0.0029054780457718546,
+         0.013444521954228145
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    },
+    "cho_mro": {
+     "pass": true,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": true,
+       "diff": 0.3919574999999999,
+       "ci": [
+        0.19942360464154765,
+        0.5844913953584522
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.2061)",
+       "pass": true,
+       "diff": -1.3490875,
+       "ci": [
+        -1.581636443789492,
+        -1.116538556210508
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.005942500000000001,
+       "ci": [
+        0.0010346247721167677,
+        0.010850375227883234
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.005942500000000001,
+       "ci": [
+        0.0015310971308465059,
+        0.010353902869153496
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.12047249999999998,
+       "ci": [
+        -0.159550524014632,
+        -0.08139447598536799
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": true,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.0976 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.09761227500000001
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.2061)",
+        "pass": true,
+        "diff": -1.3490875,
+        "ci": [
+         -1.581636443789492,
+         -1.116538556210508
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.005942500000000001,
+        "ci": [
+         0.0010346247721167677,
+         0.010850375227883234
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.005942500000000001,
+        "ci": [
+         0.0015310971308465059,
+         0.010353902869153496
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.12047249999999998,
+        "ci": [
+         -0.159550524014632,
+         -0.08139447598536799
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    }
+   },
+   "pass": false,
+   "non_inferiority_pass": false
+  },
+  "means_faded": {
+   "v3": {
+    "utility": 10.1532,
+    "ho_rate": 0.7117,
+    "fail_rate": 0.0067,
+    "rlf_rate": 0.0059,
+    "pp_rate": 0.0089,
+    "mean_se": 1.2849,
+    "mean_thr_mbps": 23.128
+   },
+   "a3_global": {
+    "utility": 6.4597,
+    "ho_rate": 3.6331,
+    "fail_rate": 0.4485,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.4209,
+    "mean_se": 1.3115,
+    "mean_thr_mbps": 23.6075
+   },
+   "cho_global": {
+    "utility": 10.2168,
+    "ho_rate": 0.8954,
+    "fail_rate": 0.003,
+    "rlf_rate": 0.003,
+    "pp_rate": 0.0007,
+    "mean_se": 1.2952,
+    "mean_thr_mbps": 23.3137
+   },
+   "cho_global_ext": {
+    "utility": 10.2168,
+    "ho_rate": 0.8954,
+    "fail_rate": 0.003,
+    "rlf_rate": 0.003,
+    "pp_rate": 0.0007,
+    "mean_se": 1.2952,
+    "mean_thr_mbps": 23.3137
+   },
+   "cho_mse": {
+    "utility": 10.217,
+    "ho_rate": 0.8954,
+    "fail_rate": 0.003,
+    "rlf_rate": 0.003,
+    "pp_rate": 0.0007,
+    "mean_se": 1.2952,
+    "mean_thr_mbps": 23.314
+   },
+   "cho_mro": {
+    "utility": 9.7612,
+    "ho_rate": 2.0608,
+    "fail_rate": 0.0007,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.1294,
+    "mean_se": 1.3125,
+    "mean_thr_mbps": 23.626
+   },
+   "a3_stock": {
+    "utility": 9.0666,
+    "ho_rate": 1.3803,
+    "fail_rate": 0.2067,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0134,
+    "mean_se": 1.3001,
+    "mean_thr_mbps": 23.4012
+   }
+  },
+  "off_episode": {}
+ },
+ "sens_ext_m120": {
+  "meta": {
+   "block": "sens_ext_m120",
+   "session": "t4-reverse",
+   "model": "/var/tmp/horus-results-v313/src-measured/working/evidence/t4-replay/neighbor-assumption-model.json",
+   "overrides": {
+    "external_interference_dbm_per_re": -120.0
+   },
+   "assumptions": {
+    "format": "horus-measured-twin-assumptions-v1",
+    "dt_s": 0.1,
+    "minimum_stable_support_s": 5.0,
+    "nominal_bandwidth_mhz": 20.0,
+    "n_prb": 100,
+    "scs_khz": 15.0,
+    "noise_figure_db": 7.0,
+    "load": 0.5,
+    "external_interference_dbm_per_re": -120.0,
+    "fading": "off",
+    "notes": "Explicit simulation assumptions, not fitted or validated by t4. Nominal 20 MHz LTE implies 18 MHz occupied resource bandwidth; raw BANDWIDTH was predominantly '20/10', not a complete PHY configuration. Missing cells are not assumed silent: an external-interference floor is declared and varied in sensitivity runs. It is not an independently measured interference estimate. No new admission criteria or promotion is defined."
+   },
+   "coverage": {
+    "route_duration_s": 2167.2000000000003,
+    "represented_duration_s": 2016.9,
+    "segment_count": 24,
+    "support_change_boundaries": 29,
+    "boundary_duration_s": 2.9000000000000004,
+    "represented_fraction": 0.9306478405315614,
+    "interpretation": "Only stable intervals with >=2 supported cells. Segment starts reset UE/controller; boundaries are not RLF/HO events."
+   },
+   "segments": 24,
+   "trace_sha256_mean_surface": "536850cb1808ae5ffdcc96fddce110b47f10f14febb1b0877415ad309a17f480",
+   "specs": {
+    "v3": "dqn2:v3.14.24",
+    "a3_global": "a3:off=0,hys=2,ttt=0.0,k=4",
+    "cho_global": "cho:prep=-6,off=3,hys=1,ttt=0.0,k=8",
+    "cho_global_ext": "cho:prep=-6,off=3,hys=1,ttt=0,k=8",
+    "cho_mse": "mse:{\"base\": {\"exec_offset_db\": 3.0, \"hys_db\": 1.0, \"l3_k\": 8, \"prep_offset_db\": -6.0, \"ttt_s\": 0.0}, \"n_high\": 3, \"n_med\": 1, \"off_high\": 0.0, \"off_med\": 0.0, \"sf_high\": 0.25, \"sf_med\": 0.5, \"stat_off_db\": 0.0, \"t_eval_s\": 30.0}",
+    "cho_mro": "mro:{\"base\": {\"exec_offset_db\": 1.0, \"hys_db\": 2.0, \"l3_k\": 4, \"prep_offset_db\": -6.0, \"ttt_s\": 0.0}, \"hi\": 8.0, \"ho_budget\": 0.0, \"lo\": -1.0, \"period_s\": 10.0, \"short_s\": 5.0, \"step_db\": 0.5}",
+    "a3_stock": "a3"
+   }
+  },
+  "verdict": {
+   "episodes": 40,
+   "modes": [
+    "rayleigh",
+    "rician"
+   ],
+   "refs": {
+    "a3_global": {
+     "pass": true,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": true,
+       "diff": 2.498652500000001,
+       "ci": [
+        1.7410655616128201,
+        3.2562394383871816
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.3651)",
+       "pass": true,
+       "diff": -2.92503,
+       "ci": [
+        -3.435041718140538,
+        -2.415018281859462
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.18368749999999998,
+       "ci": [
+        -0.2432739839738742,
+        -0.12410101602612575
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0499)",
+       "pass": true,
+       "diff": -0.4863925,
+       "ci": [
+        -0.618537469577044,
+        -0.354247530422956
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": true,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.0981 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.09805760000000001
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.3651)",
+        "pass": true,
+        "diff": -2.92503,
+        "ci": [
+         -3.435041718140538,
+         -2.415018281859462
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.18368749999999998,
+        "ci": [
+         -0.2432739839738742,
+         -0.12410101602612575
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0499)",
+        "pass": true,
+        "diff": -0.4863925,
+        "ci": [
+         -0.618537469577044,
+         -0.354247530422956
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    },
+    "cho_global": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.05251749999999955,
+       "ci": [
+        -0.10389871387135513,
+        -0.0011362861286439707
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0898)",
+       "pass": true,
+       "diff": -0.1717975,
+       "ci": [
+        -0.22325390518329746,
+        -0.12034109481670253
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.011890000000000001,
+       "ci": [
+        0.004493298775699593,
+        0.019286701224300408
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1236 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.1235693
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0898)",
+        "pass": true,
+        "diff": -0.1717975,
+        "ci": [
+         -0.22325390518329746,
+         -0.12034109481670253
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.011890000000000001,
+        "ci": [
+         0.004493298775699593,
+         0.019286701224300408
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_global_ext": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.05251749999999955,
+       "ci": [
+        -0.10389871387135513,
+        -0.0011362861286439707
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0898)",
+       "pass": true,
+       "diff": -0.1717975,
+       "ci": [
+        -0.22325390518329746,
+        -0.12034109481670253
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.011890000000000001,
+       "ci": [
+        0.004493298775699593,
+        0.019286701224300408
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1236 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.1235693
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0898)",
+        "pass": true,
+        "diff": -0.1717975,
+        "ci": [
+         -0.22325390518329746,
+         -0.12034109481670253
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.011890000000000001,
+        "ci": [
+         0.004493298775699593,
+         0.019286701224300408
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_mse": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.05265749999999958,
+       "ci": [
+        -0.10399722169022732,
+        -0.0013177783097718387
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0898)",
+       "pass": true,
+       "diff": -0.1717975,
+       "ci": [
+        -0.22325390518329746,
+        -0.12034109481670253
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.011890000000000001,
+       "ci": [
+        0.004493298775699593,
+        0.019286701224300408
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1236 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.12357069999999999
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0898)",
+        "pass": true,
+        "diff": -0.1717975,
+        "ci": [
+         -0.22325390518329746,
+         -0.12034109481670253
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.011890000000000001,
+        "ci": [
+         0.004493298775699593,
+         0.019286701224300408
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_mro": {
+     "pass": true,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": true,
+       "diff": 0.39126750000000043,
+       "ci": [
+        0.19297237419371266,
+        0.5895626258062883
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.2061)",
+       "pass": true,
+       "diff": -1.33496,
+       "ci": [
+        -1.571024053604763,
+        -1.0988959463952368
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.0007425,
+       "ci": [
+        -0.0022443480081272946,
+        0.0007593480081272947
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.11675749999999999,
+       "ci": [
+        -0.15568459364584675,
+        -0.07783040635415323
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": true,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1191 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.11913145
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.2061)",
+        "pass": true,
+        "diff": -1.33496,
+        "ci": [
+         -1.571024053604763,
+         -1.0988959463952368
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.0007425,
+        "ci": [
+         -0.0022443480081272946,
+         0.0007593480081272947
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0,
+        "ci": [
+         0.0,
+         0.0
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.11675749999999999,
+        "ci": [
+         -0.15568459364584675,
+         -0.07783040635415323
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    }
+   },
+   "pass": false,
+   "non_inferiority_pass": false
+  },
+  "means_faded": {
+   "v3": {
+    "utility": 12.3044,
+    "ho_rate": 0.7259,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0126,
+    "mean_se": 1.5475,
+    "mean_thr_mbps": 27.855
+   },
+   "a3_global": {
+    "utility": 9.8058,
+    "ho_rate": 3.6509,
+    "fail_rate": 0.1837,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.499,
+    "mean_se": 1.5808,
+    "mean_thr_mbps": 28.4548
+   },
+   "cho_global": {
+    "utility": 12.3569,
+    "ho_rate": 0.8977,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0007,
+    "mean_se": 1.5574,
+    "mean_thr_mbps": 28.0335
+   },
+   "cho_global_ext": {
+    "utility": 12.3569,
+    "ho_rate": 0.8977,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0007,
+    "mean_se": 1.5574,
+    "mean_thr_mbps": 28.0335
+   },
+   "cho_mse": {
+    "utility": 12.3571,
+    "ho_rate": 0.8977,
+    "fail_rate": 0.0,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0007,
+    "mean_se": 1.5574,
+    "mean_thr_mbps": 28.0338
+   },
+   "cho_mro": {
+    "utility": 11.9131,
+    "ho_rate": 2.0608,
+    "fail_rate": 0.0007,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.1294,
+    "mean_se": 1.5779,
+    "mean_thr_mbps": 28.402
+   },
+   "a3_stock": {
+    "utility": 11.8001,
+    "ho_rate": 1.3744,
+    "fail_rate": 0.087,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0216,
+    "mean_se": 1.5652,
+    "mean_thr_mbps": 28.1738
+   }
+  },
+  "off_episode": {}
+ },
+ "sens_ext_m100": {
+  "meta": {
+   "block": "sens_ext_m100",
+   "session": "t4-reverse",
+   "model": "/var/tmp/horus-results-v313/src-measured/working/evidence/t4-replay/neighbor-assumption-model.json",
+   "overrides": {
+    "external_interference_dbm_per_re": -100.0
+   },
+   "assumptions": {
+    "format": "horus-measured-twin-assumptions-v1",
+    "dt_s": 0.1,
+    "minimum_stable_support_s": 5.0,
+    "nominal_bandwidth_mhz": 20.0,
+    "n_prb": 100,
+    "scs_khz": 15.0,
+    "noise_figure_db": 7.0,
+    "load": 0.5,
+    "external_interference_dbm_per_re": -100.0,
+    "fading": "off",
+    "notes": "Explicit simulation assumptions, not fitted or validated by t4. Nominal 20 MHz LTE implies 18 MHz occupied resource bandwidth; raw BANDWIDTH was predominantly '20/10', not a complete PHY configuration. Missing cells are not assumed silent: an external-interference floor is declared and varied in sensitivity runs. It is not an independently measured interference estimate. No new admission criteria or promotion is defined."
+   },
+   "coverage": {
+    "route_duration_s": 2167.2000000000003,
+    "represented_duration_s": 2016.9,
+    "segment_count": 24,
+    "support_change_boundaries": 29,
+    "boundary_duration_s": 2.9000000000000004,
+    "represented_fraction": 0.9306478405315614,
+    "interpretation": "Only stable intervals with >=2 supported cells. Segment starts reset UE/controller; boundaries are not RLF/HO events."
+   },
+   "segments": 24,
+   "trace_sha256_mean_surface": "6df2adbe8aa4570b840b65598a0a9e5cc05d5f47099562e6ab961a0cec088fca",
+   "specs": {
+    "v3": "dqn2:v3.14.24",
+    "a3_global": "a3:off=0,hys=2,ttt=0.0,k=4",
+    "cho_global": "cho:prep=-6,off=3,hys=1,ttt=0.0,k=8",
+    "cho_global_ext": "cho:prep=-6,off=3,hys=1,ttt=0,k=8",
+    "cho_mse": "mse:{\"base\": {\"exec_offset_db\": 3.0, \"hys_db\": 1.0, \"l3_k\": 8, \"prep_offset_db\": -6.0, \"ttt_s\": 0.0}, \"n_high\": 3, \"n_med\": 1, \"off_high\": 0.0, \"off_med\": 0.0, \"sf_high\": 0.25, \"sf_med\": 0.5, \"stat_off_db\": 0.0, \"t_eval_s\": 30.0}",
+    "cho_mro": "mro:{\"base\": {\"exec_offset_db\": 1.0, \"hys_db\": 2.0, \"l3_k\": 4, \"prep_offset_db\": -6.0, \"ttt_s\": 0.0}, \"hi\": 8.0, \"ho_budget\": 0.0, \"lo\": -1.0, \"period_s\": 10.0, \"short_s\": 5.0, \"step_db\": 0.5}",
+    "a3_stock": "a3"
+   }
+  },
+  "verdict": {
+   "episodes": 40,
+   "modes": [
+    "rayleigh",
+    "rician"
+   ],
+   "refs": {
+    "a3_global": {
+     "pass": true,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": true,
+       "diff": 2.980595,
+       "ci": [
+        2.10478979971256,
+        3.8564002002874402
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.3646)",
+       "pass": true,
+       "diff": -2.9012249999999997,
+       "ci": [
+        -3.403000423685439,
+        -2.3994495763145602
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0287)",
+       "pass": true,
+       "diff": -0.284835,
+       "ci": [
+        -0.37437067223058285,
+        -0.19529932776941716
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0007425,
+       "ci": [
+        -0.0007593480081272949,
+        0.002244348008127295
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0476)",
+       "pass": true,
+       "diff": -0.46259749999999994,
+       "ci": [
+        -0.5856548867150795,
+        -0.3395401132849204
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": true,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.0854 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.08540420000000001
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.3646)",
+        "pass": true,
+        "diff": -2.9012249999999997,
+        "ci": [
+         -3.403000423685439,
+         -2.3994495763145602
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0287)",
+        "pass": true,
+        "diff": -0.284835,
+        "ci": [
+         -0.37437067223058285,
+         -0.19529932776941716
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0007425,
+        "ci": [
+         -0.0007593480081272949,
+         0.002244348008127295
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0476)",
+        "pass": true,
+        "diff": -0.46259749999999994,
+        "ci": [
+         -0.5856548867150795,
+         -0.3395401132849204
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    },
+    "cho_global": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.056837499999999874,
+       "ci": [
+        -0.10348955800880685,
+        -0.010185441991192895
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0896)",
+       "pass": true,
+       "diff": -0.151715,
+       "ci": [
+        -0.20030888690289453,
+        -0.10312111309710545
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0007425,
+       "ci": [
+        -0.0026500028218859784,
+        0.004135002821885978
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.0007425,
+       "ci": [
+        -0.0033659159826474575,
+        0.0018809159826474573
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.0126325,
+       "ci": [
+        0.005861579329233455,
+        0.019403420670766544
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1158 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.11577852500000001
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0896)",
+        "pass": true,
+        "diff": -0.151715,
+        "ci": [
+         -0.20030888690289453,
+         -0.10312111309710545
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0007425,
+        "ci": [
+         -0.0026500028218859784,
+         0.004135002821885978
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.0007425,
+        "ci": [
+         -0.0033659159826474575,
+         0.0018809159826474573
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.0126325,
+        "ci": [
+         0.005861579329233455,
+         0.019403420670766544
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_global_ext": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.056837499999999874,
+       "ci": [
+        -0.10348955800880685,
+        -0.010185441991192895
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0896)",
+       "pass": true,
+       "diff": -0.151715,
+       "ci": [
+        -0.20030888690289453,
+        -0.10312111309710545
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0007425,
+       "ci": [
+        -0.0026500028218859784,
+        0.004135002821885978
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.0007425,
+       "ci": [
+        -0.0033659159826474575,
+        0.0018809159826474573
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.0126325,
+       "ci": [
+        0.005861579329233455,
+        0.019403420670766544
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1158 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.11577852500000001
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0896)",
+        "pass": true,
+        "diff": -0.151715,
+        "ci": [
+         -0.20030888690289453,
+         -0.10312111309710545
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0007425,
+        "ci": [
+         -0.0026500028218859784,
+         0.004135002821885978
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.0007425,
+        "ci": [
+         -0.0033659159826474575,
+         0.0018809159826474573
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.0126325,
+        "ci": [
+         0.005861579329233455,
+         0.019403420670766544
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_mse": {
+     "pass": false,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": false,
+       "diff": -0.05695749999999986,
+       "ci": [
+        -0.10356755280863425,
+        -0.010347447191365468
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.0896)",
+       "pass": true,
+       "diff": -0.151715,
+       "ci": [
+        -0.20030888690289453,
+        -0.10312111309710545
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0007425,
+       "ci": [
+        -0.0026500028218859784,
+        0.004135002821885978
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.0007425,
+       "ci": [
+        -0.0033659159826474575,
+        0.0018809159826474573
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": false,
+       "diff": 0.0126325,
+       "ci": [
+        0.005861579329233455,
+        0.019403420670766544
+       ],
+       "modes_regressed": [
+        "rayleigh"
+       ]
+      }
+     ],
+     "non_inferiority": {
+      "pass": false,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1158 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.115779725
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.0896)",
+        "pass": true,
+        "diff": -0.151715,
+        "ci": [
+         -0.20030888690289453,
+         -0.10312111309710545
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0007425,
+        "ci": [
+         -0.0026500028218859784,
+         0.004135002821885978
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.0007425,
+        "ci": [
+         -0.0033659159826474575,
+         0.0018809159826474573
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": false,
+        "diff": 0.0126325,
+        "ci": [
+         0.005861579329233455,
+         0.019403420670766544
+        ],
+        "modes_regressed": [
+         "rayleigh"
+        ]
+       }
+      ]
+     }
+    },
+    "cho_mro": {
+     "pass": true,
+     "checks": [
+      {
+       "check": "utility: pooled 95% CI > 0",
+       "pass": true,
+       "diff": 0.3908949999999999,
+       "ci": [
+        0.1985685648023497,
+        0.5832214351976501
+       ]
+      },
+      {
+       "check": "guardrail ho_rate (margin 0.2061)",
+       "pass": true,
+       "diff": -1.316365,
+       "ci": [
+        -1.547036366922347,
+        -1.085693633077653
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail fail_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.001485,
+       "ci": [
+        -0.0015186960162545903,
+        0.00448869601625459
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail rlf_rate (margin 0.0200)",
+       "pass": true,
+       "diff": 0.0007425,
+       "ci": [
+        -0.0007593480081272949,
+        0.002244348008127295
+       ],
+       "modes_regressed": []
+      },
+      {
+       "check": "guardrail pp_rate (margin 0.0200)",
+       "pass": true,
+       "diff": -0.11601499999999998,
+       "ci": [
+        -0.15387770464108036,
+        -0.07815229535891961
+       ],
+       "modes_regressed": []
+      }
+     ],
+     "non_inferiority": {
+      "pass": true,
+      "checks": [
+       {
+        "check": "non-inferiority: pooled 95% CI lower bound > -0.1113 (1% of ref utility)",
+        "pass": true,
+        "delta": 0.1113012
+       },
+       {
+        "check": "guardrail ho_rate (margin 0.2061)",
+        "pass": true,
+        "diff": -1.316365,
+        "ci": [
+         -1.547036366922347,
+         -1.085693633077653
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail fail_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.001485,
+        "ci": [
+         -0.0015186960162545903,
+         0.00448869601625459
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail rlf_rate (margin 0.0200)",
+        "pass": true,
+        "diff": 0.0007425,
+        "ci": [
+         -0.0007593480081272949,
+         0.002244348008127295
+        ],
+        "modes_regressed": []
+       },
+       {
+        "check": "guardrail pp_rate (margin 0.0200)",
+        "pass": true,
+        "diff": -0.11601499999999998,
+        "ci": [
+         -0.15387770464108036,
+         -0.07815229535891961
+        ],
+        "modes_regressed": []
+       }
+      ]
+     }
+    }
+   },
+   "pass": false,
+   "non_inferiority_pass": false
+  },
+  "means_faded": {
+   "v3": {
+    "utility": 11.521,
+    "ho_rate": 0.7445,
+    "fail_rate": 0.0022,
+    "rlf_rate": 0.0007,
+    "pp_rate": 0.0134,
+    "mean_se": 1.4531,
+    "mean_thr_mbps": 26.1567
+   },
+   "a3_global": {
+    "utility": 8.5404,
+    "ho_rate": 3.6457,
+    "fail_rate": 0.2871,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.476,
+    "mean_se": 1.4826,
+    "mean_thr_mbps": 26.6875
+   },
+   "cho_global": {
+    "utility": 11.5779,
+    "ho_rate": 0.8962,
+    "fail_rate": 0.0015,
+    "rlf_rate": 0.0015,
+    "pp_rate": 0.0007,
+    "mean_se": 1.4622,
+    "mean_thr_mbps": 26.3193
+   },
+   "cho_global_ext": {
+    "utility": 11.5779,
+    "ho_rate": 0.8962,
+    "fail_rate": 0.0015,
+    "rlf_rate": 0.0015,
+    "pp_rate": 0.0007,
+    "mean_se": 1.4622,
+    "mean_thr_mbps": 26.3193
+   },
+   "cho_mse": {
+    "utility": 11.578,
+    "ho_rate": 0.8962,
+    "fail_rate": 0.0015,
+    "rlf_rate": 0.0015,
+    "pp_rate": 0.0007,
+    "mean_se": 1.4622,
+    "mean_thr_mbps": 26.3195
+   },
+   "cho_mro": {
+    "utility": 11.1301,
+    "ho_rate": 2.0608,
+    "fail_rate": 0.0007,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.1294,
+    "mean_se": 1.4813,
+    "mean_thr_mbps": 26.6643
+   },
+   "a3_stock": {
+    "utility": 10.8418,
+    "ho_rate": 1.3789,
+    "fail_rate": 0.1234,
+    "rlf_rate": 0.0,
+    "pp_rate": 0.0201,
+    "mean_se": 1.4692,
+    "mean_thr_mbps": 26.4462
+   }
+  },
+  "off_episode": {}
+ }
+}

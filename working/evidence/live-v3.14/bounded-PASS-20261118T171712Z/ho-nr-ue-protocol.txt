@@ -1,0 +1,56 @@
+Error 3: No such process trying to get nice value of thread 3210876608 
+46142.001096 [RLC]    I Activated srb0 for UE 0
+46144.378318 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+46144.560676 [PHY]    E synch Failed: 
+46144.572430 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+46144.744941 [PHY]    E synch Failed: 
+46144.759306 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+46144.932907 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 51
+46144.932976 [NR_RRC] I [UE 0] RNTI 0x0000 BCCH update: phyCellID 0->0, arfcn_ssb 0->641280
+46144.939034 [PHY]    A UE synchronized! decoded_frame_rx=182 skipped_frames=40
+46144.939055 [PHY]    I Resynchronizing RX by 0 samples
+46144.940411 [NR_MAC] I [UE 0] Initial cell selection: dl_frequency=3600120 kHz (from command-line, band=78, scs=1)
+46144.940417 [NR_MAC] I Initial cell selection: uplink_frequency=3600120 kHz (from dl_frequency=3600120 kHz)
+46144.959875 [RLC]    I Added srb 1 to UE 0
+46144.959938 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+    <pdcp-Parameters>
+    </pdcp-Parameters>
+46145.087519 [RLC]    I Added srb 2 to UE 0
+46145.088293 [RLC]    I Added drb 1 to UE 0
+46145.088328 [RLC]    I Added DRB to UE 0
+46145.088333 [NR_RRC] I [UE 0] RNTI 0x7912 RRCReconfiguration includes radio Bearer Configuration
+46145.088378 [PDCP]   I Added DRB 1 to UE ID 0
+46145.088398 [NR_RRC] I [UE 0] RNTI 0x7912 RRCReconfiguration includes Measurement Configuration
+46145.088445 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+46145.088448 [NR_RRC] I [UE 0] RNTI 0x7912  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+46145.088707 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+46336.644332 [NR_RRC] I [UE 0] RNTI 0xf024 RRCReconfiguration includes radio Bearer Configuration
+46336.644385 [PDCP]   I SRB 2 re-established
+46336.644389 [PDCP]   I DRB 1 re-established
+46336.644394 [NR_RRC] I [UE 0] RNTI 0xf024 RRCReconfiguration includes Measurement Configuration
+46336.644401 [NR_RRC] I [UE 0] RNTI 0xf024 HORUS: defer handover completion until target random access
+46336.644559 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+46336.644670 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3619200000->3649440000 Hz, ul 3619200000->3649440000 Hz (from dl_frequency=3630360 kHz, target_Nid_cell=1)
+46336.655117 [NR_PHY] W Starting re-sync detection for target Nid_cell 1
+46336.655124 [NR_PHY] I Starting cell search with center freq: 3649440000, bandwidth: 106. Scanning for 1 number of GSCN.
+46336.725061 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 59
+46336.728858 [PHY]    A UE synchronized! decoded_frame_rx=846 skipped_frames=18
+46336.728880 [PHY]    I Resynchronizing RX by 827216 samples
+46336.752241 [NR_RRC] I [UE 0] RNTI 0xf024 HORUS: target random access succeeded; submit handover completion
+46336.752267 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+46336.752272 [NR_RRC] I [UE 0] RNTI 0xf024  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+46361.035699 [NR_RRC] I [UE 0] RNTI 0x6cc7 RRCReconfiguration includes radio Bearer Configuration
+46361.035749 [PDCP]   I SRB 2 re-established
+46361.035753 [PDCP]   I DRB 1 re-established
+46361.035758 [NR_RRC] I [UE 0] RNTI 0x6cc7 RRCReconfiguration includes Measurement Configuration
+46361.035765 [NR_RRC] I [UE 0] RNTI 0x6cc7 HORUS: defer handover completion until target random access
+46361.035965 [MAC]    I [UE 0] Applying CellGroupConfig from gNodeB
+46361.036086 [NR_PHY] I [UE 0] SYNC REQ: RF frequency change: dl 3649440000->3619200000 Hz, ul 3649440000->3619200000 Hz (from dl_frequency=3600120 kHz, target_Nid_cell=0)
+46361.043834 [NR_PHY] W Starting re-sync detection for target Nid_cell 0
+46361.043841 [NR_PHY] I Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+46361.113944 [NR_PHY] I Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 90 dB, PSS Corr Average: 62
+46361.116227 [PHY]    A UE synchronized! decoded_frame_rx=156 skipped_frames=18
+46361.116249 [PHY]    I Resynchronizing RX by 673616 samples
+46361.138573 [NR_RRC] I [UE 0] RNTI 0x6cc7 HORUS: target random access succeeded; submit handover completion
+46361.138598 [NR_RRC] I rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+46361.138602 [NR_RRC] I [UE 0] RNTI 0x6cc7  Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)

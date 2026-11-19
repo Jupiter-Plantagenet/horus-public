@@ -1,0 +1,44 @@
+{
+ "fedavg": {
+  "server_round": 3,
+  "gain_vs_default": 0.18309178948402405,
+  "oracle_gain": 0.4644186198711395,
+  "frac_non_default": 0.9984856247901917,
+  "chosen_fail_rate": 0.003603614866733551,
+  "default_fail_rate": 0.0007738093263469636,
+  "chosen_ho_rate": 2.878504991531372,
+  "default_ho_rate": 2.9609057903289795
+ },
+ "median": {
+  "server_round": 3,
+  "gain_vs_default": 0.18395403027534485,
+  "oracle_gain": 0.4644186198711395,
+  "frac_non_default": 0.9989103674888611,
+  "chosen_fail_rate": 0.003251763293519616,
+  "default_fail_rate": 0.0007738093263469636,
+  "chosen_ho_rate": 2.8632583618164062,
+  "default_ho_rate": 2.9609057903289795
+ }
+}
+{
+ "fedavg": {
+  "server_round": 3,
+  "gain_vs_default": -14.965734481811523,
+  "oracle_gain": 0.4644186198711395,
+  "frac_non_default": 0.9997366070747375,
+  "chosen_fail_rate": 0.0684942752122879,
+  "default_fail_rate": 0.0007738093263469636,
+  "chosen_ho_rate": 11.406265258789062,
+  "default_ho_rate": 2.9609057903289795
+ },
+ "median": {
+  "server_round": 3,
+  "gain_vs_default": 0.1726008653640747,
+  "oracle_gain": 0.4644186198711395,
+  "frac_non_default": 0.9984908699989319,
+  "chosen_fail_rate": 0.0043694875203073025,
+  "default_fail_rate": 0.0007738093263469636,
+  "chosen_ho_rate": 2.8453123569488525,
+  "default_ho_rate": 2.9609057903289795
+ }
+}

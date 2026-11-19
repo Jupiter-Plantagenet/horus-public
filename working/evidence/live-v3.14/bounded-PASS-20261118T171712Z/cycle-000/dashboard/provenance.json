@@ -1,0 +1,9 @@
+{
+  "input": "calibrated TwinSim observation replay; independent online inference",
+  "rsrp": "lap-1 calibrated mean RSRP on t4 reverse route; conditional neighbour identities",
+  "sinr": "TwinSim PHY with declared load, noise and interference assumptions",
+  "network": "single simulated walker; controller-dependent simulated connection/HO state",
+  "control": "emulated OAI ordinary F1 handover; not native CHO",
+  "scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+  "final_performance_verdict": null
+}

@@ -1,0 +1,948 @@
+#     cell_type =  "CELL_MACRO_GNB";
+    nr_cellid = 12345678L;
+    tr_s_preference = "f1";
+# HORUS: E2 agent on the CU (RC Style 3 "Connected Mode Mobility" / Handover
+# carries the F1 Setup so the RIC learns both DUs' cells). The RIC address is
+Error 3: No such process trying to get nice value of thread 2436372160 
+54077.715958 [GNB_APP] I gNB 0: neighbour_list has 2 serving cell(s)
+54077.716024 [GNB_APP] I Cell 0 has 1 neighbours configured
+54077.716052 [GNB_APP] I Neighbour[0]: cellId 1, PLMN 208.99, gNB 2816, PCI 1, SCS 1, SSB ARFCN 621312, TAC 1
+54077.716066 [GNB_APP] I Cell 1 has 1 neighbours configured
+54077.716089 [GNB_APP] I Neighbour[0]: cellId 0, PLMN 208.99, gNB 3584, PCI 0, SCS 1, SSB ARFCN 641280, TAC 1
+54077.716355 [GNB_APP] I gNB 0 SIB2 config: q_Hyst=0 dB, cellReselPrio=0, q_RxLevMin=-56 dBm, t_ReselectionNR=1 s
+54080.194768 [NR_RRC] I Received F1 Setup Request from gNB_DU 3584 (du-rfsim) on assoc_id 206
+54080.194843 [NR_RRC] I Added cell 12345678 to DU cells array (total cells = 1)
+54080.194845 [NR_RRC] I DU 3584: Added cell 12345678
+54080.194856 [NR_RRC] I DU 3584: added SIB2 to F1 Setup Response (cell 12345678)
+54080.194858 [NR_RRC] I DU 3584 (du-rfsim): sending F1 Setup Response
+54080.195570 [NR_RRC] I cell PLMN 208.99 Cell ID 12345678 is in service
+54083.390858 [NR_RRC] A [--] (cellID 0, UE ID 1 RNTI 476d) Create UE context: CU UE ID 1 DU UE ID 18285 (rnti: 476d, random ue id 36bd8eded3000000)
+54083.390865 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+54083.390875 [PDCP]   W HORUS LAB: CU SRB 1 t-Reordering explicitly set to 1000 ms
+54083.390880 [NR_RRC] A [DL] (cellID bc614e, UE ID 1 RNTI 476d) Send RRC Setup
+54083.402129 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 476d) Received RRCSetupComplete (RRC_CONNECTED reached)
+54083.417722 [NR_RRC] A [DL] (cellID bc614e, UE ID 1 RNTI 476d) Send DL Information Transfer [42 bytes]
+54083.431791 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 476d) Received RRC UL Information Transfer [24 bytes]
+54083.432685 [NR_RRC] A [DL] (cellID bc614e, UE ID 1 RNTI 476d) Send DL Information Transfer [21 bytes]
+54083.446119 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 476d) Received RRC UL Information Transfer [60 bytes]
+54083.476900 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 476d) Received UE capabilities
+54083.477048 [NR_RRC] A [DL] (cellID bc614e, UE ID 1 RNTI 476d) Send DL Information Transfer [53 bytes]
+54083.490056 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 476d) Received RRC UL Information Transfer [13 bytes]
+54083.490400 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 476d) Received RRC UL Information Transfer [35 bytes]
+54083.497865 [NR_RRC] A [--] (cellID bc614e, UE ID 1 RNTI 476d) selecting CU-UP ID 3584 based on exact NSSAI match (1:0xffffff)
+54083.497874 [E1AP]   I UE 1: set up PDU session ID 1 (1 bearers)
+54083.497925 [PDCP]   I Added DRB 1 to UE ID 1
+54083.498069 [PDCP]   W HORUS LAB: CU SRB 2 t-Reordering explicitly set to 1000 ms
+54083.499227 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+54083.499248 [PDCP]   I DRB 1 re-established
+54083.499468 [NR_RRC] A [DL] (cellID bc614e, UE ID 1 RNTI 476d) Generate RRCReconfiguration (bytes 313, xid 3)
+54083.499492 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+54083.513900 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 476d) Received RRCReconfigurationComplete
+54084.356119 [NR_RRC] I Received F1 Setup Request from gNB_DU 3585 (du-rfsim) on assoc_id 212
+54084.356224 [NR_RRC] I Added cell 11111111 to DU cells array (total cells = 1)
+54084.356251 [NR_RRC] I DU 3585: Added cell 11111111
+54084.356269 [NR_RRC] I DU 3585: added SIB2 to F1 Setup Response (cell 11111111)
+54084.356275 [NR_RRC] I DU 3585 (du-rfsim): sending F1 Setup Response
+54084.356833 [NR_RRC] I cell PLMN 208.99 Cell ID 11111111 is in service
+54275.159749 [NR_RRC] A Handover triggered for UE 1/RNTI 476d towards cell 11111111/assoc_id 212/PCI 1
+54275.161667 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+54275.161689 [PDCP]   I DRB 1 re-established
+54275.161839 [PDCP]   I SRB 2 re-established
+54275.161843 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+54275.162357 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+54275.162361 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+54275.385469 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 69f8) Received RRCReconfigurationComplete
+54275.385491 [NR_RRC] A handover for UE 1/RNTI 69f8 complete!
+54275.385515 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+54299.534392 [NR_RRC] A Handover triggered for UE 1/RNTI 69f8 towards cell 12345678/assoc_id 206/PCI 0
+54299.536261 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+54299.536290 [PDCP]   I DRB 1 re-established
+54299.536421 [PDCP]   I SRB 2 re-established
+54299.536427 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+54299.536957 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+54299.536961 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+54299.754934 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI c257) Received RRCReconfigurationComplete
+54299.754955 [NR_RRC] A handover for UE 1/RNTI c257 complete!
+54299.754977 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+54464.427549 [NR_RRC] A Handover triggered for UE 1/RNTI c257 towards cell 11111111/assoc_id 212/PCI 1
+54464.429155 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+54464.429178 [PDCP]   I DRB 1 re-established
+54464.429330 [PDCP]   I SRB 2 re-established
+54464.429335 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+54464.429852 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+54464.429856 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+54464.656151 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 2e03) Received RRCReconfigurationComplete
+54464.656176 [NR_RRC] A handover for UE 1/RNTI 2e03 complete!
+54464.656201 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+54488.816088 [NR_RRC] A Handover triggered for UE 1/RNTI 2e03 towards cell 12345678/assoc_id 206/PCI 0
+54488.817788 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+54488.817812 [PDCP]   I DRB 1 re-established
+54488.817979 [PDCP]   I SRB 2 re-established
+54488.817984 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+54488.818461 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+54488.818465 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+54489.044535 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI d0a8) Received RRCReconfigurationComplete
+54489.044562 [NR_RRC] A handover for UE 1/RNTI d0a8 complete!
+54489.044588 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+54653.803004 [NR_RRC] A Handover triggered for UE 1/RNTI d0a8 towards cell 11111111/assoc_id 212/PCI 1
+54653.805267 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+54653.805290 [PDCP]   I DRB 1 re-established
+54653.805458 [PDCP]   I SRB 2 re-established
+54653.805464 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+54653.806028 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+54653.806032 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+54654.038593 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 547b) Received RRCReconfigurationComplete
+54654.038614 [NR_RRC] A handover for UE 1/RNTI 547b complete!
+54654.038635 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+54678.206734 [NR_RRC] A Handover triggered for UE 1/RNTI 547b towards cell 12345678/assoc_id 206/PCI 0
+54678.207946 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+54678.207967 [PDCP]   I DRB 1 re-established
+54678.208102 [PDCP]   I SRB 2 re-established
+54678.208106 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+54678.208606 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+54678.208612 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+54678.446405 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 7a8f) Received RRCReconfigurationComplete
+54678.446426 [NR_RRC] A handover for UE 1/RNTI 7a8f complete!
+54678.446450 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+54843.175228 [NR_RRC] A Handover triggered for UE 1/RNTI 7a8f towards cell 11111111/assoc_id 212/PCI 1
+54843.177033 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+54843.177055 [PDCP]   I DRB 1 re-established
+54843.177187 [PDCP]   I SRB 2 re-established
+54843.177192 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+54843.177723 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+54843.177728 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+54843.408979 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 7e85) Received RRCReconfigurationComplete
+54843.409003 [NR_RRC] A handover for UE 1/RNTI 7e85 complete!
+54843.409012 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+54867.567552 [NR_RRC] A Handover triggered for UE 1/RNTI 7e85 towards cell 12345678/assoc_id 206/PCI 0
+54867.568790 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+54867.568802 [PDCP]   I DRB 1 re-established
+54867.568930 [PDCP]   I SRB 2 re-established
+54867.568951 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+54867.569462 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+54867.569467 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+54867.799794 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI c9f9) Received RRCReconfigurationComplete
+54867.799815 [NR_RRC] A handover for UE 1/RNTI c9f9 complete!
+54867.799835 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+55032.511654 [NR_RRC] A Handover triggered for UE 1/RNTI c9f9 towards cell 11111111/assoc_id 212/PCI 1
+55032.513733 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+55032.513756 [PDCP]   I DRB 1 re-established
+55032.513914 [PDCP]   I SRB 2 re-established
+55032.513940 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+55032.514431 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+55032.514435 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+55032.738883 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI f210) Received RRCReconfigurationComplete
+55032.738912 [NR_RRC] A handover for UE 1/RNTI f210 complete!
+55032.738937 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+55056.898650 [NR_RRC] A Handover triggered for UE 1/RNTI f210 towards cell 12345678/assoc_id 206/PCI 0
+55056.899806 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+55056.899815 [PDCP]   I DRB 1 re-established
+55056.899937 [PDCP]   I SRB 2 re-established
+55056.899942 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+55056.900517 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+55056.900522 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+55057.117164 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 6e67) Received RRCReconfigurationComplete
+55057.117190 [NR_RRC] A handover for UE 1/RNTI 6e67 complete!
+55057.117216 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+55221.773943 [NR_RRC] A Handover triggered for UE 1/RNTI 6e67 towards cell 11111111/assoc_id 212/PCI 1
+55221.775583 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+55221.775605 [PDCP]   I DRB 1 re-established
+55221.775758 [PDCP]   I SRB 2 re-established
+55221.775763 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+55221.776291 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+55221.776295 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+55221.997236 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI d8b7) Received RRCReconfigurationComplete
+55221.997262 [NR_RRC] A handover for UE 1/RNTI d8b7 complete!
+55221.997273 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+55246.151175 [NR_RRC] A Handover triggered for UE 1/RNTI d8b7 towards cell 12345678/assoc_id 206/PCI 0
+55246.152473 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+55246.152495 [PDCP]   I DRB 1 re-established
+55246.152616 [PDCP]   I SRB 2 re-established
+55246.152622 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+55246.153078 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+55246.153083 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+55246.375331 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 69fa) Received RRCReconfigurationComplete
+55246.375355 [NR_RRC] A handover for UE 1/RNTI 69fa complete!
+55246.375375 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+55411.261912 [NR_RRC] A Handover triggered for UE 1/RNTI 69fa towards cell 11111111/assoc_id 212/PCI 1
+55411.263961 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+55411.263985 [PDCP]   I DRB 1 re-established
+55411.264155 [PDCP]   I SRB 2 re-established
+55411.264161 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+55411.264742 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+55411.264747 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+55411.495747 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 6144) Received RRCReconfigurationComplete
+55411.495768 [NR_RRC] A handover for UE 1/RNTI 6144 complete!
+55411.495789 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+55435.675934 [NR_RRC] A Handover triggered for UE 1/RNTI 6144 towards cell 12345678/assoc_id 206/PCI 0
+55435.677317 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+55435.677345 [PDCP]   I DRB 1 re-established
+55435.677491 [PDCP]   I SRB 2 re-established
+55435.677499 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+55435.678000 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+55435.678005 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+55435.895347 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI c7ef) Received RRCReconfigurationComplete
+55435.895371 [NR_RRC] A handover for UE 1/RNTI c7ef complete!
+55435.895391 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+55600.615515 [NR_RRC] A Handover triggered for UE 1/RNTI c7ef towards cell 11111111/assoc_id 212/PCI 1
+55600.617216 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+55600.617237 [PDCP]   I DRB 1 re-established
+55600.617347 [PDCP]   I SRB 2 re-established
+55600.617351 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+55600.617837 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+55600.617841 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+55600.812146 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 550b) Received RRCReconfigurationComplete
+55600.812172 [NR_RRC] A handover for UE 1/RNTI 550b complete!
+55600.812248 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+55625.034494 [NR_RRC] A Handover triggered for UE 1/RNTI 550b towards cell 12345678/assoc_id 206/PCI 0
+55625.035643 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+55625.035666 [PDCP]   I DRB 1 re-established
+55625.035774 [PDCP]   I SRB 2 re-established
+55625.035779 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+55625.036341 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+55625.036345 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+55625.262449 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 8099) Received RRCReconfigurationComplete
+55625.262476 [NR_RRC] A handover for UE 1/RNTI 8099 complete!
+55625.262502 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+55790.075966 [NR_RRC] A Handover triggered for UE 1/RNTI 8099 towards cell 11111111/assoc_id 212/PCI 1
+55790.077885 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+55790.077908 [PDCP]   I DRB 1 re-established
+55790.078027 [PDCP]   I SRB 2 re-established
+55790.078038 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+55790.078600 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+55790.078604 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+55790.320910 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 1e63) Received RRCReconfigurationComplete
+55790.320932 [NR_RRC] A handover for UE 1/RNTI 1e63 complete!
+55790.320956 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+55814.479253 [NR_RRC] A Handover triggered for UE 1/RNTI 1e63 towards cell 12345678/assoc_id 206/PCI 0
+55814.480572 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+55814.480594 [PDCP]   I DRB 1 re-established
+55814.480727 [PDCP]   I SRB 2 re-established
+55814.480734 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+55814.481210 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+55814.481214 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+55814.714465 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI edae) Received RRCReconfigurationComplete
+55814.714491 [NR_RRC] A handover for UE 1/RNTI edae complete!
+55814.714517 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+55979.575537 [NR_RRC] A Handover triggered for UE 1/RNTI edae towards cell 11111111/assoc_id 212/PCI 1
+55979.577334 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+55979.577341 [PDCP]   I DRB 1 re-established
+55979.577465 [PDCP]   I SRB 2 re-established
+55979.577471 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+55979.578096 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+55979.578100 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+55979.784511 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 5aaf) Received RRCReconfigurationComplete
+55979.784533 [NR_RRC] A handover for UE 1/RNTI 5aaf complete!
+55979.784554 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+56003.981673 [NR_RRC] A Handover triggered for UE 1/RNTI 5aaf towards cell 12345678/assoc_id 206/PCI 0
+56003.983008 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+56003.983035 [PDCP]   I DRB 1 re-established
+56003.983170 [PDCP]   I SRB 2 re-established
+56003.983174 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+56003.983744 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+56003.983748 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+56004.205494 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 1d43) Received RRCReconfigurationComplete
+56004.205522 [NR_RRC] A handover for UE 1/RNTI 1d43 complete!
+56004.205545 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+56168.851246 [NR_RRC] A Handover triggered for UE 1/RNTI 1d43 towards cell 11111111/assoc_id 212/PCI 1
+56168.853067 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+56168.853088 [PDCP]   I DRB 1 re-established
+56168.853229 [PDCP]   I SRB 2 re-established
+56168.853252 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+56168.853819 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+56168.853824 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+56169.041899 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI bd46) Received RRCReconfigurationComplete
+56169.041928 [NR_RRC] A handover for UE 1/RNTI bd46 complete!
+56169.041952 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+56193.242981 [NR_RRC] A Handover triggered for UE 1/RNTI bd46 towards cell 12345678/assoc_id 206/PCI 0
+56193.244433 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+56193.244456 [PDCP]   I DRB 1 re-established
+56193.244566 [PDCP]   I SRB 2 re-established
+56193.244570 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+56193.245152 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+56193.245156 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+56193.475921 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI e4c6) Received RRCReconfigurationComplete
+56193.475952 [NR_RRC] A handover for UE 1/RNTI e4c6 complete!
+56193.475975 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+56358.130375 [NR_RRC] A Handover triggered for UE 1/RNTI e4c6 towards cell 11111111/assoc_id 212/PCI 1
+56358.132100 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+56358.132123 [PDCP]   I DRB 1 re-established
+56358.132263 [PDCP]   I SRB 2 re-established
+56358.132268 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+56358.132899 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+56358.132903 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+56358.324168 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI d991) Received RRCReconfigurationComplete
+56358.324177 [NR_RRC] A handover for UE 1/RNTI d991 complete!
+56358.324198 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+56382.522306 [NR_RRC] A Handover triggered for UE 1/RNTI d991 towards cell 12345678/assoc_id 206/PCI 0
+56382.523500 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+56382.523523 [PDCP]   I DRB 1 re-established
+56382.523622 [PDCP]   I SRB 2 re-established
+56382.523628 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+56382.524172 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+56382.524176 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+56382.738899 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 43df) Received RRCReconfigurationComplete
+56382.738920 [NR_RRC] A handover for UE 1/RNTI 43df complete!
+56382.738929 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+56547.511298 [NR_RRC] A Handover triggered for UE 1/RNTI 43df towards cell 11111111/assoc_id 212/PCI 1
+56547.512869 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+56547.512890 [PDCP]   I DRB 1 re-established
+56547.513000 [PDCP]   I SRB 2 re-established
+56547.513004 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+56547.513465 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+56547.513468 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+56547.727279 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 4d1b) Received RRCReconfigurationComplete
+56547.727300 [NR_RRC] A handover for UE 1/RNTI 4d1b complete!
+56547.727322 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+56571.918338 [NR_RRC] A Handover triggered for UE 1/RNTI 4d1b towards cell 12345678/assoc_id 206/PCI 0
+56571.919588 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+56571.919615 [PDCP]   I DRB 1 re-established
+56571.919741 [PDCP]   I SRB 2 re-established
+56571.919746 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+56571.920376 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+56571.920380 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+56572.149826 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI c8ae) Received RRCReconfigurationComplete
+56572.149849 [NR_RRC] A handover for UE 1/RNTI c8ae complete!
+56572.149870 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+56737.039516 [NR_RRC] A Handover triggered for UE 1/RNTI c8ae towards cell 11111111/assoc_id 212/PCI 1
+56737.041018 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+56737.041040 [PDCP]   I DRB 1 re-established
+56737.041155 [PDCP]   I SRB 2 re-established
+56737.041162 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+56737.041672 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+56737.041676 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+56737.227020 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 4ebb) Received RRCReconfigurationComplete
+56737.227028 [NR_RRC] A handover for UE 1/RNTI 4ebb complete!
+56737.227048 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+56761.430811 [NR_RRC] A Handover triggered for UE 1/RNTI 4ebb towards cell 12345678/assoc_id 206/PCI 0
+56761.432170 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+56761.432197 [PDCP]   I DRB 1 re-established
+56761.432337 [PDCP]   I SRB 2 re-established
+56761.432345 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+56761.432873 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+56761.432878 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+56761.613459 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI e0d5) Received RRCReconfigurationComplete
+56761.613480 [NR_RRC] A handover for UE 1/RNTI e0d5 complete!
+56761.613490 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+56926.331421 [NR_RRC] A Handover triggered for UE 1/RNTI e0d5 towards cell 11111111/assoc_id 212/PCI 1
+56926.332909 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+56926.332934 [PDCP]   I DRB 1 re-established
+56926.333053 [PDCP]   I SRB 2 re-established
+56926.333059 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+56926.333582 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+56926.333586 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+56926.561468 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI bd37) Received RRCReconfigurationComplete
+56926.561496 [NR_RRC] A handover for UE 1/RNTI bd37 complete!
+56926.561522 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+56950.722902 [NR_RRC] A Handover triggered for UE 1/RNTI bd37 towards cell 12345678/assoc_id 206/PCI 0
+56950.724226 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+56950.724248 [PDCP]   I DRB 1 re-established
+56950.724365 [PDCP]   I SRB 2 re-established
+56950.724374 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+56950.724950 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+56950.724955 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+56950.915175 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 928d) Received RRCReconfigurationComplete
+56950.915195 [NR_RRC] A handover for UE 1/RNTI 928d complete!
+56950.915216 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+57115.607292 [NR_RRC] A Handover triggered for UE 1/RNTI 928d towards cell 11111111/assoc_id 212/PCI 1
+57115.608834 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+57115.608856 [PDCP]   I DRB 1 re-established
+57115.608968 [PDCP]   I SRB 2 re-established
+57115.608972 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+57115.609531 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+57115.609535 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+57115.785480 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 91ae) Received RRCReconfigurationComplete
+57115.785503 [NR_RRC] A handover for UE 1/RNTI 91ae complete!
+57115.785529 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+57140.018162 [NR_RRC] A Handover triggered for UE 1/RNTI 91ae towards cell 12345678/assoc_id 206/PCI 0
+57140.019450 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+57140.019477 [PDCP]   I DRB 1 re-established
+57140.019607 [PDCP]   I SRB 2 re-established
+57140.019612 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+57140.020129 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+57140.020133 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+57140.253834 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 7531) Received RRCReconfigurationComplete
+57140.253857 [NR_RRC] A handover for UE 1/RNTI 7531 complete!
+57140.253884 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+57304.871238 [NR_RRC] A Handover triggered for UE 1/RNTI 7531 towards cell 11111111/assoc_id 212/PCI 1
+57304.872945 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+57304.872970 [PDCP]   I DRB 1 re-established
+57304.873112 [PDCP]   I SRB 2 re-established
+57304.873118 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+57304.873587 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+57304.873591 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+57305.068979 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 4577) Received RRCReconfigurationComplete
+57305.069005 [NR_RRC] A handover for UE 1/RNTI 4577 complete!
+57305.069025 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+57329.262531 [NR_RRC] A Handover triggered for UE 1/RNTI 4577 towards cell 12345678/assoc_id 206/PCI 0
+57329.263804 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+57329.263829 [PDCP]   I DRB 1 re-established
+57329.263943 [PDCP]   I SRB 2 re-established
+57329.263947 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+57329.264480 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+57329.264484 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+57329.447679 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 54f1) Received RRCReconfigurationComplete
+57329.447701 [NR_RRC] A handover for UE 1/RNTI 54f1 complete!
+57329.447722 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+57494.085009 [NR_RRC] A Handover triggered for UE 1/RNTI 54f1 towards cell 11111111/assoc_id 212/PCI 1
+57494.086734 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+57494.086756 [PDCP]   I DRB 1 re-established
+57494.086901 [PDCP]   I SRB 2 re-established
+57494.086926 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+57494.087415 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+57494.087420 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+57494.316874 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 597c) Received RRCReconfigurationComplete
+57494.316897 [NR_RRC] A handover for UE 1/RNTI 597c complete!
+57494.316921 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+57518.473892 [NR_RRC] A Handover triggered for UE 1/RNTI 597c towards cell 12345678/assoc_id 206/PCI 0
+57518.475126 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+57518.475151 [PDCP]   I DRB 1 re-established
+57518.475264 [PDCP]   I SRB 2 re-established
+57518.475268 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+57518.475764 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+57518.475768 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+57518.695918 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 1619) Received RRCReconfigurationComplete
+57518.695941 [NR_RRC] A handover for UE 1/RNTI 1619 complete!
+57518.695962 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+57683.333940 [NR_RRC] A Handover triggered for UE 1/RNTI 1619 towards cell 11111111/assoc_id 212/PCI 1
+57683.335475 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+57683.335483 [PDCP]   I DRB 1 re-established
+57683.335614 [PDCP]   I SRB 2 re-established
+57683.335620 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+57683.336119 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+57683.336124 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+57683.513806 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 83a7) Received RRCReconfigurationComplete
+57683.513827 [NR_RRC] A handover for UE 1/RNTI 83a7 complete!
+57683.513867 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+57707.710034 [NR_RRC] A Handover triggered for UE 1/RNTI 83a7 towards cell 12345678/assoc_id 206/PCI 0
+57707.711506 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+57707.711533 [PDCP]   I DRB 1 re-established
+57707.711693 [PDCP]   I SRB 2 re-established
+57707.711718 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+57707.712211 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+57707.712215 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+57707.924385 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 9aeb) Received RRCReconfigurationComplete
+57707.924407 [NR_RRC] A handover for UE 1/RNTI 9aeb complete!
+57707.924428 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+57872.578068 [NR_RRC] A Handover triggered for UE 1/RNTI 9aeb towards cell 11111111/assoc_id 212/PCI 1
+57872.579601 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+57872.579623 [PDCP]   I DRB 1 re-established
+57872.579735 [PDCP]   I SRB 2 re-established
+57872.579739 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+57872.580230 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+57872.580234 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+57872.775232 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI bd66) Received RRCReconfigurationComplete
+57872.775254 [NR_RRC] A handover for UE 1/RNTI bd66 complete!
+57872.775275 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+57896.968117 [NR_RRC] A Handover triggered for UE 1/RNTI bd66 towards cell 12345678/assoc_id 206/PCI 0
+57896.969337 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+57896.969358 [PDCP]   I DRB 1 re-established
+57896.969462 [PDCP]   I SRB 2 re-established
+57896.969467 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+57896.970014 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+57896.970019 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+57897.189448 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 0a0c) Received RRCReconfigurationComplete
+57897.189478 [NR_RRC] A handover for UE 1/RNTI 0a0c complete!
+57897.189502 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+58061.816501 [NR_RRC] A Handover triggered for UE 1/RNTI 0a0c towards cell 11111111/assoc_id 212/PCI 1
+58061.818149 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+58061.818177 [PDCP]   I DRB 1 re-established
+58061.818316 [PDCP]   I SRB 2 re-established
+58061.818340 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+58061.818829 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+58061.818833 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+58061.997939 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 026c) Received RRCReconfigurationComplete
+58061.997966 [NR_RRC] A handover for UE 1/RNTI 026c complete!
+58061.997989 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+58086.215168 [NR_RRC] A Handover triggered for UE 1/RNTI 026c towards cell 12345678/assoc_id 206/PCI 0
+58086.216445 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+58086.216471 [PDCP]   I DRB 1 re-established
+58086.216643 [PDCP]   I SRB 2 re-established
+58086.216648 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+58086.217153 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+58086.217157 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+58086.436799 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 4df3) Received RRCReconfigurationComplete
+58086.436822 [NR_RRC] A handover for UE 1/RNTI 4df3 complete!
+58086.436843 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+58251.021842 [NR_RRC] A Handover triggered for UE 1/RNTI 4df3 towards cell 11111111/assoc_id 212/PCI 1
+58251.023459 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+58251.023484 [PDCP]   I DRB 1 re-established
+58251.023618 [PDCP]   I SRB 2 re-established
+58251.023624 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+58251.024160 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+58251.024165 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+58251.263090 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 424c) Received RRCReconfigurationComplete
+58251.263112 [NR_RRC] A handover for UE 1/RNTI 424c complete!
+58251.263134 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+58275.419015 [NR_RRC] A Handover triggered for UE 1/RNTI 424c towards cell 12345678/assoc_id 206/PCI 0
+58275.420402 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+58275.420424 [PDCP]   I DRB 1 re-established
+58275.420556 [PDCP]   I SRB 2 re-established
+58275.420561 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+58275.421057 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+58275.421061 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+58275.648491 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 8c74) Received RRCReconfigurationComplete
+58275.648513 [NR_RRC] A handover for UE 1/RNTI 8c74 complete!
+58275.648536 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+58440.254760 [NR_RRC] A Handover triggered for UE 1/RNTI 8c74 towards cell 11111111/assoc_id 212/PCI 1
+58440.256323 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+58440.256346 [PDCP]   I DRB 1 re-established
+58440.256458 [PDCP]   I SRB 2 re-established
+58440.256463 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+58440.257024 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+58440.257029 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+58440.476558 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI ffa1) Received RRCReconfigurationComplete
+58440.476586 [NR_RRC] A handover for UE 1/RNTI ffa1 complete!
+58440.476610 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+58464.624147 [NR_RRC] A Handover triggered for UE 1/RNTI ffa1 towards cell 12345678/assoc_id 206/PCI 0
+58464.625366 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+58464.625393 [PDCP]   I DRB 1 re-established
+58464.625521 [PDCP]   I SRB 2 re-established
+58464.625544 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+58464.626053 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+58464.626057 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+58464.824142 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI b90a) Received RRCReconfigurationComplete
+58464.824165 [NR_RRC] A handover for UE 1/RNTI b90a complete!
+58464.824188 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+58629.531106 [NR_RRC] A Handover triggered for UE 1/RNTI b90a towards cell 11111111/assoc_id 212/PCI 1
+58629.532844 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+58629.532870 [PDCP]   I DRB 1 re-established
+58629.533008 [PDCP]   I SRB 2 re-established
+58629.533013 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+58629.533576 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+58629.533581 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+58629.719879 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 2bd1) Received RRCReconfigurationComplete
+58629.719902 [NR_RRC] A handover for UE 1/RNTI 2bd1 complete!
+58629.719922 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+58653.949010 [NR_RRC] A Handover triggered for UE 1/RNTI 2bd1 towards cell 12345678/assoc_id 206/PCI 0
+58653.950160 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+58653.950184 [PDCP]   I DRB 1 re-established
+58653.950305 [PDCP]   I SRB 2 re-established
+58653.950328 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+58653.950814 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+58653.950818 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+58654.167281 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 0135) Received RRCReconfigurationComplete
+58654.167307 [NR_RRC] A handover for UE 1/RNTI 0135 complete!
+58654.167330 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+58818.785399 [NR_RRC] A Handover triggered for UE 1/RNTI 0135 towards cell 11111111/assoc_id 212/PCI 1
+58818.786753 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+58818.786775 [PDCP]   I DRB 1 re-established
+58818.786882 [PDCP]   I SRB 2 re-established
+58818.786901 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+58818.787423 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+58818.787427 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+58819.003967 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 2d20) Received RRCReconfigurationComplete
+58819.003991 [NR_RRC] A handover for UE 1/RNTI 2d20 complete!
+58819.004028 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+58843.178246 [NR_RRC] A Handover triggered for UE 1/RNTI 2d20 towards cell 12345678/assoc_id 206/PCI 0
+58843.179517 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+58843.179542 [PDCP]   I DRB 1 re-established
+58843.179681 [PDCP]   I SRB 2 re-established
+58843.179690 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+58843.180143 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+58843.180149 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+58843.414509 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 4173) Received RRCReconfigurationComplete
+58843.414532 [NR_RRC] A handover for UE 1/RNTI 4173 complete!
+58843.414541 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+59007.986233 [NR_RRC] A Handover triggered for UE 1/RNTI 4173 towards cell 11111111/assoc_id 212/PCI 1
+59007.987574 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+59007.987599 [PDCP]   I DRB 1 re-established
+59007.987740 [PDCP]   I SRB 2 re-established
+59007.987745 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+59007.988199 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+59007.988203 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+59008.218713 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI e636) Received RRCReconfigurationComplete
+59008.218736 [NR_RRC] A handover for UE 1/RNTI e636 complete!
+59008.218759 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+59032.386619 [NR_RRC] A Handover triggered for UE 1/RNTI e636 towards cell 12345678/assoc_id 206/PCI 0
+59032.387774 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+59032.387796 [PDCP]   I DRB 1 re-established
+59032.387917 [PDCP]   I SRB 2 re-established
+59032.387921 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+59032.388456 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+59032.388461 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+59032.622574 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI f5b6) Received RRCReconfigurationComplete
+59032.622596 [NR_RRC] A handover for UE 1/RNTI f5b6 complete!
+59032.622617 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+59197.257958 [NR_RRC] A Handover triggered for UE 1/RNTI f5b6 towards cell 11111111/assoc_id 212/PCI 1
+59197.259419 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+59197.259445 [PDCP]   I DRB 1 re-established
+59197.259568 [PDCP]   I SRB 2 re-established
+59197.259573 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+59197.260080 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+59197.260084 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+59197.496237 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI e712) Received RRCReconfigurationComplete
+59197.496259 [NR_RRC] A handover for UE 1/RNTI e712 complete!
+59197.496280 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+59221.635483 [NR_RRC] A Handover triggered for UE 1/RNTI e712 towards cell 12345678/assoc_id 206/PCI 0
+59221.636809 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+59221.636834 [PDCP]   I DRB 1 re-established
+59221.636982 [PDCP]   I SRB 2 re-established
+59221.636987 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+59221.637463 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+59221.637468 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+59221.873084 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI f87b) Received RRCReconfigurationComplete
+59221.873104 [NR_RRC] A handover for UE 1/RNTI f87b complete!
+59221.873124 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+59386.457806 [NR_RRC] A Handover triggered for UE 1/RNTI f87b towards cell 11111111/assoc_id 212/PCI 1
+59386.459279 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+59386.459301 [PDCP]   I DRB 1 re-established
+59386.459413 [PDCP]   I SRB 2 re-established
+59386.459417 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+59386.459963 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+59386.459967 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+59386.688958 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 70cb) Received RRCReconfigurationComplete
+59386.688968 [NR_RRC] A handover for UE 1/RNTI 70cb complete!
+59386.688992 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+59410.850221 [NR_RRC] A Handover triggered for UE 1/RNTI 70cb towards cell 12345678/assoc_id 206/PCI 0
+59410.851326 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+59410.851350 [PDCP]   I DRB 1 re-established
+59410.851467 [PDCP]   I SRB 2 re-established
+59410.851489 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+59410.852056 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+59410.852060 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+59411.073999 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 3e96) Received RRCReconfigurationComplete
+59411.074022 [NR_RRC] A handover for UE 1/RNTI 3e96 complete!
+59411.074042 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+59575.630500 [NR_RRC] A Handover triggered for UE 1/RNTI 3e96 towards cell 11111111/assoc_id 212/PCI 1
+59575.631825 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+59575.631847 [PDCP]   I DRB 1 re-established
+59575.631980 [PDCP]   I SRB 2 re-established
+59575.632001 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+59575.632466 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+59575.632470 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+59575.861167 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI c976) Received RRCReconfigurationComplete
+59575.861189 [NR_RRC] A handover for UE 1/RNTI c976 complete!
+59575.861211 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+59600.047528 [NR_RRC] A Handover triggered for UE 1/RNTI c976 towards cell 12345678/assoc_id 206/PCI 0
+59600.048751 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+59600.048774 [PDCP]   I DRB 1 re-established
+59600.048907 [PDCP]   I SRB 2 re-established
+59600.048914 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+59600.049385 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+59600.049389 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+59600.237961 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 2ae6) Received RRCReconfigurationComplete
+59600.237984 [NR_RRC] A handover for UE 1/RNTI 2ae6 complete!
+59600.238004 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+59764.834679 [NR_RRC] A Handover triggered for UE 1/RNTI 2ae6 towards cell 11111111/assoc_id 212/PCI 1
+59764.836496 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+59764.836525 [PDCP]   I DRB 1 re-established
+59764.836663 [PDCP]   I SRB 2 re-established
+59764.836674 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+59764.837279 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+59764.837283 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+59765.027537 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 3b9d) Received RRCReconfigurationComplete
+59765.027564 [NR_RRC] A handover for UE 1/RNTI 3b9d complete!
+59765.027585 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+59789.237636 [NR_RRC] A Handover triggered for UE 1/RNTI 3b9d towards cell 12345678/assoc_id 206/PCI 0
+59789.238753 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+59789.238773 [PDCP]   I DRB 1 re-established
+59789.238901 [PDCP]   I SRB 2 re-established
+59789.238909 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+59789.239401 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+59789.239405 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+59789.471345 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 027c) Received RRCReconfigurationComplete
+59789.471369 [NR_RRC] A handover for UE 1/RNTI 027c complete!
+59789.471392 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+59953.987174 [NR_RRC] A Handover triggered for UE 1/RNTI 027c towards cell 11111111/assoc_id 212/PCI 1
+59953.988522 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+59953.988547 [PDCP]   I DRB 1 re-established
+59953.988660 [PDCP]   I SRB 2 re-established
+59953.988664 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+59953.989262 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+59953.989267 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+59954.171017 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI c080) Received RRCReconfigurationComplete
+59954.171041 [NR_RRC] A handover for UE 1/RNTI c080 complete!
+59954.171065 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+59978.393260 [NR_RRC] A Handover triggered for UE 1/RNTI c080 towards cell 12345678/assoc_id 206/PCI 0
+59978.394478 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+59978.394499 [PDCP]   I DRB 1 re-established
+59978.394609 [PDCP]   I SRB 2 re-established
+59978.394613 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+59978.395147 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+59978.395151 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+59978.589353 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 0d01) Received RRCReconfigurationComplete
+59978.589377 [NR_RRC] A handover for UE 1/RNTI 0d01 complete!
+59978.589399 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+60143.186916 [NR_RRC] A Handover triggered for UE 1/RNTI 0d01 towards cell 11111111/assoc_id 212/PCI 1
+60143.188316 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+60143.188338 [PDCP]   I DRB 1 re-established
+60143.188453 [PDCP]   I SRB 2 re-established
+60143.188458 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+60143.188997 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+60143.189001 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+60143.371640 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI c80a) Received RRCReconfigurationComplete
+60143.371668 [NR_RRC] A handover for UE 1/RNTI c80a complete!
+60143.371689 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+60167.566446 [NR_RRC] A Handover triggered for UE 1/RNTI c80a towards cell 12345678/assoc_id 206/PCI 0
+60167.567631 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+60167.567652 [PDCP]   I DRB 1 re-established
+60167.567764 [PDCP]   I SRB 2 re-established
+60167.567769 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+60167.568266 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+60167.568270 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+60167.797482 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 0a77) Received RRCReconfigurationComplete
+60167.797510 [NR_RRC] A handover for UE 1/RNTI 0a77 complete!
+60167.797533 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+60332.448035 [NR_RRC] A Handover triggered for UE 1/RNTI 0a77 towards cell 11111111/assoc_id 212/PCI 1
+60332.449794 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+60332.449816 [PDCP]   I DRB 1 re-established
+60332.449927 [PDCP]   I SRB 2 re-established
+60332.449932 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+60332.450485 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+60332.450508 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+60332.643185 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 8268) Received RRCReconfigurationComplete
+60332.643208 [NR_RRC] A handover for UE 1/RNTI 8268 complete!
+60332.643229 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+60356.839768 [NR_RRC] A Handover triggered for UE 1/RNTI 8268 towards cell 12345678/assoc_id 206/PCI 0
+60356.841116 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+60356.841141 [PDCP]   I DRB 1 re-established
+60356.841271 [PDCP]   I SRB 2 re-established
+60356.841295 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+60356.841757 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+60356.841762 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+60357.076992 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 14b9) Received RRCReconfigurationComplete
+60357.077015 [NR_RRC] A handover for UE 1/RNTI 14b9 complete!
+60357.077036 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+60521.750043 [NR_RRC] A Handover triggered for UE 1/RNTI 14b9 towards cell 11111111/assoc_id 212/PCI 1
+60521.751267 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+60521.751289 [PDCP]   I DRB 1 re-established
+60521.751387 [PDCP]   I SRB 2 re-established
+60521.751392 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+60521.751924 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+60521.751928 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+60521.948040 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 16d7) Received RRCReconfigurationComplete
+60521.948065 [NR_RRC] A handover for UE 1/RNTI 16d7 complete!
+60521.948087 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+60546.138156 [NR_RRC] A Handover triggered for UE 1/RNTI 16d7 towards cell 12345678/assoc_id 206/PCI 0
+60546.139367 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+60546.139388 [PDCP]   I DRB 1 re-established
+60546.139494 [PDCP]   I SRB 2 re-established
+60546.139498 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+60546.140036 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+60546.140041 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+60546.364228 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 235b) Received RRCReconfigurationComplete
+60546.364257 [NR_RRC] A handover for UE 1/RNTI 235b complete!
+60546.364282 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+60711.037486 [NR_RRC] A Handover triggered for UE 1/RNTI 235b towards cell 11111111/assoc_id 212/PCI 1
+60711.039617 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+60711.039639 [PDCP]   I DRB 1 re-established
+60711.039758 [PDCP]   I SRB 2 re-established
+60711.039791 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+60711.040325 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+60711.040361 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+60711.273262 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 6390) Received RRCReconfigurationComplete
+60711.273290 [NR_RRC] A handover for UE 1/RNTI 6390 complete!
+60711.273343 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+60735.414756 [NR_RRC] A Handover triggered for UE 1/RNTI 6390 towards cell 12345678/assoc_id 206/PCI 0
+60735.415996 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+60735.416031 [PDCP]   I DRB 1 re-established
+60735.416152 [PDCP]   I SRB 2 re-established
+60735.416156 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+60735.416657 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+60735.416660 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+60736.582980 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI f975) Received RRCReconfigurationComplete
+60736.583001 [NR_RRC] A handover for UE 1/RNTI f975 complete!
+60736.583024 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+60900.283094 [NR_RRC] A Handover triggered for UE 1/RNTI f975 towards cell 11111111/assoc_id 212/PCI 1
+60900.284460 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+60900.284484 [PDCP]   I DRB 1 re-established
+60900.284613 [PDCP]   I SRB 2 re-established
+60900.284619 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+60900.285117 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+60900.285142 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+60900.471930 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 6858) Received RRCReconfigurationComplete
+60900.471953 [NR_RRC] A handover for UE 1/RNTI 6858 complete!
+60900.471975 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+60924.677380 [NR_RRC] A Handover triggered for UE 1/RNTI 6858 towards cell 12345678/assoc_id 206/PCI 0
+60924.678664 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+60924.678688 [PDCP]   I DRB 1 re-established
+60924.678823 [PDCP]   I SRB 2 re-established
+60924.678828 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+60924.679302 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+60924.679306 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+60924.916677 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI b650) Received RRCReconfigurationComplete
+60924.916701 [NR_RRC] A handover for UE 1/RNTI b650 complete!
+60924.916722 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+61089.397637 [NR_RRC] A Handover triggered for UE 1/RNTI b650 towards cell 11111111/assoc_id 212/PCI 1
+61089.398999 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+61089.399021 [PDCP]   I DRB 1 re-established
+61089.399156 [PDCP]   I SRB 2 re-established
+61089.399161 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+61089.399698 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+61089.399703 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+61089.636507 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 6318) Received RRCReconfigurationComplete
+61089.636537 [NR_RRC] A handover for UE 1/RNTI 6318 complete!
+61089.636565 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+61113.794886 [NR_RRC] A Handover triggered for UE 1/RNTI 6318 towards cell 12345678/assoc_id 206/PCI 0
+61113.796179 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+61113.796202 [PDCP]   I DRB 1 re-established
+61113.796317 [PDCP]   I SRB 2 re-established
+61113.796322 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+61113.796838 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+61113.796842 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+61113.994563 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 40ce) Received RRCReconfigurationComplete
+61113.994587 [NR_RRC] A handover for UE 1/RNTI 40ce complete!
+61113.994610 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+61278.625475 [NR_RRC] A Handover triggered for UE 1/RNTI 40ce towards cell 11111111/assoc_id 212/PCI 1
+61278.626995 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+61278.627006 [PDCP]   I DRB 1 re-established
+61278.627163 [PDCP]   I SRB 2 re-established
+61278.627167 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+61278.627730 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+61278.627735 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+61278.862767 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 6286) Received RRCReconfigurationComplete
+61278.862795 [NR_RRC] A handover for UE 1/RNTI 6286 complete!
+61278.862819 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+61303.003091 [NR_RRC] A Handover triggered for UE 1/RNTI 6286 towards cell 12345678/assoc_id 206/PCI 0
+61303.004357 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+61303.004386 [PDCP]   I DRB 1 re-established
+61303.004512 [PDCP]   I SRB 2 re-established
+61303.004535 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+61303.004962 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+61303.004966 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+61303.195754 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI bcd6) Received RRCReconfigurationComplete
+61303.195782 [NR_RRC] A handover for UE 1/RNTI bcd6 complete!
+61303.195807 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+61467.807909 [NR_RRC] A Handover triggered for UE 1/RNTI bcd6 towards cell 11111111/assoc_id 212/PCI 1
+61467.809273 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+61467.809296 [PDCP]   I DRB 1 re-established
+61467.809464 [PDCP]   I SRB 2 re-established
+61467.809469 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+61467.810079 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+61467.810083 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+61468.042538 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 1d9e) Received RRCReconfigurationComplete
+61468.042560 [NR_RRC] A handover for UE 1/RNTI 1d9e complete!
+61468.042581 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+61492.201524 [NR_RRC] A Handover triggered for UE 1/RNTI 1d9e towards cell 12345678/assoc_id 206/PCI 0
+61492.202681 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+61492.202702 [PDCP]   I DRB 1 re-established
+61492.202820 [PDCP]   I SRB 2 re-established
+61492.202824 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+61492.203402 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+61492.203407 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+61492.441091 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 1698) Received RRCReconfigurationComplete
+61492.441113 [NR_RRC] A handover for UE 1/RNTI 1698 complete!
+61492.441134 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+61656.969918 [NR_RRC] A Handover triggered for UE 1/RNTI 1698 towards cell 11111111/assoc_id 212/PCI 1
+61656.971199 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+61656.971220 [PDCP]   I DRB 1 re-established
+61656.971352 [PDCP]   I SRB 2 re-established
+61656.971357 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+61656.971861 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+61656.971865 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+61657.162827 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 0dd9) Received RRCReconfigurationComplete
+61657.162879 [NR_RRC] A handover for UE 1/RNTI 0dd9 complete!
+61657.162906 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+61681.350593 [NR_RRC] A Handover triggered for UE 1/RNTI 0dd9 towards cell 12345678/assoc_id 206/PCI 0
+61681.351977 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+61681.352000 [PDCP]   I DRB 1 re-established
+61681.352203 [PDCP]   I SRB 2 re-established
+61681.352209 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+61681.352770 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+61681.352775 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+61681.580261 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI cdef) Received RRCReconfigurationComplete
+61681.580284 [NR_RRC] A handover for UE 1/RNTI cdef complete!
+61681.580306 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678
+61846.106759 [NR_RRC] A Handover triggered for UE 1/RNTI cdef towards cell 11111111/assoc_id 212/PCI 1
+61846.107890 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+61846.107912 [PDCP]   I DRB 1 re-established
+61846.108028 [PDCP]   I SRB 2 re-established
+61846.108032 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+61846.108552 [NR_RRC] I Removing SCells from DU (assoc_id=206) for UE 1
+61846.108556 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 212)
+61846.313822 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 1e06) Received RRCReconfigurationComplete
+61846.313845 [NR_RRC] A handover for UE 1/RNTI 1e06 complete!
+61846.313866 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 206
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+61870.503014 [NR_RRC] A Handover triggered for UE 1/RNTI 1e06 towards cell 12345678/assoc_id 206/PCI 0
+61870.504329 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+61870.504354 [PDCP]   I DRB 1 re-established
+61870.504500 [PDCP]   I SRB 2 re-established
+61870.504506 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+61870.505011 [NR_RRC] I Removing SCells from DU (assoc_id=212) for UE 1
+61870.505015 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 206)
+61870.693633 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI fcd5) Received RRCReconfigurationComplete
+61870.693661 [NR_RRC] A handover for UE 1/RNTI fcd5 complete!
+61870.693686 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 212
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678

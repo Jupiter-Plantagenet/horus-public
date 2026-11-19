@@ -1,0 +1,94 @@
+{
+  "passed_operator_probe": true,
+  "integrated_acceptance_pending": true,
+  "controls": 36,
+  "every_control_new_cu_rrc_proof": true,
+  "every_control_post_traffic": true,
+  "cleanup_passed": true,
+  "missing_ul_srb1_sn": [
+    113,
+    164
+  ],
+  "received_completions": [
+    {
+      "sequence": 239,
+      "receipt_utc_seconds": 1793733879.879187,
+      "source": "192.168.71.172",
+      "destination": "192.168.71.150",
+      "sctp_tsn": 1022025526,
+      "sctp_stream": 0,
+      "procedure": "ULRRCMessageTransfer",
+      "message_class": "initiatingMessage",
+      "GNB-CU-UE-F1AP-ID": 1,
+      "GNB-DU-UE-F1AP-ID": 45670,
+      "srb": 1,
+      "rrc_container_bytes": 8,
+      "pdcp_sn": 114,
+      "rrc_type": "rrcReconfigurationComplete",
+      "rrc_transaction": 1
+    },
+    {
+      "sequence": 369,
+      "receipt_utc_seconds": 1793734013.598432,
+      "source": "192.168.71.172",
+      "destination": "192.168.71.150",
+      "sctp_tsn": 1022025571,
+      "sctp_stream": 0,
+      "procedure": "ULRRCMessageTransfer",
+      "message_class": "initiatingMessage",
+      "GNB-CU-UE-F1AP-ID": 1,
+      "GNB-DU-UE-F1AP-ID": 13712,
+      "srb": 1,
+      "rrc_container_bytes": 8,
+      "pdcp_sn": 165,
+      "rrc_type": "rrcReconfigurationComplete",
+      "rrc_transaction": 1
+    }
+  ],
+  "expiry_followed_by_cu_completion": [
+    [
+      "1258.552131 [F1AP]   D [UE 1] calling pdcp_data_ind for SRB 1 with size 13 (DCCH) ",
+      "[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111",
+      "1259.331463 [PDCP]   D check_t_reordering: entity (SRB) 1: t_reordering_start = 238466, t_current = 239470, t_reordering = 1000 ",
+      "1259.336297 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI b266) Received RRCReconfigurationComplete",
+      "1259.336353 [NR_RRC] A handover for UE 1/RNTI b266 complete!",
+      "1259.336377 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 6",
+      "1259.336429 [F1AP]   D CU Task Received F1AP_UE_CONTEXT_RELEASE_CMD for instance 0: sending SCTP message via assoc_id 6",
+      "1259.336461 [F1AP]   D CU Task Received F1AP_UE_CONTEXT_MODIFICATION_REQ for instance 0: sending SCTP message via assoc_id 12"
+    ],
+    [
+      "1380.446981 [F1AP]   D [UE 1] calling pdcp_data_ind for SRB 1 with size 13 (DCCH) ",
+      "[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111",
+      "1381.309635 [PDCP]   D check_t_reordering: entity (SRB) 1: t_reordering_start = 360452, t_current = 361453, t_reordering = 1000 ",
+      "1381.309960 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI 3590) Received RRCReconfigurationComplete",
+      "1381.310375 [NR_RRC] A handover for UE 1/RNTI 3590 complete!",
+      "1381.310568 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 6",
+      "1381.311007 [F1AP]   D CU Task Received F1AP_UE_CONTEXT_RELEASE_CMD for instance 0: sending SCTP message via assoc_id 6",
+      "1381.311212 [F1AP]   D CU Task Received F1AP_UE_CONTEXT_MODIFICATION_REQ for instance 0: sending SCTP message via assoc_id 12"
+    ]
+  ],
+  "source_patch": {
+    "source_commit": "cfee4c20b45ac1cf6d455d3f01bb3e00200438b0",
+    "file": "openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c",
+    "before_sha256": "92cb9880cf6641414188e49bd31d1871ebe0494ae8d51ffe4ef690c0adfacfba",
+    "after_sha256": "f12366af084fd608b7087d32e67f2d72fccc8b7846b047881010b6b148af007d",
+    "experimental": true,
+    "qualified": false,
+    "t_reordering_ms": 1000,
+    "explicit_opt_in": "HORUS_LAB_SRB_REORDERING_MS=1000",
+    "ue_patch_removed": true
+  },
+  "actual_images": {
+    "ho-cu": "sha256:dc53f0fd4f18a7fb35741467207607a31f8f688bd5b0f226c403fefddae49bcd",
+    "ho-du-pci0": "sha256:b7554483225068fa9c6a03032507b00fc2c663786c436fe61ea89b956fdb4850",
+    "ho-du-pci1": "sha256:b7554483225068fa9c6a03032507b00fc2c663786c436fe61ea89b956fdb4850",
+    "ho-nr-ue": "sha256:d7ac8b9566488d6c4e5f04ae9a7a64a2693b3d6947f1045add7b44075176e119"
+  },
+  "cu_binary_sha256": "5a240d7419152cd4a402d65d5a0f754f255c6597c8c7334e40450f663ed90e62",
+  "raw_pcap_local_only": true,
+  "decoded_f1_events": 468,
+  "decode_errors": 0,
+  "model_inference": false,
+  "new_training_or_heldout_runs": false,
+  "scope": "Operator-commanded ordinary OAI F1 handovers, original UE/DUs/106 PRB, explicit finite local CU signalling timer. Source-DU PDU loss itself is not fixed."
+}

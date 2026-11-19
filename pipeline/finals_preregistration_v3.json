@@ -1,0 +1,85 @@
+{
+  "_comment": "HORUS v3 finals go/no-go, PRE-REGISTERED before any v3 policy candidate exists (no v3 checkpoint has been trained, gated or evaluated; only baseline sweeps and the counterfactual pilot on TUNING seeds 1000-1001 have been looked at). The earlier rule (finals_preregistration.json, v2) and gate config (gate_config_finals.json) are kept unchanged. twin.evaluate_v3 applies this file mechanically. Nothing below may be changed after any v3 candidate has been evaluated on the held-out seeds; any later change goes in a NEW file with its own timestamp and the old one stays in force for the claims it covers.",
+  "registered_ts": "2026-10-30T01:33:32Z",
+  "seeds": {
+    "v3_training": "0..399 (counterfactual data; v3.0.x uses a prefix of it)",
+    "baseline_sweep": "500..504 (amendment_1; was 500..509)",
+    "federation_clients": "620..699, 720..799, 820..899 (one block per client)",
+    "tuning_model_selection": "1000..1099 (v3 hyper-parameters and candidate choice are made ONLY here)",
+    "gate": "1100..1102 (gate_config_finals.json, unchanged)",
+    "held_out_eval": "2100..2119 (20 per cell; never used by anything before this evaluation; 2000..2019 were used by the v2 evaluation and are not reused)"
+  },
+  "eval": {
+    "cells": "4 scenarios (rush_hour, corner_turner, stationary_clusters, cell_outage) x 3 fading (off, rician, rayleigh) = 12",
+    "pairing": "identical radio trace per (cell, seed) for every arm; 240 paired episodes per comparison",
+    "statistics": "pooled paired 95% Student-t CI of the per-episode difference over all 240 episodes; per-cell paired t-tests with Holm correction over the 12 cells (reported for every comparison)"
+  },
+  "policy": {
+    "id": "v3",
+    "selection": "Among v3 candidates (central and federated) that the UNCHANGED finals-v3 gate (pipeline/gate_config_finals.json, threshold 0.63, guardrails vs per-cell tuned A3) PROMOTES, the one with the highest pooled utility on tuning seeds 1000..1019 (12 cells x 20). Exactly one candidate enters the confirmatory tests below; every other v3 candidate is reported as exploratory. If no v3 candidate is promoted by the gate: NO-GO, whatever the held-out numbers."
+  },
+  "baselines": {
+    "oracle": {
+      "a3_tuned": "per (scenario, fading) cell best of the 504-config A3 grid on sweep seeds 500..504 (finals_baselines.json, frozen 2026-10-29) — knows the cell",
+      "cho_tuned": "per cell best of the 450-config CHO grid on sweep seeds 500..504 (finals_baselines.json, frozen) — knows the cell",
+      "cho_tuned_ext": "per cell best of the extended CHO grid pipeline/v3_oracle_grid.json (contains the v3 profile table, the top pilot configs and every frozen CHO config) on sweep seeds 500..504 (amendment_1) (finals_baselines_v3.json, written by twin.sweep_v3 and frozen before the held-out evaluation) — the oracle with the SAME action space as v3"
+    },
+    "deployable": {
+      "a3_global": "single network-wide A3 (finals_baselines.json global.a3)",
+      "cho_global": "single network-wide CHO (finals_baselines.json global.cho)",
+      "cho_global_ext": "single network-wide CHO, best over the extended grid on sweep seeds 500..504 (finals_baselines_v3.json global.cho_ext)",
+      "cho_mse": "CHO + 3GPP mobility-state TTT scaling + speed-dependent and static-UE offsets (cho_v3.CHOSpeedScaled), ONE parameter set network-wide, best of 36 on sweep seeds 500..504 (amendment_1) (finals_baselines_v3.json global.cho_mse)",
+      "cho_mro": "CHO + MRO-style per-cell online offset adaptation (cho_v3.CHOMRO), ONE parameter set network-wide, best of 12 on sweep seeds 500..504 (amendment_1) (finals_baselines_v3.json global.cho_mro)"
+    },
+    "reported_only": [
+      "a3_stock",
+      "mse_rule (v2 ablation)",
+      "v2.0.2-central (the best v2 policy)",
+      "v1.3.1 (live-loop promoted policy)"
+    ]
+  },
+  "go_no_go": {
+    "H1_oracle": "v3 BEATS THE PER-SITUATION ORACLES iff for EVERY ref in {a3_tuned, cho_tuned, cho_tuned_ext}: (a) the pooled paired 95% CI of utility (v3 - ref) lies entirely above 0, AND (b) for each guardrail metric the pooled paired 95% CI upper bound of the increase (v3 - ref) is <= max(rel_margin * |ref pooled mean|, abs_margin) and no cell shows a Holm-significant (p<0.05 over 12 cells) increase beyond that margin. Intersection-union test: every comparison must pass at its own 0.05 level; no further correction.",
+    "H2_deployable": "v3 BEATS EVERY DEPLOYABLE BASELINE iff the same (a) and (b) hold for EVERY ref in {a3_global, cho_global, cho_global_ext, cho_mse, cho_mro}.",
+    "headline": "H1 pass -> headline 'beats per-situation best-tuned A3 and CHO' (dashboard policy arm = v3). H1 fail but H2 pass -> headline 'beats every deployable baseline (single network-wide A3/CHO and adaptive MSE/MRO CHO)' with the oracle differences shown with their CIs, never called a win (dashboard policy arm = v3). Both fail -> NO-GO: the dashboard policy arm stays v1.3.1 as under the v2 rule and v3 is reported as an extra arm.",
+    "primary": [
+      "utility"
+    ],
+    "guardrails": [
+      {
+        "metric": "ho_rate",
+        "rel_margin": 0.1,
+        "abs_margin": 0.05
+      },
+      {
+        "metric": "fail_rate",
+        "rel_margin": 0.1,
+        "abs_margin": 0.02
+      },
+      {
+        "metric": "rlf_rate",
+        "rel_margin": 0.1,
+        "abs_margin": 0.02
+      },
+      {
+        "metric": "pp_rate",
+        "rel_margin": 0.1,
+        "abs_margin": 0.02
+      }
+    ]
+  },
+  "gate": "No gate rule change for v3: every v3 candidate is gated by twin.gate_v3 with pipeline/gate_config_finals.json exactly as committed on 2026-10-30 (no warm-up exclusion, same threshold, seeds and guardrails). The rejected v2.1.x artifacts and gate_log-finals.txt lines stay as the audit trail.",
+  "federation_poisoning": {
+    "protocol": "3 clients with the v2 non-IID mixes (client-gate, client-quad, client-lecture), each training the v3 selector locally on counterfactual data from its own scenario mix (all 3 fading modes) at its client seed block, from the shared global weights, with a FedProx proximal term; server aggregation FedAvg or coordinate-wise median. Poisoned run: client-lecture flips its targets (learns to pick the WORST profile) and boosts its delta x3 (same attack family as the v2 round).",
+    "reported": "gate verdict of each of {clean-fedavg, clean-median, poisoned-fedavg, poisoned-median}. Separation is claimed only if every clean candidate is PROMOTED and the poisoned FedAvg candidate is REJECTED; the poisoned-median verdict is reported as observed."
+  },
+  "objective": "utility = 60*mean_SE/7.4 - 0.3*HO_rate - 2.0*PP_rate - 5.0*(RLF+HOF)_rate per UE-minute (sim.utility_per_ue_min), unchanged",
+  "amendments": [
+    {
+      "ts": "2026-10-30T02:01:25Z",
+      "id": "amendment_1",
+      "still_before_any_v3_candidate": true,
+      "change": "Compute budget (the shared 4-core box gives this run ~1 core): the v3 baseline sweep uses sweep seeds 500..504 (the same 5 seeds the frozen v2-era oracles were tuned on) instead of 500..509, the cho_mse grid is 36 parameter sets (2 base configs x t-Evaluation {30,60} s x n=(1,3) x 3 speed-offset pairs x 3 static offsets) instead of 108, and the cho_mro grid is 12 (2 bases x step {0.5,1} dB x HO budget {0,3,5}, period 10 s) instead of 48. Nothing else changes; no v3 candidate had been trained when this was written."
+    }
+  ]
+}

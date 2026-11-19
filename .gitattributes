@@ -1,0 +1,110 @@
+# These files are consumed inside Linux containers (shell scripts run by bash,
+# YAML/conf parsed by Open5GS/srsRAN). They MUST stay LF on every platform, or a
+# Windows checkout (core.autocrlf=true) would give them CRLF and break the stack.
+stack/**/*.sh                   text eol=lf
+stack/**/*.py                   text eol=lf
+stack/**/Dockerfile             text eol=lf
+stack/configs/**/*.yml          text eol=lf
+stack/configs/**/*.yaml         text eol=lf
+stack/configs/**/*.conf         text eol=lf
+stack/docker-compose.yml        text eol=lf
+stack/.env                      text eol=lf
+stack/Makefile                  text eol=lf
+
+# Binary artifacts must never be line-ending normalized (would corrupt them).
+*.png                           binary
+
+# #38: files whose SHA-256 is recorded in a manifest must be byte-identical across platforms.
+working/evidence/baseline-fixed/*.json      text eol=lf
+working/evidence/baseline-fixed/*.jsonl     text eol=lf
+working/evidence/baseline-fixed/*.md        text eol=lf
+working/evidence/baseline-repro/*.json      text eol=lf
+working/evidence/baseline-repro/*.md        text eol=lf
+working/evidence/finals-eval/*.json         text eol=lf
+working/evidence/finals-eval/*.jsonl        text eol=lf
+pipeline/finals_preregistration.json        text eol=lf
+pipeline/finals_baselines.json              text eol=lf
+pipeline/checkpoints/*.pt                   binary
+
+
+# Preserve byte-level provenance of the measured dataset and model artifacts.
+data/walktest/t4/** text eol=lf
+data/walktest/t4*.json text eol=lf
+working/evidence/t4-*/**/*.json text eol=lf
+working/evidence/t4-*/**/*.jsonl text eol=lf
+
+
+# The POSIX `horus` launcher runs under bash (Git Bash / WSL): keep it LF.
+horus                           text eol=lf
+.gitattributes                  text eol=lf
+README.md                       text eol=lf
+context.md                      text eol=lf
+release/*.md                    text eol=lf
+stack/**/Dockerfile.*           text eol=lf
+stack/**/*.c                    text eol=lf
+stack/**/*.cmake                text eol=lf
+stack/oai-ho/docker-compose.yml text eol=lf
+stack/oai-ho/conf/*             text eol=lf
+
+
+release/**/*.py                 text eol=lf
+release/**/*.patch              text eol=lf
+# Patch context and captured vendor output retain their original whitespace.
+release/**/*.patch              whitespace=-blank-at-eol
+working/evidence/**/*.txt        whitespace=-blank-at-eol
+
+# Byte-hashed measured-policy integration evidence must survive Windows checkouts.
+release/MEASURED_POLICY.md       text eol=lf
+working/evidence/measured-policy-20261102/**/*.json  text eol=lf
+working/evidence/measured-policy-20261102/**/*.jsonl text eol=lf
+working/evidence/measured-policy-20261102/**/*.md    text eol=lf
+working/evidence/measured-policy-20261102/**/*.py    text eol=lf
+
+stack/SELECTOR_RUNTIME.md text eol=lf
+working/evidence/selector-runtime-20261102/**/*.json text eol=lf
+working/evidence/selector-runtime-20261102/**/*.md   text eol=lf
+working/evidence/selector-runtime-20261102/**/*.txt  text eol=lf
+release/SELECTOR_INTEGRATION.md text eol=lf
+# Preserve exact hashes of native live captures and qualification receipts.
+working/evidence/selector-live-20261102/** -text
+working/evidence/integrated-release-20261104/** -text
+working/evidence/integrated-release-20261104/** whitespace=cr-at-eol,-blank-at-eol
+working/evidence/selector-live-20261102/** whitespace=cr-at-eol
+working/evidence/selector-live-20261102/**/*.txt whitespace=cr-at-eol,-blank-at-eol
+
+# Dashboard and integration source representation
+dashboard/*.py text eol=lf
+dashboard/*.md text eol=lf
+dashboard/tests/*.py text eol=lf
+dashboard/static/*.js text eol=lf
+dashboard/static/*.css text eol=lf
+dashboard/static/*.html text eol=lf
+dashboard/evidence/*.png binary
+dashboard/evidence/*.gif binary
+release/*.lock text eol=lf
+working/evidence/signalling-recovery-20261104/** -text
+working/evidence/signalling-recovery-20261104/** whitespace=cr-at-eol,-blank-at-eol
+release/reference/*.npz binary
+release/reference/*.json text eol=lf
+stack/oai-ho/cu-srb-reordering/** text eol=lf
+stack/oai-ho/ue-rrc-completion/** text eol=lf
+working/evidence/combined-radio-20261104/** -text
+working/evidence/combined-radio-20261104/** whitespace=cr-at-eol,-blank-at-eol
+# Preserve byte-hashed protocol/evidence selections across Windows checkouts.
+/working/evidence/cfra-recovery-20261104/** -text
+/working/evidence/target-ssb-20261104/** -text
+/working/evidence/cfra-v2-20261104/** -text
+/working/evidence/cfra-recovery-20261104/** whitespace=cr-at-eol,-blank-at-eol
+/working/evidence/target-ssb-20261104/** whitespace=cr-at-eol,-blank-at-eol
+/working/evidence/cfra-v2-20261104/** whitespace=cr-at-eol,-blank-at-eol
+/stack/oai-ho/du-cfra-retry/** text eol=lf
+/stack/oai-ho/ue-target-ssb/** text eol=lf
+/stack/oai-ho/ue-sync-offset/** text eol=lf
+/working/evidence/sync-offset-20261104/** -text
+/working/evidence/sync-offset-20261104/** whitespace=cr-at-eol,-blank-at-eol
+/stack/oai-ho/xapp-reply-order/** text eol=lf
+/working/evidence/xapp-reply-order-20261104/** -text
+/working/evidence/xapp-reply-order-20261104/** whitespace=cr-at-eol,-blank-at-eol
+
+/working/evidence/qualified-release-20261104/** -text
+/working/evidence/qualified-release-20261104/** whitespace=cr-at-eol,-blank-at-eol

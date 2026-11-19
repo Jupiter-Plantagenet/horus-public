@@ -1,0 +1,2272 @@
+{
+  "schema": "horus.finals-results/1",
+  "generated_ts": "2026-11-03T12:48:50Z",
+  "title": "A3/CHO baselines and the v3.1.1 research arm (NO-GO) — Kumoh twin v2, held-out seeds",
+  "title_ko": "A3/CHO 기준선과 v3.1.1 연구용 비교군 (NO-GO) — 금오공대 디지털 트윈 v2, 미사용 시드",
+  "arms": [
+    {
+      "id": "policy",
+      "label": "HORUS policy v1.3.1 (live policy; no held-out data in this run)",
+      "label_ko": "HORUS 정책 v1.3.1 (운영 정책; 이번 평가에 미사용 시드 데이터 없음)"
+    },
+    {
+      "id": "v3_research",
+      "label": "v3.1.1 research arm (NO-GO, not the live policy)",
+      "label_ko": "v3.1.1 연구용 비교군 (NO-GO, 운영 정책 아님)"
+    },
+    {
+      "id": "a3_tuned",
+      "label": "Best-tuned A3 per scenario x fading (oracle)",
+      "label_ko": "최적 튜닝 A3 (시나리오 x 페이딩별, 오라클)"
+    },
+    {
+      "id": "a3_stock",
+      "label": "Stock A3 (Off 3 dB, Hys 1 dB, TTT 320 ms)",
+      "label_ko": "기본 A3 (Off 3 dB, Hys 1 dB, TTT 320 ms)"
+    },
+    {
+      "id": "cho_tuned",
+      "label": "Best-tuned CHO per scenario x fading (oracle)",
+      "label_ko": "최적 튜닝 CHO (시나리오 x 페이딩별, 오라클)"
+    },
+    {
+      "id": "cho_tuned_ext",
+      "label": "Best-tuned CHO per cell, extended grid (oracle)",
+      "label_ko": "최적 튜닝 CHO, 확장 그리드 (오라클)"
+    },
+    {
+      "id": "a3_global",
+      "label": "Tuned A3, one network-wide config",
+      "label_ko": "튜닝 A3 (네트워크 단일 설정)"
+    },
+    {
+      "id": "cho_global",
+      "label": "Tuned CHO, one network-wide config",
+      "label_ko": "튜닝 CHO (네트워크 단일 설정)"
+    },
+    {
+      "id": "cho_global_ext",
+      "label": "Tuned CHO, one config (extended grid)",
+      "label_ko": "튜닝 CHO (단일 설정, 확장 그리드)"
+    },
+    {
+      "id": "cho_mse",
+      "label": "CHO + 3GPP mobility-state scaling (tuned)",
+      "label_ko": "CHO + 3GPP 이동성 상태 스케일링 (튜닝)"
+    },
+    {
+      "id": "cho_mro",
+      "label": "CHO + MRO online offset tuning (tuned)",
+      "label_ko": "CHO + MRO 온라인 오프셋 조정 (튜닝)"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "utility",
+      "label": "Operator utility (objective)",
+      "label_ko": "운영자 효용 (목적함수)",
+      "unit": "per UE-min",
+      "better": "higher",
+      "scenario": null,
+      "values": {
+        "a3_tuned": {
+          "mean": 12.0561,
+          "ci_low": 11.6902,
+          "ci_high": 12.422,
+          "n": 240
+        },
+        "a3_stock": {
+          "mean": 9.2499,
+          "ci_low": 8.6441,
+          "ci_high": 9.8556,
+          "n": 240
+        },
+        "cho_tuned": {
+          "mean": 12.3065,
+          "ci_low": 11.9601,
+          "ci_high": 12.6528,
+          "n": 240
+        },
+        "cho_tuned_ext": {
+          "mean": 12.3291,
+          "ci_low": 11.9852,
+          "ci_high": 12.6731,
+          "n": 240
+        },
+        "a3_global": {
+          "mean": 10.8053,
+          "ci_low": 10.1271,
+          "ci_high": 11.4834,
+          "n": 240
+        },
+        "cho_global": {
+          "mean": 12.173,
+          "ci_low": 11.8278,
+          "ci_high": 12.5182,
+          "n": 240
+        },
+        "cho_global_ext": {
+          "mean": 12.173,
+          "ci_low": 11.8278,
+          "ci_high": 12.5182,
+          "n": 240
+        },
+        "cho_mse": {
+          "mean": 12.173,
+          "ci_low": 11.8279,
+          "ci_high": 12.5182,
+          "n": 240
+        },
+        "cho_mro": {
+          "mean": 12.1572,
+          "ci_low": 11.8005,
+          "ci_high": 12.514,
+          "n": 240
+        },
+        "v3_research": {
+          "mean": 12.2851,
+          "ci_low": 11.9424,
+          "ci_high": 12.6279,
+          "n": 240
+        }
+      }
+    },
+    {
+      "id": "pp_rate",
+      "label": "Ping-pong HOs (<1 s stay)",
+      "label_ko": "핑퐁 핸드오버 (<1초 체류)",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": null,
+      "values": {
+        "a3_tuned": {
+          "mean": 0.0062,
+          "ci_low": 0.0046,
+          "ci_high": 0.0077,
+          "n": 240
+        },
+        "a3_stock": {
+          "mean": 0.0082,
+          "ci_low": 0.0041,
+          "ci_high": 0.0123,
+          "n": 240
+        },
+        "cho_tuned": {
+          "mean": 0.0,
+          "ci_low": -0.0,
+          "ci_high": 0.0001,
+          "n": 240
+        },
+        "cho_tuned_ext": {
+          "mean": 0.0,
+          "ci_low": -0.0,
+          "ci_high": 0.0001,
+          "n": 240
+        },
+        "a3_global": {
+          "mean": 0.1338,
+          "ci_low": 0.081,
+          "ci_high": 0.1866,
+          "n": 240
+        },
+        "cho_global": {
+          "mean": 0.0003,
+          "ci_low": 0.0,
+          "ci_high": 0.0006,
+          "n": 240
+        },
+        "cho_global_ext": {
+          "mean": 0.0003,
+          "ci_low": 0.0,
+          "ci_high": 0.0006,
+          "n": 240
+        },
+        "cho_mse": {
+          "mean": 0.0003,
+          "ci_low": 0.0,
+          "ci_high": 0.0006,
+          "n": 240
+        },
+        "cho_mro": {
+          "mean": 0.0101,
+          "ci_low": 0.0057,
+          "ci_high": 0.0145,
+          "n": 240
+        },
+        "v3_research": {
+          "mean": 0.0038,
+          "ci_low": 0.0017,
+          "ci_high": 0.0059,
+          "n": 240
+        }
+      }
+    },
+    {
+      "id": "ho_rate",
+      "label": "Handover rate",
+      "label_ko": "핸드오버 빈도",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": null,
+      "values": {
+        "a3_tuned": {
+          "mean": 3.479,
+          "ci_low": 3.1447,
+          "ci_high": 3.8133,
+          "n": 240
+        },
+        "a3_stock": {
+          "mean": 3.1923,
+          "ci_low": 2.9537,
+          "ci_high": 3.4308,
+          "n": 240
+        },
+        "cho_tuned": {
+          "mean": 2.9005,
+          "ci_low": 2.6729,
+          "ci_high": 3.128,
+          "n": 240
+        },
+        "cho_tuned_ext": {
+          "mean": 2.752,
+          "ci_low": 2.5145,
+          "ci_high": 2.9895,
+          "n": 240
+        },
+        "a3_global": {
+          "mean": 4.7013,
+          "ci_low": 4.3071,
+          "ci_high": 5.0955,
+          "n": 240
+        },
+        "cho_global": {
+          "mean": 2.7177,
+          "ci_low": 2.5064,
+          "ci_high": 2.9289,
+          "n": 240
+        },
+        "cho_global_ext": {
+          "mean": 2.7177,
+          "ci_low": 2.5064,
+          "ci_high": 2.9289,
+          "n": 240
+        },
+        "cho_mse": {
+          "mean": 2.7177,
+          "ci_low": 2.5064,
+          "ci_high": 2.9289,
+          "n": 240
+        },
+        "cho_mro": {
+          "mean": 3.1336,
+          "ci_low": 2.915,
+          "ci_high": 3.3521,
+          "n": 240
+        },
+        "v3_research": {
+          "mean": 2.765,
+          "ci_low": 2.5277,
+          "ci_high": 3.0024,
+          "n": 240
+        }
+      }
+    },
+    {
+      "id": "fail_rate",
+      "label": "Failures (RLF + HO failure)",
+      "label_ko": "실패 (RLF + HO 실패)",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": null,
+      "values": {
+        "a3_tuned": {
+          "mean": 0.0419,
+          "ci_low": 0.0331,
+          "ci_high": 0.0508,
+          "n": 240
+        },
+        "a3_stock": {
+          "mean": 0.5465,
+          "ci_low": 0.4839,
+          "ci_high": 0.609,
+          "n": 240
+        },
+        "cho_tuned": {
+          "mean": 0.0003,
+          "ci_low": -0.0,
+          "ci_high": 0.0007,
+          "n": 240
+        },
+        "cho_tuned_ext": {
+          "mean": 0.002,
+          "ci_low": 0.0007,
+          "ci_high": 0.0033,
+          "n": 240
+        },
+        "a3_global": {
+          "mean": 0.1703,
+          "ci_low": 0.1145,
+          "ci_high": 0.2262,
+          "n": 240
+        },
+        "cho_global": {
+          "mean": 0.0003,
+          "ci_low": 0.0001,
+          "ci_high": 0.0006,
+          "n": 240
+        },
+        "cho_global_ext": {
+          "mean": 0.0003,
+          "ci_low": 0.0001,
+          "ci_high": 0.0006,
+          "n": 240
+        },
+        "cho_mse": {
+          "mean": 0.0003,
+          "ci_low": 0.0001,
+          "ci_high": 0.0006,
+          "n": 240
+        },
+        "cho_mro": {
+          "mean": 0.0039,
+          "ci_low": 0.0028,
+          "ci_high": 0.005,
+          "n": 240
+        },
+        "v3_research": {
+          "mean": 0.0062,
+          "ci_low": 0.0039,
+          "ci_high": 0.0084,
+          "n": 240
+        }
+      }
+    },
+    {
+      "id": "rlf_rate",
+      "label": "Radio-link failures",
+      "label_ko": "무선 링크 실패",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": null,
+      "values": {
+        "a3_tuned": {
+          "mean": 0.0048,
+          "ci_low": 0.0022,
+          "ci_high": 0.0075,
+          "n": 240
+        },
+        "a3_stock": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 240
+        },
+        "cho_tuned": {
+          "mean": 0.0003,
+          "ci_low": -0.0,
+          "ci_high": 0.0007,
+          "n": 240
+        },
+        "cho_tuned_ext": {
+          "mean": 0.0018,
+          "ci_low": 0.0006,
+          "ci_high": 0.003,
+          "n": 240
+        },
+        "a3_global": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 240
+        },
+        "cho_global": {
+          "mean": 0.0,
+          "ci_low": -0.0,
+          "ci_high": 0.0001,
+          "n": 240
+        },
+        "cho_global_ext": {
+          "mean": 0.0,
+          "ci_low": -0.0,
+          "ci_high": 0.0001,
+          "n": 240
+        },
+        "cho_mse": {
+          "mean": 0.0,
+          "ci_low": -0.0,
+          "ci_high": 0.0001,
+          "n": 240
+        },
+        "cho_mro": {
+          "mean": 0.0038,
+          "ci_low": 0.0028,
+          "ci_high": 0.0049,
+          "n": 240
+        },
+        "v3_research": {
+          "mean": 0.0061,
+          "ci_low": 0.0039,
+          "ci_high": 0.0083,
+          "n": 240
+        }
+      }
+    },
+    {
+      "id": "mro_rate",
+      "label": "MRO events (late/early/wrong-cell)",
+      "label_ko": "MRO 이벤트 (늦은/이른/잘못된 셀)",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": null,
+      "values": {
+        "a3_tuned": {
+          "mean": 0.0419,
+          "ci_low": 0.0331,
+          "ci_high": 0.0508,
+          "n": 240
+        },
+        "a3_stock": {
+          "mean": 0.5465,
+          "ci_low": 0.4839,
+          "ci_high": 0.609,
+          "n": 240
+        },
+        "cho_tuned": {
+          "mean": 0.0003,
+          "ci_low": -0.0,
+          "ci_high": 0.0007,
+          "n": 240
+        },
+        "cho_tuned_ext": {
+          "mean": 0.002,
+          "ci_low": 0.0007,
+          "ci_high": 0.0033,
+          "n": 240
+        },
+        "a3_global": {
+          "mean": 0.1703,
+          "ci_low": 0.1145,
+          "ci_high": 0.2262,
+          "n": 240
+        },
+        "cho_global": {
+          "mean": 0.0003,
+          "ci_low": 0.0001,
+          "ci_high": 0.0006,
+          "n": 240
+        },
+        "cho_global_ext": {
+          "mean": 0.0003,
+          "ci_low": 0.0001,
+          "ci_high": 0.0006,
+          "n": 240
+        },
+        "cho_mse": {
+          "mean": 0.0003,
+          "ci_low": 0.0001,
+          "ci_high": 0.0006,
+          "n": 240
+        },
+        "cho_mro": {
+          "mean": 0.0039,
+          "ci_low": 0.0028,
+          "ci_high": 0.005,
+          "n": 240
+        },
+        "v3_research": {
+          "mean": 0.0062,
+          "ci_low": 0.0039,
+          "ci_high": 0.0084,
+          "n": 240
+        }
+      }
+    },
+    {
+      "id": "ho_success_rate",
+      "label": "HO success rate",
+      "label_ko": "핸드오버 성공률",
+      "unit": "%",
+      "better": "higher",
+      "scenario": null,
+      "values": {
+        "a3_tuned": {
+          "mean": 95.841,
+          "ci_low": 94.1187,
+          "ci_high": 97.5632,
+          "n": 240
+        },
+        "a3_stock": {
+          "mean": 87.7007,
+          "ci_low": 86.4917,
+          "ci_high": 88.9098,
+          "n": 240
+        },
+        "cho_tuned": {
+          "mean": 100.0,
+          "ci_low": 100.0,
+          "ci_high": 100.0,
+          "n": 240
+        },
+        "cho_tuned_ext": {
+          "mean": 99.9078,
+          "ci_low": 99.7953,
+          "ci_high": 100.0203,
+          "n": 240
+        },
+        "a3_global": {
+          "mean": 98.0744,
+          "ci_low": 97.6005,
+          "ci_high": 98.5482,
+          "n": 240
+        },
+        "cho_global": {
+          "mean": 99.9913,
+          "ci_low": 99.9832,
+          "ci_high": 99.9994,
+          "n": 240
+        },
+        "cho_global_ext": {
+          "mean": 99.9913,
+          "ci_low": 99.9832,
+          "ci_high": 99.9994,
+          "n": 240
+        },
+        "cho_mse": {
+          "mean": 99.9913,
+          "ci_low": 99.9832,
+          "ci_high": 99.9994,
+          "n": 240
+        },
+        "cho_mro": {
+          "mean": 99.9983,
+          "ci_low": 99.996,
+          "ci_high": 100.0007,
+          "n": 240
+        },
+        "v3_research": {
+          "mean": 99.9537,
+          "ci_low": 99.8625,
+          "ci_high": 100.0449,
+          "n": 240
+        }
+      }
+    },
+    {
+      "id": "outage_frac",
+      "label": "Time in outage",
+      "label_ko": "서비스 중단 시간",
+      "unit": "%",
+      "better": "lower",
+      "scenario": null,
+      "values": {
+        "a3_tuned": {
+          "mean": 0.1886,
+          "ci_low": 0.137,
+          "ci_high": 0.2403,
+          "n": 240
+        },
+        "a3_stock": {
+          "mean": 1.2911,
+          "ci_low": 1.1426,
+          "ci_high": 1.4395,
+          "n": 240
+        },
+        "cho_tuned": {
+          "mean": 0.1709,
+          "ci_low": 0.1299,
+          "ci_high": 0.2119,
+          "n": 240
+        },
+        "cho_tuned_ext": {
+          "mean": 0.1879,
+          "ci_low": 0.1423,
+          "ci_high": 0.2335,
+          "n": 240
+        },
+        "a3_global": {
+          "mean": 0.3437,
+          "ci_low": 0.2308,
+          "ci_high": 0.4566,
+          "n": 240
+        },
+        "cho_global": {
+          "mean": 0.3487,
+          "ci_low": 0.3038,
+          "ci_high": 0.3936,
+          "n": 240
+        },
+        "cho_global_ext": {
+          "mean": 0.3487,
+          "ci_low": 0.3038,
+          "ci_high": 0.3936,
+          "n": 240
+        },
+        "cho_mse": {
+          "mean": 0.3487,
+          "ci_low": 0.3038,
+          "ci_high": 0.3936,
+          "n": 240
+        },
+        "cho_mro": {
+          "mean": 0.2075,
+          "ci_low": 0.1684,
+          "ci_high": 0.2465,
+          "n": 240
+        },
+        "v3_research": {
+          "mean": 0.2596,
+          "ci_low": 0.2118,
+          "ci_high": 0.3074,
+          "n": 240
+        }
+      }
+    },
+    {
+      "id": "mean_thr_mbps",
+      "label": "Mean throughput (Shannon proxy)",
+      "label_ko": "평균 처리량 (Shannon 근사)",
+      "unit": "Mbps",
+      "better": "higher",
+      "scenario": null,
+      "values": {
+        "a3_tuned": {
+          "mean": 161.4746,
+          "ci_low": 157.5029,
+          "ci_high": 165.4463,
+          "n": 240
+        },
+        "a3_stock": {
+          "mean": 157.0447,
+          "ci_low": 153.0599,
+          "ci_high": 161.0295,
+          "n": 240
+        },
+        "cho_tuned": {
+          "mean": 159.738,
+          "ci_low": 155.705,
+          "ci_high": 163.7711,
+          "n": 240
+        },
+        "cho_tuned_ext": {
+          "mean": 159.5742,
+          "ci_low": 155.5321,
+          "ci_high": 163.6163,
+          "n": 240
+        },
+        "a3_global": {
+          "mean": 161.6369,
+          "ci_low": 157.688,
+          "ci_high": 165.5858,
+          "n": 240
+        },
+        "cho_global": {
+          "mean": 157.461,
+          "ci_low": 153.5347,
+          "ci_high": 161.3872,
+          "n": 240
+        },
+        "cho_global_ext": {
+          "mean": 157.461,
+          "ci_low": 153.5347,
+          "ci_high": 161.3872,
+          "n": 240
+        },
+        "cho_mse": {
+          "mean": 157.4613,
+          "ci_low": 153.535,
+          "ci_high": 161.3875,
+          "n": 240
+        },
+        "cho_mro": {
+          "mean": 159.2365,
+          "ci_low": 155.2463,
+          "ci_high": 163.2267,
+          "n": 240
+        },
+        "v3_research": {
+          "mean": 159.4306,
+          "ci_low": 155.4114,
+          "ci_high": 163.4498,
+          "n": 240
+        }
+      }
+    },
+    {
+      "id": "p5_thr_mbps",
+      "label": "5th-pct UE throughput",
+      "label_ko": "하위 5% UE 처리량",
+      "unit": "Mbps",
+      "better": "higher",
+      "scenario": null,
+      "values": {
+        "a3_tuned": {
+          "mean": 116.4835,
+          "ci_low": 111.1376,
+          "ci_high": 121.8294,
+          "n": 240
+        },
+        "a3_stock": {
+          "mean": 112.0889,
+          "ci_low": 106.9135,
+          "ci_high": 117.2643,
+          "n": 240
+        },
+        "cho_tuned": {
+          "mean": 114.5465,
+          "ci_low": 109.2248,
+          "ci_high": 119.8681,
+          "n": 240
+        },
+        "cho_tuned_ext": {
+          "mean": 114.2274,
+          "ci_low": 108.8818,
+          "ci_high": 119.5729,
+          "n": 240
+        },
+        "a3_global": {
+          "mean": 117.2172,
+          "ci_low": 111.9854,
+          "ci_high": 122.4489,
+          "n": 240
+        },
+        "cho_global": {
+          "mean": 112.3273,
+          "ci_low": 107.2143,
+          "ci_high": 117.4402,
+          "n": 240
+        },
+        "cho_global_ext": {
+          "mean": 112.3273,
+          "ci_low": 107.2143,
+          "ci_high": 117.4402,
+          "n": 240
+        },
+        "cho_mse": {
+          "mean": 112.3273,
+          "ci_low": 107.2143,
+          "ci_high": 117.4402,
+          "n": 240
+        },
+        "cho_mro": {
+          "mean": 114.002,
+          "ci_low": 108.7756,
+          "ci_high": 119.2284,
+          "n": 240
+        },
+        "v3_research": {
+          "mean": 114.4888,
+          "ci_low": 109.1887,
+          "ci_high": 119.7888,
+          "n": 240
+        }
+      }
+    },
+    {
+      "id": "short_stay_rate",
+      "label": "Short-stay returns (<5 s)",
+      "label_ko": "단기 복귀 (<5초)",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": null,
+      "values": {
+        "a3_tuned": {
+          "mean": 0.3732,
+          "ci_low": 0.3216,
+          "ci_high": 0.4249,
+          "n": 240
+        },
+        "a3_stock": {
+          "mean": 0.2638,
+          "ci_low": 0.208,
+          "ci_high": 0.3197,
+          "n": 240
+        },
+        "cho_tuned": {
+          "mean": 0.2256,
+          "ci_low": 0.1992,
+          "ci_high": 0.2519,
+          "n": 240
+        },
+        "cho_tuned_ext": {
+          "mean": 0.1955,
+          "ci_low": 0.1693,
+          "ci_high": 0.2217,
+          "n": 240
+        },
+        "a3_global": {
+          "mean": 0.9011,
+          "ci_low": 0.7271,
+          "ci_high": 1.0751,
+          "n": 240
+        },
+        "cho_global": {
+          "mean": 0.2175,
+          "ci_low": 0.1882,
+          "ci_high": 0.2468,
+          "n": 240
+        },
+        "cho_global_ext": {
+          "mean": 0.2175,
+          "ci_low": 0.1882,
+          "ci_high": 0.2468,
+          "n": 240
+        },
+        "cho_mse": {
+          "mean": 0.2175,
+          "ci_low": 0.1882,
+          "ci_high": 0.2468,
+          "n": 240
+        },
+        "cho_mro": {
+          "mean": 0.3234,
+          "ci_low": 0.2822,
+          "ci_high": 0.3646,
+          "n": 240
+        },
+        "v3_research": {
+          "mean": 0.2084,
+          "ci_low": 0.1836,
+          "ci_high": 0.2332,
+          "n": 240
+        }
+      }
+    },
+    {
+      "id": "utility@rush_hour",
+      "label": "Operator utility (objective)",
+      "label_ko": "운영자 효용 (목적함수)",
+      "unit": "per UE-min",
+      "better": "higher",
+      "scenario": "rush_hour",
+      "values": {
+        "a3_tuned": {
+          "mean": 10.4374,
+          "ci_low": 10.1779,
+          "ci_high": 10.6969,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 5.8699,
+          "ci_low": 5.4461,
+          "ci_high": 6.2938,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 10.9535,
+          "ci_low": 10.7615,
+          "ci_high": 11.1455,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 10.959,
+          "ci_low": 10.7668,
+          "ci_high": 11.1512,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 10.3088,
+          "ci_low": 10.0533,
+          "ci_high": 10.5643,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 10.8262,
+          "ci_low": 10.6365,
+          "ci_high": 11.016,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 10.8262,
+          "ci_low": 10.6365,
+          "ci_high": 11.016,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 10.8263,
+          "ci_low": 10.6365,
+          "ci_high": 11.016,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 10.8488,
+          "ci_low": 10.6585,
+          "ci_high": 11.0392,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 10.929,
+          "ci_low": 10.7358,
+          "ci_high": 11.1222,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "pp_rate@rush_hour",
+      "label": "Ping-pong HOs (<1 s stay)",
+      "label_ko": "핑퐁 핸드오버 (<1초 체류)",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": "rush_hour",
+      "values": {
+        "a3_tuned": {
+          "mean": 0.0122,
+          "ci_low": 0.0084,
+          "ci_high": 0.0159,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 0.0002,
+          "ci_low": -0.0002,
+          "ci_high": 0.0005,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 0.0002,
+          "ci_low": -0.0002,
+          "ci_high": 0.0005,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 0.0073,
+          "ci_low": 0.004,
+          "ci_high": 0.0107,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 0.0003,
+          "ci_low": -0.0001,
+          "ci_high": 0.0008,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 0.0012,
+          "ci_low": 0.0003,
+          "ci_high": 0.002,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "ho_rate@rush_hour",
+      "label": "Handover rate",
+      "label_ko": "핸드오버 빈도",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": "rush_hour",
+      "values": {
+        "a3_tuned": {
+          "mean": 5.865,
+          "ci_low": 5.6219,
+          "ci_high": 6.1081,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 4.5252,
+          "ci_low": 4.3712,
+          "ci_high": 4.6791,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 4.4297,
+          "ci_low": 4.2875,
+          "ci_high": 4.5719,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 4.3162,
+          "ci_low": 4.1776,
+          "ci_high": 4.4547,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 5.9193,
+          "ci_low": 5.7243,
+          "ci_high": 6.1144,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 4.1282,
+          "ci_low": 4.0004,
+          "ci_high": 4.2559,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 4.1282,
+          "ci_low": 4.0004,
+          "ci_high": 4.2559,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 4.1282,
+          "ci_low": 4.0004,
+          "ci_high": 4.2559,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 4.6122,
+          "ci_low": 4.4904,
+          "ci_high": 4.734,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 4.3583,
+          "ci_low": 4.2423,
+          "ci_high": 4.4744,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "fail_rate@rush_hour",
+      "label": "Failures (RLF + HO failure)",
+      "label_ko": "실패 (RLF + HO 실패)",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": "rush_hour",
+      "values": {
+        "a3_tuned": {
+          "mean": 0.0713,
+          "ci_low": 0.0486,
+          "ci_high": 0.094,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 0.954,
+          "ci_low": 0.8817,
+          "ci_high": 1.0263,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 0.0005,
+          "ci_low": -0.0001,
+          "ci_high": 0.0011,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 0.0005,
+          "ci_low": -0.0001,
+          "ci_high": 0.0011,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 0.0947,
+          "ci_low": 0.0739,
+          "ci_high": 0.1154,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 0.0005,
+          "ci_low": -0.0002,
+          "ci_high": 0.0012,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 0.0005,
+          "ci_low": -0.0002,
+          "ci_high": 0.0012,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 0.0005,
+          "ci_low": -0.0002,
+          "ci_high": 0.0012,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 0.0067,
+          "ci_low": 0.004,
+          "ci_high": 0.0093,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 0.0057,
+          "ci_low": 0.0032,
+          "ci_high": 0.0081,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "mean_thr_mbps@rush_hour",
+      "label": "Mean throughput (Shannon proxy)",
+      "label_ko": "평균 처리량 (Shannon 근사)",
+      "unit": "Mbps",
+      "better": "higher",
+      "scenario": "rush_hour",
+      "values": {
+        "a3_tuned": {
+          "mean": 152.4585,
+          "ci_low": 150.1815,
+          "ci_high": 154.7355,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 145.424,
+          "ci_low": 143.2057,
+          "ci_high": 147.6423,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 148.9105,
+          "ci_low": 146.5869,
+          "ci_high": 151.2341,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 148.5643,
+          "ci_low": 146.2344,
+          "ci_high": 150.8942,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 152.3957,
+          "ci_low": 150.124,
+          "ci_high": 154.6673,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 146.2685,
+          "ci_low": 144.0022,
+          "ci_high": 148.5348,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 146.2685,
+          "ci_low": 144.0022,
+          "ci_high": 148.5348,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 146.2687,
+          "ci_low": 144.0024,
+          "ci_high": 148.5349,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 148.685,
+          "ci_low": 146.4452,
+          "ci_high": 150.9248,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 148.6928,
+          "ci_low": 146.4431,
+          "ci_high": 150.9425,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "utility@corner_turner",
+      "label": "Operator utility (objective)",
+      "label_ko": "운영자 효용 (목적함수)",
+      "unit": "per UE-min",
+      "better": "higher",
+      "scenario": "corner_turner",
+      "values": {
+        "a3_tuned": {
+          "mean": 15.9891,
+          "ci_low": 15.5572,
+          "ci_high": 16.421,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 15.647,
+          "ci_low": 15.1781,
+          "ci_high": 16.1158,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 16.0148,
+          "ci_low": 15.5849,
+          "ci_high": 16.4447,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 16.0148,
+          "ci_low": 15.5849,
+          "ci_high": 16.4447,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 15.9864,
+          "ci_low": 15.5562,
+          "ci_high": 16.4167,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 15.8335,
+          "ci_low": 15.4017,
+          "ci_high": 16.2653,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 15.8335,
+          "ci_low": 15.4017,
+          "ci_high": 16.2653,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 15.8335,
+          "ci_low": 15.4017,
+          "ci_high": 16.2653,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 15.9768,
+          "ci_low": 15.5452,
+          "ci_high": 16.4084,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 15.9192,
+          "ci_low": 15.475,
+          "ci_high": 16.3634,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "pp_rate@corner_turner",
+      "label": "Ping-pong HOs (<1 s stay)",
+      "label_ko": "핑퐁 핸드오버 (<1초 체류)",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": "corner_turner",
+      "values": {
+        "a3_tuned": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 0.0017,
+          "ci_low": -0.0007,
+          "ci_high": 0.004,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 0.0117,
+          "ci_low": 0.0036,
+          "ci_high": 0.0197,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "ho_rate@corner_turner",
+      "label": "Handover rate",
+      "label_ko": "핸드오버 빈도",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": "corner_turner",
+      "values": {
+        "a3_tuned": {
+          "mean": 2.0692,
+          "ci_low": 1.9361,
+          "ci_high": 2.2023,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 1.7025,
+          "ci_low": 1.5847,
+          "ci_high": 1.8203,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 2.0683,
+          "ci_low": 1.9354,
+          "ci_high": 2.2013,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 2.0683,
+          "ci_low": 1.9354,
+          "ci_high": 2.2013,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 2.1158,
+          "ci_low": 1.9781,
+          "ci_high": 2.2536,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 1.6375,
+          "ci_low": 1.526,
+          "ci_high": 1.749,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 1.6375,
+          "ci_low": 1.526,
+          "ci_high": 1.749,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 1.6375,
+          "ci_low": 1.526,
+          "ci_high": 1.749,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 1.885,
+          "ci_low": 1.7578,
+          "ci_high": 2.0122,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 2.06,
+          "ci_low": 1.9425,
+          "ci_high": 2.1775,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "fail_rate@corner_turner",
+      "label": "Failures (RLF + HO failure)",
+      "label_ko": "실패 (RLF + HO 실패)",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": "corner_turner",
+      "values": {
+        "a3_tuned": {
+          "mean": 0.005,
+          "ci_low": 0.0004,
+          "ci_high": 0.0096,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 0.0425,
+          "ci_low": 0.0241,
+          "ci_high": 0.0609,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 0.0025,
+          "ci_low": -0.0003,
+          "ci_high": 0.0053,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 0.005,
+          "ci_low": -0.0007,
+          "ci_high": 0.0107,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "mean_thr_mbps@corner_turner",
+      "label": "Mean throughput (Shannon proxy)",
+      "label_ko": "평균 처리량 (Shannon 근사)",
+      "unit": "Mbps",
+      "better": "higher",
+      "scenario": "corner_turner",
+      "values": {
+        "a3_tuned": {
+          "mean": 201.6345,
+          "ci_low": 196.5228,
+          "ci_high": 206.7462,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 198.4268,
+          "ci_low": 193.2827,
+          "ci_high": 203.5709,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 201.64,
+          "ci_low": 196.5285,
+          "ci_high": 206.7515,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 201.64,
+          "ci_low": 196.5285,
+          "ci_high": 206.7515,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 201.66,
+          "ci_low": 196.5509,
+          "ci_high": 206.7691,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 197.875,
+          "ci_low": 192.7375,
+          "ci_high": 203.0125,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 197.875,
+          "ci_low": 192.7375,
+          "ci_high": 203.0125,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 197.875,
+          "ci_low": 192.7375,
+          "ci_high": 203.0125,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 200.513,
+          "ci_low": 195.3873,
+          "ci_high": 205.6387,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 201.0365,
+          "ci_low": 195.8933,
+          "ci_high": 206.1797,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "utility@stationary_clusters",
+      "label": "Operator utility (objective)",
+      "label_ko": "운영자 효용 (목적함수)",
+      "unit": "per UE-min",
+      "better": "higher",
+      "scenario": "stationary_clusters",
+      "values": {
+        "a3_tuned": {
+          "mean": 11.0973,
+          "ci_low": 10.4491,
+          "ci_high": 11.7456,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 9.3616,
+          "ci_low": 8.296,
+          "ci_high": 10.4272,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 11.1119,
+          "ci_low": 10.4656,
+          "ci_high": 11.7581,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 11.1892,
+          "ci_low": 10.5538,
+          "ci_high": 11.8247,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 6.3359,
+          "ci_low": 4.3122,
+          "ci_high": 8.3597,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 11.0281,
+          "ci_low": 10.3698,
+          "ci_high": 11.6865,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 11.0281,
+          "ci_low": 10.3698,
+          "ci_high": 11.6865,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 11.0282,
+          "ci_low": 10.3699,
+          "ci_high": 11.6865,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 10.7644,
+          "ci_low": 10.083,
+          "ci_high": 11.4458,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 11.1738,
+          "ci_low": 10.535,
+          "ci_high": 11.8126,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "pp_rate@stationary_clusters",
+      "label": "Ping-pong HOs (<1 s stay)",
+      "label_ko": "핑퐁 핸드오버 (<1초 체류)",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": "stationary_clusters",
+      "values": {
+        "a3_tuned": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 0.0327,
+          "ci_low": 0.0176,
+          "ci_high": 0.0477,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 0.5184,
+          "ci_low": 0.3364,
+          "ci_high": 0.7005,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 0.0013,
+          "ci_low": 0.0001,
+          "ci_high": 0.0026,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 0.0013,
+          "ci_low": 0.0001,
+          "ci_high": 0.0026,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 0.0013,
+          "ci_low": 0.0001,
+          "ci_high": 0.0026,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 0.0398,
+          "ci_low": 0.0242,
+          "ci_high": 0.0554,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 0.0011,
+          "ci_low": 0.0002,
+          "ci_high": 0.0021,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "ho_rate@stationary_clusters",
+      "label": "Handover rate",
+      "label_ko": "핸드오버 빈도",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": "stationary_clusters",
+      "values": {
+        "a3_tuned": {
+          "mean": 0.0493,
+          "ci_low": 0.0361,
+          "ci_high": 0.0625,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 1.8918,
+          "ci_low": 1.3003,
+          "ci_high": 2.4833,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 0.5347,
+          "ci_low": 0.386,
+          "ci_high": 0.6833,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 0.1238,
+          "ci_low": 0.0848,
+          "ci_high": 0.1627,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 4.7913,
+          "ci_low": 3.4387,
+          "ci_high": 6.144,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 0.8398,
+          "ci_low": 0.5725,
+          "ci_high": 1.107,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 0.8398,
+          "ci_low": 0.5725,
+          "ci_high": 1.107,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 0.8398,
+          "ci_low": 0.5725,
+          "ci_high": 1.107,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 1.3969,
+          "ci_low": 1.043,
+          "ci_high": 1.7508,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 0.1167,
+          "ci_low": 0.0869,
+          "ci_high": 0.1465,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "fail_rate@stationary_clusters",
+      "label": "Failures (RLF + HO failure)",
+      "label_ko": "실패 (RLF + HO 실패)",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": "stationary_clusters",
+      "values": {
+        "a3_tuned": {
+          "mean": 0.0287,
+          "ci_low": 0.0174,
+          "ci_high": 0.0399,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 0.2487,
+          "ci_low": 0.1538,
+          "ci_high": 0.3435,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 0.0009,
+          "ci_low": -0.0005,
+          "ci_high": 0.0023,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 0.0076,
+          "ci_low": 0.0025,
+          "ci_high": 0.0126,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 0.5016,
+          "ci_low": 0.2989,
+          "ci_high": 0.7042,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 0.0004,
+          "ci_low": -0.0002,
+          "ci_high": 0.0011,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 0.0004,
+          "ci_low": -0.0002,
+          "ci_high": 0.0011,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 0.0004,
+          "ci_low": -0.0002,
+          "ci_high": 0.0011,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 0.002,
+          "ci_low": 0.0003,
+          "ci_high": 0.0037,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 0.0091,
+          "ci_low": 0.0028,
+          "ci_high": 0.0154,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "mean_thr_mbps@stationary_clusters",
+      "label": "Mean throughput (Shannon proxy)",
+      "label_ko": "평균 처리량 (Shannon 근사)",
+      "unit": "Mbps",
+      "better": "higher",
+      "scenario": "stationary_clusters",
+      "values": {
+        "a3_tuned": {
+          "mean": 136.4297,
+          "ci_low": 128.8121,
+          "ci_high": 144.0473,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 136.2153,
+          "ci_low": 128.543,
+          "ci_high": 143.8877,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 136.6873,
+          "ci_low": 129.0782,
+          "ci_high": 144.2965,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 136.5357,
+          "ci_low": 128.9264,
+          "ci_high": 144.145,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 137.1882,
+          "ci_low": 129.6132,
+          "ci_high": 144.7632,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 136.7875,
+          "ci_low": 129.1806,
+          "ci_high": 144.3944,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 136.7875,
+          "ci_low": 129.1806,
+          "ci_high": 144.3944,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 136.7883,
+          "ci_low": 129.1814,
+          "ci_high": 144.3953,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 136.6425,
+          "ci_low": 129.0257,
+          "ci_high": 144.2593,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 136.4433,
+          "ci_low": 128.8178,
+          "ci_high": 144.0689,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "utility@cell_outage",
+      "label": "Operator utility (objective)",
+      "label_ko": "운영자 효용 (목적함수)",
+      "unit": "per UE-min",
+      "better": "higher",
+      "scenario": "cell_outage",
+      "values": {
+        "a3_tuned": {
+          "mean": 10.7005,
+          "ci_low": 10.3143,
+          "ci_high": 11.0867,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 6.121,
+          "ci_low": 5.5031,
+          "ci_high": 6.7389,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 11.1457,
+          "ci_low": 10.7982,
+          "ci_high": 11.4932,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 11.1536,
+          "ci_low": 10.8055,
+          "ci_high": 11.5016,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 10.59,
+          "ci_low": 10.2086,
+          "ci_high": 10.9714,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 11.0041,
+          "ci_low": 10.6549,
+          "ci_high": 11.3533,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 11.0041,
+          "ci_low": 10.6549,
+          "ci_high": 11.3533,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 11.0041,
+          "ci_low": 10.6549,
+          "ci_high": 11.3533,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 11.0388,
+          "ci_low": 10.695,
+          "ci_high": 11.3826,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 11.1185,
+          "ci_low": 10.7666,
+          "ci_high": 11.4704,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "pp_rate@cell_outage",
+      "label": "Ping-pong HOs (<1 s stay)",
+      "label_ko": "핑퐁 핸드오버 (<1초 체류)",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": "cell_outage",
+      "values": {
+        "a3_tuned": {
+          "mean": 0.0125,
+          "ci_low": 0.0086,
+          "ci_high": 0.0164,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 0.0078,
+          "ci_low": 0.0045,
+          "ci_high": 0.0112,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 0.0002,
+          "ci_low": -0.0002,
+          "ci_high": 0.0005,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 0.0013,
+          "ci_low": 0.0001,
+          "ci_high": 0.0025,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "ho_rate@cell_outage",
+      "label": "Handover rate",
+      "label_ko": "핸드오버 빈도",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": "cell_outage",
+      "values": {
+        "a3_tuned": {
+          "mean": 5.9323,
+          "ci_low": 5.6804,
+          "ci_high": 6.1842,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 4.6497,
+          "ci_low": 4.466,
+          "ci_high": 4.8333,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 4.5692,
+          "ci_low": 4.3917,
+          "ci_high": 4.7466,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 4.4997,
+          "ci_low": 4.3249,
+          "ci_high": 4.6745,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 5.9788,
+          "ci_low": 5.7655,
+          "ci_high": 6.1922,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 4.2652,
+          "ci_low": 4.0923,
+          "ci_high": 4.438,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 4.2652,
+          "ci_low": 4.0923,
+          "ci_high": 4.438,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 4.2652,
+          "ci_low": 4.0923,
+          "ci_high": 4.438,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 4.6402,
+          "ci_low": 4.4692,
+          "ci_high": 4.8112,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 4.5252,
+          "ci_low": 4.3784,
+          "ci_high": 4.6719,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "fail_rate@cell_outage",
+      "label": "Failures (RLF + HO failure)",
+      "label_ko": "실패 (RLF + HO 실패)",
+      "unit": "per UE-min",
+      "better": "lower",
+      "scenario": "cell_outage",
+      "values": {
+        "a3_tuned": {
+          "mean": 0.0627,
+          "ci_low": 0.0414,
+          "ci_high": 0.0839,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 0.9407,
+          "ci_low": 0.8645,
+          "ci_high": 1.0168,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 0.0827,
+          "ci_low": 0.0633,
+          "ci_high": 0.102,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 0.0003,
+          "ci_low": -0.0001,
+          "ci_high": 0.0008,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 0.0003,
+          "ci_low": -0.0001,
+          "ci_high": 0.0008,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 0.0003,
+          "ci_low": -0.0001,
+          "ci_high": 0.0008,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 0.007,
+          "ci_low": 0.0042,
+          "ci_high": 0.0098,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 0.0048,
+          "ci_low": 0.0031,
+          "ci_high": 0.0066,
+          "n": 60
+        }
+      }
+    },
+    {
+      "id": "mean_thr_mbps@cell_outage",
+      "label": "Mean throughput (Shannon proxy)",
+      "label_ko": "평균 처리량 (Shannon 근사)",
+      "unit": "Mbps",
+      "better": "higher",
+      "scenario": "cell_outage",
+      "values": {
+        "a3_tuned": {
+          "mean": 155.3758,
+          "ci_low": 151.5918,
+          "ci_high": 159.1599,
+          "n": 60
+        },
+        "a3_stock": {
+          "mean": 148.1125,
+          "ci_low": 144.2423,
+          "ci_high": 151.9827,
+          "n": 60
+        },
+        "cho_tuned": {
+          "mean": 151.7143,
+          "ci_low": 147.8452,
+          "ci_high": 155.5835,
+          "n": 60
+        },
+        "cho_tuned_ext": {
+          "mean": 151.5568,
+          "ci_low": 147.6833,
+          "ci_high": 155.4304,
+          "n": 60
+        },
+        "a3_global": {
+          "mean": 155.3037,
+          "ci_low": 151.5266,
+          "ci_high": 159.0807,
+          "n": 60
+        },
+        "cho_global": {
+          "mean": 148.9128,
+          "ci_low": 145.0379,
+          "ci_high": 152.7878,
+          "n": 60
+        },
+        "cho_global_ext": {
+          "mean": 148.9128,
+          "ci_low": 145.0379,
+          "ci_high": 152.7878,
+          "n": 60
+        },
+        "cho_mse": {
+          "mean": 148.913,
+          "ci_low": 145.0381,
+          "ci_high": 152.7879,
+          "n": 60
+        },
+        "cho_mro": {
+          "mean": 151.1055,
+          "ci_low": 147.2886,
+          "ci_high": 154.9224,
+          "n": 60
+        },
+        "v3_research": {
+          "mean": 151.5497,
+          "ci_low": 147.6728,
+          "ci_high": 155.4265,
+          "n": 60
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "twin": "twin v2: 100 ms step, per-RE RSRP (n78 100 MHz, 273 PRB), RS-SINR with 50% interferer load, Doppler-correlated fading (2-branch diversity), 3GPP RLF (Qout -8 dB / Qin -6 dB, N310=2, T310=1 s), HO failure on source-command loss or target SINR < Qout, 1 s re-establishment; CHO executions skip command loss",
+    "radio_map": "opencellid (9 nearest real Kumoh sites)",
+    "cells": "4 scenarios x 3 fading modes",
+    "eval_seeds": "2100-2119 (pre-registered held-out; used once). v3.1.1 lineage: central init v3.39.0 trained on fit seeds 31000-31003 (early-stopping validation 31100-31101); federation clients on 4-seed prefixes of the pre-registered blocks (620-623, 720-723, 820-823); baseline sweep 500-504; candidate selection on tuning seeds 1000-1019; gate 1100-1102. Audit seeds 31200-31219 unused.",
+    "episodes_per_arm": 240,
+    "episode_length": "300 s",
+    "pairing": "all arms run on identical radio traces per (cell, seed), one sim pass per trace",
+    "ci_method": "95% Student-t CI of the mean over episodes; paired-difference tests in working/evidence/finals-v3/report.md",
+    "baselines": "oracle (knows the scenario x fading cell): a3_tuned, cho_tuned (sweep 500-504), cho_tuned_ext (extended grid, sweep 500-504); deployable (one network-wide setting): a3_global, cho_global, cho_global_ext, cho_mse (3GPP mobility-state scaling; equals cho_global in this run), cho_mro (MRO online offsets)",
+    "objective": "utility = 60*meanSE/7.4 - 0.3*HO - 2*ping-pong - 5*(RLF+HOF), per UE-minute",
+    "preregistration": "pipeline/finals_preregistration_v3.json",
+    "go_no_go": "NO-GO",
+    "policy_arm": "v1.3.1 (the promoted live policy) remains the policy arm, as frozen in FREEZE.md and the pre-registration. It has NO held-out data in this run and none is shown or invented. The evaluated candidate v3.1.1 (clean median-federated MLP CHO-profile selector, OpenCelliD, not runtime-qualified) is shown only as the extra research arm `v3_research`; its pre-registered verdict is NO-GO.",
+    "commit": "b6cdd8b",
+    "evaluated_candidate": {
+      "version": "v3.1.1",
+      "role": "extra research arm (NO-GO)",
+      "selection": "clean-candidates-only reading of the pre-registered rule, disclosed in FREEZE.md",
+      "frozen_at_commit": "b6cdd8b"
+    },
+    "projection": {
+      "script": "pipeline/twin/project_final_dashboard.py",
+      "simulation_rerun": false,
+      "new_seeds_used": false,
+      "source": "working/evidence/finals-results-v3.1.1-original.json",
+      "source_sha256": "1cd8d0f20c59117b866810845c19b8c240792ec1529dee886c15a48cd4bac4ee",
+      "stats_sha256": "9e87b1baf60fea1ba1c8517f6aa2b2650208809cc65d0a2907e5002f83884a24",
+      "eval_rows_sha256": "3c8586a2effd1649873d469627eb1035fd8c3aa704e7e5a370669216f4c5fc5b",
+      "report_sha256": "0851a7dfa45d0e69d7a86cd055d396892249e82b4b243a343583cee3b187aedd",
+      "changes": [
+        "arm policy -> v3_research (numbers unchanged); policy arm kept as v1.3.1 with no values",
+        "provenance.eval_seeds, baselines (sweep seeds), policy_arm corrected; evaluated_candidate added",
+        "title/title_ko"
+      ]
+    }
+  }
+}

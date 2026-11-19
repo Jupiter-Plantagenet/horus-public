@@ -1,0 +1,1222 @@
+{
+  "passed": true,
+  "scope": "Engineering fidelity for calibrated-twin to emulated OAI F1 only",
+  "candidate": "v3.14.24",
+  "frames": 20169,
+  "roundtrip_decision_mismatches": 0,
+  "segments": [
+    {
+      "index": 0,
+      "start_s": 0.0,
+      "end_s": 199.4,
+      "inference_calls": 95,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 199.4,
+        "ho_attempts": 2,
+        "ho_success": 2,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.6018,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": 0.0,
+        "outage_frac": 0.0,
+        "mean_se": 0.9305,
+        "mean_thr_mbps": 16.75,
+        "p5_thr_mbps": 16.75,
+        "mean_sinr_db": 2.679,
+        "mean_rsrp_dbm": -92.39
+      }
+    },
+    {
+      "index": 1,
+      "start_s": 199.5,
+      "end_s": 236.8,
+      "inference_calls": 14,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 37.300000000000004,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 1.6007,
+        "mean_thr_mbps": 28.81,
+        "p5_thr_mbps": 28.81,
+        "mean_sinr_db": 7.219,
+        "mean_rsrp_dbm": -84.54
+      }
+    },
+    {
+      "index": 2,
+      "start_s": 236.9,
+      "end_s": 353.8,
+      "inference_calls": 54,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 116.9,
+        "ho_attempts": 1,
+        "ho_success": 1,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.5133,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 1.8542,
+        "mean_thr_mbps": 33.38,
+        "p5_thr_mbps": 33.38,
+        "mean_sinr_db": 8.363,
+        "mean_rsrp_dbm": -79.7
+      }
+    },
+    {
+      "index": 3,
+      "start_s": 353.90000000000003,
+      "end_s": 477.8,
+      "inference_calls": 57,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 123.9,
+        "ho_attempts": 1,
+        "ho_success": 1,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.4843,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": 0.0,
+        "outage_frac": 0.0,
+        "mean_se": 1.7078,
+        "mean_thr_mbps": 30.74,
+        "p5_thr_mbps": 30.74,
+        "mean_sinr_db": 7.763,
+        "mean_rsrp_dbm": -81.21
+      }
+    },
+    {
+      "index": 4,
+      "start_s": 477.90000000000003,
+      "end_s": 483.3,
+      "inference_calls": 0,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 5.4,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 2.5786,
+        "mean_thr_mbps": 46.41,
+        "p5_thr_mbps": 46.41,
+        "mean_sinr_db": 12.658,
+        "mean_rsrp_dbm": -76.11
+      }
+    },
+    {
+      "index": 5,
+      "start_s": 483.40000000000003,
+      "end_s": 572.6,
+      "inference_calls": 40,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 89.2,
+        "ho_attempts": 1,
+        "ho_success": 1,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.6726,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 1.5473,
+        "mean_thr_mbps": 27.85,
+        "p5_thr_mbps": 27.85,
+        "mean_sinr_db": 6.781,
+        "mean_rsrp_dbm": -75.59
+      }
+    },
+    {
+      "index": 6,
+      "start_s": 572.7,
+      "end_s": 628.5,
+      "inference_calls": 23,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 55.800000000000004,
+        "ho_attempts": 2,
+        "ho_success": 2,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 2.1505,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 1.1612,
+        "mean_thr_mbps": 20.9,
+        "p5_thr_mbps": 20.9,
+        "mean_sinr_db": 4.386,
+        "mean_rsrp_dbm": -77.95
+      }
+    },
+    {
+      "index": 7,
+      "start_s": 628.6,
+      "end_s": 639.5,
+      "inference_calls": 1,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 10.9,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 1.9141,
+        "mean_thr_mbps": 34.45,
+        "p5_thr_mbps": 34.45,
+        "mean_sinr_db": 9.044,
+        "mean_rsrp_dbm": -86.11
+      }
+    },
+    {
+      "index": 8,
+      "start_s": 642.6,
+      "end_s": 756.2,
+      "inference_calls": 52,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 113.60000000000001,
+        "ho_attempts": 1,
+        "ho_success": 1,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.5282,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": 0.0,
+        "outage_frac": 0.0,
+        "mean_se": 1.2279,
+        "mean_thr_mbps": 22.1,
+        "p5_thr_mbps": 22.1,
+        "mean_sinr_db": 4.846,
+        "mean_rsrp_dbm": -92.36
+      }
+    },
+    {
+      "index": 9,
+      "start_s": 756.3000000000001,
+      "end_s": 843.7,
+      "inference_calls": 39,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 87.4,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 2.8496,
+        "mean_thr_mbps": 51.29,
+        "p5_thr_mbps": 51.29,
+        "mean_sinr_db": 14.026,
+        "mean_rsrp_dbm": -79.71
+      }
+    },
+    {
+      "index": 10,
+      "start_s": 843.8000000000001,
+      "end_s": 894.2,
+      "inference_calls": 21,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 50.400000000000006,
+        "ho_attempts": 2,
+        "ho_success": 2,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 2.381,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 1.1966,
+        "mean_thr_mbps": 21.54,
+        "p5_thr_mbps": 21.54,
+        "mean_sinr_db": 4.432,
+        "mean_rsrp_dbm": -89.3
+      }
+    },
+    {
+      "index": 11,
+      "start_s": 894.3000000000001,
+      "end_s": 924.5,
+      "inference_calls": 11,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 30.200000000000003,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 1.7591,
+        "mean_thr_mbps": 31.66,
+        "p5_thr_mbps": 31.66,
+        "mean_sinr_db": 8.089,
+        "mean_rsrp_dbm": -85.4
+      }
+    },
+    {
+      "index": 12,
+      "start_s": 925.4000000000001,
+      "end_s": 1044.9,
+      "inference_calls": 55,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 119.5,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": 0.0,
+        "outage_frac": 0.0,
+        "mean_se": 0.9213,
+        "mean_thr_mbps": 16.58,
+        "p5_thr_mbps": 16.58,
+        "mean_sinr_db": 2.43,
+        "mean_rsrp_dbm": -88.35
+      }
+    },
+    {
+      "index": 13,
+      "start_s": 1045.0,
+      "end_s": 1164.3,
+      "inference_calls": 55,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 119.30000000000001,
+        "ho_attempts": 2,
+        "ho_success": 2,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 1.0059,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": 0.0,
+        "outage_frac": 0.0,
+        "mean_se": 1.2067,
+        "mean_thr_mbps": 21.72,
+        "p5_thr_mbps": 21.72,
+        "mean_sinr_db": 4.644,
+        "mean_rsrp_dbm": -84.02
+      }
+    },
+    {
+      "index": 14,
+      "start_s": 1167.6000000000001,
+      "end_s": 1178.9,
+      "inference_calls": 1,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 11.3,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": 0.0,
+        "outage_frac": 0.0,
+        "mean_se": 1.796,
+        "mean_thr_mbps": 32.33,
+        "p5_thr_mbps": 32.33,
+        "mean_sinr_db": 8.427,
+        "mean_rsrp_dbm": -75.89
+      }
+    },
+    {
+      "index": 15,
+      "start_s": 1179.0,
+      "end_s": 1254.4,
+      "inference_calls": 33,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 75.4,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": 0.0,
+        "outage_frac": 0.0,
+        "mean_se": 1.7793,
+        "mean_thr_mbps": 32.03,
+        "p5_thr_mbps": 32.03,
+        "mean_sinr_db": 8.332,
+        "mean_rsrp_dbm": -76.93
+      }
+    },
+    {
+      "index": 16,
+      "start_s": 1254.5,
+      "end_s": 1267.5,
+      "inference_calls": 2,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 13.0,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": 0.0,
+        "outage_frac": 0.0,
+        "mean_se": 2.0754,
+        "mean_thr_mbps": 37.36,
+        "p5_thr_mbps": 37.36,
+        "mean_sinr_db": 9.987,
+        "mean_rsrp_dbm": -73.63
+      }
+    },
+    {
+      "index": 17,
+      "start_s": 1271.6000000000001,
+      "end_s": 1287.2,
+      "inference_calls": 3,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 15.600000000000001,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 2.4468,
+        "mean_thr_mbps": 44.04,
+        "p5_thr_mbps": 44.04,
+        "mean_sinr_db": 11.993,
+        "mean_rsrp_dbm": -70.46
+      }
+    },
+    {
+      "index": 18,
+      "start_s": 1288.1000000000001,
+      "end_s": 1337.8000000000002,
+      "inference_calls": 20,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 49.7,
+        "ho_attempts": 1,
+        "ho_success": 1,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 1.2072,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 1.2988,
+        "mean_thr_mbps": 23.38,
+        "p5_thr_mbps": 23.38,
+        "mean_sinr_db": 4.911,
+        "mean_rsrp_dbm": -77.98
+      }
+    },
+    {
+      "index": 19,
+      "start_s": 1337.9,
+      "end_s": 1346.5,
+      "inference_calls": 0,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 8.6,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 1.1372,
+        "mean_thr_mbps": 20.47,
+        "p5_thr_mbps": 20.47,
+        "mean_sinr_db": 4.345,
+        "mean_rsrp_dbm": -76.22
+      }
+    },
+    {
+      "index": 20,
+      "start_s": 1346.6000000000001,
+      "end_s": 1526.3000000000002,
+      "inference_calls": 85,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 179.70000000000002,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": 0.0,
+        "outage_frac": 0.0,
+        "mean_se": 2.421,
+        "mean_thr_mbps": 43.58,
+        "p5_thr_mbps": 43.58,
+        "mean_sinr_db": 11.766,
+        "mean_rsrp_dbm": -72.75
+      }
+    },
+    {
+      "index": 21,
+      "start_s": 1662.6000000000001,
+      "end_s": 1719.5,
+      "inference_calls": 24,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 56.900000000000006,
+        "ho_attempts": 0,
+        "ho_success": 0,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.0,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": null,
+        "outage_frac": 0.0,
+        "mean_se": 2.6549,
+        "mean_thr_mbps": 47.79,
+        "p5_thr_mbps": 47.79,
+        "mean_sinr_db": 13.093,
+        "mean_rsrp_dbm": -74.3
+      }
+    },
+    {
+      "index": 22,
+      "start_s": 1719.6000000000001,
+      "end_s": 1953.3000000000002,
+      "inference_calls": 112,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 233.70000000000002,
+        "ho_attempts": 2,
+        "ho_success": 2,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.5135,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": 0.0,
+        "outage_frac": 0.0,
+        "mean_se": 1.628,
+        "mean_thr_mbps": 29.3,
+        "p5_thr_mbps": 29.3,
+        "mean_sinr_db": 7.407,
+        "mean_rsrp_dbm": -79.79
+      }
+    },
+    {
+      "index": 23,
+      "start_s": 1953.4,
+      "end_s": 2167.2000000000003,
+      "inference_calls": 102,
+      "metrics": {
+        "n_ues": 1,
+        "duration_s": 213.8,
+        "ho_attempts": 1,
+        "ho_success": 1,
+        "hof_cmd": 0,
+        "hof_target": 0,
+        "rlf": 0,
+        "too_late": 0,
+        "too_early": 0,
+        "wrong_cell": 0,
+        "rlf_coverage": 0,
+        "ping_pongs": 0,
+        "short_stays": 0,
+        "ho_stationary": 0,
+        "hof": 0,
+        "ho_success_rate": 1.0,
+        "ho_rate": 0.2806,
+        "pp_rate": 0.0,
+        "short_stay_rate": 0.0,
+        "fail_rate": 0.0,
+        "rlf_rate": 0.0,
+        "mro_rate": 0.0,
+        "stationary_ho_rate": 0.0,
+        "outage_frac": 0.0,
+        "mean_se": 1.0897,
+        "mean_thr_mbps": 19.61,
+        "p5_thr_mbps": 19.61,
+        "mean_sinr_db": 3.934,
+        "mean_rsrp_dbm": -89.85
+      }
+    }
+  ],
+  "coverage": {
+    "route_duration_s": 2167.2000000000003,
+    "represented_duration_s": 2016.9,
+    "segment_count": 24,
+    "support_change_boundaries": 29,
+    "boundary_duration_s": 2.9000000000000004,
+    "excluded_intervals": [
+      {
+        "start": 6396,
+        "end": 6426,
+        "seconds": 2.9000000000000004,
+        "cells": 3
+      },
+      {
+        "start": 9246,
+        "end": 9254,
+        "seconds": 0.7000000000000001,
+        "cells": 2
+      },
+      {
+        "start": 11644,
+        "end": 11676,
+        "seconds": 3.1,
+        "cells": 3
+      },
+      {
+        "start": 12676,
+        "end": 12716,
+        "seconds": 3.9000000000000004,
+        "cells": 3
+      },
+      {
+        "start": 12873,
+        "end": 12881,
+        "seconds": 0.7000000000000001,
+        "cells": 3
+      },
+      {
+        "start": 15264,
+        "end": 16626,
+        "seconds": 136.1,
+        "cells": 1
+      }
+    ],
+    "represented_fraction": 0.9306478405315614,
+    "interpretation": "Only stable intervals with >=2 supported cells. Segment starts reset UE/controller; boundaries are not RLF/HO events."
+  },
+  "natural_events": [
+    {
+      "segment": "reverse-supported-0",
+      "t_s": 154.10000000000002,
+      "learned": true,
+      "targets": [
+        2
+      ],
+      "profiles": [
+        31
+      ]
+    },
+    {
+      "segment": "reverse-supported-0",
+      "t_s": 178.5,
+      "learned": true,
+      "targets": [
+        3
+      ],
+      "profiles": [
+        16
+      ]
+    },
+    {
+      "segment": "reverse-supported-2",
+      "t_s": 81.80000000000001,
+      "learned": true,
+      "targets": [
+        2
+      ],
+      "profiles": [
+        12
+      ]
+    },
+    {
+      "segment": "reverse-supported-3",
+      "t_s": 10.100000000000001,
+      "learned": true,
+      "targets": [
+        1
+      ],
+      "profiles": [
+        31
+      ]
+    },
+    {
+      "segment": "reverse-supported-5",
+      "t_s": 40.6,
+      "learned": true,
+      "targets": [
+        1
+      ],
+      "profiles": [
+        15
+      ]
+    },
+    {
+      "segment": "reverse-supported-6",
+      "t_s": 30.1,
+      "learned": true,
+      "targets": [
+        0
+      ],
+      "profiles": [
+        16
+      ]
+    },
+    {
+      "segment": "reverse-supported-6",
+      "t_s": 51.2,
+      "learned": true,
+      "targets": [
+        1
+      ],
+      "profiles": [
+        16
+      ]
+    },
+    {
+      "segment": "reverse-supported-8",
+      "t_s": 106.10000000000001,
+      "learned": true,
+      "targets": [
+        0
+      ],
+      "profiles": [
+        31
+      ]
+    },
+    {
+      "segment": "reverse-supported-10",
+      "t_s": 10.100000000000001,
+      "learned": true,
+      "targets": [
+        2
+      ],
+      "profiles": [
+        16
+      ]
+    },
+    {
+      "segment": "reverse-supported-10",
+      "t_s": 44.1,
+      "learned": true,
+      "targets": [
+        3
+      ],
+      "profiles": [
+        31
+      ]
+    },
+    {
+      "segment": "reverse-supported-13",
+      "t_s": 22.1,
+      "learned": true,
+      "targets": [
+        2
+      ],
+      "profiles": [
+        20
+      ]
+    },
+    {
+      "segment": "reverse-supported-13",
+      "t_s": 110.80000000000001,
+      "learned": true,
+      "targets": [
+        0
+      ],
+      "profiles": [
+        15
+      ]
+    },
+    {
+      "segment": "reverse-supported-18",
+      "t_s": 40.1,
+      "learned": true,
+      "targets": [
+        1
+      ],
+      "profiles": [
+        12
+      ]
+    },
+    {
+      "segment": "reverse-supported-22",
+      "t_s": 10.100000000000001,
+      "learned": true,
+      "targets": [
+        2
+      ],
+      "profiles": [
+        8
+      ]
+    },
+    {
+      "segment": "reverse-supported-22",
+      "t_s": 25.1,
+      "learned": true,
+      "targets": [
+        0
+      ],
+      "profiles": [
+        12
+      ]
+    },
+    {
+      "segment": "reverse-supported-23",
+      "t_s": 70.5,
+      "learned": true,
+      "targets": [
+        0
+      ],
+      "profiles": [
+        31
+      ]
+    }
+  ],
+  "learned_event": {
+    "segment": "reverse-supported-0",
+    "t_s": 154.10000000000002,
+    "learned": true,
+    "targets": [
+      2
+    ],
+    "profiles": [
+      31
+    ]
+  },
+  "prior_run_comparison": {
+    "ho_attempts": [
+      16,
+      16
+    ],
+    "ho_success": [
+      16,
+      16
+    ],
+    "hof_cmd": [
+      0,
+      0
+    ],
+    "hof_target": [
+      0,
+      0
+    ],
+    "rlf": [
+      0,
+      0
+    ],
+    "too_late": [
+      0,
+      0
+    ],
+    "too_early": [
+      0,
+      0
+    ],
+    "wrong_cell": [
+      0,
+      0
+    ],
+    "rlf_coverage": [
+      0,
+      0
+    ],
+    "ping_pongs": [
+      0,
+      0
+    ],
+    "short_stays": [
+      0,
+      0
+    ],
+    "ho_stationary": [
+      0,
+      0
+    ],
+    "duration_s": [
+      2016.9,
+      2016.9
+    ],
+    "mean_se": [
+      1.5671,
+      1.5671
+    ]
+  },
+  "prior_run_differences": {},
+  "prior_run_note": "Only ping-pong/short-stay accounting may differ: the frozen run predates the PR #49 float-boundary fix that this release carries.",
+  "source_sha256": {
+    "stack/measured_selector_stream.py": "d489395f873449a5175c4328844b7007d89944c93fbef37cc7f4b5390d0f403f",
+    "pipeline/twin/measured_twin.py": "5265c08b85525f485df8fca3b74b0aac201162be99617a5b431a99286d243872",
+    "stack/session_clock.py": "68e77defbb1847d2c1a412db6235e1c464d8a4d19ea2c6b2701974a70168d79d",
+    "stack/oai-ho/selector_driver.py": "8f9b48bd28957c5afac0a110491173fa5b8c3aa5107e678a285a8ad49fdbafe8",
+    "pipeline/twin/measured_scenario.py": "f1f09be1090159a0f7631d7d9c52fe6918d2d45fec05ebf6b13d7c5934a1ea71",
+    "pipeline/twin/route_radio.py": "74ee916d011c2a09f7b6291b1d27c5a416e28b808300a701a4e472d911bea3e7",
+    "data/walktest/t4-phy-assumptions.json": "2c627ccec3b396b02a21b06efc7e99c726efdc2a63b33fb8dcb61cac46edce0b",
+    "data/walktest/t4/manifest.json": "365e4b23349dc0df0ab3e73d1210f9c239896e88b9c74215d4742391fb2c1843",
+    "data/walktest/t4/epochs.jsonl": "c44e2df0d8a3523e1bb4fa6f4e1e41097514134fe4cf99d833c45c901195c4e7",
+    "working/evidence/t4-replay/cell-mapping.json": "bc92bc6449d61f428654d75f85a10230883b8f673a63ba9fef8f61826fc80385",
+    "working/evidence/t4-replay/neighbor-assumption-model.json": "c75fe2587556f0ba7b262c321028c1efbccaf3936c4b10ea41685e51775315ce",
+    "pipeline/twin/selector_v3.py": "4a83dd27d16e4812a178674c4e5a1ae54f8b1390c9c690c6e999817eececdb5e",
+    "pipeline/twin/cho_v3.py": "bccc8bd5cd88fee69fcf78210a3b10a1452ac580d311dcfe731f843e5240c81a",
+    "pipeline/twin/controllers_v2.py": "f04d48740eab2745efbea52d549e59f191ab19a56eb9d8890a4028c5afe499fe",
+    "pipeline/twin/sim.py": "94f3b4fc48d9e8bf209f926cce3143de9f07ad3b1826391302eb43a35dc8ff73",
+    "pipeline/twin/phy.py": "257338be67c958b96659808ca83beec0fe7eb71f379986c129358308341b7e15",
+    "pipeline/twin/gate_v3.py": "4f1fd28f7f4f91a213cf394a20472621f0c438c613ee85373757268882cb2cae",
+    "stack/selector_runtime.py": "a9f2209d3d7421ddae930b8e615f266dd1117a46e1fbc76149dc42eee5422512"
+  },
+  "weights_sha256": "b6002c7aabadec8b5135c7494b83834207d0882eb5a1116cdf734a490f1dfa28",
+  "artifact_canonical_sha256": "ede8373889bd68a298abecea879da194b72d678c7102a31a1ced9bd345efe20f",
+  "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+  "provenance_sha256": "fed2fb7ddfd019b51534bab571bc7e8ab89e6469242b5ff782f13d16b7a466e4",
+  "limits": [
+    "RSRP surface calibrated (lap 1); SINR, load, HO state and utility simulated.",
+    "Single UE and supported segments only; resets retained.",
+    "Does not establish general superiority, field safety, native CHO or a final GO."
+  ]
+}

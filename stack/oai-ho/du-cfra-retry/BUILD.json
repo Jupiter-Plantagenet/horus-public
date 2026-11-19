@@ -1,0 +1,75 @@
+{
+  "image_tag": "horus/oai-gnb:cfra-retry-v2-diagnostic",
+  "image_id": "sha256:9a0a1a2536f371ff9d014fa787c282d30bbfe4be81b621821883cb49ea9700c7",
+  "binary_sha256": "3436e82ad2deee1a7b0b7d81bc98ec01cede51a087c36e3ecfdae52e0b175654",
+  "window_patch": {
+    "source_commit": "cfee4c20b45ac1cf6d455d3f01bb3e00200438b0",
+    "experimental": true,
+    "qualified": false,
+    "behavior": "CFRA only: at most three rearms after expired Msg2; wait for a new preamble; idle limit 1000 ms radio time",
+    "response_window_changed": false,
+    "security_changed": false,
+    "files": {
+      "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_RA.c": {
+        "before_sha256": "d10e79c59dfc0202701f9abd57f9a87ca5a8a09d546178f312fd2e4c29ac3d88",
+        "after_sha256": "889436c9939610e0a0f4d8b14804b178c0ee8b144ca89795d7a2b3c6a226b0f3"
+      },
+      "openair2/LAYER2/NR_MAC_gNB/nr_mac_gNB.h": {
+        "before_sha256": "de2f59ab9d2099c70abfb96e936e205497a49a33a6c10a1edfedc50f6578a27c",
+        "after_sha256": "2818f3749588a8fd5b1ee95b9af2b2b9ca794b0a081529892c5a164f0a0a5516"
+      }
+    }
+  },
+  "rar_loss_patch": {
+    "source_commit": "cfee4c20b45ac1cf6d455d3f01bb3e00200438b0",
+    "experimental": true,
+    "qualified": false,
+    "scope": "CFRA only; finite reserved-preamble retry after missed RAR; exclusive RA ownership; first valid UL, UE deletion, or 1000 ms radio-time expiry frees retained context; aggregate retry budget three",
+    "response_window_security_bandwidth_model_gate_unchanged": true,
+    "files": {
+      "gNB_scheduler_primitives.c": {
+        "before_sha256": "b91f8b37e1ecd997067175926f06a3e5cceb60c1b934ab1589473640dd2a9caf",
+        "after_sha256": "b12bedb7782775b06519e5ddfe55dd4ff945b67e3da5c328663450eb73cee060"
+      },
+      "gNB_scheduler_ulsch.c": {
+        "before_sha256": "16c1f0bb50a0594953bc1287ae7073b092ac33cc89e7b2f001c8522ab5b98590",
+        "after_sha256": "b363b9725a328f731f7582471cd6b71f107cb2a0aa7a823328d9e1dccce5477b"
+      },
+      "gNB_scheduler_RA.c": {
+        "before_sha256": "889436c9939610e0a0f4d8b14804b178c0ee8b144ca89795d7a2b3c6a226b0f3",
+        "after_sha256": "e13259b7a4b75e1133ecf8bfd0402c5088d4df4f1fe445890aea5169cd16bdc9"
+      },
+      "nr_mac_gNB.h": {
+        "before_sha256": "2818f3749588a8fd5b1ee95b9af2b2b9ca794b0a081529892c5a164f0a0a5516",
+        "after_sha256": "c7d43696cc85bff20d92d2b172f408aa3d520a35d4f1dc6df22ffa40e415702f"
+      }
+    }
+  },
+  "builder_image": "96bd3e9fc7e7",
+  "incremental_parent": "1aca1fcb9c70",
+  "source_change_check": {
+    "changed": [
+      "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_RA.c",
+      "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_primitives.c",
+      "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_ulsch.c",
+      "openair2/LAYER2/NR_MAC_gNB/nr_mac_gNB.h"
+    ],
+    "pdcp_sha256": "92cb9880cf6641414188e49bd31d1871ebe0494ae8d51ffe4ef690c0adfacfba"
+  },
+  "actual_c_lifecycle_checks": {
+    "passed": true,
+    "actual_patched_c_compiled": true,
+    "address_and_undefined_sanitizers_passed": true,
+    "new_training_or_evaluation": false
+  },
+  "prior_window_only_image_receipt": "working/evidence/cfra-recovery-20261104/initial-du-image/BUILD.json",
+  "standalone_recipe_full_rebuild_tested": false,
+  "actual_operator_probe_pending": false,
+  "actual_integrated_acceptance_pending": true,
+  "new_training_or_heldout_runs": false,
+  "operator_probe_pending": false,
+  "current_combination_operator_probe": "PASS: 36 fresh CU RRC completions with post-control traffic and cleanup",
+  "operator_evidence": "working/evidence/cfra-v2-20261104/VERIFICATION.json",
+  "current_missed_rar_replays_observed": 0,
+  "current_target_ssb_selections_observed": 0
+}

@@ -1,0 +1,61 @@
+{
+  "image_tag": "horus/oai-nr-ue:target-ssb-diagnostic",
+  "image_id": "sha256:6643acf4eb73b01dc0ac9767ec3083ff75efca3f19fd49ba30f7eaff3cf5228a",
+  "binary_sha256": "ddd40f4fb07ce2883518cffe60ac79411eb2d379f2fe781d6077bee1429fa48c",
+  "patch": {
+    "source_commit": "cfee4c20b45ac1cf6d455d3f01bb3e00200438b0",
+    "experimental": true,
+    "qualified": false,
+    "file": "openair2/LAYER2/NR_MAC_UE/nr_ra_procedures.c",
+    "before_sha256": "604dab87cdb22db171cbd8c8eb99f66c25cd176fc6c014ca705191453b4561ee",
+    "after_sha256": "e7de7088676d0bcfb3a86ede7b9584563e48093ca3003bc0729ac6c7840b4972",
+    "scope": "4-step CFRA only; one RRC-authorized resource and one active target SSB; matching map required; previous MIB index unchanged",
+    "model_gate_security_bandwidth_unchanged": true
+  },
+  "target_ra_completion_patch_retained": {
+    "upstream": "cfee4c20b45ac1cf6d455d3f01bb3e00200438b0",
+    "diagnostic_only": true,
+    "patched_sha256": {
+      "openair2/RRC/NR_UE/rrc_UE.c": "61aecacdf86cde4710e7641ef2100194b67948c51f613340edb28255a6cf7514",
+      "openair2/RRC/NR_UE/rrc_defs.h": "a449bb75fa502d7958fb0a8514ea5336099a0eb7ebf6d67e8ff090eddb468760"
+    }
+  },
+  "incremental_build_parent": "08632eb2330c",
+  "builder_image": "e6b050fe74dc",
+  "standalone_recipe_full_rebuild_tested": false,
+  "actual_c_unit_checks": {
+    "passed": true,
+    "actual_patched_c_compiled": true,
+    "source_builder": "41a9dee534cb",
+    "new_training_or_evaluation": false
+  },
+  "operator_probe_pending": false,
+  "integrated_sustained_acceptance_pending": true,
+  "new_training_or_heldout_runs": false,
+  "operator_probes": {
+    "first-failed": {
+      "passed": false,
+      "controls": 1,
+      "confirmed": 0,
+      "cfra_rearms": 0,
+      "ssb_selections": 0,
+      "cleanup": true,
+      "startup_settle_seconds": 0
+    },
+    "fresh-repeat": {
+      "passed": false,
+      "controls": 30,
+      "confirmed": 29,
+      "cfra_rearms": 1,
+      "ssb_selections": 0,
+      "cleanup": true,
+      "startup_settle_seconds": 8
+    }
+  },
+  "actual_operator_probe_pending": false,
+  "current_combination_operator_probe": "PASS: 36 fresh CU RRC completions with post-control traffic and cleanup",
+  "operator_evidence": "working/evidence/cfra-v2-20261104/VERIFICATION.json",
+  "current_missed_rar_replays_observed": 0,
+  "current_target_ssb_selections_observed": 0,
+  "actual_integrated_acceptance_pending": true
+}

@@ -1,0 +1,90 @@
+{
+  "started": "2026-11-18T17:17:13.584875+00:00",
+  "passed": true,
+  "cycles": [
+    {
+      "index": 0,
+      "summary": {
+        "mode": "live-twin-to-OAI",
+        "frames": 1817,
+        "runtime": {
+          "candidate_version": "v3.14.24",
+          "eligible": true,
+          "reason": "qualified_twin_input",
+          "fixture_only": false,
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "input_qualified": true,
+          "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+          "runtime_fault": null,
+          "live_eligible": true,
+          "inference_calls": 86,
+          "fallback_frames": 0,
+          "invalid_frames": 0,
+          "model_faults": 0
+        },
+        "control_attempts": 2,
+        "confirmed_handovers": 2,
+        "failed_controls": 0,
+        "dry_run_target_proposals": 0,
+        "native_cho_configured": false,
+        "session_state": "stopped",
+        "control_path_fault": null
+      },
+      "api_frames": 179,
+      "learned_api_frames": 167,
+      "post_handover_replies": [
+        21,
+        5
+      ],
+      "max_input_age_s": 0.02275705337524414,
+      "replay_manifest_sha256": "9888400eb0665e1cf83a0347e83445486ceedb2573afb8338bfcc98f22479df8"
+    }
+  ],
+  "candidate_version": "v3.14.24",
+  "qualification_dir": "selector-integration-v3.14",
+  "qualification": "calibrated replay -> emulated OAI ordinary F1; not field RAN or native CHO",
+  "required_sustained_utc_seconds": 0,
+  "final_evaluation_verdict": null,
+  "ue_image_override": "horus/oai-nr-ue:sync-offset-diagnostic",
+  "cu_image_override": "horus/oai-gnb:srb-reorder-diagnostic",
+  "du_image_override": "horus/oai-gnb:cfra-retry-v2-diagnostic",
+  "flexric_image_override": "horus/oai-flexric:reply-order-diagnostic",
+  "cu_srb_reordering_ms": 1000,
+  "radio_startup_settle_seconds": 8,
+  "ue_image_id": "sha256:995d877338aeb029ceb102659d5de0e5078bcae8f54dca14d2da3a915af40b05",
+  "cu_image_id": "sha256:dc53f0fd4f18a7fb35741467207607a31f8f688bd5b0f226c403fefddae49bcd",
+  "flexric_image_id": "sha256:67dc41ae98695084d01627001895a9f86a2382536eb09d2f16bfb15c3d23931e",
+  "handover_xapp_sha256": "76ca14afd2a02ac06ef4ffeb420deab604ab4b93acf8eb14a4c9aaa4899f5d2e",
+  "du_image_ids": {
+    "ho-du-pci0": "sha256:9a0a1a2536f371ff9d014fa787c282d30bbfe4be81b621821883cb49ea9700c7",
+    "ho-du-pci1": "sha256:9a0a1a2536f371ff9d014fa787c282d30bbfe4be81b621821883cb49ea9700c7"
+  },
+  "cpu_allocation": {
+    "shared_available_cores": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "note": "Shared CPU allocation; RF simulation retains all available CPUs"
+  },
+  "dashboard_url": "http://127.0.0.1:8027",
+  "sustained_started": "2026-11-18T17:18:08.361091+00:00",
+  "sustained_elapsed_seconds": 189.22445890199742,
+  "cleanup_passed": true,
+  "finished": "2026-11-18T17:21:31.427100+00:00",
+  "source_files_verified": 5040,
+  "source_hashes_match": true
+}

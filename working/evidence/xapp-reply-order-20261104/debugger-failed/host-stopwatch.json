@@ -1,0 +1,10 @@
+﻿{
+    "exit_code":  1,
+    "host_elapsed_seconds":  638.3366506,
+    "requested_soak_seconds":  0,
+    "capture":  "sync-offset-xapp-debug-20261104",
+    "cu_image":  "horus/oai-gnb:srb-reorder-diagnostic",
+    "cu_srb_reordering_ms":  1000,
+    "ue_image":  "horus/oai-nr-ue:sync-offset-diagnostic",
+    "du_image":  "horus/oai-gnb:cfra-retry-v2-diagnostic"
+}

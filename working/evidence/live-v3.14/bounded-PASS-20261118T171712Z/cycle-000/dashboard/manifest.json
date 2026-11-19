@@ -1,0 +1,58 @@
+{
+  "schema": "horus.replay-bundle/1",
+  "sample": false,
+  "label": "RECORDED \u00b7 calibrated twin replay / emulated OAI F1",
+  "start_ts": "2026-11-18T17:18:09.332639+00:00",
+  "end_ts": "2026-11-18T17:21:11.878716+00:00",
+  "session_id": "52836fd2-2bb5-4537-abf0-38d8462e2b15",
+  "recorded_from": "selector_driver / SessionTelemetry",
+  "provenance": {
+    "input": "calibrated TwinSim observation replay; independent online inference",
+    "rsrp": "lap-1 calibrated mean RSRP on t4 reverse route; conditional neighbour identities",
+    "sinr": "TwinSim PHY with declared load, noise and interference assumptions",
+    "network": "single simulated walker; controller-dependent simulated connection/HO state",
+    "control": "emulated OAI ordinary F1 handover; not native CHO",
+    "scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+    "final_performance_verdict": null
+  },
+  "files": {
+    "context.json": {
+      "bytes": 2965,
+      "sha256": "69cbeee43dece9c3c26b70cc390df57b54b20e388c98b6221a909a2285e2a881"
+    },
+    "provenance.json": {
+      "bytes": 571,
+      "sha256": "c3571044daa7f7642e161249d40a90dd1bc96ddc2f285480a78c2b977b80f6e6"
+    },
+    "metrics/rtt.jsonl": {
+      "bytes": 48467,
+      "sha256": "37ec3ae96cc63222e67aea2f94555fa022fb9dd7849f97d5203fbef149c9fb78"
+    },
+    "evidence/control-attempts.jsonl": {
+      "bytes": 5138,
+      "sha256": "c9bee0239366187e4883d172d9390f840f264dadf36518fa6af98c30e13ad9c2"
+    },
+    "evidence/runtime-eligibility.jsonl": {
+      "bytes": 139275,
+      "sha256": "8f9654bf59ac0e2fcab35c30e91a742a70ff7445ad5efb4b6541b8b176c666a0"
+    },
+    "candidates/v3.14.24.json": {
+      "bytes": 3952,
+      "sha256": "8c7edf1214b4e5f173e5435c10af27eb7ac795ca4a3ff70a0ee8b9ea367d7993"
+    },
+    "actuation/actions.jsonl": {
+      "bytes": 4751,
+      "sha256": "1d494d56e2657d15e80d85168380e31fde779102a22af1d877aebfeae194f615"
+    },
+    "actuation/decisions.jsonl": {
+      "bytes": 2175961,
+      "sha256": "f09b1f1141a7aeae8c5ee28f81a5965cf7516fd1d831ad5aab77345a04fe4627"
+    }
+  },
+  "clock": {
+    "kind": "horus.steady-session-utc/1",
+    "boot_id": "b4f099a5-5be7-4c79-8da3-b07e4d17a94c",
+    "anchor_monotonic_s": 46179.558073518,
+    "anchor_utc_s": 1795022289.3320136
+  }
+}

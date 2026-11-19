@@ -1,0 +1,13 @@
+{
+  "format": "horus-measured-twin-assumptions-v1",
+  "dt_s": 0.1,
+  "minimum_stable_support_s": 5.0,
+  "nominal_bandwidth_mhz": 20.0,
+  "n_prb": 100,
+  "scs_khz": 15.0,
+  "noise_figure_db": 7.0,
+  "load": 0.5,
+  "external_interference_dbm_per_re": -110.0,
+  "fading": "off",
+  "notes": "Explicit simulation assumptions, not fitted or validated by t4. Nominal 20 MHz LTE implies 18 MHz occupied resource bandwidth; raw BANDWIDTH was predominantly '20/10', not a complete PHY configuration. Missing cells are not assumed silent: an external-interference floor is declared and varied in sensitivity runs. It is not an independently measured interference estimate. No new admission criteria or promotion is defined."
+}

@@ -1,0 +1,91 @@
+{
+  "_comment": "HORUS v3.15: ONE confirmatory test of a v3.14 candidate that finals_preregistration_v3_14.json declared 'reported, never eligible' (config A, utility-only rule) and that passed H1 on the v3.14 selection seeds. Registered BEFORE any held-out run of v3.14 or v3.15 (no seed in 2200..2259 or 2300..2359 has been simulated). The candidate is used exactly as it exists (no retraining, no config change). The H1/H2 rules, arms, guardrails, statistics, objective and gate are reused UNCHANGED from finals_preregistration_v3.json. finals_preregistration_v3_14.json stays in force for its own confirmatory run (v3.14.24 on 2200..2259). Nothing below may change after the candidate has been evaluated on 2300..2359.",
+  "registered_ts": "2026-11-18T13:13:58Z",
+  "basis": {
+    "candidate_origin": "v3.14 step 3 (twin.run_v314 derive): weights v3.14.10 (clean FedAvg of the pre-registered v3.14 federation) + decision config A (utility_only, switch_margin 0.1) = v3.14.32. Config A and its version number were fixed in finals_preregistration_v3_14.json before any v3.14 candidate existed.",
+    "selection_seed_result": {
+      "seeds": "1500..1539 (480 paired episodes)",
+      "H1_oracle": true,
+      "H2_deployable": false,
+      "utility_vs": {
+        "a3_tuned": [
+          0.2642,
+          0.2273,
+          0.3012
+        ],
+        "cho_tuned": [
+          0.04,
+          0.0326,
+          0.0474
+        ],
+        "cho_tuned_ext": [
+          0.0135,
+          0.0091,
+          0.0178
+        ],
+        "a3_global": [
+          1.4957,
+          1.159,
+          1.8324
+        ],
+        "cho_global": [
+          0.1701,
+          0.1573,
+          0.1829
+        ],
+        "cho_global_ext": [
+          0.1701,
+          0.1573,
+          0.1829
+        ],
+        "cho_mse": [
+          0.1701,
+          0.1573,
+          0.1829
+        ],
+        "cho_mro": [
+          0.1786,
+          0.155,
+          0.2023
+        ]
+      },
+      "H2_failure": "HO-rate guardrail vs cho_global/cho_global_ext/cho_mse (per-cell increases in mobile cells); by design the utility-only rule trades extra handovers for spectral efficiency"
+    },
+    "fedavg_vs_median": "v3.14.32 (FedAvg, pooled selection utility 12.1251) over v3.14.33 (median, 12.1231) by the v3.14 step-6 tie rule (higher pooled selection utility), the rule already registered",
+    "gates": {
+      "unchanged_1100": [
+        "promote",
+        0.7998
+      ],
+      "replicate_1300": [
+        "promote",
+        0.8154
+      ]
+    },
+    "evidence": "working/evidence/v3.14/freeze-decision.json, working/evidence/v3.14/selection/"
+  },
+  "candidate": {
+    "version": "v3.14.32",
+    "weights": "pipeline/checkpoints/dqn-v3.14.32.pt",
+    "weights_sha256": "cca0713197681a4f6929cb21be697f5be77abaab300f92f4d4561fb6ddfb9fba",
+    "artifact": "working/candidates/v3-clean-fedavg-v3.14.32.json"
+  },
+  "seeds": {
+    "held_out_eval": "2300..2359 (60 per cell, 720 paired episodes; never used by anything)",
+    "used_before_this_file": "everything listed in finals_preregistration_v3_14.json plus 1300..1302 and 1500..1539; 2200..2259 are reserved for the v3.14 confirmatory run"
+  },
+  "rules_from": "pipeline/finals_preregistration_v3.json",
+  "held_out_seeds": [
+    2300,
+    2359
+  ],
+  "confirmatory": {
+    "run": "Exactly one: python -m twin.evaluate_v3 --v3 v3.14.32 --seed0 2300 --seeds 60 --workers 15 --final --prereg pipeline/finals_preregistration_v3_15.json (writes working/evidence/finals-v3.15/final/ and working/evidence/finals-results-v3.15.json)",
+    "rules": "go_no_go H1_oracle and H2_deployable exactly as in finals_preregistration_v3.json, applied to v3.14.32.",
+    "headline": "H1 pass -> 'federated HORUS beats per-situation best-tuned A3 and CHO (incl. the oracle over HORUS's own action space)'. H1 fail -> no oracle claim from this file; H2 is reported as observed (expected to fail on the HO guardrail).",
+    "no_rerun": "No rerun, no substitute candidate, no threshold change, whatever the result."
+  },
+  "multiplicity": "Two pre-registered confirmatory tests exist after this file: v3.14 (v3.14.24, 2200..2259) and v3.15 (v3.14.32, 2300..2359), different candidates and disjoint seeds, each at the unchanged 0.05 level; both are reported whatever their outcome. In addition (reported, does not change any headline) each file's H1/H2 utility comparisons are re-checked at 97.5% (Bonferroni over the two files) by working/evidence/v3.15/bonferroni.py, committed with this file.",
+  "order": "Both files are registered before either held-out run. Run order: the v3.14 confirmatory run, then this one.",
+  "objective": "utility = 60*mean_SE/7.4 - 0.3*HO_rate - 2.0*PP_rate - 5.0*(RLF+HOF)_rate per UE-minute (sim.utility_per_ue_min), unchanged"
+}

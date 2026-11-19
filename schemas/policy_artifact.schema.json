@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Jupiter-Plantagenet/horus/schemas/policy_artifact.schema.json",
+  "title": "Policy Artifact",
+  "description": "One candidate handover policy moving through the pipeline: trained -> aggregated -> gated -> (promoted | rejected). The promoted-policy store accepts only artifacts with gate.verdict == \"promote\". Frozen per issue #1 — changing this schema requires sign-off from both George and Raneem.",
+  "type": "object",
+  "required": ["version", "weights_ref", "algo", "created_ts", "trained_on", "gate"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Unique candidate version, e.g. v0.3.1. The xApp logs this as active_policy_version after hot-load."
+    },
+    "weights_ref": {
+      "type": "string",
+      "description": "Path or URI to the checkpoint file this artifact describes."
+    },
+    "algo": {
+      "type": "string",
+      "description": "Policy architecture label, e.g. dqn_lstm."
+    },
+    "created_ts": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC creation time."
+    },
+    "trained_on": {
+      "type": "object",
+      "required": ["radio_map", "twin_commit"],
+      "additionalProperties": false,
+      "properties": {
+        "radio_map": {
+          "type": "string",
+          "enum": ["placeholder", "opencellid", "measured"],
+          "description": "Which twin radio map the policy trained against (issue #6 stages)."
+        },
+        "twin_commit": {
+          "type": "string",
+          "description": "Git commit of the twin used for training."
+        },
+        "scenarios": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Scenario config names used during training."
+        },
+        "seeds": {
+          "type": "array",
+          "items": { "type": "integer" },
+          "description": "Training seeds, for reproducibility."
+        },
+        "radio_model": {
+          "type": "string",
+          "enum": ["legacy", "phy-v2"],
+          "description": "Twin radio model. legacy = v1 twin (total-power RSRP, 1 s step, RSRP-threshold HO failure); phy-v2 = per-RE RSRP + SINR/interference, 100 ms step, 3GPP RLF/HOF (pipeline/twin/phy.py, sim.py). Absent = legacy."
+        },
+        "fading": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["off", "rician", "rayleigh"] },
+          "description": "Small-scale fading modes used during training (domain randomization when more than one). Absent = off."
+        },
+        "obs_filter": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["l3_k"],
+          "properties": {
+            "l3_k": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "3GPP L3 filterCoefficient k (TS 38.331 5.5.3.2) applied to the policy's RSRP observations; 0 = unfiltered."
+            }
+          },
+          "description": "Measurement filtering the policy observes. Absent = unfiltered."
+        }
+      }
+    },
+    "provenance": {
+      "type": ["object", "null"],
+      "description": "Present for federated candidates; null for single-client training runs.",
+      "required": ["client_ids", "aggregation", "round"],
+      "additionalProperties": false,
+      "properties": {
+        "client_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "description": "Contributing federated clients."
+        },
+        "aggregation": {
+          "type": "string",
+          "enum": ["fedavg", "median"],
+          "description": "Aggregation method that produced this candidate."
+        },
+        "round": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Federated round number."
+        }
+      }
+    },
+    "gate": {
+      "type": "object",
+      "description": "Safety-gate result. verdict == \"pending\" until the gate has run; the store refuses anything but \"promote\".",
+      "required": ["verdict"],
+      "additionalProperties": false,
+      "properties": {
+        "verdict": {
+          "type": "string",
+          "enum": ["pending", "promote", "reject"]
+        },
+        "worst_case_score": {
+          "type": ["number", "null"],
+          "description": "Worst-case performance score over the adversarial scenario suite."
+        },
+        "threshold": {
+          "type": ["number", "null"],
+          "description": "Pre-registered SLA threshold the worst-case score was checked against."
+        },
+        "scenario_suite": {
+          "type": ["string", "null"],
+          "description": "Name/version of the adversarial scenario suite used."
+        },
+        "evaluated_ts": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "When the gate ran."
+        }
+      }
+    }
+  }
+}

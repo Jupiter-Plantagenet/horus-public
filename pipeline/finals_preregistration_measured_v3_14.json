@@ -1,0 +1,153 @@
+{
+ "_comment": "HORUS measured-route transfer test of the FROZEN v3.14.24, PRE-REGISTERED before anything is run on the evaluation lap (t4-reverse) with HORUS or any of these baselines in this harness (the t4 baseline A3/CHO replays of 2026-11-01 on finals-measured-map are the only earlier runs on that lap and used other code). No retraining, tuning or decision-rule change of the candidate. Rules from finals_preregistration_v3.json (H2) unchanged; a non-inferiority reading is added and declared here. Applied by pipeline/twin/measured_v314.py.",
+ "registered_ts": "2026-11-18T14:03:42Z",
+ "candidate": {
+  "version": "v3.14.24",
+  "weights_sha256": "b6002c7aabadec8b5135c7494b83834207d0882eb5a1116cdf734a490f1dfa28",
+  "origin": "the v3.14 confirmatory candidate (H2 PASS on twin held-out 2200..2259); trained only on synthetic twin data"
+ },
+ "data": {
+  "walk": "t4 G-NetTrack Pro walk, LG U+ LTE band 1, 31 Oct 2026; allowlisted derived dataset data/walktest/t4 (manifest sha256 365e4b23349dc0df0ab3e73d1210f9c239896e88b9c74215d4742391fb2c1843)",
+  "surface": "lap-1-only calibrated mean RSRP surfaces from finals-measured-map @ 99bda6b, unchanged: primary neighbor-assumption model working/evidence/t4-replay/neighbor-assumption-model.json (sha256 c75fe2587556f0ba7b262c321028c1efbccaf3936c4b10ea41685e51775315ce); serving-only model working/evidence/t4-calibration/primary-model.json (sensitivity)",
+  "evaluation_lap": "t4-reverse (lap 2). It received descriptive QA and A3/CHO decision replays on 2026-11-01 (not with HORUS); its positions are evaluated on a surface fitted on lap 1 only. Not a blind independent collection.",
+  "assumptions": "data/walktest/t4-phy-assumptions.json (declared PHY: 18 MHz occupied, load 0.5, external interference -110 dBm/RE)"
+ },
+ "dataset": "data/walktest/t4",
+ "mapping": "working/evidence/t4-replay/cell-mapping.json",
+ "assumptions": "data/walktest/t4-phy-assumptions.json",
+ "fading_layer": "off = the calibrated mean surface (deterministic, one episode, reported only). rician / rayleigh = the twin's Doppler-correlated fading (phy.PhyModel.fading_gain, 2-branch diversity, K=6 dB for Rician) at 2.12 GHz layered on the mean surface with the listed seeds: a declared assumption, not measured.",
+ "arms": "v3 = v3.14.24; deployable baselines a3_global, cho_global, cho_global_ext, cho_mse, cho_mro exactly as finals_baselines(_v3).json; a3_stock reported. Per-cell oracles are tuned per synthetic cell and are undefined on this route (no H1).",
+ "rules_from": "pipeline/finals_preregistration_v3.json",
+ "hypotheses": {
+  "primary_H2_measured": "Block 'primary' (t4-reverse, neighbor-assumption surface, declared PHY, rician seeds 0..59 + rayleigh seeds 0..59 = 120 paired episodes): for EVERY deployable ref the pooled paired 95% CI of utility (v3 - ref) lies above 0 and every guardrail of finals_preregistration_v3.json holds (pooled upper CI of the increase <= max(rel*|ref mean|, abs); no Holm-significant increase beyond it in either fading mode).",
+  "secondary_non_inferiority": "Same block and guardrails; utility pooled 95% CI lower bound > -1% of the ref's pooled mean utility, for every deployable ref.",
+  "expectation_from_development": {
+   "source": "lap 1 (t4-forward, the surface's own lap), 20+20 seeds, working/evidence/measured-v3.14/dev/",
+   "utility_v3_minus_ref": {
+    "a3_global": [
+     2.4366,
+     1.795,
+     3.0782
+    ],
+    "cho_global": [
+     -0.0307,
+     -0.0569,
+     -0.0044
+    ],
+    "cho_global_ext": [
+     -0.0307,
+     -0.0569,
+     -0.0044
+    ],
+    "cho_mse": [
+     -0.0307,
+     -0.0569,
+     -0.0044
+    ],
+    "cho_mro": [
+     0.3941,
+     0.2495,
+     0.5387
+    ]
+   },
+   "reading": "On lap 1 the frozen policy beats cho_mro and a3_global by wide margins and is slightly below cho_global (-0.031) with fewer handovers. H2 is therefore expected to FAIL against cho_global on lap 2; the non-inferiority reading is the transfer question."
+  }
+ },
+ "non_inferiority_rel": 0.01,
+ "blocks": {
+  "primary": {
+   "session": "t4-reverse",
+   "model": "working/evidence/t4-replay/neighbor-assumption-model.json",
+   "fadings": [
+    "off",
+    "rician",
+    "rayleigh"
+   ],
+   "seeds": [
+    0,
+    59
+   ]
+  },
+  "sens_serving_only": {
+   "session": "t4-reverse",
+   "model": "working/evidence/t4-calibration/primary-model.json",
+   "fadings": [
+    "off",
+    "rician",
+    "rayleigh"
+   ],
+   "seeds": [
+    100,
+    119
+   ]
+  },
+  "sens_load_025": {
+   "session": "t4-reverse",
+   "model": "working/evidence/t4-replay/neighbor-assumption-model.json",
+   "fadings": [
+    "rician",
+    "rayleigh"
+   ],
+   "seeds": [
+    100,
+    119
+   ],
+   "overrides": {
+    "load": 0.25
+   }
+  },
+  "sens_load_075": {
+   "session": "t4-reverse",
+   "model": "working/evidence/t4-replay/neighbor-assumption-model.json",
+   "fadings": [
+    "rician",
+    "rayleigh"
+   ],
+   "seeds": [
+    100,
+    119
+   ],
+   "overrides": {
+    "load": 0.75
+   }
+  },
+  "sens_ext_m120": {
+   "session": "t4-reverse",
+   "model": "working/evidence/t4-replay/neighbor-assumption-model.json",
+   "fadings": [
+    "rician",
+    "rayleigh"
+   ],
+   "seeds": [
+    100,
+    119
+   ],
+   "overrides": {
+    "external_interference_dbm_per_re": -120.0
+   }
+  },
+  "sens_ext_m100": {
+   "session": "t4-reverse",
+   "model": "working/evidence/t4-replay/neighbor-assumption-model.json",
+   "fadings": [
+    "rician",
+    "rayleigh"
+   ],
+   "seeds": [
+    100,
+    119
+   ],
+   "overrides": {
+    "external_interference_dbm_per_re": -100.0
+   }
+  }
+ },
+ "reporting": "Only block 'primary' carries the two hypotheses. Sensitivity blocks and the 'off' episodes are reported as observed with the same statistics, never as claims. Exactly one run of all blocks: python -m twin.measured_v314 --plan pipeline/finals_preregistration_measured_v3_14.json --out working/evidence/measured-v3.14/final. No rerun, no substitute candidate, no margin change.",
+ "limits": [
+  "one handset, one operator, one route, two laps",
+  "mean RSRP surface interpolated from lap 1; neighbour identities partly assumed",
+  "fading, load, interference, SINR, HO execution and throughput are modelled, not measured",
+  "segments with <2 supported cells or <5 s are excluded; segment starts reset UE and controllers",
+  "the walker's connected/idle RRC state is not established (raw logs unavailable)"
+ ]
+}

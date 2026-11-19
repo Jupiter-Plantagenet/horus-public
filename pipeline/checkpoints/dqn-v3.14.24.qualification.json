@@ -1,0 +1,19 @@
+{
+  "format": "horus.selector-qualification/1",
+  "status": "qualified",
+  "scope": "twin-actuation",
+  "weights_sha256": "b6002c7aabadec8b5135c7494b83834207d0882eb5a1116cdf734a490f1dfa28",
+  "artifact_canonical_sha256": "ede8373889bd68a298abecea879da194b72d678c7102a31a1ced9bd345efe20f",
+  "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+  "backend_sha256": {
+    "pipeline/twin/selector_v3.py": "4a83dd27d16e4812a178674c4e5a1ae54f8b1390c9c690c6e999817eececdb5e",
+    "pipeline/twin/cho_v3.py": "bccc8bd5cd88fee69fcf78210a3b10a1452ac580d311dcfe731f843e5240c81a",
+    "pipeline/twin/controllers_v2.py": "f04d48740eab2745efbea52d549e59f191ab19a56eb9d8890a4028c5afe499fe",
+    "pipeline/twin/sim.py": "94f3b4fc48d9e8bf209f926cce3143de9f07ad3b1826391302eb43a35dc8ff73",
+    "pipeline/twin/phy.py": "257338be67c958b96659808ca83beec0fe7eb71f379986c129358308341b7e15",
+    "pipeline/twin/gate_v3.py": "4f1fd28f7f4f91a213cf394a20472621f0c438c613ee85373757268882cb2cae",
+    "stack/selector_runtime.py": "a9f2209d3d7421ddae930b8e615f266dd1117a46e1fbc76149dc42eee5422512"
+  },
+  "evidence_ref": "working/evidence/selector-integration-v3.14/input-fidelity.json",
+  "evidence_sha256": "6d75423e03625d438d7e2f912ab702ce58d3938f18bc9b99799da6a4cbe75b89"
+}

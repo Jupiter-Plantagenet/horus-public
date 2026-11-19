@@ -1,0 +1,12 @@
+{
+  "outcome": "FAILED on attempt 56; 55 strict completed handovers",
+  "debugger_changes_timing": true,
+  "debugger_image": "sha256:51f5de706c9f8433afe5222457334ba9af741992592866cfdc7d11a6f172dd14",
+  "original_debugger_log": "<home>/horus-cfra-probe-20261104-sync-offset-xapp-debug/root/working/xapp-gdb-1118.txt",
+  "original_debugger_log_sha256": "26df3878d8bdcfe9398cb0cdd894ae3e0916a9db756926eef32288d46ceae671",
+  "diagnosis": "ACK handler removes a pending event while sender is still registering it; minimum(NULL) in pending-event red-black tree",
+  "evidence": "Receiver backtrace is in control ACK -> rm_pending_event -> minimum(NULL); sender is concurrently in add_pending_event for the same control",
+  "cleanup_passed": true,
+  "raw_memory_and_packet_dumps_excluded": true,
+  "new_training_or_heldout_runs": false
+}

@@ -1,0 +1,49 @@
+[xApp]: CONTROL-REQUEST tx 
+[xApp]: CONTROL ACK rx
+
+Thread 4 "xapp_horus_ho" received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0x78829989c640 (LWP 1131)]
+0x000063a49e49da53 in minimum (x_node=0x0, tree=<optimized out>) at /flexric/src/util/alg_ds/ds/assoc_container/assoc_rb_tree.c:385
+385	/flexric/src/util/alg_ds/ds/assoc_container/assoc_rb_tree.c: No such file or directory.
+
+Thread 4 (Thread 0x78829989c640 (LWP 1131) "xapp_horus_ho"):
+#0  0x000063a49e49da53 in minimum (x_node=0x0, tree=<optimized out>) at /flexric/src/util/alg_ds/ds/assoc_container/assoc_rb_tree.c:385
+#1  assoc_rb_tree_extract_node (tree=tree@entry=0x63a4ad598ba8, z_node=z_node@entry=0x63a4ad599a60) at /flexric/src/util/alg_ds/ds/assoc_container/assoc_rb_tree.c:430
+#2  0x000063a49e49ec32 in assoc_rb_tree_extract (tree=tree@entry=0x63a4ad598ba8, key=key@entry=0x78829989baa0) at /flexric/src/util/alg_ds/ds/assoc_container/assoc_rb_tree.c:459
+#3  0x000063a49e49ef27 in bi_map_extract_right (map=0x63a4ad598b78, key2=key2@entry=0x78829989baa0, key2_sz=key2_sz@entry=16, f=f@entry=0x0) at /flexric/src/util/alg_ds/ds/assoc_container/bimap.c:122
+#4  0x000063a49e49abbb in rm_pending_event_ev (p=p@entry=0x63a4ad598b78, ev=ev@entry=0x78829989baa0) at /flexric/src/xApp/pending_event_xapp.c:164
+#5  0x000063a49e4be236 in rm_pending_event_xapp (ev=0x78829989baa0, xapp=0x63a4ad5982b0) at /flexric/src/xApp/msg_handler_xapp.c:71
+#6  e2ap_handle_control_ack_xapp (xapp=0x63a4ad5982b0, msg=<optimized out>) at /flexric/src/xApp/msg_handler_xapp.c:283
+#7  0x000063a49e4be5f5 in e2ap_msg_handle_xapp (xapp=<optimized out>, msg=msg@entry=0x78829989bcd8) at /flexric/src/xApp/msg_handler_xapp.c:115
+#8  0x000063a49e4989d7 in e2_event_loop_xapp (xapp=<optimized out>) at /flexric/src/xApp/e42_xapp.c:265
+#9  0x000063a49e499007 in start_e42_xapp (xapp=<optimized out>) at /flexric/src/xApp/e42_xapp.c:310
+#10 0x000063a49e4898d4 in static_start_xapp (a=<optimized out>) at /flexric/src/xApp/e42_xapp_api.c:60
+#11 0x000078829adcfa83 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+#12 0x000078829ae60a94 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+
+Thread 3 (Thread 0x78829a09d640 (LWP 1130) "xapp_horus_ho"):
+#0  0x000078829adcc0d7 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+#1  0x000078829adcea01 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+#2  0x000063a49e49fa79 in wait_and_pop_tsnq (q=q@entry=0x63a4ad598c98, f=f@entry=0x63a49e4ad280 <create_val>) at /flexric/src/util/alg_ds/ds/tsn_queue/tsn_queue.c:93
+#3  0x000063a49e4ad093 in worker_thread (arg=0x63a4ad598c88) at /flexric/src/xApp/db/db.c:93
+#4  0x000078829adcfa83 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+#5  0x000078829ae60a94 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+
+Thread 2 (Thread 0x78829a8a6640 (LWP 1129) "xapp_horus_ho"):
+#0  0x000078829adcc0d7 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+#1  0x000078829adcea01 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+#2  0x000063a49e49fa79 in wait_and_pop_tsnq (q=q@entry=0x63a4ad598c08, f=f@entry=0x63a49e49b560 <create_val>) at /flexric/src/util/alg_ds/ds/tsn_queue/tsn_queue.c:93
+#3  0x000063a49e49b544 in worker_thread (arg=0x63a4ad598c08) at /flexric/src/xApp/msg_dispatcher_xapp.c:39
+#4  0x000078829adcfa83 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+#5  0x000078829ae60a94 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+
+Thread 1 (Thread 0x78829ad38740 (LWP 1126) "xapp_horus_ho"):
+#0  0x000078829adcc280 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+#1  0x000078829add2fc2 in pthread_mutex_lock () from /lib/x86_64-linux-gnu/libc.so.6
+#2  0x000063a49e49a836 in add_pending_event (p=p@entry=0x63a4ad598b78, fd=<optimized out>, ev=ev@entry=0x7ffc18917610) at /flexric/src/xApp/pending_event_xapp.c:85
+#3  0x000063a49e4bd44f in add_pending_event_xapp (ev=0x7ffc18917610, xapp=0x63a4ad5982b0) at /flexric/src/xApp/msg_handler_xapp.c:65
+#4  e2ap_handle_e42_ric_control_request_xapp (xapp=0x63a4ad5982b0, msg=0x7ffc18917820) at /flexric/src/xApp/msg_handler_xapp.c:595
+#5  0x000063a49e4986d1 in send_control_request (xapp=xapp@entry=0x63a4ad5982b0, id=id@entry=0x63a4ad60cc80, ric_req=ric_req@entry=..., ctrl_msg=ctrl_msg@entry=0x7ffc18917b00) at /flexric/src/xApp/e42_xapp.c:497
+#6  0x000063a49e49933e in control_sm_sync_xapp (xapp=0x63a4ad5982b0, id=id@entry=0x63a4ad60cc80, ran_func_id=ran_func_id@entry=3, ctrl_msg=ctrl_msg@entry=0x7ffc18917b00) at /flexric/src/xApp/e42_xapp.c:513
+#7  0x000063a49e489ab9 in control_sm_xapp_api (id=id@entry=0x63a4ad60cc80, ran_func_id=ran_func_id@entry=3, wr=wr@entry=0x7ffc18917b00) at /flexric/src/xApp/e42_xapp_api.c:184
+#8  0x000063a49e48689b in main (argc=<optimized out>, argv=<optimized out>) at /flexric/examples/xApp/c/rc_handover/xapp_horus_ho.c:553

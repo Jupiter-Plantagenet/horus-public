@@ -1,0 +1,150 @@
+{
+  "objective": "sim.utility_per_ue_min (c_ho=0.3, c_pp=2.0, c_fail=5.0)",
+  "sweep_seeds": [
+    500,
+    501,
+    502,
+    503,
+    504
+  ],
+  "per_cell": {
+    "rush_hour": {
+      "off": {
+        "a3": {
+          "spec": "a3:off=1,hys=2,ttt=0.0,k=0",
+          "sweep_utility": 11.0159
+        },
+        "cho": {
+          "spec": "cho:prep=-6,off=3,hys=1,ttt=0.0,k=0",
+          "sweep_utility": 11.0583
+        }
+      },
+      "rician": {
+        "a3": {
+          "spec": "a3:off=2,hys=0,ttt=0.16,k=0",
+          "sweep_utility": 10.6169
+        },
+        "cho": {
+          "spec": "cho:prep=-6,off=3,hys=1,ttt=0.0,k=4",
+          "sweep_utility": 10.8995
+        }
+      },
+      "rayleigh": {
+        "a3": {
+          "spec": "a3:off=0,hys=2,ttt=0.0,k=4",
+          "sweep_utility": 9.6936
+        },
+        "cho": {
+          "spec": "cho:prep=-6,off=4,hys=1,ttt=0.0,k=4",
+          "sweep_utility": 10.8082
+        }
+      }
+    },
+    "corner_turner": {
+      "off": {
+        "a3": {
+          "spec": "a3:off=0,hys=2,ttt=0.0,k=0",
+          "sweep_utility": 16.4399
+        },
+        "cho": {
+          "spec": "cho:prep=-6,off=1,hys=1,ttt=0.0,k=0",
+          "sweep_utility": 16.4399
+        }
+      },
+      "rician": {
+        "a3": {
+          "spec": "a3:off=0,hys=2,ttt=0.0,k=4",
+          "sweep_utility": 16.3482
+        },
+        "cho": {
+          "spec": "cho:prep=-6,off=1,hys=1,ttt=0.0,k=4",
+          "sweep_utility": 16.3482
+        }
+      },
+      "rayleigh": {
+        "a3": {
+          "spec": "a3:off=2,hys=0,ttt=0.16,k=4",
+          "sweep_utility": 16.2393
+        },
+        "cho": {
+          "spec": "cho:prep=-6,off=2,hys=0,ttt=0.16,k=4",
+          "sweep_utility": 16.2393
+        }
+      }
+    },
+    "stationary_clusters": {
+      "off": {
+        "a3": {
+          "spec": "a3:off=-1,hys=1,ttt=0.0,k=0",
+          "sweep_utility": 11.9833
+        },
+        "cho": {
+          "spec": "cho:prep=-6,off=0,hys=0,ttt=0.0,k=0",
+          "sweep_utility": 11.9833
+        }
+      },
+      "rician": {
+        "a3": {
+          "spec": "a3:off=3,hys=2,ttt=0.16,k=11",
+          "sweep_utility": 11.6857
+        },
+        "cho": {
+          "spec": "cho:prep=-6,off=4,hys=0,ttt=0.64,k=0",
+          "sweep_utility": 11.7242
+        }
+      },
+      "rayleigh": {
+        "a3": {
+          "spec": "a3:off=6,hys=1,ttt=1.28,k=8",
+          "sweep_utility": 11.1612
+        },
+        "cho": {
+          "spec": "cho:prep=-6,off=4,hys=1,ttt=0.0,k=8",
+          "sweep_utility": 11.2215
+        }
+      }
+    },
+    "cell_outage": {
+      "off": {
+        "a3": {
+          "spec": "a3:off=1,hys=2,ttt=0.0,k=0",
+          "sweep_utility": 11.1035
+        },
+        "cho": {
+          "spec": "cho:prep=-6,off=3,hys=1,ttt=0.0,k=0",
+          "sweep_utility": 11.1405
+        }
+      },
+      "rician": {
+        "a3": {
+          "spec": "a3:off=2,hys=0,ttt=0.16,k=0",
+          "sweep_utility": 10.7201
+        },
+        "cho": {
+          "spec": "cho:prep=-6,off=3,hys=1,ttt=0.0,k=4",
+          "sweep_utility": 10.964
+        }
+      },
+      "rayleigh": {
+        "a3": {
+          "spec": "a3:off=0,hys=2,ttt=0.0,k=4",
+          "sweep_utility": 9.9142
+        },
+        "cho": {
+          "spec": "cho:prep=-6,off=4,hys=1,ttt=0.0,k=4",
+          "sweep_utility": 10.8687
+        }
+      }
+    }
+  },
+  "global": {
+    "a3": {
+      "spec": "a3:off=0,hys=2,ttt=0.0,k=4",
+      "sweep_utility_mean": 11.1235
+    },
+    "cho": {
+      "spec": "cho:prep=-6,off=3,hys=1,ttt=0.0,k=8",
+      "sweep_utility_mean": 12.3414
+    }
+  }
+}

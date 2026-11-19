@@ -1,0 +1,486 @@
+#     cell_type =  "CELL_MACRO_GNB";
+    nr_cellid = 12345678L;
+    servingCellConfigCommon = (
+ #spCellConfigCommon
+      physCellId                                                    = 0;
+# ssb_periodicityServingCell
+      ssb_periodicityServingCell                                    = 2;
+    tr_n_preference  = "f1";
+# HORUS: E2 agent on each DU too. FlexRIC's xapp_rc_handover learns the DUs'
+# cells (NR CGI) from the F1 Setup each DU carries in its E2 Setup
+# (E2 Node Component Config, F1 interface) and targets "the other DU's cell".
+Error 3: No such process trying to get nice value of thread 1895925440 
+46141.621462 [RRC]    I Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 641280, DLBand 78, ABSFREQPOINTA 640008, DLBW 106,RACH_TargetReceivedPower -96
+46141.621517 [NR_MAC] I PUSCH Target 230 RSSI thresh 0 Failure 10, PUCCH Target 200 RSSI thresh 0 Failure 10
+46141.627790 [F1AP]   I F1-C DU IPaddr 192.168.71.171, connect to F1-C CU 192.168.71.150, binding GTP to 192.168.71.171 ports local 2153 remote 2153
+46141.629797 [GNB_APP] I F1AP: gNB idx 0 gNB_DU_id 3584, gNB_DU_name du-rfsim, TAC 1 MCC/MNC/length 208/99/2 cellID 12345678
+46141.629814 [GNB_APP] I ngran_DU: Configuring Cell 0 for TDD
+46141.629834 [GNB_APP] I Configured DU: cell ID 12345678, PCI 0
+46141.629919 [GNB_APP] I gNB 0: neighbour_list has 0 serving cell(s)
+46141.630384 [GNB_APP] I gNB 0 SIB2 config: q_Hyst=0 dB, cellReselPrio=0, q_RxLevMin=-56 dBm, t_ReselectionNR=1 s
+46141.672519 [MAC]    I received F1 Setup Response from CU cu-rfsim
+46142.744051 [PHY]    I fp->Nid_cell=0
+46144.955539 [RLC]    I Activated srb0 for UE 30994
+46144.955566 [RLC]    I Added srb 1 to UE 30994
+46145.083995 [RLC]    I Added srb 2 to UE 30994
+46145.084865 [RLC]    I Added drb 1 to UE 30994
+46145.084887 [RLC]    I Added DRB to UE 30994
+UE 7912: dlsch_rounds 11/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE 7912: ulsch_rounds 28/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.08100 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 8 SNR 26.8 (+3.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 15/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.05905 MCS (0) 0 (Qm 2) CCE fail 0
+UE 7912: ulsch_rounds 51/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02059 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.9 (+2.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 17/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.04783 MCS (0) 0 (Qm 2) CCE fail 0
+UE 7912: ulsch_rounds 67/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00581 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 20/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.03487 MCS (0) 0 (Qm 2) CCE fail 1
+UE 7912: ulsch_rounds 82/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00148 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 22/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.02824 MCS (0) 0 (Qm 2) CCE fail 1
+UE 7912: ulsch_rounds 98/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00042 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 25/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.02059 MCS (0) 0 (Qm 2) CCE fail 1
+UE 7912: ulsch_rounds 116/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00012 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.8 (+2.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 27/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.01668 MCS (0) 0 (Qm 2) CCE fail 1
+UE 7912: ulsch_rounds 131/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00003 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 30/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.01216 MCS (0) 0 (Qm 2) CCE fail 2
+UE 7912: ulsch_rounds 147/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 33/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00886 MCS (0) 0 (Qm 2) CCE fail 2
+UE 7912: ulsch_rounds 168/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 26.1 (+3.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 36/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00646 MCS (0) 0 (Qm 2) CCE fail 2
+UE 7912: ulsch_rounds 185/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 39/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00471 MCS (0) 0 (Qm 2) CCE fail 3
+UE 7912: ulsch_rounds 202/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 41/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00382 MCS (0) 0 (Qm 2) CCE fail 3
+UE 7912: ulsch_rounds 216/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 43/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00309 MCS (0) 0 (Qm 2) CCE fail 3
+UE 7912: ulsch_rounds 233/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 46/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00225 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7912: ulsch_rounds 251/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 49/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00164 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7912: ulsch_rounds 265/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 51/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00133 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7912: ulsch_rounds 282/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 53/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00108 MCS (0) 0 (Qm 2) CCE fail 5
+UE 7912: ulsch_rounds 296/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 57/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00087 MCS (0) 0 (Qm 2) CCE fail 5
+UE 7912: ulsch_rounds 315/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 60/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00071 MCS (0) 0 (Qm 2) CCE fail 5
+UE 7912: ulsch_rounds 336/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 62/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00064 MCS (0) 0 (Qm 2) CCE fail 6
+UE 7912: ulsch_rounds 351/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 64/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00057 MCS (0) 0 (Qm 2) CCE fail 6
+UE 7912: ulsch_rounds 367/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 68/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00042 MCS (0) 0 (Qm 2) CCE fail 6
+UE 7912: ulsch_rounds 385/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 70/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00034 MCS (0) 0 (Qm 2) CCE fail 7
+UE 7912: ulsch_rounds 400/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 72/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00027 MCS (0) 0 (Qm 2) CCE fail 7
+UE 7912: ulsch_rounds 416/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 75/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00020 MCS (0) 0 (Qm 2) CCE fail 7
+UE 7912: ulsch_rounds 431/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 78/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00015 MCS (0) 0 (Qm 2) CCE fail 8
+UE 7912: ulsch_rounds 449/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 26.0 (+3.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 80/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00012 MCS (0) 0 (Qm 2) CCE fail 8
+UE 7912: ulsch_rounds 465/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 82/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00010 MCS (0) 0 (Qm 2) CCE fail 8
+UE 7912: ulsch_rounds 480/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 85/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00007 MCS (0) 0 (Qm 2) CCE fail 9
+UE 7912: ulsch_rounds 496/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 88/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00005 MCS (0) 0 (Qm 2) CCE fail 9
+UE 7912: ulsch_rounds 515/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 90/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00004 MCS (0) 0 (Qm 2) CCE fail 9
+UE 7912: ulsch_rounds 529/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 92/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00003 MCS (0) 0 (Qm 2) CCE fail 9
+UE 7912: ulsch_rounds 546/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 95/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00002 MCS (0) 0 (Qm 2) CCE fail 10
+UE 7912: ulsch_rounds 560/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 97/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00002 MCS (0) 0 (Qm 2) CCE fail 10
+UE 7912: ulsch_rounds 577/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 100/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00001 MCS (0) 0 (Qm 2) CCE fail 10
+UE 7912: ulsch_rounds 595/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 103/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00001 MCS (0) 0 (Qm 2) CCE fail 11
+UE 7912: ulsch_rounds 609/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 107/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00001 MCS (0) 0 (Qm 2) CCE fail 11
+UE 7912: ulsch_rounds 635/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 112/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00001 MCS (0) 0 (Qm 2) CCE fail 11
+UE 7912: ulsch_rounds 661/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 116/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 12
+UE 7912: ulsch_rounds 685/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 121/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 12
+UE 7912: ulsch_rounds 709/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 123/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 12
+UE 7912: ulsch_rounds 725/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 125/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 13
+UE 7912: ulsch_rounds 740/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 131/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 13
+UE 7912: ulsch_rounds 767/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 135/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 13
+UE 7912: ulsch_rounds 791/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 139/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 14
+UE 7912: ulsch_rounds 816/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 143/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 14
+UE 7912: ulsch_rounds 837/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 149/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 14
+UE 7912: ulsch_rounds 865/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 2 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 153/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 15
+UE 7912: ulsch_rounds 889/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 25.8 (+2.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 155/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 15
+UE 7912: ulsch_rounds 905/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 160/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 15
+UE 7912: ulsch_rounds 929/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 165/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 16
+UE 7912: ulsch_rounds 958/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 169/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 16
+UE 7912: ulsch_rounds 982/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 172/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 16
+UE 7912: ulsch_rounds 1002/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 177/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 17
+UE 7912: ulsch_rounds 1026/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 181/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 17
+UE 7912: ulsch_rounds 1054/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 24 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 184/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 17
+UE 7912: ulsch_rounds 1078/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 13 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 186/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 17
+UE 7912: ulsch_rounds 1094/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 191/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 18
+UE 7912: ulsch_rounds 1118/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 196/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 18
+UE 7912: ulsch_rounds 1147/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 200/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 18
+UE 7912: ulsch_rounds 1172/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 205/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 19
+UE 7912: ulsch_rounds 1197/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 209/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 19
+UE 7912: ulsch_rounds 1220/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 214/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 19
+UE 7912: ulsch_rounds 1249/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 218/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 20
+UE 7912: ulsch_rounds 1272/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 13 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 221/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 20
+UE 7912: ulsch_rounds 1287/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 225/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 20
+UE 7912: ulsch_rounds 1311/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 229/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 21
+UE 7912: ulsch_rounds 1333/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.2 (+1.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 235/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 21
+UE 7912: ulsch_rounds 1358/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 239/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 21
+UE 7912: ulsch_rounds 1383/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 243/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 22
+UE 7912: ulsch_rounds 1407/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 247/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 22
+UE 7912: ulsch_rounds 1432/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 253/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 22
+UE 7912: ulsch_rounds 1459/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 13 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 255/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 1 (Qm 2) CCE fail 23
+UE 7912: ulsch_rounds 1476/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 259/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 23
+UE 7912: ulsch_rounds 1501/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 264/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 23
+UE 7912: ulsch_rounds 1523/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 270/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 24
+UE 7912: ulsch_rounds 1555/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.8 (+2.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 274/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 24
+UE 7912: ulsch_rounds 1581/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 278/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 24
+UE 7912: ulsch_rounds 1604/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 283/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 25
+UE 7912: ulsch_rounds 1630/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 288/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 25
+UE 7912: ulsch_rounds 1659/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 2 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 292/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 25
+UE 7912: ulsch_rounds 1682/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 294/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 25
+UE 7912: ulsch_rounds 1698/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 299/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 26
+UE 7912: ulsch_rounds 1722/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 304/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 26
+UE 7912: ulsch_rounds 1749/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 308/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 26
+UE 7912: ulsch_rounds 1773/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 313/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 27
+UE 7912: ulsch_rounds 1796/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 317/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 27
+UE 7912: ulsch_rounds 1817/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 322/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 27
+UE 7912: ulsch_rounds 1842/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 325/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 28
+UE 7912: ulsch_rounds 1866/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 330/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 28
+UE 7912: ulsch_rounds 1892/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 332/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 28
+UE 7912: ulsch_rounds 1908/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 337/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 29
+UE 7912: ulsch_rounds 1932/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 26.0 (+3.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 341/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 29
+UE 7912: ulsch_rounds 1958/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 345/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 29
+UE 7912: ulsch_rounds 1980/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 349/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 30
+UE 7912: ulsch_rounds 2004/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 353/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 30
+UE 7912: ulsch_rounds 2032/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 358/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 30
+UE 7912: ulsch_rounds 2054/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 362/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 31
+UE 7912: ulsch_rounds 2078/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.9 (+2.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 366/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 31
+UE 7912: ulsch_rounds 2103/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 370/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 31
+UE 7912: ulsch_rounds 2121/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 374/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 32
+UE 7912: ulsch_rounds 2144/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 378/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 32
+UE 7912: ulsch_rounds 2169/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 382/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 33
+UE 7912: ulsch_rounds 2194/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 387/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 34
+UE 7912: ulsch_rounds 2217/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 392/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 34
+UE 7912: ulsch_rounds 2245/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 396/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 34
+UE 7912: ulsch_rounds 2270/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 400/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 34
+UE 7912: ulsch_rounds 2291/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 405/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 35
+UE 7912: ulsch_rounds 2316/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 409/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 35
+UE 7912: ulsch_rounds 2344/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 413/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 35
+UE 7912: ulsch_rounds 2368/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 416/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 36
+UE 7912: ulsch_rounds 2384/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 420/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 36
+UE 7912: ulsch_rounds 2409/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 425/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 36
+UE 7912: ulsch_rounds 2436/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.8 (+2.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 429/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 37
+UE 7912: ulsch_rounds 2462/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 434/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 37
+UE 7912: ulsch_rounds 2484/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 437/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 37
+UE 7912: ulsch_rounds 2507/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 442/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 38
+UE 7912: ulsch_rounds 2535/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 2 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 447/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 38
+UE 7912: ulsch_rounds 2556/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 451/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 38
+UE 7912: ulsch_rounds 2577/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 12 SNR 27.2 (+4.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 453/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 39
+UE 7912: ulsch_rounds 2596/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 458/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 39
+UE 7912: ulsch_rounds 2623/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 463/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 39
+UE 7912: ulsch_rounds 2646/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 467/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 40
+UE 7912: ulsch_rounds 2668/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 471/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 40
+UE 7912: ulsch_rounds 2690/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 476/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 40
+UE 7912: ulsch_rounds 2717/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 480/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 41
+UE 7912: ulsch_rounds 2739/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 484/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 41
+UE 7912: ulsch_rounds 2764/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 486/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 41
+UE 7912: ulsch_rounds 2780/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 492/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 42
+UE 7912: ulsch_rounds 2807/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 496/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 42
+UE 7912: ulsch_rounds 2832/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 499/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 42
+UE 7912: ulsch_rounds 2858/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 503/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 42
+UE 7912: ulsch_rounds 2882/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 509/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 43
+UE 7912: ulsch_rounds 2911/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 26.1 (+3.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 512/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 43
+UE 7912: ulsch_rounds 2934/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 516/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 43
+UE 7912: ulsch_rounds 2960/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 521/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 44
+UE 7912: ulsch_rounds 2985/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 523/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 44
+UE 7912: ulsch_rounds 3002/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 528/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 44
+UE 7912: ulsch_rounds 3029/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 532/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 45
+UE 7912: ulsch_rounds 3054/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 537/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 45
+UE 7912: ulsch_rounds 3078/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 541/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 45
+UE 7912: ulsch_rounds 3103/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 546/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 46
+UE 7912: ulsch_rounds 3132/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 551/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 46
+UE 7912: ulsch_rounds 3156/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 555/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 46
+UE 7912: ulsch_rounds 3179/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 558/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 47
+UE 7912: ulsch_rounds 3204/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 561/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 47
+UE 7912: ulsch_rounds 3222/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 566/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 47
+UE 7912: ulsch_rounds 3245/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 570/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 48
+UE 7912: ulsch_rounds 3267/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 574/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 48
+UE 7912: ulsch_rounds 3288/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 580/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 48
+UE 7912: ulsch_rounds 3317/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 584/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 49
+UE 7912: ulsch_rounds 3342/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 589/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 49
+UE 7912: ulsch_rounds 3369/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 593/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 49
+UE 7912: ulsch_rounds 3395/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 599/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 50
+UE 7912: ulsch_rounds 3422/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 25.9 (+2.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 601/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 1 (Qm 2) CCE fail 50
+UE 7912: ulsch_rounds 3438/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 605/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 50
+UE 7912: ulsch_rounds 3461/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 609/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 50
+UE 7912: ulsch_rounds 3486/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 615/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 51
+UE 7912: ulsch_rounds 3513/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 25.9 (+2.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 619/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 51
+UE 7912: ulsch_rounds 3537/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 623/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 51
+UE 7912: ulsch_rounds 3563/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 628/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 52
+UE 7912: ulsch_rounds 3588/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 633/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 52
+UE 7912: ulsch_rounds 3615/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.9 (+2.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 637/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 52
+UE 7912: ulsch_rounds 3641/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 25.9 (+2.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 639/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 53
+UE 7912: ulsch_rounds 3657/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 644/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 53
+UE 7912: ulsch_rounds 3683/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 649/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 53
+UE 7912: ulsch_rounds 3712/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 26.5 (+3.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 653/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 54
+UE 7912: ulsch_rounds 3736/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 658/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 54
+UE 7912: ulsch_rounds 3761/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 662/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 54
+UE 7912: ulsch_rounds 3784/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 667/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 55
+UE 7912: ulsch_rounds 3812/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 671/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 55
+UE 7912: ulsch_rounds 3837/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 2 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 676/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 55
+UE 7912: ulsch_rounds 3859/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 12 SNR 26.7 (+3.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 678/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 56
+UE 7912: ulsch_rounds 3879/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 682/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 56
+UE 7912: ulsch_rounds 3902/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 688/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 56
+UE 7912: ulsch_rounds 3930/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 692/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 57
+UE 7912: ulsch_rounds 3953/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 696/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 57
+UE 7912: ulsch_rounds 3979/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 700/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 57
+UE 7912: ulsch_rounds 4004/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 706/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 58
+UE 7912: ulsch_rounds 4033/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 2 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.8 (+2.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 710/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 58
+UE 7912: ulsch_rounds 4057/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 714/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 58
+UE 7912: ulsch_rounds 4081/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 716/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 58
+UE 7912: ulsch_rounds 4099/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 722/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 59
+UE 7912: ulsch_rounds 4126/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.8 (+2.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 726/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 59
+UE 7912: ulsch_rounds 4151/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 730/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 59
+UE 7912: ulsch_rounds 4177/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 735/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 60
+UE 7912: ulsch_rounds 4198/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 740/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 60
+UE 7912: ulsch_rounds 4226/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.8 (+2.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 744/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 60
+UE 7912: ulsch_rounds 4248/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 748/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 61
+UE 7912: ulsch_rounds 4272/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 753/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 61
+UE 7912: ulsch_rounds 4297/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 13 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 756/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 61
+UE 7912: ulsch_rounds 4315/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 760/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 62
+UE 7912: ulsch_rounds 4339/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 764/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 62
+UE 7912: ulsch_rounds 4363/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 768/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 62
+UE 7912: ulsch_rounds 4386/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 772/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 63
+UE 7912: ulsch_rounds 4411/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 775/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 63
+UE 7912: ulsch_rounds 4437/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 780/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 63
+UE 7912: ulsch_rounds 4460/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 784/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 64
+UE 7912: ulsch_rounds 4486/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.9 (+2.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 787/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 64
+UE 7912: ulsch_rounds 4505/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 792/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 64
+UE 7912: ulsch_rounds 4529/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 796/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 65
+UE 7912: ulsch_rounds 4555/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 800/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 65
+UE 7912: ulsch_rounds 4580/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 804/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 65
+UE 7912: ulsch_rounds 4607/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 810/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 66
+UE 7912: ulsch_rounds 4633/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 814/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 66
+UE 7912: ulsch_rounds 4654/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 818/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 66
+UE 7912: ulsch_rounds 4677/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 822/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 66
+UE 7912: ulsch_rounds 4702/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.9 (+2.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 826/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 67
+UE 7912: ulsch_rounds 4722/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 830/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 67
+UE 7912: ulsch_rounds 4745/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 834/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 67
+UE 7912: ulsch_rounds 4771/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 839/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 68
+UE 7912: ulsch_rounds 4793/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 844/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 68
+UE 7912: ulsch_rounds 4820/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 7912: dlsch_rounds 848/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.8+1.8) RSSI -37.3, BLER 0.00000 MCS (0) 0 (Qm 2) CCE fail 68
+UE 7912: ulsch_rounds 4845/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+46336.652357 [NR_MAC] W UE 7912 UL failure after transmission timeout
+46336.864390 [RLC]    W Remove UE 30994
+46361.031619 [NR_MAC] I Added new CFRA process for UE RNTI 6cc7 with initial CellGroup and 1 preamble(s):   63
+46361.031625 [RLC]    I Activated srb0 for UE 27847
+46361.031724 [RLC]    I Added srb 1 to UE 27847
+46361.031763 [RLC]    I Added srb 2 to UE 27847
+46361.032176 [RLC]    I Added drb 1 to UE 27847
+46361.032195 [RLC]    I Added DRB to UE 27847
+46361.253199 [NR_MAC] W reconfigCellGroup still present, did we miss ACK for RRCReconfiguration?
+UE 6cc7: dlsch_rounds 5/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6cc7: ulsch_rounds 24/3/0/0, ulsch_errors 0, ulsch_DTX 3, BLER 0.08618 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 6cc7: dlsch_rounds 11/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.05314 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6cc7: ulsch_rounds 53/3/0/0, ulsch_errors 0, ulsch_DTX 3, BLER 0.02434 MCS (0) 2 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 6cc7: dlsch_rounds 15/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.04305 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6cc7: ulsch_rounds 79/3/0/0, ulsch_errors 0, ulsch_DTX 3, BLER 0.00687 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 26.3 (+3.3) RSSI -42.0 CCE fail 0
+UE 6cc7: dlsch_rounds 17/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.03874 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6cc7: ulsch_rounds 95/3/0/0, ulsch_errors 0, ulsch_DTX 3, BLER 0.00194 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 6cc7: dlsch_rounds 21/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.03138 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6cc7: ulsch_rounds 117/4/0/0, ulsch_errors 0, ulsch_DTX 4, BLER 0.00553 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 32.8 (+9.8) RSSI -42.0 CCE fail 0
+UE 6cc7: dlsch_rounds 27/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.02288 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6cc7: ulsch_rounds 143/6/0/0, ulsch_errors 0, ulsch_DTX 6, BLER 0.10544 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 43.3 (+20.3) RSSI -42.0 CCE fail 0
+UE 6cc7: dlsch_rounds 33/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.01668 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6cc7: ulsch_rounds 178/7/0/0, ulsch_errors 0, ulsch_DTX 7, BLER 0.03413 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 29.3 (+6.3) RSSI -42.0 CCE fail 0
+UE 6cc7: dlsch_rounds 38/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.01216 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6cc7: ulsch_rounds 208/7/0/0, ulsch_errors 0, ulsch_DTX 7, BLER 0.00964 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 6cc7: dlsch_rounds 44/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.00718 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6cc7: ulsch_rounds 237/8/0/0, ulsch_errors 0, ulsch_DTX 8, BLER 0.03606 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 44.4 (+21.4) RSSI -42.0 CCE fail 0
+UE 6cc7: dlsch_rounds 51/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.00471 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6cc7: ulsch_rounds 272/8/0/0, ulsch_errors 0, ulsch_DTX 8, BLER 0.01131 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 13 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+UE 6cc7: dlsch_rounds 54/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.00343 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6cc7: ulsch_rounds 293/9/0/0, ulsch_errors 0, ulsch_DTX 9, BLER 0.01820 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 42.8 (+19.8) RSSI -42.0 CCE fail 0
+UE 6cc7: dlsch_rounds 59/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.00225 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6cc7: ulsch_rounds 325/10/0/0, ulsch_errors 0, ulsch_DTX 10, BLER 0.01805 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 31.4 (+8.4) RSSI -42.0 CCE fail 0

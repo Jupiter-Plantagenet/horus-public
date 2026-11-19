@@ -1,0 +1,1071 @@
+{
+  "mode": "live",
+  "now": 1795034807.4324641,
+  "now_iso": "2026-11-18T20:46:47Z",
+  "meta": {
+    "root": "/var/tmp/horus-live-v314/sustained-20261118T192432Z/cycle-026/dashboard",
+    "replay_available": false,
+    "probe": null,
+    "sample": false,
+    "label": "RECORDED \u00b7 calibrated twin replay / emulated OAI F1",
+    "clock": {
+      "kind": "horus.steady-session-utc/1",
+      "boot_id": "b4f099a5-5be7-4c79-8da3-b07e4d17a94c",
+      "anchor_monotonic_s": 59040.150090511,
+      "anchor_utc_s": 1795034625.2270138
+    }
+  },
+  "health": {
+    "overall": "warn",
+    "checks": {
+      "stack": "unknown",
+      "e2": "unknown",
+      "data": "ok"
+    },
+    "source": null,
+    "e2_nodes": null,
+    "containers_down": [],
+    "containers_n": 0,
+    "ran_functions": null,
+    "ages": {
+      "rtt": 0.1,
+      "tput": null,
+      "kpm": null
+    },
+    "fresh": {
+      "rtt": true,
+      "tput": false,
+      "kpm": false
+    }
+  },
+  "rtt": {
+    "ues": {
+      "measured-walker": {
+        "n": 57,
+        "last": 34.9,
+        "p50": 29.3,
+        "p95": 34.9,
+        "max": 39.1,
+        "jitter": 5.88,
+        "loss_pct": 0.0
+      }
+    },
+    "all": {
+      "p50": 29.3,
+      "p95": 34.9,
+      "n": 57
+    },
+    "series": {
+      "measured-walker": [
+        [
+          1795034627.569,
+          14.2
+        ],
+        [
+          1795034628.623,
+          18.7
+        ],
+        [
+          1795034629.667,
+          13.2
+        ],
+        [
+          1795034630.718,
+          14.5
+        ],
+        [
+          1795034631.768,
+          15.2
+        ],
+        [
+          1795034632.818,
+          15.5
+        ],
+        [
+          1795034633.862,
+          10.8
+        ],
+        [
+          1795034634.913,
+          11.6
+        ],
+        [
+          1795034635.97,
+          18.7
+        ],
+        [
+          1795034637.014,
+          12.8
+        ],
+        [
+          1795034638.064,
+          11.8
+        ],
+        [
+          1795034639.114,
+          12.4
+        ],
+        [
+          1795034640.162,
+          9.9
+        ],
+        [
+          1795034641.214,
+          11.7
+        ],
+        [
+          1795034642.262,
+          9.94
+        ],
+        [
+          1795034643.315,
+          12.7
+        ],
+        [
+          1795034644.369,
+          15.7
+        ],
+        [
+          1795034645.417,
+          13.8
+        ],
+        [
+          1795034646.469,
+          13.1
+        ],
+        [
+          1795034647.522,
+          17.8
+        ],
+        [
+          1795034648.573,
+          19.3
+        ],
+        [
+          1795034649.623,
+          18.3
+        ],
+        [
+          1795034650.673,
+          18.4
+        ],
+        [
+          1795034651.725,
+          20.6
+        ],
+        [
+          1795034652.77,
+          14.8
+        ],
+        [
+          1795034653.82,
+          14.5
+        ],
+        [
+          1795034654.877,
+          21.9
+        ],
+        [
+          1795034655.922,
+          16.6
+        ],
+        [
+          1795034656.977,
+          21.8
+        ],
+        [
+          1795034658.03,
+          24.2
+        ],
+        [
+          1795034659.08,
+          23.8
+        ],
+        [
+          1795034660.131,
+          24.0
+        ],
+        [
+          1795034661.179,
+          22.0
+        ],
+        [
+          1795034662.232,
+          24.0
+        ],
+        [
+          1795034663.281,
+          22.8
+        ],
+        [
+          1795034664.333,
+          24.2
+        ],
+        [
+          1795034665.365,
+          5.55
+        ],
+        [
+          1795034666.418,
+          8.02
+        ],
+        [
+          1795034667.467,
+          7.21
+        ],
+        [
+          1795034668.517,
+          6.25
+        ],
+        [
+          1795034669.569,
+          7.43
+        ],
+        [
+          1795034670.619,
+          7.1
+        ],
+        [
+          1795034671.673,
+          10.9
+        ],
+        [
+          1795034672.728,
+          15.2
+        ],
+        [
+          1795034673.776,
+          12.6
+        ],
+        [
+          1795034674.826,
+          11.9
+        ],
+        [
+          1795034675.871,
+          6.22
+        ],
+        [
+          1795034676.929,
+          13.6
+        ],
+        [
+          1795034677.984,
+          18.0
+        ],
+        [
+          1795034679.035,
+          18.1
+        ],
+        [
+          1795034680.09,
+          22.5
+        ],
+        [
+          1795034681.14,
+          21.7
+        ],
+        [
+          1795034682.192,
+          23.4
+        ],
+        [
+          1795034683.24,
+          21.0
+        ],
+        [
+          1795034684.292,
+          22.5
+        ],
+        [
+          1795034685.343,
+          24.1
+        ],
+        [
+          1795034686.394,
+          25.3
+        ],
+        [
+          1795034687.445,
+          26.9
+        ],
+        [
+          1795034688.491,
+          22.8
+        ],
+        [
+          1795034689.547,
+          29.5
+        ],
+        [
+          1795034690.596,
+          29.5
+        ],
+        [
+          1795034691.648,
+          31.3
+        ],
+        [
+          1795034692.695,
+          29.1
+        ],
+        [
+          1795034693.748,
+          31.1
+        ],
+        [
+          1795034694.801,
+          32.0
+        ],
+        [
+          1795034695.851,
+          30.1
+        ],
+        [
+          1795034696.899,
+          26.1
+        ],
+        [
+          1795034697.96,
+          35.3
+        ],
+        [
+          1795034699.011,
+          34.0
+        ],
+        [
+          1795034700.059,
+          30.4
+        ],
+        [
+          1795034701.111,
+          29.8
+        ],
+        [
+          1795034702.163,
+          30.6
+        ],
+        [
+          1795034703.218,
+          28.5
+        ],
+        [
+          1795034704.262,
+          25.6
+        ],
+        [
+          1795034705.321,
+          32.9
+        ],
+        [
+          1795034706.372,
+          31.9
+        ],
+        [
+          1795034707.417,
+          25.6
+        ],
+        [
+          1795034708.469,
+          25.6
+        ],
+        [
+          1795034709.517,
+          22.0
+        ],
+        [
+          1795034710.572,
+          25.4
+        ],
+        [
+          1795034711.633,
+          34.4
+        ],
+        [
+          1795034712.677,
+          25.8
+        ],
+        [
+          1795034713.73,
+          27.2
+        ],
+        [
+          1795034714.781,
+          26.5
+        ],
+        [
+          1795034715.837,
+          30.4
+        ],
+        [
+          1795034716.882,
+          23.3
+        ],
+        [
+          1795034717.935,
+          24.7
+        ],
+        [
+          1795034718.989,
+          27.1
+        ],
+        [
+          1795034720.05,
+          35.4
+        ],
+        [
+          1795034721.1,
+          33.8
+        ],
+        [
+          1795034722.15,
+          32.0
+        ],
+        [
+          1795034723.202,
+          32.5
+        ],
+        [
+          1795034724.255,
+          33.1
+        ],
+        [
+          1795034725.299,
+          25.9
+        ],
+        [
+          1795034726.362,
+          36.6
+        ],
+        [
+          1795034727.404,
+          27.0
+        ],
+        [
+          1795034728.457,
+          28.3
+        ],
+        [
+          1795034729.516,
+          35.2
+        ],
+        [
+          1795034730.564,
+          31.5
+        ],
+        [
+          1795034731.612,
+          28.1
+        ],
+        [
+          1795034732.669,
+          32.7
+        ],
+        [
+          1795034733.718,
+          30.0
+        ],
+        [
+          1795034734.775,
+          35.1
+        ],
+        [
+          1795034735.82,
+          28.8
+        ],
+        [
+          1795034736.871,
+          27.5
+        ],
+        [
+          1795034737.919,
+          24.0
+        ],
+        [
+          1795034738.983,
+          36.1
+        ],
+        [
+          1795034740.031,
+          33.1
+        ],
+        [
+          1795034741.081,
+          31.2
+        ],
+        [
+          1795034742.128,
+          25.9
+        ],
+        [
+          1795034743.184,
+          30.5
+        ],
+        [
+          1795034744.228,
+          22.6
+        ],
+        [
+          1795034745.292,
+          35.0
+        ],
+        [
+          1795034746.338,
+          28.9
+        ],
+        [
+          1795034747.391,
+          30.0
+        ],
+        [
+          1795034748.441,
+          28.0
+        ],
+        [
+          1795034749.496,
+          31.2
+        ],
+        [
+          1795034750.548,
+          32.0
+        ],
+        [
+          1795034751.595,
+          27.1
+        ],
+        [
+          1795034752.65,
+          29.6
+        ],
+        [
+          1795034753.705,
+          33.1
+        ],
+        [
+          1795034754.74,
+          16.1
+        ],
+        [
+          1795034755.806,
+          30.5
+        ],
+        [
+          1795034756.86,
+          32.7
+        ],
+        [
+          1795034757.893,
+          14.4
+        ],
+        [
+          1795034758.954,
+          23.2
+        ],
+        [
+          1795034760.015,
+          32.7
+        ],
+        [
+          1795034761.063,
+          28.3
+        ],
+        [
+          1795034762.112,
+          26.1
+        ],
+        [
+          1795034763.166,
+          28.1
+        ],
+        [
+          1795034764.217,
+          27.2
+        ],
+        [
+          1795034765.272,
+          30.4
+        ],
+        [
+          1795034766.314,
+          20.5
+        ],
+        [
+          1795034767.379,
+          34.0
+        ],
+        [
+          1795034768.43,
+          33.0
+        ],
+        [
+          1795034769.482,
+          33.3
+        ],
+        [
+          1795034770.529,
+          28.0
+        ],
+        [
+          1795034771.588,
+          34.9
+        ],
+        [
+          1795034772.626,
+          21.2
+        ],
+        [
+          1795034773.69,
+          32.8
+        ],
+        [
+          1795034774.737,
+          27.4
+        ],
+        [
+          1795034775.793,
+          31.6
+        ],
+        [
+          1795034776.842,
+          28.2
+        ],
+        [
+          1795034777.885,
+          18.3
+        ],
+        [
+          1795034778.936,
+          17.2
+        ],
+        [
+          1795034780.003,
+          31.3
+        ],
+        [
+          1795034781.057,
+          33.3
+        ],
+        [
+          1795034782.112,
+          35.6
+        ],
+        [
+          1795034783.157,
+          28.5
+        ],
+        [
+          1795034784.205,
+          24.1
+        ],
+        [
+          1795034785.268,
+          34.2
+        ],
+        [
+          1795034786.321,
+          34.8
+        ],
+        [
+          1795034787.361,
+          22.8
+        ],
+        [
+          1795034788.416,
+          26.5
+        ],
+        [
+          1795034789.471,
+          28.8
+        ],
+        [
+          1795034790.514,
+          19.9
+        ],
+        [
+          1795034791.574,
+          27.6
+        ],
+        [
+          1795034792.628,
+          29.6
+        ],
+        [
+          1795034793.684,
+          33.3
+        ],
+        [
+          1795034794.728,
+          25.8
+        ],
+        [
+          1795034795.787,
+          33.4
+        ],
+        [
+          1795034796.845,
+          39.1
+        ],
+        [
+          1795034797.892,
+          34.6
+        ],
+        [
+          1795034798.939,
+          30.7
+        ],
+        [
+          1795034799.995,
+          34.9
+        ],
+        [
+          1795034801.035,
+          23.0
+        ],
+        [
+          1795034802.092,
+          28.8
+        ],
+        [
+          1795034803.146,
+          30.8
+        ],
+        [
+          1795034804.196,
+          27.1
+        ],
+        [
+          1795034805.252,
+          28.7
+        ],
+        [
+          1795034806.306,
+          29.3
+        ],
+        [
+          1795034807.366,
+          34.9
+        ]
+      ]
+    },
+    "last_t": 1795034807.365851,
+    "age_s": 0.1
+  },
+  "tput": {
+    "ues": {},
+    "total": {
+      "dl_last": null,
+      "dl_mean": null,
+      "ul_last": null,
+      "ul_mean": null
+    },
+    "series": {},
+    "last_t": null,
+    "age_s": null
+  },
+  "kpm": {
+    "total_rows": 0,
+    "files": 0,
+    "rows_per_min": 0.0,
+    "rsrp": [],
+    "thp": [],
+    "last": null,
+    "last_t": null,
+    "age_s": null
+  },
+  "actuation": {
+    "feed": [
+      {
+        "kind": "actuated",
+        "t": 1795034780.16961,
+        "ts": "2026-11-18T20:46:20Z",
+        "ue": "ue-0",
+        "policy_version": "v3.14.24",
+        "action": "handover",
+        "target": "du-3585/nr-cell-11111111",
+        "params": {
+          "ric_style": 3,
+          "ric_action": 1,
+          "ran_function": "ORAN-E2SM-RC",
+          "ric_control": "Connected Mode Mobility / Handover Control (F1, intra-gNB inter-DU)",
+          "xapp": "xapp_horus_ho (FlexRIC v3.0.0 xapp_rc_handover + UE/target selection)",
+          "e2_node": "OAI gNB-CU",
+          "cu_ue_id": 1,
+          "ric_control_result": "acked",
+          "ric_control_ack_ms": 0.6,
+          "rrc_handover_complete": true,
+          "rrc_completion_evidence": {
+            "cu_container_id": "4e7f121b28dbf3df22fe43d4360bddf42e06105542f4d1389b912d3fa62487ee",
+            "cu_ue_id": 1,
+            "trigger_marker": 59197.257958,
+            "completion_marker": 59197.496259,
+            "target_nr_cell_id": "11111111",
+            "meaning": "CU reports completed RRC handover after this target-specific trigger"
+          },
+          "source_du": "3584",
+          "target_du": "3585",
+          "target_nr_cell_id": "11111111",
+          "twin_ue": "measured-walker",
+          "twin_step": 1541,
+          "twin_from_cell": "LTE/450/6/36153880/100",
+          "twin_to_cell": "LTE/450/6/36154379/100",
+          "decision_source": "twin-in-the-loop (qualified-twin-stream, radio_map=lap-1 calibrated mean RSRP on t4 reverse route; conditional neighbour identities, controller=selector)",
+          "mapping": "each twin HO decision executes as a real F1 HO to the other live DU (2-cell testbed)",
+          "xapp_rc": 0,
+          "selector": {
+            "candidate_version": "v3.14.24",
+            "effective_controller": "selector",
+            "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+            "source_ts": "2026-11-18T20:46:20.164063+00:00",
+            "input_age_s": 0.004189968109130859,
+            "selected_profile": {
+              "index": 31,
+              "parameters": {
+                "prep_offset_db": -6.0,
+                "exec_offset_db": 0.0,
+                "hys_db": 2.0,
+                "ttt_s": 0.0,
+                "l3_k": 0
+              }
+            },
+            "selector_stage": "learned_profiles",
+            "native_cho_configured": false,
+            "conditional_in_twin": true,
+            "mapping": "Twin target maps to OTHER emulated live DU; profile parameters are applied only in twin"
+          },
+          "decision_to_cu_confirmed_ms": 3244.7,
+          "dashboard_latency_note": "decision-to-ACK unavailable; latency_ms intentionally null",
+          "completion_basis": "ACK, DU transition and new CU RRC completion"
+        },
+        "result": "ok",
+        "ok": true,
+        "latency_ms": null,
+        "trigger": {
+          "kpi": "twin_rsrp_dbm",
+          "observed": -97.31616458398527,
+          "slo": -94.36287328128219,
+          "note": "serving vs target RSRP in the twin at the decision step"
+        },
+        "effect": {
+          "status": "no-data",
+          "source": "tput"
+        },
+        "series": []
+      }
+    ],
+    "focus": {
+      "kind": "actuated",
+      "t": 1795034780.16961,
+      "ts": "2026-11-18T20:46:20Z",
+      "ue": "ue-0",
+      "policy_version": "v3.14.24",
+      "action": "handover",
+      "target": "du-3585/nr-cell-11111111",
+      "params": {
+        "ric_style": 3,
+        "ric_action": 1,
+        "ran_function": "ORAN-E2SM-RC",
+        "ric_control": "Connected Mode Mobility / Handover Control (F1, intra-gNB inter-DU)",
+        "xapp": "xapp_horus_ho (FlexRIC v3.0.0 xapp_rc_handover + UE/target selection)",
+        "e2_node": "OAI gNB-CU",
+        "cu_ue_id": 1,
+        "ric_control_result": "acked",
+        "ric_control_ack_ms": 0.6,
+        "rrc_handover_complete": true,
+        "rrc_completion_evidence": {
+          "cu_container_id": "4e7f121b28dbf3df22fe43d4360bddf42e06105542f4d1389b912d3fa62487ee",
+          "cu_ue_id": 1,
+          "trigger_marker": 59197.257958,
+          "completion_marker": 59197.496259,
+          "target_nr_cell_id": "11111111",
+          "meaning": "CU reports completed RRC handover after this target-specific trigger"
+        },
+        "source_du": "3584",
+        "target_du": "3585",
+        "target_nr_cell_id": "11111111",
+        "twin_ue": "measured-walker",
+        "twin_step": 1541,
+        "twin_from_cell": "LTE/450/6/36153880/100",
+        "twin_to_cell": "LTE/450/6/36154379/100",
+        "decision_source": "twin-in-the-loop (qualified-twin-stream, radio_map=lap-1 calibrated mean RSRP on t4 reverse route; conditional neighbour identities, controller=selector)",
+        "mapping": "each twin HO decision executes as a real F1 HO to the other live DU (2-cell testbed)",
+        "xapp_rc": 0,
+        "selector": {
+          "candidate_version": "v3.14.24",
+          "effective_controller": "selector",
+          "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+          "source_ts": "2026-11-18T20:46:20.164063+00:00",
+          "input_age_s": 0.004189968109130859,
+          "selected_profile": {
+            "index": 31,
+            "parameters": {
+              "prep_offset_db": -6.0,
+              "exec_offset_db": 0.0,
+              "hys_db": 2.0,
+              "ttt_s": 0.0,
+              "l3_k": 0
+            }
+          },
+          "selector_stage": "learned_profiles",
+          "native_cho_configured": false,
+          "conditional_in_twin": true,
+          "mapping": "Twin target maps to OTHER emulated live DU; profile parameters are applied only in twin"
+        },
+        "decision_to_cu_confirmed_ms": 3244.7,
+        "dashboard_latency_note": "decision-to-ACK unavailable; latency_ms intentionally null",
+        "completion_basis": "ACK, DU transition and new CU RRC completion"
+      },
+      "result": "ok",
+      "ok": true,
+      "latency_ms": null,
+      "trigger": {
+        "kpi": "twin_rsrp_dbm",
+        "observed": -97.31616458398527,
+        "slo": -94.36287328128219,
+        "note": "serving vs target RSRP in the twin at the decision step"
+      },
+      "effect": {
+        "status": "no-data",
+        "source": "tput"
+      },
+      "series": []
+    },
+    "counts": {
+      "actuated": 1,
+      "ok": 1,
+      "failed": 0,
+      "shadow": 0
+    },
+    "latency": {
+      "p50": null,
+      "p95": null,
+      "max": null,
+      "n": 0,
+      "hist": []
+    },
+    "success_pct": 100.0,
+    "effect_median_pct": null,
+    "last_t": 1795034780.16961,
+    "last_shadow_t": null
+  },
+  "pipeline": {
+    "cards": [
+      {
+        "version": "v3.14.24",
+        "algo": "ctx_cho_selector",
+        "file": "v3.14.24.json",
+        "stage": "promoted",
+        "in_store": false,
+        "aggregation": "fedavg",
+        "round": 14,
+        "clients": [
+          "client-gate",
+          "client-lecture",
+          "client-quad"
+        ],
+        "poisoned": false,
+        "worst": 0.7998,
+        "threshold": 0.63,
+        "worst_case": null,
+        "suite": "finals-v3",
+        "gate_t": 1795007080.0,
+        "gate_ts": "2026-11-18T13:04:40Z",
+        "active": false
+      }
+    ],
+    "events": [
+      {
+        "t": 1795007080.0,
+        "version": "v3.14.24",
+        "verdict": "promoted",
+        "worst": 0.7998,
+        "threshold": 0.63,
+        "aggregation": "fedavg",
+        "poisoned": false,
+        "worst_case": null
+      }
+    ],
+    "counts": {
+      "trained": 0,
+      "federated": 0,
+      "gating": 0,
+      "promoted": 1,
+      "rejected": 0
+    },
+    "active_store": null,
+    "active_xapp": null,
+    "active": null
+  },
+  "runtime": {
+    "eligibility": {
+      "candidate_version": "v3.14.24",
+      "eligible": true,
+      "live_eligible": true,
+      "fixture_only": false,
+      "reason": "qualified_twin_input",
+      "inference_calls": 86,
+      "session_state": "running",
+      "runtime_fault": null,
+      "clock_diagnostics": {
+        "raw_wall_utc": "2026-11-18T20:46:37.089380+00:00",
+        "wall_minus_session_s": -9.632912397384644
+      },
+      "session_id": "03ef3037-043f-4464-b087-086c3ef68e17",
+      "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+      "input_qualified": true,
+      "input_scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification",
+      "ts": "2026-11-18T20:46:46Z",
+      "age_s": 0.7,
+      "stale": false
+    },
+    "effective": {
+      "controller": "selector",
+      "stage": "learned_profiles",
+      "age_s": 0.1,
+      "stale": false,
+      "counts_60s": {
+        "selector": 600,
+        "a3": 0,
+        "hold": 0
+      },
+      "profile": {
+        "prep_offset_db": -6.0,
+        "exec_offset_db": 2.0,
+        "hys_db": 2.0,
+        "ttt_s": 0.0,
+        "l3_k": 0
+      },
+      "input_age_s": 0.009199857711791992,
+      "candidate_version": "v3.14.24",
+      "session_id": "03ef3037-043f-4464-b087-086c3ef68e17",
+      "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+      "learned": true,
+      "ts": "2026-11-18T20:46:47Z"
+    },
+    "research_gate": {
+      "candidate_version": "v3.14.24",
+      "verdict": "promoted",
+      "worst": 0.7998,
+      "threshold": 0.63
+    },
+    "final_evaluation": {
+      "candidate_version": null,
+      "verdict": "pending",
+      "decided": false,
+      "note": "pre-registered held-out evaluation not run / not recorded"
+    },
+    "ai_active": true,
+    "binding": {
+      "ok": true,
+      "reason": null
+    },
+    "store_only": false,
+    "store_active": null
+  },
+  "results": null,
+  "campus": {
+    "campuses": [],
+    "promoted": 0,
+    "rejected": 0,
+    "sample": false
+  }
+}

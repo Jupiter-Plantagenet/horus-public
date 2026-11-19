@@ -1,0 +1,11 @@
+# Incremental layer over the existing validated build; does not fetch upstream.
+ARG BASE=horus/flexric:local
+FROM ${BASE}
+COPY patches/patch5_epoll_eintr.py /tmp/patch5_epoll_eintr.py
+COPY tests/epoll_eintr.c /tmp/epoll_eintr.c
+RUN python3 /tmp/patch5_epoll_eintr.py /opt/flexric \
+ && cc -Wall -Wextra -I/opt/flexric/src/xApp /tmp/epoll_eintr.c /opt/flexric/src/xApp/asio_xapp.c -o /tmp/test_epoll_eintr \
+ && /tmp/test_epoll_eintr \
+ && cmake --build /opt/flexric/build -j2 \
+ && cmake --install /opt/flexric/build \
+ && ldconfig

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "actual_c_handlers_and_pthread_wait_compiled": true,
+  "immediate_delayed_and_absent_transport_cases": 9,
+  "old_handlers_fail_immediate_ack_cases": 3,
+  "early_delayed_missing_rejected_and_stale_reply_cases": 5,
+  "asan_ubsan_passed": true,
+  "scope": "Actual three modified handlers with stub transport/pending map; actual pthread wait implementation; not full RIC/ASN.1 sanitizer qualification",
+  "source_sha256": {
+    "msg_handler_xapp.c": "1eeaf1ad3a181b5eb6698d87b57be6d5cc71e13dc63a73b3c4b52ca1466c965c",
+    "e42_xapp.c": "44a972e68b297a6b53d179a44cb6d6ddae163946c2b9142cdd7293e43da600cd",
+    "sync_ui.c": "774a4345225d0b5cf0534a12c5bd9dcb8cb3e893b660f61d9a57947ef8426d8d",
+    "sync_ui.h": "e30059480d7b9845e67119cde41139f0afb137ca90189405a0396951dfed3d17"
+  },
+  "new_training_or_evaluation": false
+}

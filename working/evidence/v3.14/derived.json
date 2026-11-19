@@ -1,0 +1,98 @@
+[
+ {
+  "version": "v3.14.20",
+  "config": "B04",
+  "weights": "v3.14.10",
+  "sha256": "89917c1197297da196c39f8c28cb8885764448db7a36816089f7122330012392"
+ },
+ {
+  "version": "v3.14.21",
+  "config": "B04",
+  "weights": "v3.14.11",
+  "sha256": "12c81b25c0869c9ca5e859c02c033e44000268dea2867ea4a61a53819d3ce369"
+ },
+ {
+  "version": "v3.14.22",
+  "config": "B04",
+  "weights": "v3.14.12",
+  "sha256": "5ff7db6d2cbf62546e342bfae4b2ad0bd5c59057031f54edf54f98f24f8d75f0"
+ },
+ {
+  "version": "v3.14.23",
+  "config": "B04",
+  "weights": "v3.14.13",
+  "sha256": "ea1c0f34ed4fd86fa3e4da1d81cc2c483d9207e4aee2591851d7af96c80db6ee"
+ },
+ {
+  "version": "v3.14.24",
+  "config": "B03",
+  "weights": "v3.14.10",
+  "sha256": "b6002c7aabadec8b5135c7494b83834207d0882eb5a1116cdf734a490f1dfa28"
+ },
+ {
+  "version": "v3.14.25",
+  "config": "B03",
+  "weights": "v3.14.11",
+  "sha256": "e5eade8164687c054b0c29a0c74935d0f7c4ea62ecc9177bb437efdc6bf49f42"
+ },
+ {
+  "version": "v3.14.26",
+  "config": "B03",
+  "weights": "v3.14.12",
+  "sha256": "962ee47ec8c7f6295709097cd8e88a119fe571ac98a1b0eb56bb604fb660e027"
+ },
+ {
+  "version": "v3.14.27",
+  "config": "B03",
+  "weights": "v3.14.13",
+  "sha256": "3735504b8e2b20740ec1efdfb998410ce9828c7155d1fe7d8c798175f33043d3"
+ },
+ {
+  "version": "v3.14.28",
+  "config": "B02",
+  "weights": "v3.14.10",
+  "sha256": "4582972e67de531356f3feebf263711b87577ff7eab61317e9d741463bad0fea"
+ },
+ {
+  "version": "v3.14.29",
+  "config": "B02",
+  "weights": "v3.14.11",
+  "sha256": "bd444bdf4a379389b7cc13ca706b3481d4bfd37929dc39a1ed6ff3ce1481f160"
+ },
+ {
+  "version": "v3.14.30",
+  "config": "B02",
+  "weights": "v3.14.12",
+  "sha256": "bc6c10c202e2619b5ff5d904a1a5b6a50b8478094bb5375b244c9345ba703fea"
+ },
+ {
+  "version": "v3.14.31",
+  "config": "B02",
+  "weights": "v3.14.13",
+  "sha256": "364a255c9f43cfb8f1fcf813d9680105c4788d9aab1f5dd992cd0bbfb6becfec"
+ },
+ {
+  "version": "v3.14.32",
+  "config": "A",
+  "weights": "v3.14.10",
+  "sha256": "cca0713197681a4f6929cb21be697f5be77abaab300f92f4d4561fb6ddfb9fba"
+ },
+ {
+  "version": "v3.14.33",
+  "config": "A",
+  "weights": "v3.14.11",
+  "sha256": "fdc2d2a92d51961affae62df5e0eedf3142dc27183ac6171d3dcefe2cbdc4e96"
+ },
+ {
+  "version": "v3.14.34",
+  "config": "A",
+  "weights": "v3.14.12",
+  "sha256": "de9f8aaa8246e49bc7c37e8d71d325de81dd8e96da8bf0f24cd9f75e3d8bb282"
+ },
+ {
+  "version": "v3.14.35",
+  "config": "A",
+  "weights": "v3.14.13",
+  "sha256": "2aebee7cb06d3e760f5e020e52dbf198d24a64936988c612025a764fe233c8f1"
+ }
+]

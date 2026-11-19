@@ -1,0 +1,62 @@
+{
+  "image_tag": "horus/oai-flexric:reply-order-diagnostic",
+  "image_id": "sha256:67dc41ae98695084d01627001895a9f86a2382536eb09d2f16bfb15c3d23931e",
+  "binary_sha256": "76ca14afd2a02ac06ef4ffeb420deab604ab4b93acf8eb14a4c9aaa4899f5d2e",
+  "flexric_commit": "18c3325091ad6890a706ebb2bba38d3c0fb741e5",
+  "patch": {
+    "flexric_tag": "v3.0.0",
+    "experimental": true,
+    "qualified": false,
+    "observed_crash": "CONTROL ACK removes pending event before sender registers it; assoc_rb_tree minimum(NULL)",
+    "scope": "Register setup/delete/control pending events before TX; arm synchronous reply state before each request; preserve early ACKs; reject CONTROL FAILURE and missing replies",
+    "original_timeouts_preserved": true,
+    "model_gate_radio_security_bandwidth_cu_proof_unchanged": true,
+    "files": {
+      "msg_handler_xapp.c": {
+        "before_sha256": "5f236fc06af04bc515bac8fc76b3aaa40665888521cb4f886c64d501fd2aa3a3",
+        "after_sha256": "1eeaf1ad3a181b5eb6698d87b57be6d5cc71e13dc63a73b3c4b52ca1466c965c"
+      },
+      "e42_xapp.c": {
+        "before_sha256": "b76d0d6f05ba63ef3aed7e9bd98e067f383c506bf1751794f98dab8fe1fe9526",
+        "after_sha256": "44a972e68b297a6b53d179a44cb6d6ddae163946c2b9142cdd7293e43da600cd"
+      },
+      "sync_ui.c": {
+        "before_sha256": "8b7e52dc932318384ecd534f99d6dfc301026623e66ca62ea7b09731398317a4",
+        "after_sha256": "774a4345225d0b5cf0534a12c5bd9dcb8cb3e893b660f61d9a57947ef8426d8d"
+      },
+      "sync_ui.h": {
+        "before_sha256": "2c298f05a6e19340cc9c1f97193742c561f8542b1f5a189094a09ca2b2268d2b",
+        "after_sha256": "e30059480d7b9845e67119cde41139f0afb137ca90189405a0396951dfed3d17"
+      }
+    }
+  },
+  "actual_c_checks": {
+    "passed": true,
+    "actual_c_handlers_and_pthread_wait_compiled": true,
+    "immediate_delayed_and_absent_transport_cases": 9,
+    "old_handlers_fail_immediate_ack_cases": 3,
+    "early_delayed_missing_rejected_and_stale_reply_cases": 5,
+    "asan_ubsan_passed": true,
+    "scope": "Actual three modified handlers with stub transport/pending map; actual pthread wait implementation; not full RIC/ASN.1 sanitizer qualification",
+    "source_sha256": {
+      "msg_handler_xapp.c": "1eeaf1ad3a181b5eb6698d87b57be6d5cc71e13dc63a73b3c4b52ca1466c965c",
+      "e42_xapp.c": "44a972e68b297a6b53d179a44cb6d6ddae163946c2b9142cdd7293e43da600cd",
+      "sync_ui.c": "774a4345225d0b5cf0534a12c5bd9dcb8cb3e893b660f61d9a57947ef8426d8d",
+      "sync_ui.h": "e30059480d7b9845e67119cde41139f0afb137ca90189405a0396951dfed3d17"
+    },
+    "new_training_or_evaluation": false
+  },
+  "full_source_sdk_build": true,
+  "compiler_major": 12,
+  "build_parallelism": 2,
+  "builder_image": "6a66ed6a82e2",
+  "bootstrap_builder": "sha256:5e371e4782cdc110973f0c406c8ffa8e5cce5642f4943d960f18496136ba7e51",
+  "runtime_parent": "sha256:12a652edf98631a1b0d2e1cf7f3077f4f9e2ae55c6088a3a0bb1fd00549910e8",
+  "standalone_single_build_recipe_reexecuted": false,
+  "near_rt_ric_and_plugins_unchanged": true,
+  "no_new_training_or_heldout_runs": true,
+  "operator_probe_pending": false,
+  "normal_combination_operator_outcome": "80/80 PASS with CU proof, traffic and cleanup",
+  "normal_operator_evidence": "working/evidence/xapp-reply-order-20261104/operator-80-controls/VERIFICATION.json",
+  "integrated_sustained_acceptance_pending": true
+}

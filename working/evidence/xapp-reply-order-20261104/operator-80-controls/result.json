@@ -1,0 +1,512 @@
+{
+  "passed": true,
+  "operator_diagnostic_only": true,
+  "model_inference": false,
+  "new_training_or_heldout_runs": false,
+  "rf_prb": 106,
+  "xapp_under_gdb": false,
+  "driver_source_sha256": "0e0e4eb2222e212dfdde98d548473d5e805dadd2576c5bd2a74204cd709aeac8",
+  "initial_radio_settle_seconds": 8,
+  "requested_controls": 80,
+  "timing_metadata_enabled": true,
+  "response_window_slots": 20,
+  "security_unchanged": true,
+  "controls": [
+    {
+      "index": 0,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 1,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 2,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 3,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 4,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 5,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 6,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 7,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 8,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 9,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 10,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 11,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 12,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 13,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 14,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 15,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 16,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 17,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 18,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 19,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 20,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 21,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 22,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 23,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 24,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 25,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 26,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 27,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 28,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 29,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 30,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 31,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 32,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 33,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 34,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 35,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 36,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 37,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 38,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 39,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 40,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 41,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 42,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 43,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 44,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 45,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 46,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 47,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 48,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 49,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 50,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 51,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 52,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 53,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 54,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 55,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 56,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 57,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 58,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 59,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 60,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 61,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 62,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 63,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 64,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 65,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 66,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 67,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 68,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 69,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 70,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 71,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 72,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 73,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 74,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 75,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 76,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 77,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 78,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    },
+    {
+      "index": 79,
+      "result": "ok",
+      "rrc_complete": true,
+      "traffic_passed": true
+    }
+  ],
+  "cleanup_passed": true,
+  "configuration_sha256": {
+    "docker-compose.yml": "162c9ca11ceedce9b7ce92fc8e3a38b77ea2e3552e9c5b001e955281ca805530",
+    "conf/gnb-du.conf": "4ab201564d0ca1ae736243f6037d9e7360025bd93969781f85315e04807f6048"
+  },
+  "actual_images": {
+    "ho-cu": "sha256:dc53f0fd4f18a7fb35741467207607a31f8f688bd5b0f226c403fefddae49bcd",
+    "ho-du-pci0": "sha256:9a0a1a2536f371ff9d014fa787c282d30bbfe4be81b621821883cb49ea9700c7",
+    "ho-du-pci1": "sha256:9a0a1a2536f371ff9d014fa787c282d30bbfe4be81b621821883cb49ea9700c7",
+    "ho-nr-ue": "sha256:995d877338aeb029ceb102659d5de0e5078bcae8f54dca14d2da3a915af40b05",
+    "ho-flexric": "sha256:67dc41ae98695084d01627001895a9f86a2382536eb09d2f16bfb15c3d23931e"
+  },
+  "cfra_rearm_events": 0,
+  "lost_rar_replay_events": 0,
+  "valid_ul_context_retirements": 80,
+  "elapsed_s": 594.045601091
+}

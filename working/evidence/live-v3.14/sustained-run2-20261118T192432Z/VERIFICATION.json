@@ -1,0 +1,42 @@
+{
+ "run": "sustained-run2-20261118T192432Z",
+ "candidate": "v3.14.24",
+ "requested_soak_seconds_runner_clock": 7600,
+ "why_7600": "run 1 (7200 on the runner's WSL CLOCK_MONOTONIC) delivered only 7,095 s of real time; 7600 adds margin for the measured drift",
+ "runner_result": {
+  "passed": true,
+  "cleanup_passed": true,
+  "source_files_verified": 5040,
+  "source_hashes_match": true
+ },
+ "cycles": 41,
+ "frames": 74502,
+ "control_attempts": 82,
+ "confirmed_handovers": 82,
+ "failed_controls": 0,
+ "inference_calls": 3527,
+ "fallback_frames": 0,
+ "invalid_frames": 0,
+ "model_faults": 0,
+ "runtime_faults": 0,
+ "every_cycle_two_confirmed": true,
+ "candidate_versions": [
+  "v3.14.24"
+ ],
+ "context_sha256": "a355861d53ece3123099678b1a1b473eb169b35ecd43cd5d5d0cdc3829caa075",
+ "max_input_age_s": 0.03771805763244629,
+ "min_post_handover_replies": 4,
+ "timing": {
+  "runner_monotonic_sustained_s": 7760.2,
+  "utc_sustained_started": "2026-11-18T19:25:28.184Z",
+  "utc_first_cycle_ready": "2026-11-18T19:25:30.266Z",
+  "utc_last_cycle_summary": "2026-11-18T21:28:31.021Z",
+  "utc_runner_finished": "2026-11-18T21:28:53.498Z",
+  "real_sustained_s": 7380.8,
+  "independent_check": "laptop clock (NTP-synchronised): launch 19:24:31.94Z, end-of-run observed 21:28:57.37Z = 7,465 s total including startup and shutdown; the desktop's UTC stamps agree with it to within 2 s",
+  "monotonic_over_utc_sustained_window": 1.0511,
+  "verdict": "PASS: 2 h 3 min 0.8 s of real sustained operation (>= 7,200 s by the UTC clock, confirmed by an independent clock)"
+ },
+ "runner_fix": "release/run_demo.py now ends the soak only when BOTH the monotonic and the UTC elapsed time reach --soak-seconds, and records sustained_elapsed_utc_seconds",
+ "full_capture": "desktop /var/tmp/horus-live-v314/sustained-20261118T192432Z (227 MB; 912 files bound by FULL-CAPTURE.sha256, which excludes itself); this folder holds the per-cycle driver/state subset (decisions.jsonl omitted, hashes in FULL-CAPTURE.sha256)"
+}

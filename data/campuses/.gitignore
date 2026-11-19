@@ -1,0 +1,3 @@
+# Raw API pulls stay local (OpenCellID CC-BY-SA tiles, Overpass ODbL dumps);
+# the committed artifacts are the trimmed sites.json + layout.json per campus.
+*/raw/

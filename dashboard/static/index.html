@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HORUS Live Demo</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<div id="app">
+  <aside id="side">
+    <div class="brand">HORUS</div>
+    <div class="tag" data-i18n="tagline"></div>
+    <nav id="nav"></nav>
+    <div class="sidefoot">
+      <div id="feedstats"></div>
+      <div class="keys" data-i18n="keys"></div>
+    </div>
+  </aside>
+  <div id="main">
+    <header id="top">
+      <div class="title"><span class="brand-sm">HORUS</span><span id="ptitle"></span></div>
+      <div id="modebadge" class="mode live"></div>
+      <div id="health" class="health"></div>
+      <div id="clock" class="clock num"></div>
+      <button id="langbtn" class="btn" title="L">한/EN</button>
+      <button id="presbtn" class="btn" title="P">⛶</button>
+    </header>
+    <div id="replaybar" class="replaybar" hidden></div>
+    <div id="samplebar" class="samplebar" hidden></div>
+    <div id="errbar" class="errbar" hidden></div>
+    <main id="pages">
+      <section class="page" id="pg-overview"></section>
+      <section class="page" id="pg-actuation"></section>
+      <section class="page" id="pg-pipeline">
+        <div class="panel lanepanel">
+          <div id="lane" class="lane">
+            <svg id="lanesvg" class="lanesvg" aria-hidden="true"></svg>
+            <div class="stage" data-st="train" style="left:9%;top:50%"><div class="sdot"></div><b data-i18n="s_train"></b><span data-i18n="s_train_sub"></span></div>
+            <div class="stage" data-st="fed" style="left:30%;top:50%"><div class="sdot"></div><b data-i18n="s_fed"></b><span data-i18n="s_fed_sub"></span></div>
+            <div class="stage gate" data-st="gate" style="left:52%;top:50%"><div class="sdot"></div><b data-i18n="s_gate"></b><span data-i18n="s_gate_sub"></span></div>
+            <div class="stage good" data-st="promote" style="left:74%;top:18%"><div class="sdot"></div><b data-i18n="s_promote"></b></div>
+            <div class="stage badst" data-st="reject" style="left:74%;top:82%"><div class="sdot"></div><b data-i18n="s_reject"></b></div>
+            <div class="stage good" data-st="live" style="left:93%;top:18%"><div class="sdot"></div><b data-i18n="s_live"></b><span data-i18n="s_live_sub"></span></div>
+            <div id="gauge" class="gauge"><div class="gfill"></div><div class="gthr"></div><div class="gtxt num"></div></div>
+            <div id="token" class="token"><span class="tv"></span><span class="tp"></span></div>
+          </div>
+          <div id="narr" class="narr"></div>
+        </div>
+        <div id="pipebody"></div>
+      </section>
+      <section class="page" id="pg-results"></section>
+      <section class="page" id="pg-campus"></section>
+    </main>
+    <div id="dots" class="dots"></div>
+  </div>
+</div>
+<div id="tip" class="tip" hidden></div>
+<script src="/static/i18n.js"></script>
+<script src="/static/charts.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

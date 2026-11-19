@@ -1,0 +1,7 @@
+train: 2400 episodes, 6159600 samples, K=32, heads=3 (52s)
+  epoch 10/40 loss 0.7697
+  epoch 20/40 loss 0.7684
+  epoch 30/40 loss 0.7679
+  epoch 40/40 loss 0.7677
+train-set (first 200k rows) v3.14.0 {'gain_vs_default': 0.24820302426815033, 'oracle_gain': 0.5638270378112793, 'frac_non_default': 0.9999834299087524, 'chosen_fail_rate': 0.00029802965582348406, 'default_fail_rate': 0.0, 'chosen_ho_rate': 4.268220901489258, 'default_ho_rate': 4.132495403289795}
+saved /var/tmp/horus-results-v313/src-v314/pipeline/checkpoints/dqn-v3.14.0.pt sha256 830a8ff21439671cd5b14849abbccbcd8473b62c043865c4df81bf6da6288d5c

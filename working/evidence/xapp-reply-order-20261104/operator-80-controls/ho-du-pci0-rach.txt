@@ -1,0 +1,630 @@
+          prach_ConfigurationIndex                                  = 98;
+#prach_msg1_FDM
+          prach_msg1_FDM                                            = 0;
+          prach_msg1_FrequencyStart                                 = 0;
+          preambleReceivedTargetPower                               = -96;
+          preambleTransMax                                          = 6;
+#ssb_perRACH_OccasionAndCB_PreamblesPerSSB_PR
+        ssb_perRACH_OccasionAndCB_PreamblesPerSSB_PR                = 4;
+        ssb_perRACH_OccasionAndCB_PreamblesPerSSB                   = 14;
+#prach-RootSequenceIndex_PR
+        prach_RootSequenceIndex_PR                                  = 2;
+        prach_RootSequenceIndex                                     = 1;
+        # SCS for msg1, can only be 15 for 30 kHz < 6 GHz, takes precendence over the one derived from prach-ConfigIndex
+        msg1_SubcarrierSpacing                                      = 1,
+        msg3_DeltaPreamble                                          = 1;
+        msgA_prach_ConfigurationIndex_r16                           = 148;
+        msgA_ssb_perRACH_OccasionAndCB_PreamblesPerSSB_PR           = 4;
+        msgA_ssb_perRACH_OccasionAndCB_PreamblesPerSSB              = 15;
+  prach_dtx_threshold = 200;
+# HORUS: E2 agent on each DU too. FlexRIC's xapp_rc_handover learns the DUs'
+1413.706863 [UTIL]   I running in SA mode (no --phy-test, --do-ra, --nsa option present)
+1413.711959 [NR_MAC] I PUSCH Target 230 RSSI thresh 0 Failure 10, PUCCH Target 200 RSSI thresh 0 Failure 10
+1414.861516 [PHY]    I Starting RU 0 (,synch_to_ext_device) on cpu 2
+1414.874512 [PHY]    I RU 0 Setting N_TA_offset to 800 samples (UL Freq 3600120, N_RB 106, mu 1)
+1416.994376 [NR_PHY] E   90. 7 PRACH job is in the past (  89.19)
+1417.638625 [NR_PHY] E  154. 7 PRACH job is in the past ( 153.19)
+1417.685737 [NR_PHY] E  160. 7 PRACH job is in the past ( 159.19)
+1417.738036 [NR_PHY] E  166. 7 PRACH job is in the past ( 165.19)
+1417.865514 [NR_PHY] E  178. 7 PRACH job is in the past ( 177.19)
+1418.288809 [NR_PHY] E  198. 7 PRACH job is in the past ( 197.19)
+1418.423941 [NR_PHY] A [RAPROC] 205.19 Initiating RA procedure with preamble 27, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1418.424531 [NR_MAC] A 205.19 UE RA-RNTI 010b TC-RNTI 7c36: initiating RA procedure for RAPID 27 with TA 0 units
+1418.427110 [NR_MAC] I UE 7c36: Msg3 scheduled at 206.19 (206.10 TDA 0) start 0 RBs 8
+1418.427190 [NR_MAC] A UE 7c36: 206.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 27, timing_offset = 0 (estimated distance 0.0 [m])
+1418.441560 [NR_MAC] I Activating scheduling Msg4 for TC_RNTI 0x7c36 (state WAIT_Msg3)
+1418.491114 [NR_MAC] A  207.17 UE 7c36: Received Ack of Msg4. CBRA procedure succeeded (UE Connected)
+UE 7c36: dlsch_rounds 13/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.7+1.7) RSSI -37.3, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7c36: ulsch_rounds 37/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.06561 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7c36: dlsch_rounds 15/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.7+1.7) RSSI -37.3, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7c36: ulsch_rounds 53/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01668 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7c36: dlsch_rounds 19/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.7+1.7) RSSI -37.3, BLER 0.04305 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7c36: ulsch_rounds 71/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00471 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+1424.952423 [NR_PHY] E  526. 7 PRACH job is in the past ( 525.19)
+UE 7c36: dlsch_rounds 21/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.7+1.7) RSSI -37.3, BLER 0.03487 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7c36: ulsch_rounds 88/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00120 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7c36: dlsch_rounds 25/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.7+1.7) RSSI -37.3, BLER 0.02288 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7c36: ulsch_rounds 112/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00034 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 26.4 (+3.4) RSSI -42.0 CCE fail 0
+UE 7c36: dlsch_rounds 27/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.7+1.7) RSSI -37.3, BLER 0.01853 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7c36: ulsch_rounds 127/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00009 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 7c36: dlsch_rounds 30/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.7+1.7) RSSI -37.3, BLER 0.01351 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7c36: ulsch_rounds 143/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00002 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 7c36: dlsch_rounds 32/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.7+1.7) RSSI -37.3, BLER 0.01094 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7c36: ulsch_rounds 158/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+UE 7c36: dlsch_rounds 35/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.7+1.7) RSSI -37.3, BLER 0.00798 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7c36: ulsch_rounds 176/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 7c36: dlsch_rounds 41/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.7+1.7) RSSI -37.3, BLER 0.00471 MCS (0) 0 (Qm 2) CCE fail 4
+UE 7c36: ulsch_rounds 206/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+1453.900439 [NR_MAC] W UE 7c36 UL failure after transmission timeout
+1454.381308 [NR_PHY] A [RAPROC] 411.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1460.188609 [NR_MAC] I Added new CFRA process for UE RNTI 1aa0 with initial CellGroup and 1 preamble(s):   63
+1460.909220 [NR_PHY] A [RAPROC] 641.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1460.909411 [NR_MAC] A 641.19 UE RA-RNTI 010f TC-RNTI 1aa0: initiating RA procedure for RAPID 63 with TA 0 units
+1460.928805 [NR_MAC] I UE 1aa0: Msg3 scheduled at 642.19 (642.10 TDA 0) start 0 RBs 8
+1460.928827 [NR_MAC] A UE 1aa0: 642.10 Generating RA-Msg2 DCI, RA RNTI 0x10f, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1460.958209 [NR_MAC] W HORUS LAB: CFRA 1aa0 retain bounded RAR retry context pending valid UL
+1460.958237 [NR_MAC] A (rnti 0x1aa0) CFRA procedure succeeded!
+1461.026352 [NR_MAC] W HORUS LAB: CFRA 1aa0 valid UL received; retire RAR retry context
+UE 1aa0: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.07290 MCS (0) 0 (Qm 2) CCE fail 0
+UE 1aa0: ulsch_rounds 33/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.03138 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+1468.422911 [NR_MAC] W UE 1aa0 UL failure after transmission timeout
+1468.778561 [NR_PHY] A [RAPROC] 871.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1474.724575 [NR_MAC] I Added new CFRA process for UE RNTI dcf7 with initial CellGroup and 1 preamble(s):   63
+1475.116858 [NR_PHY] A [RAPROC] 81.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1475.116934 [NR_MAC] A 81.19 UE RA-RNTI 0113 TC-RNTI dcf7: initiating RA procedure for RAPID 63 with TA 0 units
+1475.121434 [NR_MAC] I UE dcf7: Msg3 scheduled at 82.19 (82.10 TDA 0) start 0 RBs 8
+1475.121458 [NR_MAC] A UE dcf7: 82.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1475.137370 [NR_MAC] W HORUS LAB: CFRA dcf7 retain bounded RAR retry context pending valid UL
+1475.137402 [NR_MAC] A (rnti 0xdcf7) CFRA procedure succeeded!
+1475.151599 [NR_MAC] W HORUS LAB: CFRA dcf7 valid UL received; retire RAR retry context
+UE dcf7: dlsch_rounds 4/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE dcf7: ulsch_rounds 19/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.07290 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 12 SNR 25.9 (+2.9) RSSI -42.0 CCE fail 0
+UE dcf7: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE dcf7: ulsch_rounds 37/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01853 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+1480.929716 [NR_MAC] W UE dcf7 UL failure after transmission timeout
+1481.399492 [NR_PHY] A [RAPROC] 327.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1487.770753 [NR_MAC] I Added new CFRA process for UE RNTI 67f9 with initial CellGroup and 1 preamble(s):   63
+1488.338181 [NR_PHY] A [RAPROC] 569.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1488.338408 [NR_MAC] A 569.19 UE RA-RNTI 010b TC-RNTI 67f9: initiating RA procedure for RAPID 63 with TA 0 units
+1488.343750 [NR_MAC] I UE 67f9: Msg3 scheduled at 570.19 (570.10 TDA 0) start 0 RBs 8
+1488.343792 [NR_MAC] A UE 67f9: 570.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1488.367804 [NR_MAC] W HORUS LAB: CFRA 67f9 retain bounded RAR retry context pending valid UL
+1488.368351 [NR_MAC] A (rnti 0x67f9) CFRA procedure succeeded!
+1488.389107 [NR_MAC] W HORUS LAB: CFRA 67f9 valid UL received; retire RAR retry context
+UE 67f9: dlsch_rounds 5/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE 67f9: ulsch_rounds 21/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.05314 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.8 (+2.8) RSSI -42.0 CCE fail 0
+UE 67f9: dlsch_rounds 8/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 67f9: ulsch_rounds 39/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01501 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+1493.866834 [NR_MAC] W UE 67f9 UL failure after transmission timeout
+1494.192277 [NR_PHY] A [RAPROC] 851.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1500.075064 [NR_MAC] I Added new CFRA process for UE RNTI 9f13 with initial CellGroup and 1 preamble(s):   63
+1500.444160 [NR_PHY] A [RAPROC] 91.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1500.445107 [NR_MAC] A 91.19 UE RA-RNTI 0113 TC-RNTI 9f13: initiating RA procedure for RAPID 63 with TA 0 units
+1500.446324 [NR_MAC] I UE 9f13: Msg3 scheduled at 92.19 (92.10 TDA 0) start 0 RBs 8
+1500.446341 [NR_MAC] A UE 9f13: 92.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1500.464937 [NR_MAC] W HORUS LAB: CFRA 9f13 retain bounded RAR retry context pending valid UL
+1500.465400 [NR_MAC] A (rnti 0x9f13) CFRA procedure succeeded!
+1500.479477 [NR_MAC] W HORUS LAB: CFRA 9f13 valid UL received; retire RAR retry context
+UE 9f13: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.09000 MCS (0) 0 (Qm 2) CCE fail 0
+UE 9f13: ulsch_rounds 12/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.07290 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 9f13: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 9f13: ulsch_rounds 33/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02288 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+1506.137548 [NR_MAC] W UE 9f13 UL failure after transmission timeout
+1506.478030 [NR_PHY] A [RAPROC] 369.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+UE 9f13: dlsch_rounds 10/1/1/0, dlsch_errors 0, pucch0_DTX 3 (SNR 18.2-1.8) RSSI 38.9, BLER 0.05314 MCS (0) 0 (Qm 2) CCE fail 0
+UE 9f13: ulsch_rounds 45/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00886 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+1512.210624 [NR_MAC] I Added new CFRA process for UE RNTI 0701 with initial CellGroup and 1 preamble(s):   63
+1512.816142 [NR_PHY] A [RAPROC] 623.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1512.816758 [NR_MAC] A 623.19 UE RA-RNTI 010f TC-RNTI 0701: initiating RA procedure for RAPID 63 with TA 0 units
+1512.818576 [NR_MAC] I UE 0701: Msg3 scheduled at 624.19 (624.10 TDA 0) start 0 RBs 8
+1512.818597 [NR_MAC] A UE 0701: 624.10 Generating RA-Msg2 DCI, RA RNTI 0x10f, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1512.833727 [NR_MAC] W HORUS LAB: CFRA 0701 retain bounded RAR retry context pending valid UL
+1512.833765 [NR_MAC] A (rnti 0x0701) CFRA procedure succeeded!
+1512.850713 [NR_MAC] W HORUS LAB: CFRA 0701 valid UL received; retire RAR retry context
+UE 0701: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.09000 MCS (0) 0 (Qm 2) CCE fail 0
+UE 0701: ulsch_rounds 10/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.09000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 0701: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 0701: ulsch_rounds 33/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02542 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+1518.375820 [NR_MAC] W UE 0701 UL failure after transmission timeout
+1518.726372 [NR_PHY] A [RAPROC] 849.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1524.393685 [NR_MAC] I Added new CFRA process for UE RNTI d989 with initial CellGroup and 1 preamble(s):   63
+1524.781071 [NR_PHY] A [RAPROC] 103.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1524.781309 [NR_MAC] A 103.19 UE RA-RNTI 010f TC-RNTI d989: initiating RA procedure for RAPID 63 with TA 0 units
+1524.786767 [NR_MAC] I UE d989: Msg3 scheduled at 104.19 (104.10 TDA 0) start 0 RBs 8
+1524.786786 [NR_MAC] A UE d989: 104.10 Generating RA-Msg2 DCI, RA RNTI 0x10f, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1524.814510 [NR_MAC] W HORUS LAB: CFRA d989 retain bounded RAR retry context pending valid UL
+1524.814539 [NR_MAC] A (rnti 0xd989) CFRA procedure succeeded!
+1524.835097 [NR_MAC] W HORUS LAB: CFRA d989 valid UL received; retire RAR retry context
+UE d989: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.09000 MCS (0) 0 (Qm 2) CCE fail 0
+UE d989: ulsch_rounds 10/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.09000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+UE d989: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE d989: ulsch_rounds 36/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.02772 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+1531.233729 [NR_MAC] W UE d989 UL failure after transmission timeout
+1531.507090 [NR_PHY] A [RAPROC] 347.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1537.155428 [NR_MAC] I Added new CFRA process for UE RNTI 90de with initial CellGroup and 1 preamble(s):   63
+1537.525607 [NR_PHY] A [RAPROC] 633.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1537.526220 [NR_MAC] A 633.19 UE RA-RNTI 010f TC-RNTI 90de: initiating RA procedure for RAPID 63 with TA 0 units
+1537.528956 [NR_MAC] I UE 90de: Msg3 scheduled at 634.19 (634.10 TDA 0) start 0 RBs 8
+1537.528973 [NR_MAC] A UE 90de: 634.10 Generating RA-Msg2 DCI, RA RNTI 0x10f, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1537.544175 [NR_MAC] W HORUS LAB: CFRA 90de retain bounded RAR retry context pending valid UL
+1537.544438 [NR_MAC] A (rnti 0x90de) CFRA procedure succeeded!
+1537.560471 [NR_MAC] W HORUS LAB: CFRA 90de valid UL received; retire RAR retry context
+UE 90de: dlsch_rounds 0/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.0+0.0) RSSI -128.0, BLER 0.10000 MCS (0) 0 (Qm 2) CCE fail 0
+UE 90de: ulsch_rounds 1/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.10000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 18.0 (-5.0) RSSI -42.0 CCE fail 0
+UE 90de: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 90de: ulsch_rounds 33/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.03138 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+1543.493214 [NR_MAC] W UE 90de UL failure after transmission timeout
+UE 90de: dlsch_rounds 10/2/2/0, dlsch_errors 0, pucch0_DTX 6 (SNR 17.7-2.3) RSSI -123.5, BLER 0.04783 MCS (0) 0 (Qm 2) CCE fail 0
+UE 90de: ulsch_rounds 48/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00798 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+1543.825307 [NR_PHY] A [RAPROC] 909.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1549.608798 [NR_MAC] I Added new CFRA process for UE RNTI ea8d with initial CellGroup and 1 preamble(s):   63
+1549.946084 [NR_PHY] A [RAPROC] 155.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1549.946358 [NR_MAC] A 155.19 UE RA-RNTI 010f TC-RNTI ea8d: initiating RA procedure for RAPID 63 with TA 0 units
+1549.950357 [NR_MAC] I UE ea8d: Msg3 scheduled at 156.19 (156.10 TDA 0) start 0 RBs 8
+1549.950407 [NR_MAC] A UE ea8d: 156.10 Generating RA-Msg2 DCI, RA RNTI 0x10f, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1549.971132 [NR_MAC] W HORUS LAB: CFRA ea8d retain bounded RAR retry context pending valid UL
+1549.971157 [NR_MAC] A (rnti 0xea8d) CFRA procedure succeeded!
+1549.995395 [NR_MAC] W HORUS LAB: CFRA ea8d valid UL received; retire RAR retry context
+UE ea8d: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE ea8d: ulsch_rounds 35/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.04783 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 26.0 (+3.0) RSSI -42.0 CCE fail 0
+UE ea8d: dlsch_rounds 10/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.05314 MCS (0) 0 (Qm 2) CCE fail 1
+UE ea8d: ulsch_rounds 50/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01216 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+1555.720948 [NR_MAC] W UE ea8d UL failure after transmission timeout
+1556.161414 [NR_PHY] A [RAPROC] 429.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1561.751578 [NR_MAC] I Added new CFRA process for UE RNTI bc84 with initial CellGroup and 1 preamble(s):   63
+1562.135335 [NR_PHY] A [RAPROC] 713.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1562.136398 [NR_MAC] A 713.19 UE RA-RNTI 010f TC-RNTI bc84: initiating RA procedure for RAPID 63 with TA 0 units
+1562.138290 [NR_MAC] I UE bc84: Msg3 scheduled at 714.19 (714.10 TDA 0) start 0 RBs 8
+1562.138310 [NR_MAC] A UE bc84: 714.10 Generating RA-Msg2 DCI, RA RNTI 0x10f, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1562.150734 [NR_MAC] W HORUS LAB: CFRA bc84 retain bounded RAR retry context pending valid UL
+1562.150776 [NR_MAC] A (rnti 0xbc84) CFRA procedure succeeded!
+1562.167421 [NR_MAC] W HORUS LAB: CFRA bc84 valid UL received; retire RAR retry context
+UE bc84: dlsch_rounds 5/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE bc84: ulsch_rounds 20/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.06561 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 12 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE bc84: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE bc84: ulsch_rounds 37/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01853 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+1568.350030 [NR_MAC] W UE bc84 UL failure after transmission timeout
+1569.211058 [NR_PHY] A [RAPROC] 929.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1574.464057 [NR_PHY] E   98. 7 PRACH job is in the past (  97.19)
+1575.598428 [NR_MAC] I Added new CFRA process for UE RNTI cb16 with initial CellGroup and 1 preamble(s):   63
+1576.047877 [NR_PHY] E  142. 7 PRACH job is in the past ( 141.19)
+1576.117032 [NR_PHY] A [RAPROC] 143.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1576.118264 [NR_MAC] A 143.19 UE RA-RNTI 0113 TC-RNTI cb16: initiating RA procedure for RAPID 63 with TA 0 units
+1576.123063 [NR_MAC] I UE cb16: Msg3 scheduled at 144.19 (144.10 TDA 0) start 0 RBs 8
+1576.123086 [NR_MAC] A UE cb16: 144.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1576.150780 [NR_MAC] W HORUS LAB: CFRA cb16 retain bounded RAR retry context pending valid UL
+1576.150885 [NR_MAC] A (rnti 0xcb16) CFRA procedure succeeded!
+1576.179782 [NR_MAC] W HORUS LAB: CFRA cb16 valid UL received; retire RAR retry context
+UE cb16: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE cb16: ulsch_rounds 30/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.03487 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE cb16: dlsch_rounds 9/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.05905 MCS (0) 0 (Qm 2) CCE fail 0
+UE cb16: ulsch_rounds 46/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00985 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+1581.932362 [NR_MAC] W UE cb16 UL failure after transmission timeout
+1582.273529 [NR_PHY] A [RAPROC] 429.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1587.992956 [NR_MAC] I Added new CFRA process for UE RNTI b2a3 with initial CellGroup and 1 preamble(s):   63
+1588.707482 [NR_PHY] A [RAPROC] 635.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1588.707922 [NR_MAC] A 635.19 UE RA-RNTI 0113 TC-RNTI b2a3: initiating RA procedure for RAPID 63 with TA 0 units
+1588.709728 [NR_MAC] I UE b2a3: Msg3 scheduled at 636.19 (636.10 TDA 0) start 0 RBs 8
+1588.709750 [NR_MAC] A UE b2a3: 636.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1588.728701 [NR_MAC] W HORUS LAB: CFRA b2a3 retain bounded RAR retry context pending valid UL
+1588.728729 [NR_MAC] A (rnti 0xb2a3) CFRA procedure succeeded!
+1588.741009 [NR_MAC] W HORUS LAB: CFRA b2a3 valid UL received; retire RAR retry context
+UE b2a3: dlsch_rounds 0/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.0+0.0) RSSI -128.0, BLER 0.10000 MCS (0) 0 (Qm 2) CCE fail 0
+UE b2a3: ulsch_rounds 1/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.10000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 18.0 (-5.0) RSSI -42.0 CCE fail 0
+UE b2a3: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.07290 MCS (0) 0 (Qm 2) CCE fail 0
+UE b2a3: ulsch_rounds 33/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.03138 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+1594.067252 [NR_MAC] W UE b2a3 UL failure after transmission timeout
+UE b2a3: dlsch_rounds 9/1/1/0, dlsch_errors 0, pucch0_DTX 3 (SNR 18.7-1.3) RSSI -123.5, BLER 0.05905 MCS (0) 0 (Qm 2) CCE fail 0
+UE b2a3: ulsch_rounds 48/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00798 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+1594.419639 [NR_PHY] A [RAPROC] 909.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1598.109065 [NR_PHY] E   54. 7 PRACH job is in the past (  53.19)
+1600.039147 [NR_MAC] I Added new CFRA process for UE RNTI 5730 with initial CellGroup and 1 preamble(s):   63
+1600.394181 [NR_PHY] A [RAPROC] 173.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1600.394286 [NR_MAC] A 173.19 UE RA-RNTI 0113 TC-RNTI 5730: initiating RA procedure for RAPID 63 with TA 0 units
+1600.395793 [NR_MAC] I UE 5730: Msg3 scheduled at 174.19 (174.10 TDA 0) start 0 RBs 8
+1600.395973 [NR_MAC] A UE 5730: 174.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1600.413300 [NR_MAC] W HORUS LAB: CFRA 5730 retain bounded RAR retry context pending valid UL
+1600.413351 [NR_MAC] A (rnti 0x5730) CFRA procedure succeeded!
+1600.431759 [NR_MAC] W HORUS LAB: CFRA 5730 valid UL received; retire RAR retry context
+UE 5730: dlsch_rounds 4/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.1+1.1) RSSI -121.4, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE 5730: ulsch_rounds 23/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.04783 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+UE 5730: dlsch_rounds 8/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.1+1.1) RSSI -121.4, BLER 0.05905 MCS (0) 0 (Qm 2) CCE fail 0
+UE 5730: ulsch_rounds 40/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01351 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+1606.134656 [NR_MAC] W UE 5730 UL failure after transmission timeout
+1606.453974 [NR_PHY] A [RAPROC] 455.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1612.558686 [NR_MAC] I Added new CFRA process for UE RNTI 1843 with initial CellGroup and 1 preamble(s):   63
+1612.900038 [NR_PHY] A [RAPROC] 655.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1612.901201 [NR_MAC] A 655.19 UE RA-RNTI 0113 TC-RNTI 1843: initiating RA procedure for RAPID 63 with TA 0 units
+1612.902421 [NR_MAC] I UE 1843: Msg3 scheduled at 656.19 (656.10 TDA 0) start 0 RBs 8
+1612.902441 [NR_MAC] A UE 1843: 656.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1612.917297 [NR_MAC] W HORUS LAB: CFRA 1843 retain bounded RAR retry context pending valid UL
+1612.917325 [NR_MAC] A (rnti 0x1843) CFRA procedure succeeded!
+1612.934866 [NR_MAC] W HORUS LAB: CFRA 1843 valid UL received; retire RAR retry context
+1613.987151 [NR_PHY] E  702. 7 PRACH job is in the past ( 701.19)
+UE 1843: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 1843: ulsch_rounds 30/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.03874 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 1843: dlsch_rounds 9/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.05905 MCS (0) 0 (Qm 2) CCE fail 0
+UE 1843: ulsch_rounds 46/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01094 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+1619.571662 [NR_MAC] W UE 1843 UL failure after transmission timeout
+1619.942898 [NR_PHY] A [RAPROC] 933.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1625.918741 [NR_MAC] I Added new CFRA process for UE RNTI 12b6 with initial CellGroup and 1 preamble(s):   63
+1626.268147 [NR_PHY] A [RAPROC] 181.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1626.268685 [NR_MAC] A 181.19 UE RA-RNTI 010b TC-RNTI 12b6: initiating RA procedure for RAPID 63 with TA 0 units
+1626.273101 [NR_MAC] I UE 12b6: Msg3 scheduled at 182.19 (182.10 TDA 0) start 0 RBs 8
+1626.273122 [NR_MAC] A UE 12b6: 182.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1626.286081 [NR_MAC] W HORUS LAB: CFRA 12b6 retain bounded RAR retry context pending valid UL
+1626.286671 [NR_MAC] A (rnti 0x12b6) CFRA procedure succeeded!
+1626.303719 [NR_MAC] W HORUS LAB: CFRA 12b6 valid UL received; retire RAR retry context
+UE 12b6: dlsch_rounds 4/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.0+1.0) RSSI -121.4, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE 12b6: ulsch_rounds 25/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.05314 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+1632.654090 [NR_MAC] W UE 12b6 UL failure after transmission timeout
+1633.120226 [NR_PHY] A [RAPROC] 375.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+UE 12b6: dlsch_rounds 7/1/1/0, dlsch_errors 0, pucch0_DTX 3 (SNR 15.5-4.5) RSSI 41.0, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 12b6: ulsch_rounds 38/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02059 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+1638.567459 [NR_MAC] I Added new CFRA process for UE RNTI 5d19 with initial CellGroup and 1 preamble(s):   63
+1639.528453 [NR_PHY] A [RAPROC] 637.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1639.528609 [NR_MAC] A 637.19 UE RA-RNTI 0113 TC-RNTI 5d19: initiating RA procedure for RAPID 63 with TA 0 units
+1639.530991 [NR_MAC] I UE 5d19: Msg3 scheduled at 638.19 (638.10 TDA 0) start 0 RBs 8
+1639.531032 [NR_MAC] A UE 5d19: 638.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1639.562703 [NR_MAC] W HORUS LAB: CFRA 5d19 retain bounded RAR retry context pending valid UL
+1639.562752 [NR_MAC] A (rnti 0x5d19) CFRA procedure succeeded!
+UE 5d19: dlsch_rounds 0/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.0+0.0) RSSI -128.0, BLER 0.10000 MCS (0) 0 (Qm 2) CCE fail 0
+UE 5d19: ulsch_rounds 1/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.10000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 0 SNR 18.0 (-5.0) RSSI -42.0 CCE fail 0
+1639.620820 [NR_MAC] W HORUS LAB: CFRA 5d19 valid UL received; retire RAR retry context
+UE 5d19: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.1+1.1) RSSI -121.4, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 5d19: ulsch_rounds 32/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.05838 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+1645.793626 [NR_MAC] W UE 5d19 UL failure after transmission timeout
+UE 5d19: dlsch_rounds 9/1/1/0, dlsch_errors 0, pucch0_DTX 2 (SNR 19.1-0.9) RSSI -121.4, BLER 0.05314 MCS (0) 0 (Qm 2) CCE fail 0
+UE 5d19: ulsch_rounds 49/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.01484 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+1646.081541 [NR_PHY] A [RAPROC] 911.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1651.706966 [NR_MAC] I Added new CFRA process for UE RNTI 1a4b with initial CellGroup and 1 preamble(s):   63
+1652.035854 [NR_PHY] A [RAPROC] 169.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1652.036937 [NR_MAC] A 169.19 UE RA-RNTI 010b TC-RNTI 1a4b: initiating RA procedure for RAPID 63 with TA 0 units
+1652.039092 [NR_MAC] I UE 1a4b: Msg3 scheduled at 170.19 (170.10 TDA 0) start 0 RBs 8
+1652.039138 [NR_MAC] A UE 1a4b: 170.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1652.054149 [NR_MAC] W HORUS LAB: CFRA 1a4b retain bounded RAR retry context pending valid UL
+1652.054177 [NR_MAC] A (rnti 0x1a4b) CFRA procedure succeeded!
+1652.070632 [NR_MAC] W HORUS LAB: CFRA 1a4b valid UL received; retire RAR retry context
+UE 1a4b: dlsch_rounds 5/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE 1a4b: ulsch_rounds 25/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.04783 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 1a4b: dlsch_rounds 9/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.05905 MCS (0) 0 (Qm 2) CCE fail 0
+UE 1a4b: ulsch_rounds 45/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01216 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+1657.812637 [NR_MAC] W UE 1a4b UL failure after transmission timeout
+1658.221625 [NR_PHY] A [RAPROC] 445.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1664.162977 [NR_MAC] I Added new CFRA process for UE RNTI e2e5 with initial CellGroup and 1 preamble(s):   63
+1664.535666 [NR_PHY] A [RAPROC] 665.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1664.535742 [NR_MAC] A 665.19 UE RA-RNTI 0113 TC-RNTI e2e5: initiating RA procedure for RAPID 63 with TA 0 units
+1664.544811 [NR_MAC] I UE e2e5: Msg3 scheduled at 666.19 (666.10 TDA 0) start 0 RBs 8
+1664.544837 [NR_MAC] A UE e2e5: 666.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1664.564511 [NR_MAC] W HORUS LAB: CFRA e2e5 retain bounded RAR retry context pending valid UL
+1664.564716 [NR_MAC] A (rnti 0xe2e5) CFRA procedure succeeded!
+1664.593662 [NR_MAC] W HORUS LAB: CFRA e2e5 valid UL received; retire RAR retry context
+UE e2e5: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE e2e5: ulsch_rounds 31/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.04305 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE e2e5: dlsch_rounds 9/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.05905 MCS (0) 0 (Qm 2) CCE fail 0
+UE e2e5: ulsch_rounds 45/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01216 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+1670.357088 [NR_MAC] W UE e2e5 UL failure after transmission timeout
+1670.691835 [NR_PHY] A [RAPROC] 923.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1676.569700 [NR_MAC] I Added new CFRA process for UE RNTI ab8c with initial CellGroup and 1 preamble(s):   63
+1676.950197 [NR_PHY] A [RAPROC] 173.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1676.950400 [NR_MAC] A 173.19 UE RA-RNTI 010b TC-RNTI ab8c: initiating RA procedure for RAPID 63 with TA 0 units
+1676.955366 [NR_MAC] I UE ab8c: Msg3 scheduled at 174.19 (174.10 TDA 0) start 0 RBs 8
+1676.955382 [NR_MAC] A UE ab8c: 174.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1676.979076 [NR_MAC] W HORUS LAB: CFRA ab8c retain bounded RAR retry context pending valid UL
+1676.979446 [NR_MAC] A (rnti 0xab8c) CFRA procedure succeeded!
+1677.006128 [NR_MAC] W HORUS LAB: CFRA ab8c valid UL received; retire RAR retry context
+UE ab8c: dlsch_rounds 5/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.0+1.0) RSSI -121.4, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE ab8c: ulsch_rounds 25/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.04783 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE ab8c: dlsch_rounds 9/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.0+1.0) RSSI -121.4, BLER 0.05905 MCS (0) 0 (Qm 2) CCE fail 0
+UE ab8c: ulsch_rounds 42/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01351 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+1682.789144 [NR_MAC] W UE ab8c UL failure after transmission timeout
+1683.139742 [NR_PHY] A [RAPROC] 449.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1689.443976 [NR_MAC] I Added new CFRA process for UE RNTI 6e39 with initial CellGroup and 1 preamble(s):   63
+1689.797914 [NR_PHY] A [RAPROC] 695.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1689.798468 [NR_MAC] A 695.19 UE RA-RNTI 010b TC-RNTI 6e39: initiating RA procedure for RAPID 63 with TA 0 units
+1689.800358 [NR_MAC] I UE 6e39: Msg3 scheduled at 696.19 (696.10 TDA 0) start 0 RBs 8
+1689.800441 [NR_MAC] A UE 6e39: 696.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1689.819278 [NR_MAC] W HORUS LAB: CFRA 6e39 retain bounded RAR retry context pending valid UL
+1689.820884 [NR_MAC] A (rnti 0x6e39) CFRA procedure succeeded!
+1689.836778 [NR_MAC] W HORUS LAB: CFRA 6e39 valid UL received; retire RAR retry context
+UE 6e39: dlsch_rounds 4/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6e39: ulsch_rounds 24/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.05905 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.9 (+2.9) RSSI -42.0 CCE fail 0
+UE 6e39: dlsch_rounds 8/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.05314 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6e39: ulsch_rounds 49/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01853 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 26.2 (+3.2) RSSI -42.0 CCE fail 0
+1695.706411 [NR_MAC] W UE 6e39 UL failure after transmission timeout
+1696.009650 [NR_PHY] A [RAPROC] 989.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1701.697061 [NR_MAC] I Added new CFRA process for UE RNTI 7f76 with initial CellGroup and 1 preamble(s):   63
+1702.394729 [NR_PHY] A [RAPROC] 229.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1702.395481 [NR_MAC] A 229.19 UE RA-RNTI 010b TC-RNTI 7f76: initiating RA procedure for RAPID 63 with TA 0 units
+1702.399876 [NR_MAC] I UE 7f76: Msg3 scheduled at 230.19 (230.10 TDA 0) start 0 RBs 8
+1702.399913 [NR_MAC] A UE 7f76: 230.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1702.424337 [NR_MAC] W HORUS LAB: CFRA 7f76 retain bounded RAR retry context pending valid UL
+1702.424454 [NR_MAC] A (rnti 0x7f76) CFRA procedure succeeded!
+1702.452630 [NR_MAC] W HORUS LAB: CFRA 7f76 valid UL received; retire RAR retry context
+UE 7f76: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.1+1.1) RSSI -121.4, BLER 0.09000 MCS (0) 0 (Qm 2) CCE fail 0
+UE 7f76: ulsch_rounds 11/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.08100 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.3 (+2.3) RSSI -42.0 CCE fail 0
+UE 7f76: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.1+1.1) RSSI -121.4, BLER 0.07290 MCS (0) 0 (Qm 2) CCE fail 0
+UE 7f76: ulsch_rounds 33/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02542 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+1707.947221 [NR_MAC] W UE 7f76 UL failure after transmission timeout
+1708.359087 [NR_PHY] A [RAPROC] 495.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+UE 7f76: dlsch_rounds 10/1/1/0, dlsch_errors 0, pucch0_DTX 3 (SNR 16.6-3.4) RSSI 41.0, BLER 0.05905 MCS (0) 0 (Qm 2) CCE fail 0
+UE 7f76: ulsch_rounds 45/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00886 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+1713.993293 [NR_MAC] I Added new CFRA process for UE RNTI 86f7 with initial CellGroup and 1 preamble(s):   63
+1714.620217 [NR_PHY] A [RAPROC] 729.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1714.620352 [NR_MAC] A 729.19 UE RA-RNTI 0113 TC-RNTI 86f7: initiating RA procedure for RAPID 63 with TA 0 units
+1714.626729 [NR_MAC] I UE 86f7: Msg3 scheduled at 730.19 (730.10 TDA 0) start 0 RBs 8
+1714.626751 [NR_MAC] A UE 86f7: 730.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1714.679287 [NR_MAC] W HORUS LAB: CFRA 86f7 retain bounded RAR retry context pending valid UL
+1714.679656 [NR_MAC] A (rnti 0x86f7) CFRA procedure succeeded!
+1714.707816 [NR_MAC] W HORUS LAB: CFRA 86f7 valid UL received; retire RAR retry context
+UE 86f7: dlsch_rounds 5/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE 86f7: ulsch_rounds 15/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.07290 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 26.8 (+3.8) RSSI -42.0 CCE fail 0
+UE 86f7: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.07290 MCS (0) 0 (Qm 2) CCE fail 0
+UE 86f7: ulsch_rounds 35/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02059 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+1721.795914 [NR_MAC] W UE 86f7 UL failure after transmission timeout
+1722.075960 [NR_PHY] A [RAPROC] 939.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1727.914751 [NR_MAC] I Added new CFRA process for UE RNTI 5884 with initial CellGroup and 1 preamble(s):   63
+1728.519136 [NR_PHY] A [RAPROC] 153.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1728.519327 [NR_MAC] A 153.19 UE RA-RNTI 010b TC-RNTI 5884: initiating RA procedure for RAPID 63 with TA 0 units
+1728.527426 [NR_MAC] I UE 5884: Msg3 scheduled at 154.19 (154.10 TDA 0) start 0 RBs 8
+1728.527618 [NR_MAC] A UE 5884: 154.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1728.551379 [NR_MAC] W HORUS LAB: CFRA 5884 retain bounded RAR retry context pending valid UL
+1728.551445 [NR_MAC] A (rnti 0x5884) CFRA procedure succeeded!
+1728.590688 [NR_MAC] W HORUS LAB: CFRA 5884 valid UL received; retire RAR retry context
+UE 5884: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.07290 MCS (0) 0 (Qm 2) CCE fail 0
+UE 5884: ulsch_rounds 27/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.04305 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 25.6 (+2.6) RSSI -42.0 CCE fail 0
+UE 5884: dlsch_rounds 8/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 5884: ulsch_rounds 42/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01094 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+1733.895894 [NR_MAC] W UE 5884 UL failure after transmission timeout
+1734.192258 [NR_PHY] A [RAPROC] 415.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1739.828631 [NR_MAC] I Added new CFRA process for UE RNTI bf94 with initial CellGroup and 1 preamble(s):   63
+1740.157839 [NR_PHY] A [RAPROC] 691.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1740.158634 [NR_MAC] A 691.19 UE RA-RNTI 010b TC-RNTI bf94: initiating RA procedure for RAPID 63 with TA 0 units
+1740.165342 [NR_MAC] I UE bf94: Msg3 scheduled at 692.19 (692.10 TDA 0) start 0 RBs 8
+1740.165366 [NR_MAC] A UE bf94: 692.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1740.185510 [NR_MAC] W HORUS LAB: CFRA bf94 retain bounded RAR retry context pending valid UL
+1740.185666 [NR_MAC] A (rnti 0xbf94) CFRA procedure succeeded!
+1740.210349 [NR_MAC] W HORUS LAB: CFRA bf94 valid UL received; retire RAR retry context
+UE bf94: dlsch_rounds 4/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE bf94: ulsch_rounds 24/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.05314 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.9 (+2.9) RSSI -42.0 CCE fail 0
+UE bf94: dlsch_rounds 8/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.05905 MCS (0) 0 (Qm 2) CCE fail 0
+UE bf94: ulsch_rounds 43/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01351 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+1745.956985 [NR_MAC] W UE bf94 UL failure after transmission timeout
+1746.235006 [NR_PHY] A [RAPROC] 965.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1752.442639 [NR_MAC] I Added new CFRA process for UE RNTI 2844 with initial CellGroup and 1 preamble(s):   63
+1752.832186 [NR_PHY] A [RAPROC] 225.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1752.833347 [NR_MAC] A 225.19 UE RA-RNTI 0113 TC-RNTI 2844: initiating RA procedure for RAPID 63 with TA 0 units
+1752.834681 [NR_MAC] I UE 2844: Msg3 scheduled at 226.19 (226.10 TDA 0) start 0 RBs 8
+1752.834711 [NR_MAC] A UE 2844: 226.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1752.848177 [NR_MAC] W HORUS LAB: CFRA 2844 retain bounded RAR retry context pending valid UL
+1752.848203 [NR_MAC] A (rnti 0x2844) CFRA procedure succeeded!
+1752.862071 [NR_MAC] W HORUS LAB: CFRA 2844 valid UL received; retire RAR retry context
+UE 2844: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.09000 MCS (0) 0 (Qm 2) CCE fail 0
+UE 2844: ulsch_rounds 11/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.08100 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+UE 2844: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 2844: ulsch_rounds 36/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02288 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+1758.958931 [NR_MAC] W UE 2844 UL failure after transmission timeout
+1759.246466 [NR_PHY] A [RAPROC] 449.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1765.068480 [NR_MAC] I Added new CFRA process for UE RNTI 1c66 with initial CellGroup and 1 preamble(s):   63
+1765.451489 [NR_PHY] A [RAPROC] 725.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1765.451969 [NR_MAC] A 725.19 UE RA-RNTI 010f TC-RNTI 1c66: initiating RA procedure for RAPID 63 with TA 0 units
+1765.458214 [NR_MAC] I UE 1c66: Msg3 scheduled at 726.19 (726.10 TDA 0) start 0 RBs 8
+1765.458235 [NR_MAC] A UE 1c66: 726.10 Generating RA-Msg2 DCI, RA RNTI 0x10f, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1765.477311 [NR_MAC] W HORUS LAB: CFRA 1c66 retain bounded RAR retry context pending valid UL
+1765.477341 [NR_MAC] A (rnti 0x1c66) CFRA procedure succeeded!
+1765.495753 [NR_MAC] W HORUS LAB: CFRA 1c66 valid UL received; retire RAR retry context
+UE 1c66: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.1+1.1) RSSI -121.4, BLER 0.09000 MCS (0) 0 (Qm 2) CCE fail 0
+UE 1c66: ulsch_rounds 12/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.09090 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 1c66: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.1+1.1) RSSI -121.4, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 1c66: ulsch_rounds 33/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.02567 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+1771.268762 [NR_MAC] W UE 1c66 UL failure after transmission timeout
+1771.620920 [NR_PHY] A [RAPROC] 1013.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+UE 1c66: dlsch_rounds 9/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.5+0.5) RSSI 41.0, BLER 0.04783 MCS (0) 0 (Qm 2) CCE fail 0
+UE 1c66: ulsch_rounds 45/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.00895 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.7 (+1.7) RSSI -42.0 CCE fail 0
+1777.265834 [NR_MAC] I Added new CFRA process for UE RNTI 7cf3 with initial CellGroup and 1 preamble(s):   63
+1777.729867 [NR_PHY] A [RAPROC] 265.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1777.730097 [NR_MAC] A 265.19 UE RA-RNTI 0113 TC-RNTI 7cf3: initiating RA procedure for RAPID 63 with TA 0 units
+1777.738876 [NR_MAC] I UE 7cf3: Msg3 scheduled at 266.19 (266.10 TDA 0) start 0 RBs 8
+1777.738902 [NR_MAC] A UE 7cf3: 266.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1777.780209 [NR_MAC] W HORUS LAB: CFRA 7cf3 retain bounded RAR retry context pending valid UL
+1777.780258 [NR_MAC] A (rnti 0x7cf3) CFRA procedure succeeded!
+1777.817357 [NR_MAC] W HORUS LAB: CFRA 7cf3 valid UL received; retire RAR retry context
+UE 7cf3: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 7cf3: ulsch_rounds 31/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.03487 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+1783.856410 [NR_MAC] W UE 7cf3 UL failure after transmission timeout
+1784.220757 [NR_PHY] A [RAPROC] 501.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+UE 7cf3: dlsch_rounds 11/2/2/0, dlsch_errors 0, pucch0_DTX 6 (SNR 15.2-4.8) RSSI 38.9, BLER 0.05314 MCS (0) 0 (Qm 2) CCE fail 0
+UE 7cf3: ulsch_rounds 44/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01351 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+1789.923684 [NR_MAC] I Added new CFRA process for UE RNTI fad1 with initial CellGroup and 1 preamble(s):   63
+1790.370480 [NR_PHY] A [RAPROC] 769.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1790.370614 [NR_MAC] A 769.19 UE RA-RNTI 0113 TC-RNTI fad1: initiating RA procedure for RAPID 63 with TA 0 units
+1790.372206 [NR_MAC] I UE fad1: Msg3 scheduled at 770.19 (770.10 TDA 0) start 0 RBs 8
+1790.372281 [NR_MAC] A UE fad1: 770.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1790.387621 [NR_MAC] W HORUS LAB: CFRA fad1 retain bounded RAR retry context pending valid UL
+1790.387649 [NR_MAC] A (rnti 0xfad1) CFRA procedure succeeded!
+1790.402691 [NR_MAC] W HORUS LAB: CFRA fad1 valid UL received; retire RAR retry context
+UE fad1: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE fad1: ulsch_rounds 32/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.03913 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0
+1793.795904 [NR_PHY] E  922. 7 PRACH job is in the past ( 921.19)
+1796.016948 [NR_MAC] W UE fad1 UL failure after transmission timeout
+UE fad1: dlsch_rounds 9/1/1/0, dlsch_errors 0, pucch0_DTX 3 (SNR 18.8-1.2) RSSI -123.5, BLER 0.04783 MCS (0) 0 (Qm 2) CCE fail 0
+UE fad1: ulsch_rounds 46/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.01105 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+1796.646741 [NR_PHY] A [RAPROC] 5.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1801.967758 [NR_MAC] I Added new CFRA process for UE RNTI e40b with initial CellGroup and 1 preamble(s):   63
+1802.360813 [NR_PHY] A [RAPROC] 249.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1802.362668 [NR_MAC] A 249.19 UE RA-RNTI 010b TC-RNTI e40b: initiating RA procedure for RAPID 63 with TA 0 units
+1802.366163 [NR_MAC] I UE e40b: Msg3 scheduled at 250.19 (250.10 TDA 0) start 0 RBs 8
+1802.366190 [NR_MAC] A UE e40b: 250.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1802.383279 [NR_MAC] W HORUS LAB: CFRA e40b retain bounded RAR retry context pending valid UL
+1802.383324 [NR_MAC] A (rnti 0xe40b) CFRA procedure succeeded!
+1802.400781 [NR_MAC] W HORUS LAB: CFRA e40b valid UL received; retire RAR retry context
+UE e40b: dlsch_rounds 0/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.0+0.0) RSSI -128.0, BLER 0.10000 MCS (0) 0 (Qm 2) CCE fail 0
+UE e40b: ulsch_rounds 1/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.10000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 18.0 (-5.0) RSSI -42.0 CCE fail 0
+UE e40b: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.07290 MCS (0) 0 (Qm 2) CCE fail 0
+UE e40b: ulsch_rounds 34/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02824 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+1807.870999 [NR_MAC] W UE e40b UL failure after transmission timeout
+UE e40b: dlsch_rounds 10/1/1/0, dlsch_errors 0, pucch0_DTX 3 (SNR 18.8-1.2) RSSI -123.5, BLER 0.05905 MCS (0) 0 (Qm 2) CCE fail 0
+UE e40b: ulsch_rounds 48/0/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.00798 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 34.3 (+11.3) RSSI -42.0 CCE fail 0
+1808.225679 [NR_PHY] A [RAPROC] 517.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1813.898408 [NR_MAC] I Added new CFRA process for UE RNTI 6e04 with initial CellGroup and 1 preamble(s):   63
+1814.309477 [NR_PHY] A [RAPROC] 769.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1814.309803 [NR_MAC] A 769.19 UE RA-RNTI 0113 TC-RNTI 6e04: initiating RA procedure for RAPID 63 with TA 0 units
+1814.313613 [NR_MAC] I UE 6e04: Msg3 scheduled at 770.19 (770.10 TDA 0) start 0 RBs 8
+1814.313633 [NR_MAC] A UE 6e04: 770.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1814.329574 [NR_MAC] W HORUS LAB: CFRA 6e04 retain bounded RAR retry context pending valid UL
+1814.329674 [NR_MAC] A (rnti 0x6e04) CFRA procedure succeeded!
+1814.344203 [NR_MAC] W HORUS LAB: CFRA 6e04 valid UL received; retire RAR retry context
+UE 6e04: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6e04: ulsch_rounds 31/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.03138 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 6e04: dlsch_rounds 9/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.05314 MCS (0) 0 (Qm 2) CCE fail 0
+UE 6e04: ulsch_rounds 48/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00798 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+1819.972243 [NR_MAC] W UE 6e04 UL failure after transmission timeout
+1820.252913 [NR_PHY] A [RAPROC] 13.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1825.741944 [NR_MAC] I Added new CFRA process for UE RNTI e9b7 with initial CellGroup and 1 preamble(s):   63
+1826.198094 [NR_PHY] A [RAPROC] 277.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1826.198384 [NR_MAC] A 277.19 UE RA-RNTI 010f TC-RNTI e9b7: initiating RA procedure for RAPID 63 with TA 0 units
+1826.207799 [NR_MAC] I UE e9b7: Msg3 scheduled at 278.19 (278.10 TDA 0) start 0 RBs 8
+1826.207845 [NR_MAC] A UE e9b7: 278.10 Generating RA-Msg2 DCI, RA RNTI 0x10f, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1826.232624 [NR_MAC] W HORUS LAB: CFRA e9b7 retain bounded RAR retry context pending valid UL
+1826.232727 [NR_MAC] A (rnti 0xe9b7) CFRA procedure succeeded!
+1826.263462 [NR_MAC] W HORUS LAB: CFRA e9b7 valid UL received; retire RAR retry context
+UE e9b7: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.1+1.1) RSSI -121.4, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE e9b7: ulsch_rounds 30/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.04305 MCS (0) 1 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.8 (+2.8) RSSI -42.0 CCE fail 0
+1832.015957 [NR_PHY] E  486. 7 PRACH job is in the past ( 485.19)
+1832.074776 [NR_MAC] W UE e9b7 UL failure after transmission timeout
+1832.121922 [NR_PHY] E  488. 7 PRACH job is in the past ( 487.19)
+1833.046333 [NR_PHY] A [RAPROC] 501.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+UE e9b7: dlsch_rounds 10/2/2/0, dlsch_errors 0, pucch0_DTX 6 (SNR 17.1-2.9) RSSI -121.4, BLER 0.05314 MCS (0) 0 (Qm 2) CCE fail 0
+UE e9b7: ulsch_rounds 42/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01501 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+1839.726574 [NR_MAC] I Added new CFRA process for UE RNTI 959d with initial CellGroup and 1 preamble(s):   63
+1840.314574 [NR_PHY] A [RAPROC] 757.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1840.314704 [NR_MAC] A 757.19 UE RA-RNTI 0113 TC-RNTI 959d: initiating RA procedure for RAPID 63 with TA 0 units
+1840.316589 [NR_MAC] I UE 959d: Msg3 scheduled at 758.19 (758.10 TDA 0) start 0 RBs 8
+1840.317374 [NR_MAC] A UE 959d: 758.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1840.331386 [NR_MAC] W HORUS LAB: CFRA 959d retain bounded RAR retry context pending valid UL
+1840.331413 [NR_MAC] A (rnti 0x959d) CFRA procedure succeeded!
+1840.343191 [NR_MAC] W HORUS LAB: CFRA 959d valid UL received; retire RAR retry context
+UE 959d: dlsch_rounds 1/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.4+0.4) RSSI -123.5, BLER 0.10000 MCS (0) 0 (Qm 2) CCE fail 0
+UE 959d: ulsch_rounds 5/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.10000 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 31 SNR 23.2 (+0.2) RSSI -42.0 CCE fail 0
+UE 959d: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.0+1.0) RSSI -121.4, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 959d: ulsch_rounds 33/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.03138 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+1845.854978 [NR_MAC] W UE 959d UL failure after transmission timeout
+1846.213956 [NR_PHY] A [RAPROC] 991.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1851.957242 [NR_MAC] I Added new CFRA process for UE RNTI 00eb with initial CellGroup and 1 preamble(s):   63
+1852.351566 [NR_PHY] A [RAPROC] 227.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1852.352109 [NR_MAC] A 227.19 UE RA-RNTI 010b TC-RNTI 00eb: initiating RA procedure for RAPID 63 with TA 0 units
+1852.358854 [NR_MAC] I UE 00eb: Msg3 scheduled at 228.19 (228.10 TDA 0) start 0 RBs 8
+1852.359337 [NR_MAC] A UE 00eb: 228.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1852.390463 [NR_MAC] W HORUS LAB: CFRA 00eb retain bounded RAR retry context pending valid UL
+1852.391046 [NR_MAC] A (rnti 0x00eb) CFRA procedure succeeded!
+1852.414581 [NR_MAC] W HORUS LAB: CFRA 00eb valid UL received; retire RAR retry context
+UE 00eb: dlsch_rounds 4/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE 00eb: ulsch_rounds 14/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.08100 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 12 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+UE 00eb: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 00eb: ulsch_rounds 34/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02288 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+1858.165338 [NR_MAC] W UE 00eb UL failure after transmission timeout
+1858.470863 [NR_PHY] A [RAPROC] 407.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1864.000434 [NR_MAC] I Added new CFRA process for UE RNTI b8cd with initial CellGroup and 1 preamble(s):   63
+1864.362882 [NR_PHY] A [RAPROC] 681.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1864.363200 [NR_MAC] A 681.19 UE RA-RNTI 0113 TC-RNTI b8cd: initiating RA procedure for RAPID 63 with TA 0 units
+1864.365887 [NR_MAC] I UE b8cd: Msg3 scheduled at 682.19 (682.10 TDA 0) start 0 RBs 8
+1864.366006 [NR_MAC] A UE b8cd: 682.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1864.381370 [NR_MAC] W HORUS LAB: CFRA b8cd retain bounded RAR retry context pending valid UL
+1864.381517 [NR_MAC] A (rnti 0xb8cd) CFRA procedure succeeded!
+1864.400813 [NR_MAC] W HORUS LAB: CFRA b8cd valid UL received; retire RAR retry context
+UE b8cd: dlsch_rounds 5/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.8+0.8) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE b8cd: ulsch_rounds 28/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.05964 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+1871.286904 [NR_MAC] W UE b8cd UL failure after transmission timeout
+1871.780903 [NR_PHY] A [RAPROC] 837.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1877.475548 [NR_MAC] I Added new CFRA process for UE RNTI 3ec3 with initial CellGroup and 1 preamble(s):   63
+1877.950995 [NR_PHY] A [RAPROC] 59.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1877.951349 [NR_MAC] A 59.19 UE RA-RNTI 010b TC-RNTI 3ec3: initiating RA procedure for RAPID 63 with TA 0 units
+1877.958980 [NR_MAC] I UE 3ec3: Msg3 scheduled at 60.19 (60.10 TDA 0) start 0 RBs 8
+1877.959001 [NR_MAC] A UE 3ec3: 60.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1877.998066 [NR_MAC] W HORUS LAB: CFRA 3ec3 retain bounded RAR retry context pending valid UL
+1877.999000 [NR_MAC] A (rnti 0x3ec3) CFRA procedure succeeded!
+1878.022008 [NR_MAC] W HORUS LAB: CFRA 3ec3 valid UL received; retire RAR retry context
+UE 3ec3: dlsch_rounds 4/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE 3ec3: ulsch_rounds 24/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.05314 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+UE 3ec3: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.05905 MCS (0) 0 (Qm 2) CCE fail 0
+UE 3ec3: ulsch_rounds 42/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01501 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.7 (+2.7) RSSI -42.0 CCE fail 0
+1883.871740 [NR_MAC] W UE 3ec3 UL failure after transmission timeout
+1884.257382 [NR_PHY] A [RAPROC] 285.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1890.112943 [NR_MAC] I Added new CFRA process for UE RNTI 96ec with initial CellGroup and 1 preamble(s):   63
+1890.626560 [NR_PHY] A [RAPROC] 517.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1890.626745 [NR_MAC] A 517.19 UE RA-RNTI 010f TC-RNTI 96ec: initiating RA procedure for RAPID 63 with TA 0 units
+1890.630635 [NR_MAC] I UE 96ec: Msg3 scheduled at 518.19 (518.10 TDA 0) start 0 RBs 8
+1890.630659 [NR_MAC] A UE 96ec: 518.10 Generating RA-Msg2 DCI, RA RNTI 0x10f, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1890.651486 [NR_MAC] W HORUS LAB: CFRA 96ec retain bounded RAR retry context pending valid UL
+1890.651517 [NR_MAC] A (rnti 0x96ec) CFRA procedure succeeded!
+1890.673117 [NR_MAC] W HORUS LAB: CFRA 96ec valid UL received; retire RAR retry context
+UE 96ec: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 21.1+1.1) RSSI -121.4, BLER 0.07290 MCS (0) 0 (Qm 2) CCE fail 0
+UE 96ec: ulsch_rounds 34/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.03487 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+1896.664836 [NR_MAC] W UE 96ec UL failure after transmission timeout
+1896.977615 [NR_PHY] A [RAPROC] 705.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1902.837189 [NR_MAC] I Added new CFRA process for UE RNTI 0569 with initial CellGroup and 1 preamble(s):   63
+1903.244360 [NR_PHY] A [RAPROC] 983.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1903.244684 [NR_MAC] A 983.19 UE RA-RNTI 010f TC-RNTI 0569: initiating RA procedure for RAPID 63 with TA 0 units
+1903.246508 [NR_MAC] I UE 0569: Msg3 scheduled at 984.19 (984.10 TDA 0) start 0 RBs 8
+1903.246653 [NR_MAC] A UE 0569: 984.10 Generating RA-Msg2 DCI, RA RNTI 0x10f, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1903.262359 [NR_MAC] W HORUS LAB: CFRA 0569 retain bounded RAR retry context pending valid UL
+1903.262420 [NR_MAC] A (rnti 0x0569) CFRA procedure succeeded!
+1903.278005 [NR_MAC] W HORUS LAB: CFRA 0569 valid UL received; retire RAR retry context
+UE 0569: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.09000 MCS (0) 0 (Qm 2) CCE fail 0
+UE 0569: ulsch_rounds 12/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.07290 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.0 (+2.0) RSSI -42.0 CCE fail 0
+UE 0569: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 0569: ulsch_rounds 34/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02059 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+1909.100594 [NR_MAC] W UE 0569 UL failure after transmission timeout
+1909.437396 [NR_PHY] A [RAPROC] 207.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1914.924107 [NR_MAC] I Added new CFRA process for UE RNTI fb4d with initial CellGroup and 1 preamble(s):   63
+1915.367241 [NR_PHY] A [RAPROC] 455.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1915.367480 [NR_MAC] A 455.19 UE RA-RNTI 010f TC-RNTI fb4d: initiating RA procedure for RAPID 63 with TA 0 units
+1915.371485 [NR_MAC] I UE fb4d: Msg3 scheduled at 456.19 (456.10 TDA 0) start 0 RBs 8
+1915.371527 [NR_MAC] A UE fb4d: 456.10 Generating RA-Msg2 DCI, RA RNTI 0x10f, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1915.389697 [NR_MAC] W HORUS LAB: CFRA fb4d retain bounded RAR retry context pending valid UL
+1915.389882 [NR_MAC] A (rnti 0xfb4d) CFRA procedure succeeded!
+1915.402207 [NR_MAC] W HORUS LAB: CFRA fb4d valid UL received; retire RAR retry context
+UE fb4d: dlsch_rounds 5/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE fb4d: ulsch_rounds 23/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.06561 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 26.2 (+3.2) RSSI -42.0 CCE fail 0
+UE fb4d: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.07290 MCS (0) 0 (Qm 2) CCE fail 0
+UE fb4d: ulsch_rounds 39/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01853 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.8 (+1.8) RSSI -42.0 CCE fail 0
+1921.250942 [NR_MAC] W UE fb4d UL failure after transmission timeout
+1921.540635 [NR_PHY] A [RAPROC] 723.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1927.506988 [NR_MAC] I Added new CFRA process for UE RNTI 8510 with initial CellGroup and 1 preamble(s):   63
+1927.979687 [NR_PHY] A [RAPROC] 971.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1927.981712 [NR_MAC] A 971.19 UE RA-RNTI 010b TC-RNTI 8510: initiating RA procedure for RAPID 63 with TA 0 units
+1927.984139 [NR_MAC] I UE 8510: Msg3 scheduled at 972.19 (972.10 TDA 0) start 0 RBs 8
+1927.984347 [NR_MAC] A UE 8510: 972.10 Generating RA-Msg2 DCI, RA RNTI 0x10b, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1927.998769 [NR_MAC] W HORUS LAB: CFRA 8510 retain bounded RAR retry context pending valid UL
+1927.998794 [NR_MAC] A (rnti 0x8510) CFRA procedure succeeded!
+1928.013817 [NR_MAC] W HORUS LAB: CFRA 8510 valid UL received; retire RAR retry context
+UE 8510: dlsch_rounds 4/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.08100 MCS (0) 0 (Qm 2) CCE fail 0
+UE 8510: ulsch_rounds 22/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.08181 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 17 SNR 25.5 (+2.5) RSSI -42.0 CCE fail 0
+UE 8510: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 8510: ulsch_rounds 38/1/0/0, ulsch_errors 0, ulsch_DTX 1, BLER 0.02311 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.1 (+2.1) RSSI -42.0 CCE fail 0
+1933.665892 [NR_MAC] W UE 8510 UL failure after transmission timeout
+1934.015233 [NR_PHY] A [RAPROC] 203.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1940.173571 [NR_MAC] I Added new CFRA process for UE RNTI 9e89 with initial CellGroup and 1 preamble(s):   63
+1940.550211 [NR_PHY] A [RAPROC] 473.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 8 freq index 0
+1940.550294 [NR_MAC] A 473.19 UE RA-RNTI 0113 TC-RNTI 9e89: initiating RA procedure for RAPID 63 with TA 0 units
+1940.555598 [NR_MAC] I UE 9e89: Msg3 scheduled at 474.19 (474.10 TDA 0) start 0 RBs 8
+1940.555623 [NR_MAC] A UE 9e89: 474.10 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1940.574826 [NR_MAC] W HORUS LAB: CFRA 9e89 retain bounded RAR retry context pending valid UL
+1940.574931 [NR_MAC] A (rnti 0x9e89) CFRA procedure succeeded!
+1940.600403 [NR_MAC] W HORUS LAB: CFRA 9e89 valid UL received; retire RAR retry context
+UE 9e89: dlsch_rounds 3/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.09000 MCS (0) 0 (Qm 2) CCE fail 0
+UE 9e89: ulsch_rounds 12/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.07290 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 24.9 (+1.9) RSSI -42.0 CCE fail 0
+UE 9e89: dlsch_rounds 7/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.7+0.7) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 9e89: ulsch_rounds 37/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.02059 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.4 (+2.4) RSSI -42.0 CCE fail 0
+1946.308280 [NR_MAC] W UE 9e89 UL failure after transmission timeout
+1946.606723 [NR_PHY] A [RAPROC] 749.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 0 freq index 0
+1952.266704 [NR_MAC] I Added new CFRA process for UE RNTI 5488 with initial CellGroup and 1 preamble(s):   63
+1952.645136 [NR_PHY] A [RAPROC] 1023.19 Initiating RA procedure with preamble 63, energy 60.5 dB (I0 0, thres 200), delay 0 start symbol 4 freq index 0
+1952.645880 [NR_MAC] A 1023.19 UE RA-RNTI 010f TC-RNTI 5488: initiating RA procedure for RAPID 63 with TA 0 units
+1952.647224 [NR_MAC] I UE 5488: Msg3 scheduled at 0.19 (0.10 TDA 0) start 0 RBs 8
+1952.647240 [NR_MAC] A UE 5488: 0.10 Generating RA-Msg2 DCI, RA RNTI 0x10f, state 1, preamble_index(RAPID) 63, timing_offset = 0 (estimated distance 0.0 [m])
+1952.662689 [NR_MAC] W HORUS LAB: CFRA 5488 retain bounded RAR retry context pending valid UL
+1952.662715 [NR_MAC] A (rnti 0x5488) CFRA procedure succeeded!
+1952.786965 [NR_MAC] W HORUS LAB: CFRA 5488 valid UL received; retire RAR retry context
+UE 5488: dlsch_rounds 6/0/0/0, dlsch_errors 0, pucch0_DTX 0 (SNR 20.9+0.9) RSSI -123.5, BLER 0.06561 MCS (0) 0 (Qm 2) CCE fail 0
+UE 5488: ulsch_rounds 31/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.03487 MCS (0) 0 (Qm 2 deltaMCS 0) NPRB 5 SNR 25.2 (+2.2) RSSI -42.0 CCE fail 0

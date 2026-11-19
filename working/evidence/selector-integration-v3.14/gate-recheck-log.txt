@@ -1,0 +1,1 @@
+2026-11-18T16:03:32Z GATE PROMOTE v3.14.24 worst=0.7998 (threshold 0.63, worst case: stationary_clusters/rayleigh seed 1101; all guardrails held) suite=finals-v3 aggregation=fedavg artifact=gate-recheck-artifact.json

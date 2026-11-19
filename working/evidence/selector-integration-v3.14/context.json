@@ -1,0 +1,50 @@
+{
+  "format": "horus.selector-context/1",
+  "mode": "twin-stream",
+  "dt_s": 0.1,
+  "l3_k": 4,
+  "source_clock": "Shared steady session UTC: one UTC anchor plus same-boot monotonic elapsed time; raw wall drift recorded",
+  "ue_count": 1,
+  "min_cells": 2,
+  "max_cells": 5,
+  "max_frame_age_s": 2.0,
+  "delivery_processing_margin_s": 0.2,
+  "cell_ids": [
+    "LTE/450/6/36153880/100",
+    "LTE/450/6/36153883/100",
+    "LTE/450/6/36154378/100",
+    "LTE/450/6/36154379/100",
+    "LTE/450/6/36154392/100",
+    "LTE/450/6/36154396/100",
+    "LTE/450/6/39319068/100"
+  ],
+  "ue_ids": [
+    "measured-walker"
+  ],
+  "source_sha256": {
+    "stack/measured_selector_stream.py": "d489395f873449a5175c4328844b7007d89944c93fbef37cc7f4b5390d0f403f",
+    "pipeline/twin/measured_twin.py": "5265c08b85525f485df8fca3b74b0aac201162be99617a5b431a99286d243872",
+    "stack/session_clock.py": "68e77defbb1847d2c1a412db6235e1c464d8a4d19ea2c6b2701974a70168d79d",
+    "stack/oai-ho/selector_driver.py": "8f9b48bd28957c5afac0a110491173fa5b8c3aa5107e678a285a8ad49fdbafe8",
+    "pipeline/twin/measured_scenario.py": "f1f09be1090159a0f7631d7d9c52fe6918d2d45fec05ebf6b13d7c5934a1ea71",
+    "pipeline/twin/route_radio.py": "74ee916d011c2a09f7b6291b1d27c5a416e28b808300a701a4e472d911bea3e7",
+    "data/walktest/t4-phy-assumptions.json": "2c627ccec3b396b02a21b06efc7e99c726efdc2a63b33fb8dcb61cac46edce0b",
+    "data/walktest/t4/manifest.json": "365e4b23349dc0df0ab3e73d1210f9c239896e88b9c74215d4742391fb2c1843",
+    "data/walktest/t4/epochs.jsonl": "c44e2df0d8a3523e1bb4fa6f4e1e41097514134fe4cf99d833c45c901195c4e7",
+    "working/evidence/t4-replay/cell-mapping.json": "bc92bc6449d61f428654d75f85a10230883b8f673a63ba9fef8f61826fc80385",
+    "working/evidence/t4-replay/neighbor-assumption-model.json": "c75fe2587556f0ba7b262c321028c1efbccaf3936c4b10ea41685e51775315ce",
+    "pipeline/twin/selector_v3.py": "4a83dd27d16e4812a178674c4e5a1ae54f8b1390c9c690c6e999817eececdb5e",
+    "pipeline/twin/cho_v3.py": "bccc8bd5cd88fee69fcf78210a3b10a1452ac580d311dcfe731f843e5240c81a",
+    "pipeline/twin/controllers_v2.py": "f04d48740eab2745efbea52d549e59f191ab19a56eb9d8890a4028c5afe499fe",
+    "pipeline/twin/sim.py": "94f3b4fc48d9e8bf209f926cce3143de9f07ad3b1826391302eb43a35dc8ff73",
+    "pipeline/twin/phy.py": "257338be67c958b96659808ca83beec0fe7eb71f379986c129358308341b7e15",
+    "pipeline/twin/gate_v3.py": "4f1fd28f7f4f91a213cf394a20472621f0c438c613ee85373757268882cb2cae",
+    "stack/selector_runtime.py": "a9f2209d3d7421ddae930b8e615f266dd1117a46e1fbc76149dc42eee5422512"
+  },
+  "feature_source": {
+    "rsrp": "lap-1 calibrated mean RSRP on t4 reverse route; conditional neighbour identities",
+    "sinr": "TwinSim PHY with declared load, noise and interference assumptions",
+    "network": "single simulated walker; controller-dependent simulated connection/HO state"
+  },
+  "scope": "Bounded calibrated-twin to emulated OAI F1 actuation; no field-performance or native CHO qualification"
+}

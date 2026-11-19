@@ -1,0 +1,49 @@
+{
+  "_comment": "REPLICATE of gate_config_finals.json for v3.14 (finals_preregistration_v3_14.json): identical rules, threshold, se_ref, references and guardrails; ONLY seeds differ (1300..1302, never used before). Safety-gate SLA for twin-v2 policies (suite finals-v3). PRE-REGISTERED 2026-10-30 before any v2 candidate existed (the v2.0.0 training run was in progress; no v2 checkpoint had been evaluated). The gate reads everything from here, never from CLI flags. Score per episode = 0.4*(1-min(1,fail_rate)) + 0.3*(1-min(1,pp_rate)) + 0.3*min(1, mean_SE/se_ref), rates per UE-minute; worst case = MIN over every (scenario, fading, seed). Threshold 0.63 = ~90% of the per-cell best-tuned A3's own worst case (0.705, rush_hour/rayleigh seed 1102) on this suite; calibration on baselines only (global A3 0.123, stock A3 0.414 would both FAIL this gate). Guardrails: per (scenario,fading) cell, candidate mean HO rate <= ho_rel*ref + ho_abs and mean (RLF+HOF) rate <= fail_rel*ref + fail_abs, ref = per-cell tuned A3 on the same traces.",
+  "scenario_suite": "finals-v3",
+  "threshold": 0.63,
+  "se_ref": 3.0,
+  "seeds": [
+    1300,
+    1301,
+    1302
+  ],
+  "scenarios": [
+    "rush_hour",
+    "corner_turner",
+    "stationary_clusters",
+    "cell_outage"
+  ],
+  "fadings": [
+    "off",
+    "rician",
+    "rayleigh"
+  ],
+  "reference_specs": {
+    "rush_hour": {
+      "off": "a3:off=1,hys=2,ttt=0.0,k=0",
+      "rician": "a3:off=2,hys=0,ttt=0.16,k=0",
+      "rayleigh": "a3:off=0,hys=2,ttt=0.0,k=4"
+    },
+    "corner_turner": {
+      "off": "a3:off=0,hys=2,ttt=0.0,k=0",
+      "rician": "a3:off=0,hys=2,ttt=0.0,k=4",
+      "rayleigh": "a3:off=2,hys=0,ttt=0.16,k=4"
+    },
+    "stationary_clusters": {
+      "off": "a3:off=-1,hys=1,ttt=0.0,k=0",
+      "rician": "a3:off=3,hys=2,ttt=0.16,k=11",
+      "rayleigh": "a3:off=6,hys=1,ttt=1.28,k=8"
+    },
+    "cell_outage": {
+      "off": "a3:off=1,hys=2,ttt=0.0,k=0",
+      "rician": "a3:off=2,hys=0,ttt=0.16,k=0",
+      "rayleigh": "a3:off=0,hys=2,ttt=0.0,k=4"
+    }
+  },
+  "ho_rel": 1.5,
+  "ho_abs": 0.5,
+  "fail_rel": 1.5,
+  "fail_abs": 0.1,
+  "registered_ts": "2026-10-30T05:30:00Z"
+}

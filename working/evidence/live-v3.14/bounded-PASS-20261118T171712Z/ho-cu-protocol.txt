@@ -1,0 +1,68 @@
+#     cell_type =  "CELL_MACRO_GNB";
+    nr_cellid = 12345678L;
+    tr_s_preference = "f1";
+# HORUS: E2 agent on the CU (RC Style 3 "Connected Mode Mobility" / Handover
+# carries the F1 Setup so the RIC learns both DUs' cells). The RIC address is
+Error 3: No such process trying to get nice value of thread 1005553344 
+46139.181669 [GNB_APP] I gNB 0: neighbour_list has 2 serving cell(s)
+46139.181698 [GNB_APP] I Cell 0 has 1 neighbours configured
+46139.181704 [GNB_APP] I Neighbour[0]: cellId 1, PLMN 208.99, gNB 2816, PCI 1, SCS 1, SSB ARFCN 621312, TAC 1
+46139.181717 [GNB_APP] I Cell 1 has 1 neighbours configured
+46139.181740 [GNB_APP] I Neighbour[0]: cellId 0, PLMN 208.99, gNB 3584, PCI 0, SCS 1, SSB ARFCN 641280, TAC 1
+46139.186301 [GNB_APP] I gNB 0 SIB2 config: q_Hyst=0 dB, cellReselPrio=0, q_RxLevMin=-56 dBm, t_ReselectionNR=1 s
+46141.672238 [NR_RRC] I Received F1 Setup Request from gNB_DU 3584 (du-rfsim) on assoc_id 22
+46141.672312 [NR_RRC] I Added cell 12345678 to DU cells array (total cells = 1)
+46141.672314 [NR_RRC] I DU 3584: Added cell 12345678
+46141.672326 [NR_RRC] I DU 3584: added SIB2 to F1 Setup Response (cell 12345678)
+46141.672330 [NR_RRC] I DU 3584 (du-rfsim): sending F1 Setup Response
+46141.672880 [NR_RRC] I cell PLMN 208.99 Cell ID 12345678 is in service
+46144.956323 [NR_RRC] A [--] (cellID 0, UE ID 1 RNTI 7912) Create UE context: CU UE ID 1 DU UE ID 30994 (rnti: 7912, random ue id c462b8a045000000)
+46144.956350 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 22)
+46144.956394 [PDCP]   W HORUS LAB: CU SRB 1 t-Reordering explicitly set to 1000 ms
+46144.956454 [NR_RRC] A [DL] (cellID bc614e, UE ID 1 RNTI 7912) Send RRC Setup
+46144.970252 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 7912) Received RRCSetupComplete (RRC_CONNECTED reached)
+46144.991270 [NR_RRC] A [DL] (cellID bc614e, UE ID 1 RNTI 7912) Send DL Information Transfer [42 bytes]
+46145.005401 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 7912) Received RRC UL Information Transfer [24 bytes]
+46145.006364 [NR_RRC] A [DL] (cellID bc614e, UE ID 1 RNTI 7912) Send DL Information Transfer [21 bytes]
+46145.021441 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 7912) Received RRC UL Information Transfer [60 bytes]
+46145.056741 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 7912) Received UE capabilities
+46145.056941 [NR_RRC] A [DL] (cellID bc614e, UE ID 1 RNTI 7912) Send DL Information Transfer [53 bytes]
+46145.071338 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 7912) Received RRC UL Information Transfer [13 bytes]
+46145.071691 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 7912) Received RRC UL Information Transfer [35 bytes]
+46145.083304 [NR_RRC] A [--] (cellID bc614e, UE ID 1 RNTI 7912) selecting CU-UP ID 3584 based on exact NSSAI match (1:0xffffff)
+46145.083316 [E1AP]   I UE 1: set up PDU session ID 1 (1 bearers)
+46145.083445 [PDCP]   I Added DRB 1 to UE ID 1
+46145.083541 [PDCP]   W HORUS LAB: CU SRB 2 t-Reordering explicitly set to 1000 ms
+46145.085272 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+46145.085296 [PDCP]   I DRB 1 re-established
+46145.085614 [NR_RRC] A [DL] (cellID bc614e, UE ID 1 RNTI 7912) Generate RRCReconfiguration (bytes 313, xid 3)
+46145.085640 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+46145.101459 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 7912) Received RRCReconfigurationComplete
+46145.878288 [NR_RRC] I Received F1 Setup Request from gNB_DU 3585 (du-rfsim) on assoc_id 28
+46145.878407 [NR_RRC] I Added cell 11111111 to DU cells array (total cells = 1)
+46145.878426 [NR_RRC] I DU 3585: Added cell 11111111
+46145.878456 [NR_RRC] I DU 3585: added SIB2 to F1 Setup Response (cell 11111111)
+46145.878474 [NR_RRC] I DU 3585 (du-rfsim): sending F1 Setup Response
+46145.879198 [NR_RRC] I cell PLMN 208.99 Cell ID 11111111 is in service
+46336.637081 [NR_RRC] A Handover triggered for UE 1/RNTI 7912 towards cell 11111111/assoc_id 28/PCI 1
+46336.638983 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+46336.639008 [PDCP]   I DRB 1 re-established
+46336.639218 [PDCP]   I SRB 2 re-established
+46336.639224 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+46336.639765 [NR_RRC] I Removing SCells from DU (assoc_id=22) for UE 1
+46336.639769 [NR_RRC] I Adding new PCell (cell 11111111, assoc_id 28)
+46336.864147 [NR_RRC] A [UL] (cellID a98ac7, UE ID 1 RNTI f024) Received RRCReconfigurationComplete
+46336.864169 [NR_RRC] A handover for UE 1/RNTI f024 complete!
+46336.864189 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 0/assoc_id 22
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 11111111
+46361.031066 [NR_RRC] A Handover triggered for UE 1/RNTI f024 towards cell 12345678/assoc_id 22/PCI 0
+46361.032586 [E1AP]   I UE 1: updating PDU session ID 1 (0 setup, 1 modify bearers)
+46361.032608 [PDCP]   I DRB 1 re-established
+46361.032697 [PDCP]   I SRB 2 re-established
+46361.032701 [NR_RRC] I Received E1AP Bearer Context Modification Response for UE CU-CP ID 1
+46361.033303 [NR_RRC] I Removing SCells from DU (assoc_id=28) for UE 1
+46361.033307 [NR_RRC] I Adding new PCell (cell 12345678, assoc_id 22)
+46361.252834 [NR_RRC] A [UL] (cellID bc614e, UE ID 1 RNTI 6cc7) Received RRCReconfigurationComplete
+46361.252854 [NR_RRC] A handover for UE 1/RNTI 6cc7 complete!
+46361.252874 [NR_RRC] I UE 1 Handover: trigger release on cell PCI 1/assoc_id 28
+[E2 AGENT] RC Control: F1 Handover Control for UE 1 to NR Cell Identity 12345678

@@ -1,0 +1,12 @@
+{
+  "sha": "a646baaa62d6950e77edebd188e80422d4bf5bc3",
+  "message": "nrUE: align negative sync offsets with the next frame\n\nInitial synchronization can return a negative rx_offset. syncInFrame() consumes no samples for negative offsets, leaving reception misaligned and causing repeated PBCH decoding failures.\n\nAdvance negative offsets by one frame and increment the decoded frame number.\n\nSigned-off-by: Adrian-Cristian Batrin <(contact: see the repository README)>",
+  "title": "nrUE: align negative sync offsets with the next frame",
+  "url": "https://github.com/openairinterface/openairinterface5g/commit/a646baaa62d6950e77edebd188e80422d4bf5bc3",
+  "files": [
+    {
+      "filename": "executables/nr-ue.c",
+      "patch": "@@ -715,6 +715,16 @@ static void readFrame(PHY_VARS_NR_UE *UE, openair0_timestamp_t *timestamp, int d\n     free(rxp[0]);\n }\n \n+static int sync_frame_start(int decoded_frame, int skipped_frames, int samples_per_frame, int *rx_offset)\n+{\n+  // Sometimes offset is negative meaning we need to skip ahead to next frame\n+  if (*rx_offset < 0) {\n+    *rx_offset += samples_per_frame;\n+    decoded_frame++;\n+  }\n+  return (decoded_frame + skipped_frames) % MAX_FRAME_NUMBER;\n+}\n+\n static void syncInFrame(PHY_VARS_NR_UE *UE, openair0_timestamp_t *timestamp, int duration_rx_to_tx, openair0_timestamp_t rx_offset)\n {\n   const NR_DL_FRAME_PARMS *fp = &UE->frame_parms;\n@@ -865,7 +875,7 @@ void *UE_thread(void *arg)\n           LOG_A(PHY, \"UE synchronized! decoded_frame_rx=%d skipped_frames=%d\\n\", decoded_frame_rx, skipped_frames);\n           // shift the frame index with all the frames we trashed meanwhile we perform the synch search\n           syncData_t *syncMsg = (syncData_t *)NotifiedFifoData(res);\n-          decoded_frame_rx = (decoded_frame_rx + skipped_frames) % MAX_FRAME_NUMBER;\n+          decoded_frame_rx = sync_frame_start(decoded_frame_rx, skipped_frames, fp->samples_per_frame, &syncMsg->rx_offset);\n           intialSyncOffset = syncMsg->rx_offset;\n         }\n         delNotifiedFIFO_elt(res);"
+    }
+  ]
+}

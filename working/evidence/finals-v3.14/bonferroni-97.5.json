@@ -1,0 +1,50 @@
+{
+ "H1/a3_tuned": {
+  "diff": 0.2256,
+  "ci95_low": 0.1967,
+  "ci97.5_low": 0.1925,
+  "above_0_at_97.5": true
+ },
+ "H1/cho_tuned": {
+  "diff": 0.0092,
+  "ci95_low": 0.0025,
+  "ci97.5_low": 0.0016,
+  "above_0_at_97.5": true
+ },
+ "H1/cho_tuned_ext": {
+  "diff": -0.0157,
+  "ci95_low": -0.02,
+  "ci97.5_low": -0.0207,
+  "above_0_at_97.5": false
+ },
+ "H2/a3_global": {
+  "diff": 1.4334,
+  "ci95_low": 1.1582,
+  "ci97.5_low": 1.1185,
+  "above_0_at_97.5": true
+ },
+ "H2/cho_global": {
+  "diff": 0.1469,
+  "ci95_low": 0.137,
+  "ci97.5_low": 0.1356,
+  "above_0_at_97.5": true
+ },
+ "H2/cho_global_ext": {
+  "diff": 0.1469,
+  "ci95_low": 0.137,
+  "ci97.5_low": 0.1356,
+  "above_0_at_97.5": true
+ },
+ "H2/cho_mse": {
+  "diff": 0.1469,
+  "ci95_low": 0.137,
+  "ci97.5_low": 0.1356,
+  "above_0_at_97.5": true
+ },
+ "H2/cho_mro": {
+  "diff": 0.1584,
+  "ci95_low": 0.1377,
+  "ci97.5_low": 0.1347,
+  "above_0_at_97.5": true
+ }
+}

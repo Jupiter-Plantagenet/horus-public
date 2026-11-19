@@ -1,0 +1,254 @@
+# HORUS finals — RIC-commanded HANDOVER profile (alternative to the default
+# srsRAN stack, which stays untouched in ../docker-compose.yml).
+#
+#   OAI 5G core (AMF/SMF/UPF v2.2.1 + MySQL)                       ext-dn
+#        │ N2/N3                                                     │
+#   OAI CU (gNB-CU, RRC/PDCP) ──E2 (RC style 3 + KPM)──▶ FlexRIC v3.0.0 near-RT RIC
+#     │F1            │F1                                         ▲ E42
+#   OAI DU pci0    OAI DU pci1  (two cells: DU id 3584 / 3585)     │
+#     └─rfsim─┐ ┌─rfsim─┘                                       HORUS HO xApp
+#          OAI nrUE (rfsim SERVER; both DUs are rfsim clients)
+#
+# The handover is a real 3GPP F1 (intra-gNB, inter-DU) handover executed by the
+# OAI protocol stack (RRC Reconfiguration with sync, RACH on the target DU, UE
+# context release on the source DU), commanded by an E2SM-RC CONTROL (Style 3
+# "Connected Mode Mobility", Action 1 "Handover Control") from a FlexRIC xApp.
+#
+# Topology, IPs, configs and image tags follow OAI's own CI scenario
+# ci-scripts/yaml_files/5g_f1_rfsimulator (develop, 2026-10) — the CI runs
+# exactly this CU + 2 DU + nrUE handover; we add the E2 agent + RIC + xApp.
+#
+# Bring-up order matters (OAI handover-tutorial.md): CN -> CU -> DU0 -> UE must
+# attach on DU0 -> DU1. `make -C .. ho-up` (or ./ho-up.sh) does that.
+#
+# CPU: three nr-softmodems + nrUE at 106 PRB. Do NOT run this concurrently with
+# the srsRAN stack on the 4-vCPU demo box — ho-up.sh refuses if it is running.
+
+name: horus-oai-ho
+
+x-gnb: &gnb
+  image: ${REGISTRY-oaisoftwarealliance/}oai-gnb:${OAI_TAG:-2026.w43}
+  cap_drop: [ALL]
+  # NO SYS_NICE on purpose: with it OAI requests SCHED_FIFO threads, which a
+  # WSL2/cgroup-v2 Docker cannot grant (pthread_create EAGAIN -> softmodem
+  # asserts at startup). Without it OAI uses default-priority threads. RFsim
+  # is sample-clocked, but scheduling and protocol timers still need qualification.
+  # OAI mlockall()s its memory; with Docker's default 8 MB RLIMIT_MEMLOCK the
+  # next thread stack cannot be locked and pthread_create() fails with EAGAIN.
+  cap_add: [IPC_LOCK]
+  ulimits:
+    memlock: {soft: -1, hard: -1}
+  restart: "no"
+  healthcheck:
+    test: /bin/bash -c "pgrep nr-softmodem"
+    interval: 10s
+    timeout: 5s
+    retries: 5
+
+services:
+  mysql:
+    container_name: ho-mysql
+    image: mysql:9.6
+    init: true
+    volumes:
+      - ./conf/oai_db.sql:/docker-entrypoint-initdb.d/oai_db.sql:ro
+      - ./conf/mysql-healthcheck.sh:/tmp/mysql-healthcheck.sh:ro
+    environment:
+      - TZ=UTC
+      - MYSQL_DATABASE=oai_db
+      - MYSQL_USER=test
+      - MYSQL_PASSWORD=test
+      - MYSQL_ROOT_PASSWORD=linux
+    healthcheck:
+      test: ["CMD", "/bin/bash", "/tmp/mysql-healthcheck.sh"]
+      start_period: 10s
+      interval: 10s
+      timeout: 5s
+      retries: 30
+    networks:
+      public_net: {ipv4_address: 192.168.71.131}
+
+  oai-amf:
+    container_name: ho-amf
+    image: oaisoftwarealliance/oai-amf:v2.2.1
+    environment: [TZ=UTC]
+    volumes:
+      - ./conf/mini_nonrf_config_3slices.yaml:/openair-amf/etc/config.yaml:ro
+    depends_on:
+      mysql: {condition: service_healthy}
+    networks:
+      public_net: {ipv4_address: 192.168.71.132}
+
+  oai-smf:
+    container_name: ho-smf
+    image: oaisoftwarealliance/oai-smf:v2.2.1
+    environment: [TZ=UTC]
+    volumes:
+      - ./conf/mini_nonrf_config_3slices.yaml:/openair-smf/etc/config.yaml:ro
+    depends_on: [oai-amf]
+    networks:
+      public_net: {ipv4_address: 192.168.71.133}
+
+  oai-upf:
+    container_name: ho-upf
+    image: oaisoftwarealliance/oai-upf:v2.2.1
+    init: true
+    environment: [TZ=UTC]
+    volumes:
+      - ./conf/mini_nonrf_config_3slices.yaml:/openair-upf/etc/config.yaml:ro
+    depends_on: [oai-smf]
+    cap_add: [NET_ADMIN, SYS_ADMIN]
+    cap_drop: [ALL]
+    privileged: true
+    networks:
+      public_net: {ipv4_address: 192.168.71.134, interface_name: eth0}
+      traffic_net: {ipv4_address: 192.168.72.134, interface_name: eth1}
+
+  oai-ext-dn:
+    container_name: ho-ext-dn
+    privileged: true
+    image: oaisoftwarealliance/trf-gen-cn5g:latest
+    init: true
+    entrypoint: /bin/bash -c "iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE; ip route add 12.1.1.0/24 via 192.168.72.134 dev eth0; sleep infinity"
+    depends_on: [oai-upf]
+    networks:
+      traffic_net: {ipv4_address: 192.168.72.135}
+
+  # ------------------------------ near-RT RIC --------------------------------
+  flexric:
+    container_name: ho-flexric
+    # upstream oai-flexric:v3.0.0 + one extra xApp (xapp_horus_ho), see xapp/Dockerfile
+    image: ${HORUS_FLEXRIC_IMAGE:-horus/oai-flexric:v3.0.0-horus}
+    build: ./xapp
+    restart: "no"
+    command: ["stdbuf", "-o0", "nearRT-RIC"]
+    volumes:
+      - ./conf/flexric.conf:/usr/local/etc/flexric/flexric.conf:ro
+      - ./xapp:/horus:ro                       # HORUS HO controller (runs here, E42 -> RIC)
+      - ../../working:/working                 # actions.jsonl, policies (A1 store), evidence
+    networks:
+      public_net: {ipv4_address: 192.168.71.160}
+
+  # ------------------------------ RAN ----------------------------------------
+  oai-cu:
+    <<: *gnb
+    image: ${HORUS_CU_IMAGE:-${REGISTRY-oaisoftwarealliance/}oai-gnb:${OAI_TAG:-2026.w43}}
+    container_name: ho-cu
+    environment:
+      HORUS_LAB_SRB_REORDERING_MS: ${HORUS_LAB_SRB_REORDERING_MS:-}
+      USE_ADDITIONAL_OPTIONS: --log_config.global_log_options level,nocolor,time
+                              --gNBs.[0].remote_s_address 0.0.0.0
+                              --telnetsrv --telnetsrv.listenaddr 192.168.71.150
+                              --telnetsrv.shrmod ci
+                              --e2_agent.near_ric_ip_addr 192.168.71.160
+                              --e2_agent.sm_dir /usr/local/lib/flexric/
+    depends_on: [oai-ext-dn, flexric]
+    networks:
+      public_net: {ipv4_address: 192.168.71.150}
+    volumes:
+      - ./conf/neighbour-config.conf:/opt/oai-gnb/etc/neighbour-config.conf:ro
+      - ./conf/gnb-cu.conf:/opt/oai-gnb/etc/gnb.conf:ro
+
+  oai-du-pci0:
+    <<: *gnb
+    image: ${HORUS_DU_IMAGE:-${REGISTRY-oaisoftwarealliance/}oai-gnb:${OAI_TAG:-2026.w43}}
+    container_name: ho-du-pci0
+    environment:
+      USE_ADDITIONAL_OPTIONS: --rfsim
+                              --log_config.global_log_options level,nocolor,time
+                              --telnetsrv --telnetsrv.listenaddr 192.168.71.171
+                              --telnetsrv.shrmod ci
+                              --rfsimulator.[0].serveraddr 192.168.71.181
+                              --e2_agent.near_ric_ip_addr 192.168.71.160
+                              --e2_agent.sm_dir /usr/local/lib/flexric/
+    depends_on: [oai-cu]
+    networks:
+      public_net: {ipv4_address: 192.168.71.171}
+    volumes:
+      - ./conf/gnb-du.conf:/opt/oai-gnb/etc/gnb.conf:ro
+
+  oai-du-pci1:
+    <<: *gnb
+    image: ${HORUS_DU_IMAGE:-${REGISTRY-oaisoftwarealliance/}oai-gnb:${OAI_TAG:-2026.w43}}
+    container_name: ho-du-pci1
+    environment:
+      USE_ADDITIONAL_OPTIONS: --rfsim
+                              --log_config.global_log_options level,nocolor,time
+                              --gNBs.[0].gNB_DU_ID 3585
+                              --gNBs.[0].nr_cellid 11111111
+                              --gNBs.[0].servingCellConfigCommon.[0].physCellId 1
+                              --gNBs.[0].servingCellConfigCommon.[0].absoluteFrequencySSB 643296
+                              --gNBs.[0].servingCellConfigCommon.[0].dl_absoluteFrequencyPointA 642024
+                              --gNBs.[0].servingCellConfigCommon.[0].ssb_PositionsInBurst_Bitmap 2
+                              --MACRLCs.[0].local_n_address 192.168.71.172
+                              --rfsimulator.[0].serveraddr 192.168.71.181
+                              --e2_agent.near_ric_ip_addr 192.168.71.160
+                              --e2_agent.sm_dir /usr/local/lib/flexric/
+    depends_on: [oai-cu]
+    networks:
+      public_net: {ipv4_address: 192.168.71.172}
+    volumes:
+      - ./conf/gnb-du.conf:/opt/oai-gnb/etc/gnb.conf:ro
+
+  oai-nr-ue:
+    container_name: ho-nr-ue
+    image: ${HORUS_NR_UE_IMAGE:-${REGISTRY-oaisoftwarealliance/}oai-nr-ue:${OAI_TAG:-2026.w43}}
+    restart: "no"
+    cap_drop: [ALL]
+    cap_add: [NET_ADMIN, NET_RAW, IPC_LOCK]   # no SYS_NICE (see x-gnb)
+    ulimits:
+      memlock: {soft: -1, hard: -1}
+    environment:
+      USE_ADDITIONAL_OPTIONS: --rfsim --log_config.global_log_options level,nocolor,time
+                              -r 106 --numerology 1 -C 3619200000
+                              --uicc0.imsi 208990100001100
+                              --rfsimulator.[0].serveraddr server
+                              --telnetsrv --telnetsrv.shrmod ciUE --telnetsrv.listenaddr 192.168.71.181 --telnetsrv.listenport 8091
+    networks:
+      public_net: {ipv4_address: 192.168.71.181}
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    volumes:
+      - ./conf/nrue.uicc.conf:/opt/oai-nr-ue/etc/nr-ue.conf:ro
+    healthcheck:
+      test: /bin/bash -c "pgrep nr-uesoftmodem"
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # UE-side live metrics (RTT + tput through the OAI UE tunnel), same producer
+  # and file contract as the srsRAN stack: ../../working/metrics/*.jsonl
+  ue-metrics:
+    container_name: ho-ue-metrics
+    image: python:3.11-slim
+    restart: unless-stopped
+    profiles: ["metrics"]
+    network_mode: "service:oai-nr-ue"
+    cap_add: [NET_RAW, NET_ADMIN]
+    environment:
+      UE_LABEL: "${UE_LABEL:-ue-0}"
+      UE_IFACE: oaitun_ue1
+      RTT_TARGET: 192.168.72.135
+      METRICS_DIR: /metrics
+    command: ["python3", "-u", "/app/ue_metrics.py"]
+    volumes:
+      - ../metrics:/app:ro
+      - ../../working/metrics:/metrics
+
+networks:
+  public_net:
+    driver: bridge
+    name: horus-ho-public
+    ipam:
+      config:
+        - subnet: 192.168.71.128/26
+    driver_opts:
+      com.docker.network.bridge.name: "horus-ho-pub"
+  traffic_net:
+    driver: bridge
+    name: horus-ho-traffic
+    ipam:
+      config:
+        - subnet: 192.168.72.128/26
+    driver_opts:
+      com.docker.network.bridge.name: "horus-ho-trf"

@@ -1,0 +1,33 @@
+[19:24:33] 1/5 core network + near-RT RIC
+ Container ho-upf  Started
+ Container ho-ext-dn  Starting
+ Container ho-ext-dn  Started
+[19:24:50] 2/5 CU (E2 agent -> RIC 192.168.71.160)
+ Container ho-cu  Started
+[19:24:53]    CU: NG Setup with AMF done
+[19:24:53] 3/5 DU pci0 (DU id 3584)
+ Container ho-du-pci0  Started
+[19:24:53]    CU accepted DU0 over F1
+[19:24:53] 4/5 nrUE (rfsim server) — attach on DU0
+ Container ho-nr-ue  Started
+[19:24:57]    UE attached: oaitun_ue1 12.1.1.2/24
+[19:24:57] 5/5 DU pci1 (DU id 3585, second cell)
+ Container ho-du-pci1  Started
+[19:25:16]    CU sees DU1 (3585)
+[19:25:16] state: serving DU per CU RRC ->
+[19:25:16]    UE contexts at CU: 1 (active with PDU session: CU UE ID 1)
+   gNB_DU_id 3584 is connected to ue_id 1
+[19:25:16] E2 nodes at the RIC:
+   [NEAR-RIC]: Accepting RAN function ID 146 with def = TC_STATS_V0 
+   [NEAR-RIC]: Accepting RAN function ID 148 with def = GTP_STATS_V0 
+   [E2AP]: E2 SETUP-REQUEST rx from PLMN 20899 Node ID 3585 RAN type ngran_gNB_DU ID 3584
+   [NEAR-RIC]: Accepting RAN function ID 2 with def = ORAN-E2SM-KPM 
+   [NEAR-RIC]: Accepting RAN function ID 3 with def = ORAN-E2SM-RC 
+   [NEAR-RIC]: Accepting RAN function ID 4 with def = ORAN-E2SM-CCC 
+   [NEAR-RIC]: Accepting RAN function ID 142 with def = MAC_STATS_V0 
+   [NEAR-RIC]: Accepting RAN function ID 143 with def = RLC_STATS_V0 
+   [NEAR-RIC]: Accepting RAN function ID 144 with def = PDCP_STATS_V0 
+   [NEAR-RIC]: Accepting RAN function ID 145 with def = SLICE_STATS_V0 
+   [NEAR-RIC]: Accepting RAN function ID 146 with def = TC_STATS_V0 
+   [NEAR-RIC]: Accepting RAN function ID 148 with def = GTP_STATS_V0 
+[19:25:16] handover profile up. 'make ho-demo' to run the RIC-commanded handover.

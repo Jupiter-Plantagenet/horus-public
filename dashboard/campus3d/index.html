@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HORUS Campus Twin</title>
+<meta name="description" content="HORUS 3D campus digital twin: Kumoh National Institute of Technology route, serving cells and confirmed handovers.">
+<link rel="icon" href="assets/horus-mark.png">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js"}}</script>
+</head>
+<body>
+<div id="app" class="app">
+  <canvas id="scene" aria-label="3D campus twin"></canvas>
+  <div id="labels" class="labels" aria-hidden="true"></div>
+
+  <header class="top chrome">
+    <div class="brand">
+      <img src="assets/horus-mark.png" alt="" class="mark">
+      <div>
+        <div class="brand-title">HORUS <span class="thin" data-i18n="title">Campus Twin</span></div>
+        <div class="brand-sub" data-i18n="subtitle">Kumoh National Institute of Technology · 금오공과대학교</div>
+      </div>
+    </div>
+    <nav class="scen" id="scenarios" aria-label="Scenario"></nav>
+    <div class="top-right">
+      <button class="btn ghost" id="btn-lang" title="L">한국어</button>
+      <button class="btn ghost" id="btn-full" title="F">⤢</button>
+    </div>
+  </header>
+
+  <div class="badge-row">
+    <div id="mode-badge" class="mode-badge replay"><span class="dot"></span><span id="mode-text">REPLAY</span></div>
+    <div id="scen-label" class="scen-label"></div>
+    <button id="prov-chip" class="prov-chip" aria-expanded="false"><span data-i18n="provenance">Provenance</span> ⓘ</button>
+  </div>
+  <div id="prov-pop" class="prov-pop" hidden></div>
+  <div id="sample-bar" class="sample-bar" hidden></div>
+  <div id="waiting" class="waiting" hidden></div>
+
+  <aside class="side left chrome" id="now-panel">
+    <section class="card">
+      <h3><span data-i18n="now">Now</span> <span class="ko" data-i18n-ko="now">현재</span></h3>
+      <div class="serve-row">
+        <div class="serve" id="serving"></div>
+        <div class="arrow" id="target-arrow">→</div>
+        <div class="serve target" id="target"></div>
+      </div>
+      <div id="rsrp-bars" class="bars"></div>
+      <div class="kv" id="radio-kv"></div>
+    </section>
+    <section class="card" id="ai-card">
+      <h3><span data-i18n="decision">AI decision</span> <span class="ko" data-i18n-ko="decision">AI 결정</span></h3>
+      <div id="ai-body"></div>
+    </section>
+    <section class="card" id="ran-card">
+      <h3><span data-i18n="ran">RAN execution</span> <span class="ko" data-i18n-ko="ran">RAN 실행</span></h3>
+      <div id="ran-body"></div>
+    </section>
+  </aside>
+
+  <aside class="side right chrome" id="evidence-panel">
+    <section class="card" id="artifact-card">
+      <h3><span data-i18n="artifact">Active artifact</span> <span class="ko" data-i18n-ko="artifact">활성 모델</span></h3>
+      <div id="artifact-body"></div>
+    </section>
+    <section class="card" id="accept-card">
+      <h3><span data-i18n="acceptance">Execution evidence</span> <span class="ko" data-i18n-ko="acceptance">실행 증거</span></h3>
+      <div id="accept-body"></div>
+    </section>
+    <section class="card" id="service-card">
+      <h3><span data-i18n="service">Service observations</span> <span class="ko" data-i18n-ko="service">서비스 관측</span></h3>
+      <div id="service-body"></div>
+    </section>
+  </aside>
+
+  <canvas id="minimap" class="minimap" width="240" height="300" aria-label="2D overview"></canvas>
+
+  <div class="view-switch chrome-lite" id="views" aria-label="Camera"></div>
+
+  <footer class="timeline chrome" id="timeline">
+    <div class="tl-controls">
+      <button class="btn play" id="btn-play" title="Space">❚❚</button>
+      <div class="clock"><span id="t-now">0.0</span><span class="dim"> / <span id="t-dur">0.0</span> s</span></div>
+      <div class="speeds" id="speeds"></div>
+    </div>
+    <div class="tl-lanes" id="lanes">
+      <canvas id="tl-canvas"></canvas>
+      <div class="tl-head" id="tl-head"></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" hidden></div>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

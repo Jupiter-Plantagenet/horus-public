@@ -1,0 +1,58 @@
+{
+  "image_tag": "horus/oai-nr-ue:sync-offset-diagnostic",
+  "image_id": "sha256:995d877338aeb029ceb102659d5de0e5078bcae8f54dca14d2da3a915af40b05",
+  "binary_sha256": "23b3a7a394b5c1bebf69fe755d4da3b7b31ce75e82805344c5fb669f5748e00d",
+  "patch": {
+    "source_commit": "cfee4c20b45ac1cf6d455d3f01bb3e00200438b0",
+    "upstream_fix": "a646baaa62d6950e77edebd188e80422d4bf5bc3",
+    "upstream_url": "https://github.com/OPENAIRINTERFACE/openairinterface5g/commit/a646baaa62d6950e77edebd188e80422d4bf5bc3",
+    "scope": "Advance a negative synchronization offset by one radio frame and advance decoded SFN; positive offsets unchanged; additional warning only",
+    "file": "executables/nr-ue.c",
+    "before_sha256": "9a05fae2a97586eed2aaf0983808b0ec1adb77700de67c786a52206b3be185b7",
+    "after_sha256": "04c3f10ae989792547ee5f17f38e1b474a65f068992b11bffdd50777100f257c",
+    "experimental": true,
+    "qualified": false,
+    "model_gate_security_bandwidth_response_window_unchanged": true
+  },
+  "actual_c_unit_checks": {
+    "passed": true,
+    "actual_patched_c_compiled": true,
+    "cases": 12,
+    "asan_ubsan_passed": true,
+    "helper_sha256": "8f805b20eb8d292266ed14a1f28ff3877cbac8aa87c9edd054b3982a8107c378",
+    "source_sha256": "04c3f10ae989792547ee5f17f38e1b474a65f068992b11bffdd50777100f257c",
+    "observed_failure_offset_samples": -2224,
+    "frame_sizes_checked": [
+      614400,
+      1228800
+    ],
+    "scope": "Helper/SFN arithmetic and caller wiring; no PHY/radio outcome qualification",
+    "new_training_or_evaluation": false
+  },
+  "embedded_image_initial_unit_checks": {
+    "passed": true,
+    "actual_patched_c_compiled": true,
+    "cases": 10,
+    "asan_ubsan_passed": true,
+    "helper_sha256": "8f805b20eb8d292266ed14a1f28ff3877cbac8aa87c9edd054b3982a8107c378",
+    "source_sha256": "04c3f10ae989792547ee5f17f38e1b474a65f068992b11bffdd50777100f257c",
+    "scope": "Helper/SFN arithmetic and caller wiring; no PHY/radio outcome qualification",
+    "new_training_or_evaluation": false
+  },
+  "previous_completion_and_target_ssb_patches_retained": true,
+  "incremental_build_parent": {
+    "builder": "e6b050fe74dcb31c4e9de5a21986549da9549e86cbed502aac02b23c321bb782",
+    "runtime": "6643acf4eb73b01dc0ac9767ec3083ff75efca3f19fd49ba30f7eaff3cf5228a"
+  },
+  "builder_image": "be161caf2a3a",
+  "standalone_recipe_full_rebuild_tested": false,
+  "operator_probe_pending": false,
+  "integrated_sustained_acceptance_pending": true,
+  "no_new_training_or_heldout_runs": true,
+  "known_failed_494_file_run_retained": true,
+  "operator_probe_outcome": "FAILED: 27 completions, then xApp exit 139; traffic still passed",
+  "natural_negative_offset_recovery_observed": true,
+  "operator_evidence": "working/evidence/sync-offset-20261104/first-failed-xapp/SUMMARY.json",
+  "normal_combination_operator_outcome": "80/80 PASS with CU proof, traffic and cleanup",
+  "normal_operator_evidence": "working/evidence/xapp-reply-order-20261104/operator-80-controls/VERIFICATION.json"
+}
