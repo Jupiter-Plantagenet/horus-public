@@ -4,7 +4,7 @@ For every UE, HORUS continuously picks the conditional-handover (CHO) profile th
 The policy is learned **federatedly** across campus networks. A safety gate admits a model only if it improves
 the network without regressing failures. In our tests the gate promoted every clean candidate and rejected a
 poisoned FedAvg update.
-The policy runs as an **online runtime** that issues real handovers on an OAI 5G RAN. It was built at Kumoh
+The policy runs as an **online runtime** that issues real handovers on an OAI 5G RAN. It was built by George Akor and Raneem Khafagy at Kumoh
 National Institute of Technology (금오공과대학교) for Track 2 of the 2026 이음5G+ × AI Smart Campus Challenge.
 
 ![HORUS 3D campus console: v3.14.24 on the measured campus route](working/evidence/console-v3.14/console-v314-en.jpg)
